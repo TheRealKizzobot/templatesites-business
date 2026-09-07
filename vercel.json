@@ -1,46 +1,7 @@
 {
-  "projects": [
-    {
-      "name": "moshine-restaurant",
-      "source": "restaurant-site",
-      "framework": "nextjs",
-      "buildCommand": "next build",
-      "outputDirectory": "out"
-    },
-    {
-      "name": "moshine-taskflow",
-      "source": "taskflow-saas",
-      "framework": "nextjs",
-      "buildCommand": "next build",
-      "outputDirectory": "out"
-    },
-    {
-      "name": "moshine-booking",
-      "source": "booking-system",
-      "framework": "nextjs",
-      "buildCommand": "next build",
-      "outputDirectory": ".next"
-    },
-    {
-      "name": "moshine-shop",
-      "source": "ecommerce-store",
-      "framework": "nextjs",
-      "buildCommand": "next build",
-      "outputDirectory": ".next"
-    },
-    {
-      "name": "moshine-metrics",
-      "source": "analytics-dashboard",
-      "framework": "nextjs",
-      "buildCommand": "next build",
-      "outputDirectory": ".next"
-    },
-    {
-      "name": "moshine-portfolio",
-      "source": "moshine-portfolio",
-      "framework": "nextjs",
-      "buildCommand": "next build",
-      "outputDirectory": ".next"
-    }
-  ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "devCommand": "next dev",
+  "installCommand": "npm install"
 }
