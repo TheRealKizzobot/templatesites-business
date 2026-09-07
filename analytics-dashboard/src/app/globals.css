@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4efe8;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --brand: #5a4a42;
+  --border: #e0ddd8;
+  --error: #c94a4a;
+  --success: #3d7a4e;
+  --warning: #b07d2b;
+}
+
+.dark {
+  --bg-primary: #171310;
+  --bg-secondary: #221c18;
+  --text-primary: #f4efe8;
+  --text-secondary: #c4b7ae;
+  --brand: #faf8f6;
+  --border: #3b312c;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-text-primary antialiased transition-colors duration-200 dark:bg-[#171310];
+  }
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+  ::selection {
+    @apply bg-brand-200 text-brand-900;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold transition-colors;
+  }
+  .btn-primary {
+    @apply btn bg-brand-800 text-brand-50 hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-secondary {
+    @apply btn border border-border bg-white text-text-primary hover:bg-bg-secondary;
+  }
+  .btn-ghost {
+    @apply btn text-text-secondary hover:bg-bg-secondary;
+  }
+  .btn-sm {
+    @apply min-h-[44px] px-4 py-1.5 text-xs;
+  }
+  .card {
+    @apply rounded-xl bg-white shadow-soft dark:bg-[#221c18];
+  }
+  .pill {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold;
+  }
+  .nav-link {
+    @apply inline-flex min-h-[44px] items-center rounded-full px-4 text-sm font-medium text-text-secondary transition-colors hover:bg-brand-100 hover:text-brand-800 dark:text-text-secondary dark:hover:bg-brand-900 dark:hover:text-brand-100;
+  }
+  .nav-link-active {
+    @apply bg-brand-100 text-brand-800 dark:bg-brand-900 dark:text-brand-100;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

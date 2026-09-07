@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------------------------
+   Design system tokens (MoshineSites)
+   Single source of truth — Tailwind theme maps to these CSS variables.
+--------------------------------------------------------------------------- */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4efe8;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --brand: #5a4a42;
+  --border: #e0ddd8;
+  --error: #c94a4a;
+  --success: #3d7a4e;
+  --warning: #b07d2b;
+
+  --brand-50: #faf8f6;
+  --brand-100: #f0ece8;
+  --brand-200: #ddd4cd;
+  --brand-300: #c4b7ae;
+  --brand-400: #a98f82;
+  --brand-500: #5a4a42;
+  --brand-600: #4a3d37;
+  --brand-700: #3b312c;
+  --brand-800: #2c2521;
+  --brand-900: #1d1815;
+
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-inter);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: var(--brand-500);
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  /* Page container following the design-system spacing scale */
+  .container-page {
+    @apply mx-auto w-full max-w-page px-md sm:px-lg lg:px-xl;
+  }
+
+  .section {
+    @apply py-2xl sm:py-3xl;
+  }
+
+  .section-kicker {
+    @apply text-sm font-semibold uppercase tracking-[0.16em] text-brand-500;
+  }
+
+  .section-title {
+    @apply mt-sm font-display text-3xl text-text-primary sm:text-4xl;
+  }
+
+  .section-lede {
+    @apply mt-md max-w-2xl text-text-secondary;
+  }
+
+  /* Buttons — all meet 44px minimum touch target */
+  .btn {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-sm rounded-full px-lg text-base font-medium transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-brand-700 text-white hover:bg-brand-800 active:bg-brand-900;
+  }
+
+  .btn-outline {
+    @apply border border-brand-300 bg-transparent text-brand-700 hover:border-brand-500 hover:bg-brand-100;
+  }
+
+  .btn-on-dark {
+    @apply bg-[#f4efe8] text-brand-800 hover:bg-white;
+  }
+}
+
+/* Accessible focus ring: 2px brand, 2px offset, visible on keyboard only */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid #5a4a42;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

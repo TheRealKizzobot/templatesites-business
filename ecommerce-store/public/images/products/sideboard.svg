@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Side table illustration">
+  <rect width="800" height="800" fill="#faf8f6"/>
+  <rect x="0" y="0" width="800" height="800" fill="none" stroke="#f0ece8" stroke-width="2"/>
+  <ellipse cx="400" cy="676" rx="190" ry="22" fill="#efe9e2"/>
+  <!-- top -->
+  <rect x="250" y="220" width="300" height="30" rx="14" fill="#c98f72"/>
+  <rect x="250" y="220" width="300" height="30" rx="14" fill="url(#woodShade)" opacity="0.3"/>
+  <!-- lip shadow under top -->
+  <rect x="262" y="250" width="276" height="12" rx="6" fill="#a5674d" opacity="0.55"/>
+  <!-- pedestal -->
+  <path d="M 336 262 L 464 262 L 452 540 L 348 540 Z" fill="#b97a5e"/>
+  <!-- legs splay -->
+  <path d="M 348 540 L 306 654 L 336 654 L 362 540 Z" fill="#9a6449"/>
+  <path d="M 452 540 L 464 654 L 494 654 L 438 540 Z" fill="#9a6449"/>
+  <path d="M 378 540 L 392 654 L 408 654 L 420 540 Z" fill="#8a5a40"/>
+  <!-- shelf -->
+  <rect x="320" y="520" width="160" height="14" rx="7" fill="#a5674d"/>
+  <!-- book on shelf -->
+  <rect x="340" y="480" width="16" height="40" rx="3" fill="#5a4a42"/>
+  <rect x="360" y="486" width="13" height="34" rx="3" fill="#c4b7ae"/>
+  <!-- cup on top -->
+  <rect x="420" y="188" width="40" height="36" rx="8" fill="#fff" opacity="0.9"/>
+  <ellipse cx="440" cy="188" rx="20" ry="7" fill="#fff"/>
+  <ellipse cx="440" cy="188" rx="15" ry="5" fill="#6f5b4a"/>
+  <defs>
+    <linearGradient id="woodShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.14"/>
+    </linearGradient>
+  </defs>
+</svg>

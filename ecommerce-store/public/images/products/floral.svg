@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Dried floral arrangement illustration">
+  <rect width="800" height="800" fill="#faf8f6"/>
+  <rect x="0" y="0" width="800" height="800" fill="none" stroke="#f0ece8" stroke-width="2"/>
+  <ellipse cx="400" cy="660" rx="150" ry="18" fill="#efe9e2"/>
+  <!-- stems -->
+  <g stroke="#8a6f5c" stroke-width="7" stroke-linecap="round">
+    <line x1="336" y1="560" x2="300" y2="236"/>
+    <line x1="350" y1="560" x2="368" y2="180"/>
+    <line x1="366" y1="556" x2="440" y2="196"/>
+    <line x1="392" y1="552" x2="348" y2="300"/>
+    <line x1="420" y1="556" x2="500" y2="250"/>
+    <line x1="448" y1="560" x2="470" y2="340"/>
+  </g>
+  <!-- dried bloom heads -->
+  <circle cx="300" cy="228" r="26" fill="#c4b7ae"/>
+  <circle cx="300" cy="228" r="13" fill="#a98f82"/>
+  <circle cx="368" cy="170" r="24" fill="#d9c9b2"/>
+  <circle cx="368" cy="170" r="12" fill="#c4b7ae"/>
+  <circle cx="440" cy="186" r="28" fill="#b07d2b"/>
+  <circle cx="440" cy="186" r="14" fill="#8f6222"/>
+  <circle cx="500" cy="240" r="22" fill="#ddd4cd"/>
+  <circle cx="500" cy="240" r="11" fill="#c4b7ae"/>
+  <!-- pampas plumes -->
+  <ellipse cx="348" cy="286" rx="16" ry="46" fill="#e6dccd"/>
+  <ellipse cx="470" cy="326" rx="14" ry="40" fill="#eee6da"/>
+  <!-- vase (small) -->
+  <path d="M 348 660 L 352 560 Q 300 606 348 660 Z" fill="#8a6f5c"/>
+  <path d="M 452 560 L 448 660 Q 500 606 452 560 Z" fill="#8a6f5c"/>
+  <path d="M 352 560 L 448 560 Q 430 686 370 686 Q 350 686 352 560 Z" fill="#b97a5e"/>
+  <rect x="340" y="590" width="120" height="10" rx="5" fill="#f0ece8" opacity="0.7"/>
+  <ellipse cx="400" cy="560" rx="48" ry="12" fill="#a5674d"/>
+  <ellipse cx="400" cy="556" rx="38" ry="8" fill="#c98f72"/>
+</svg>

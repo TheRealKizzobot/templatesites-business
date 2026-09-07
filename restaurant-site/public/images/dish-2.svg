@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" role="img" aria-label="Wood-fired salmon fillet with blistered tomatoes and lemon">
+  <title>Wood-fired salmon</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf8f6"/>
+      <stop offset="1" stop-color="#f0ece8"/>
+    </linearGradient>
+    <linearGradient id="salmon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c96f4a"/>
+      <stop offset="1" stop-color="#a04930"/>
+    </linearGradient>
+    <radialGradient id="liner" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3d7a4e"/>
+      <stop offset="0.65" stop-color="#1d1815"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="480" fill="url(#bg)"/>
+
+  <ellipse cx="300" cy="310" rx="238" ry="128" fill="#faf8f6" stroke="#ddd4cd" stroke-width="4"/>
+
+  <ellipse cx="250" cy="270" rx="150" ry="64" fill="url(#liner)"/>
+  <path d="M120 268 c26-52 90-66 138-66 52 0 108 18 132 64 -4 56 -56 74 -120 74 -66 0 -128 -14 -150-72Z" fill="url(#salmon)"/>
+  <path d="M150 262 c40-44 96-50 136-40 M140 292 c52-30 112-34 162-16" fill="none" stroke="#f2d3b8" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+
+  <g fill="#c94a4a">
+    <circle cx="418" cy="252" r="16"/>
+    <circle cx="446" cy="278" r="13"/>
+    <circle cx="430" cy="304" r="15"/>
+    <circle cx="466" cy="322" r="12"/>
+  </g>
+  <g stroke="#3d7a4e" stroke-width="5" stroke-linecap="round">
+    <path d="M418 252 v20 M446 278 v16 M430 304 v16 M466 322 v14"/>
+  </g>
+
+  <g fill="#e8c98f">
+    <ellipse cx="210" cy="330" rx="26" ry="14"/>
+    <ellipse cx="300" cy="340" rx="28" ry="15"/>
+    <ellipse cx="268" cy="312" rx="24" ry="13"/>
+  </g>
+  <g stroke="#b07d2b" stroke-width="3" stroke-linecap="round">
+    <path d="M210 330 h-18 M210 330 h16 M210 330 v-22 M210 330 v20"/>
+  </g>
+
+  <g fill="#3d7a4e">
+    <path d="M140 216 c-12 2-16 12-7 15 l-22 5 c-4 11 9 16 16 11 l-9 16 c5 7 14 4 12-3 l16 2 c3-9-7-12-12-7 l12-16 c-5-9-16-9-19-2 Z"/>
+    <ellipse cx="348" cy="342" rx="16" ry="6"/>
+    <ellipse cx="472" cy="240" rx="14" ry="5"/>
+  </g>
+
+  <rect width="600" height="480" filter="url(#grain)" opacity="0.8"/>
+</svg>

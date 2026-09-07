@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Terracotta planter illustration">
+  <rect width="800" height="800" fill="#faf8f6"/>
+  <rect x="0" y="0" width="800" height="800" fill="none" stroke="#f0ece8" stroke-width="2"/>
+  <ellipse cx="400" cy="672" rx="190" ry="20" fill="#efe9e2"/>
+  <!-- planter body -->
+  <path d="M 250 404 L 282 636 Q 400 678 518 636 L 550 404 Q 400 368 250 404 Z" fill="#c26a43"/>
+  <path d="M 250 404 L 282 636 Q 400 678 518 636 L 550 404 Q 400 368 250 404 Z" fill="url(#potShade)" opacity="0.35"/>
+  <!-- rim -->
+  <rect x="236" y="360" width="328" height="48" rx="18" fill="#d9814f"/>
+  <rect x="236" y="360" width="328" height="48" rx="18" fill="url(#rimShade)" opacity="0.3"/>
+  <!-- mottled texture -->
+  <g fill="#9c4c2a" opacity="0.3">
+    <circle cx="310" cy="470" r="7"/>
+    <circle cx="470" cy="500" r="9"/>
+    <circle cx="360" cy="560" r="6"/>
+    <circle cx="430" cy="430" r="5"/>
+    <circle cx="520" cy="560" r="6"/>
+    <circle cx="280" cy="540" r="5"/>
+  </g>
+  <!-- plant -->
+  <path d="M 400 360 L 360 190 M 400 360 L 400 150 M 400 360 L 440 200 M 400 360 L 372 240 M 400 360 L 428 248" fill="none" stroke="#3d7a4e" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#3d7a4e">
+    <ellipse cx="358" cy="168" rx="26" ry="16" transform="rotate(-20 358 168)"/>
+    <ellipse cx="402" cy="126" rx="22" ry="16"/>
+    <ellipse cx="444" cy="178" rx="26" ry="16" transform="rotate(18 444 178)"/>
+    <ellipse cx="368" cy="224" rx="18" ry="13" transform="rotate(-12 368 224)"/>
+    <ellipse cx="432" cy="232" rx="18" ry="13" transform="rotate(14 432 232)"/>
+  </g>
+  <g fill="#4f9a62">
+    <ellipse cx="340" cy="196" rx="14" ry="9" transform="rotate(-24 340 196)"/>
+    <ellipse cx="428" cy="150" rx="13" ry="9" transform="rotate(20 428 150)"/>
+  </g>
+  <defs>
+    <linearGradient id="potShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="0.55" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="rimShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+</svg>

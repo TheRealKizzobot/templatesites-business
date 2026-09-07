@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" role="img" aria-label="Ember-crusted ribeye steak plated with jus">
+  <title>Ember-crusted ribeye</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf8f6"/>
+      <stop offset="1" stop-color="#f0ece8"/>
+    </linearGradient>
+    <linearGradient id="steak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a3a2c"/>
+      <stop offset="1" stop-color="#5c1f16"/>
+    </linearGradient>
+    <radialGradient id="plate" cx="0.5" cy="0.38" r="0.6">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ddd4cd"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="480" fill="url(#bg)"/>
+
+  <ellipse cx="300" cy="300" rx="236" ry="130" fill="url(#plate)" stroke="#b07d2b" stroke-width="6" opacity="0.85"/>
+
+  <ellipse cx="300" cy="260" rx="150" ry="60" fill="#5c1f16"/>
+  <path d="M150 258 c20-70 80-88 150-88 70 0 130 18 150 88 -6 78 -46 96 -150 96 -104 0 -144-18 -150-96Z" fill="url(#steak)"/>
+
+  <g stroke="#2c2521" stroke-width="6" stroke-linecap="round" opacity="0.55">
+    <path d="M218 250 l-26 12 M226 220 l-34 6 M244 196 l-30 -12"/>
+    <path d="M378 250 l26 12 M372 220 l34 6 M356 196 l30 -12"/>
+  </g>
+
+  <g fill="#3d7a4e">
+    <path d="M176 250 c-14 2-18 14-8 18 l-26 6 c-4 12 10 18 18 12 l-10 18 c6 8 16 4 14-4 l18 2 c4-10-8-14-14-8 l14-18 c-6-10-18-10-22-2 l-12-14 c4-4 8-10 12-8 Z"/>
+    <path d="M424 250 c14 2 18 14 8 18 l26 6 c4 12-10 18-18 12 l10 18 c-6 8-16 4-14-4 l-18 2 c-4-10 8-14 14-8 l-14-18 c6-10 18-10 22-2 l12-14 c-4-4-8-10-12-8 Z"/>
+  </g>
+
+  <g fill="#b07d2b">
+    <circle cx="248" cy="318" r="5"/>
+    <circle cx="300" cy="330" r="6"/>
+    <circle cx="352" cy="318" r="5"/>
+  </g>
+  <path d="M220 352 c60 24 100 24 160 0" fill="none" stroke="#b07d2b" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+
+  <rect width="600" height="480" filter="url(#grain)" opacity="0.8"/>
+</svg>

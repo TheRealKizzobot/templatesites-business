@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Candle set illustration">
+  <rect width="800" height="800" fill="#faf8f6"/>
+  <rect x="0" y="0" width="800" height="800" fill="none" stroke="#f0ece8" stroke-width="2"/>
+  <ellipse cx="400" cy="650" rx="250" ry="22" fill="#efe9e2"/>
+  <!-- candle 1 -->
+  <rect x="200" y="300" width="120" height="320" rx="14" fill="#e8d9c4"/>
+  <rect x="200" y="300" width="120" height="320" rx="14" fill="url(#cShade)" opacity="0.3"/>
+  <g>
+    <ellipse cx="260" cy="300" rx="14" ry="16" fill="#6d4b36"/>
+    <path d="M 260 250 Q 266 280 260 300 Q 254 280 260 250 Z" fill="#3b312c"/>
+    <path d="M 260 246 C 264 258 256 258 260 246 Z" fill="#e8a45c"/>
+  </g>
+  <!-- candle 2 -->
+  <rect x="344" y="336" width="112" height="284" rx="12" fill="#cbb8a0"/>
+  <rect x="344" y="336" width="112" height="284" rx="12" fill="url(#cShade)" opacity="0.25"/>
+  <g>
+    <ellipse cx="400" cy="336" rx="13" ry="15" fill="#5d3f2d"/>
+    <path d="M 400 288 Q 406 316 400 336 Q 394 316 400 288 Z" fill="#3b312c"/>
+    <path d="M 400 284 C 404 296 396 296 400 284 Z" fill="#e8a45c"/>
+  </g>
+  <!-- candle 3 -->
+  <rect x="478" y="280" width="120" height="340" rx="14" fill="#f1e5d2"/>
+  <rect x="478" y="280" width="120" height="340" rx="14" fill="url(#cShade)" opacity="0.3"/>
+  <g>
+    <ellipse cx="538" cy="280" rx="14" ry="16" fill="#7a5638"/>
+    <path d="M 538 230 Q 544 260 538 280 Q 532 260 538 230 Z" fill="#3b312c"/>
+    <path d="M 538 226 C 542 238 534 238 538 226 Z" fill="#e8a45c"/>
+  </g>
+  <defs>
+    <linearGradient id="cShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.4"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+</svg>

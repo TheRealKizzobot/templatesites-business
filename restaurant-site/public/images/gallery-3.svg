@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Overhead view of a rustic table set with small plates and glasses">
+  <title>A table for two</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a3d37"/>
+      <stop offset="1" stop-color="#2c2521"/>
+    </linearGradient>
+    <radialGradient id="table" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5a4a42"/>
+      <stop offset="0.8" stop-color="#3b312c"/>
+      <stop offset="1" stop-color="#2c2521"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="400" cy="400" r="340" fill="url(#table)"/>
+  <circle cx="400" cy="400" r="280" fill="none" stroke="#1d1815" stroke-width="5" opacity="0.5"/>
+
+  <g>
+    <circle cx="400" cy="400" r="120" fill="#faf8f6"/>
+    <circle cx="400" cy="400" r="96" fill="none" stroke="#ddd4cd" stroke-width="4"/>
+    <g>
+      <circle cx="372" cy="380" r="34" fill="#c94a4a"/>
+      <circle cx="426" cy="384" r="28" fill="#b07d2b"/>
+      <circle cx="398" cy="424" r="30" fill="#3d7a4e"/>
+      <circle cx="402" cy="392" r="22" fill="#ddd4cd"/>
+    </g>
+  </g>
+
+  <g fill="#ddd4cd">
+    <circle cx="218" cy="250" r="54"/>
+    <circle cx="218" cy="250" r="30" fill="#b07d2b"/>
+    <circle cx="560" cy="260" r="48"/>
+    <circle cx="560" cy="260" r="26" fill="#3d7a4e"/>
+    <circle cx="210" cy="540" r="50"/>
+    <circle cx="210" cy="540" r="28" fill="#c94a4a"/>
+    <circle cx="566" cy="540" r="52"/>
+    <circle cx="566" cy="540" r="30" fill="#a98f82"/>
+  </g>
+
+  <g fill="#c4b7ae">
+    <ellipse cx="318" cy="196" rx="18" ry="26"/>
+    <ellipse cx="332" cy="208" rx="16" ry="22"/>
+    <ellipse cx="496" cy="600" rx="18" ry="26"/>
+    <ellipse cx="482" cy="612" rx="16" ry="22"/>
+  </g>
+
+  <g fill="#2c2521">
+    <rect x="344" y="156" width="10" height="26" rx="5"/>
+    <path d="M332 182 h34 l-6 16 h-22 Z" fill="#b07d2b"/>
+    <rect x="452" y="620" width="10" height="26" rx="5"/>
+    <path d="M440 646 h34 l-6 16 h-22 Z" fill="#b07d2b"/>
+  </g>
+
+  <rect x="680" y="86" width="46" height="22" rx="6" fill="#faf8f6" transform="rotate(28 703 97)"/>
+
+  <rect width="800" height="800" filter="url(#grain)" opacity="0.8"/>
+</svg>

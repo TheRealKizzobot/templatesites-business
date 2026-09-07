@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" role="img" aria-label="Flat illustration of Ember and Wood's wood-fired dining room">
+  <defs>
+    <linearGradient id="fireGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c94a4a"/>
+      <stop offset="1" stop-color="#b07d2b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Opaque backdrop -->
+  <rect width="800" height="560" fill="#f4efe8"/>
+  <rect x="0" y="396" width="800" height="164" fill="#e2d8cc"/>
+
+  <!-- Back wall -->
+  <rect x="64" y="64" width="672" height="352" rx="28" fill="#efe8df"/>
+
+  <!-- Window -->
+  <rect x="150" y="120" width="110" height="130" rx="12" fill="#faf8f6" stroke="#ddd4cd" stroke-width="6"/>
+  <line x1="205" y1="120" x2="205" y2="250" stroke="#ddd4cd" stroke-width="6"/>
+  <line x1="150" y1="185" x2="260" y2="185" stroke="#ddd4cd" stroke-width="6"/>
+  <circle cx="222" cy="152" r="16" fill="#b07d2b"/>
+
+  <!-- Hanging lamp -->
+  <line x1="400" y1="64" x2="400" y2="132" stroke="#5a4a42" stroke-width="4"/>
+  <path d="M368 132h64l-12 40h-40z" fill="#2c2521"/>
+  <ellipse cx="400" cy="196" rx="90" ry="18" fill="#b07d2b" opacity="0.28"/>
+
+  <!-- Fireplace -->
+  <path d="M320 420v-150a80 80 0 0 1 160 0v150z" fill="#2c2521"/>
+  <rect x="300" y="388" width="200" height="18" rx="9" fill="#4a3d37"/>
+  <path d="M344 420v-92a56 56 0 0 1 112 0v92z" fill="#1d1815"/>
+  <ellipse cx="400" cy="332" rx="34" ry="40" fill="url(#fireGlow)"/>
+  <path d="M400 296c8 14 12 24 12 34a12 12 0 1 1-24 0c0-10 5-19 12-34z" fill="#c94a4a"/>
+  <ellipse cx="390" cy="346" rx="18" ry="10" fill="#f4efe8" opacity="0.35"/>
+  <circle cx="376" cy="332" r="4" fill="#f4efe8" opacity="0.6"/>
+  <circle cx="420" cy="340" r="3" fill="#f4efe8" opacity="0.5"/>
+  <rect x="300" y="420" width="200" height="10" rx="5" fill="#2c2521"/>
+
+  <!-- Wall art -->
+  <rect x="566" y="120" width="84" height="62" rx="8" fill="#faf8f6" stroke="#ddd4cd" stroke-width="4"/>
+  <circle cx="586" cy="146" r="12" fill="#a98f82"/>
+  <path d="M640 180l-30-34h60z" fill="#b07d2b"/>
+
+  <!-- Potted plant -->
+  <path d="M108 420h56l-9 50h-38z" fill="#4a3d37"/>
+  <ellipse cx="118" cy="308" rx="16" ry="26" fill="#3d7a4e"/>
+  <ellipse cx="146" cy="304" rx="15" ry="30" fill="#5a4a42" opacity="0.25"/>
+  <ellipse cx="136" cy="282" rx="13" ry="22" fill="#3d7a4e"/>
+  <ellipse cx="122" cy="286" rx="10" ry="18" fill="#6b6b6b" opacity="0.2"/>
+
+  <!-- Table -->
+  <rect x="300" y="318" width="216" height="16" rx="8" fill="#a98f82"/>
+  <rect x="320" y="334" width="12" height="62" rx="6" fill="#5a4a42"/>
+  <rect x="484" y="334" width="12" height="62" rx="6" fill="#5a4a42"/>
+  <rect x="330" y="334" width="156" height="4" rx="2" fill="#4a3d37"/>
+
+  <!-- Table setting -->
+  <circle cx="342" cy="306" r="20" fill="#faf8f6" stroke="#ddd4cd" stroke-width="3"/>
+  <circle cx="342" cy="306" r="8" fill="#c94a4a"/>
+  <rect x="412" y="290" width="46" height="32" rx="6" fill="#ffffff" stroke="#ddd4cd" stroke-width="3"/>
+  <path d="M440 274l-4 14h8z" fill="#b07d2b" opacity="0.85"/>
+  <circle cx="470" cy="310" r="9" fill="#3d7a4e"/>
+  <rect x="378" y="282" width="30" height="4" rx="2" fill="#e0ddd8"/>
+  <rect x="375" y="288" width="36" height="4" rx="2" fill="#e0ddd8"/>
+
+  <!-- Chairs -->
+  <path d="M262 396h36v-34h-36z M268 362h24v-34h-24z" fill="#ddd4cd" stroke="#4a3d37" stroke-width="3"/>
+  <rect x="264" y="396" width="32" height="46" rx="6" fill="#4a3d37"/>
+  <path d="M514 396h36v-34h-36z M508 362h24v-34h-24z" fill="#ddd4cd" stroke="#4a3d37" stroke-width="3"/>
+  <rect x="516" y="396" width="32" height="46" rx="6" fill="#4a3d37"/>
+
+  <!-- Floor line -->
+  <rect x="0" y="440" width="800" height="120" fill="#e2d8cc"/>
+  <rect x="0" y="440" width="800" height="6" fill="#d6cabc"/>
+</svg>

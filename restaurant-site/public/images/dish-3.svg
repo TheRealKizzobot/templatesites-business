@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" role="img" aria-label="Burrata with heirloom tomatoes and basil oil">
+  <title>Burrata and heirloom tomato</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf8f6"/>
+      <stop offset="1" stop-color="#f0ece8"/>
+    </linearGradient>
+    <radialGradient id="burrata" cx="0.42" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ddd4cd"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="480" fill="url(#bg)"/>
+
+  <ellipse cx="300" cy="320" rx="240" ry="118" fill="#ffffff" stroke="#ddd4cd" stroke-width="4"/>
+
+  <g>
+    <circle cx="180" cy="268" r="42" fill="#c94a4a"/>
+    <circle cx="268" cy="288" r="52" fill="#3d7a4e" opacity="0.85"/>
+    <circle cx="392" cy="272" r="40" fill="#b07d2b"/>
+    <circle cx="322" cy="242" r="34" fill="#c94a4a" opacity="0.8"/>
+  </g>
+
+  <circle cx="286" cy="270" r="58" fill="url(#burrata)"/>
+  <path d="M256 264 c14-30 46-30 60-4 c22-20 46-8 44 18 -26 20-52 6-70-10Z" fill="#ffffff" opacity="0.5"/>
+  <path d="M262 296 c10 4 18 2 24-2" fill="none" stroke="#ddd4cd" stroke-width="4" stroke-linecap="round"/>
+
+  <g fill="#3d7a4e">
+    <path d="M122 250 c-14 2-18 14-8 18 l-26 6 c-4 12 10 18 18 12 l-10 18 c6 8 16 4 14-4 l18 2 c4-10-8-14-14-8 l14-18 c-6-10-18-10-22-2 l-12-14 c4-4 8-10 12-8 Z"/>
+    <path d="M470 270 c-14 2-18 14-8 18 l-26 6 c-4 12 10 18 18 12 l-10 18 c6 8 16 4 14-4 l18 2 c4-10-8-14-14-8 l14-18 c-6-10-18-10-22-2 l-12-14 c4-4 8-10 12-8 Z" transform="translate(10 0) scale(0.9)"/>
+  </g>
+
+  <path d="M210 360 c70 26 130 26 190 0" fill="none" stroke="#3d7a4e" stroke-width="5" stroke-linecap="round" opacity="0.45"/>
+
+  <rect width="600" height="480" filter="url(#grain)" opacity="0.8"/>
+</svg>

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Warm restaurant interior lit by pendant lights over a set table" >
+  <title>Warm restaurant interior</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b312c"/>
+      <stop offset="0.55" stop-color="#2c2521"/>
+      <stop offset="1" stop-color="#1d1815"/>
+    </linearGradient>
+    <linearGradient id="window" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a98f82"/>
+      <stop offset="1" stop-color="#4a3d37"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#b07d2b" stop-opacity="0.85"/>
+      <stop offset="0.45" stop-color="#b07d2b" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#b07d2b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a3d37"/>
+      <stop offset="1" stop-color="#2c2521"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <circle cx="800" cy="450" r="560" fill="url(#glow)"/>
+
+  <!-- arched window -->
+  <path d="M540 470 V300 a120 120 0 0 1 240 0 V470 Z" fill="url(#window)" opacity="0.9"/>
+  <line x1="660" y1="190" x2="660" y2="470" stroke="#2c2521" stroke-width="14"/>
+  <line x1="540" y1="470" x2="900" y2="470" stroke="#2c2521" stroke-width="14"/>
+  <line x1="540" y1="300" x2="900" y2="300" stroke="#2c2521" stroke-width="8"/>
+  <line x1="420" y1="492" x2="1020" y2="492" stroke="#1d1815" stroke-width="34"/>
+
+  <!-- pendant lamps -->
+  <g>
+    <line x1="350" y1="160" x2="350" y2="260" stroke="#1d1815" stroke-width="8"/>
+    <path d="M322 262 h56 l-10 26 h-36 Z" fill="#b07d2b"/>
+    <circle cx="350" cy="296" r="70" fill="url(#glow)"/>
+    <circle cx="350" cy="292" r="7" fill="#e8c98f"/>
+
+    <line x1="800" y1="120" x2="800" y2="196" stroke="#1d1815" stroke-width="8"/>
+    <path d="M771 198 h58 l-11 27 h-36 Z" fill="#b07d2b"/>
+    <circle cx="800" cy="226" r="80" fill="url(#glow)"/>
+    <circle cx="800" cy="222" r="8" fill="#e8c98f"/>
+
+    <line x1="1250" y1="160" x2="1250" y2="260" stroke="#1d1815" stroke-width="8"/>
+    <path d="M1222 262 h56 l-10 26 h-36 Z" fill="#b07d2b"/>
+    <circle cx="1250" cy="296" r="70" fill="url(#glow)"/>
+    <circle cx="1250" cy="292" r="7" fill="#e8c98f"/>
+  </g>
+
+  <!-- table + settings -->
+  <path d="M120 700 h1360 l60 130 H60 Z" fill="url(#table)"/>
+  <rect x="120" y="690" width="1360" height="22" rx="11" fill="#4a3d37"/>
+
+  <g fill="#ddd4cd">
+    <ellipse cx="800" cy="640" rx="240" ry="14"/>
+    <ellipse cx="430" cy="642" rx="150" ry="11"/>
+    <ellipse cx="1170" cy="642" rx="150" ry="11"/>
+  </g>
+
+  <g fill="#faf8f6">
+    <circle cx="800" cy="600" r="52"/>
+    <circle cx="740" cy="526" r="22"/>
+    <circle cx="860" cy="526" r="22"/>
+  </g>
+  <g fill="#c4b7ae">
+    <ellipse cx="740" cy="618" rx="16" ry="6"/>
+    <ellipse cx="860" cy="618" rx="16" ry="6"/>
+    <rect x="804" y="566" width="16" height="52" rx="3"/>
+  </g>
+
+  <!-- candles -->
+  <g>
+    <rect x="684" y="516" width="8" height="20" rx="3" fill="#ddd4cd"/>
+    <ellipse cx="688" cy="514" rx="7" ry="10" fill="#e8c98f"/>
+    <rect x="908" y="516" width="8" height="20" rx="3" fill="#ddd4cd"/>
+    <ellipse cx="912" cy="514" rx="7" ry="10" fill="#e8c98f"/>
+  </g>
+
+  <!-- steam curls -->
+  <g fill="none" stroke="#ddd4cd" stroke-width="7" stroke-linecap="round" opacity="0.5">
+    <path d="M1040 430 C1075 400 1005 392 1040 362"/>
+    <path d="M1090 442 C1125 412 1055 404 1090 374"/>
+    <path d="M1180 300 C1215 270 1145 262 1180 232"/>
+  </g>
+
+  <!-- floor -->
+  <g stroke="#2c2521" stroke-width="5">
+    <path d="M0 830 h1600" />
+    <path d="M180 826 v74 M420 826 v74 M660 826 v74 M900 826 v74 M1140 826 v74 M1380 826 v74"/>
+  </g>
+
+  <rect width="1600" height="900" filter="url(#grain)" opacity="0.8"/>
+</svg>

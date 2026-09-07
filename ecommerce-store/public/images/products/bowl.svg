@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Serving bowl illustration">
+  <rect width="800" height="800" fill="#faf8f6"/>
+  <rect x="0" y="0" width="800" height="800" fill="none" stroke="#f0ece8" stroke-width="2"/>
+  <ellipse cx="400" cy="660" rx="230" ry="22" fill="#efe9e2"/>
+  <!-- bowl -->
+  <path d="M 200 320 Q 400 600 600 320 Q 400 360 200 320 Z" fill="#d9c9b2"/>
+  <path d="M 200 320 Q 400 600 600 320 Q 400 360 200 320 Z" fill="url(#bShade)" opacity="0.3"/>
+  <!-- inner -->
+  <path d="M 226 322 Q 400 560 574 322 Q 400 352 226 322 Z" fill="#efe5d6"/>
+  <ellipse cx="400" cy="322" rx="174" ry="16" fill="#cbb49a"/>
+  <!-- rim highlight -->
+  <path d="M 200 320 Q 400 360 600 320" fill="none" stroke="#f1e5d2" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+  <!-- lemon accent -->
+  <circle cx="512" cy="424" r="46" fill="#e0b64e"/>
+  <circle cx="512" cy="424" r="46" fill="none" stroke="#c99a2e" stroke-width="4"/>
+  <path d="M 512 386 L 520 424 L 512 462 L 504 424 Z" fill="#f6ecd2" opacity="0.9"/>
+  <defs>
+    <linearGradient id="bShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.16"/>
+    </linearGradient>
+  </defs>
+</svg>

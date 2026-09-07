@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Stoneware mug illustration">
+  <rect width="800" height="800" fill="#faf8f6"/>
+  <rect x="0" y="0" width="800" height="800" fill="none" stroke="#f0ece8" stroke-width="2"/>
+  <ellipse cx="400" cy="660" rx="150" ry="20" fill="#efe9e2"/>
+  <!-- body (trapezoid mug) -->
+  <path d="M 268 520 L 284 300 Q 400 272 516 300 L 532 520 Q 400 560 268 520 Z" fill="#cdc3b5"/>
+  <path d="M 268 520 L 284 300 Q 400 272 516 300 L 532 520 Q 400 560 268 520 Z" fill="url(#mShade)" opacity="0.35"/>
+  <!-- handle -->
+  <path d="M 518 338 Q 606 342 600 438 Q 594 520 524 508" fill="none" stroke="#a99f8f" stroke-width="28" stroke-linecap="round"/>
+  <!-- rim -->
+  <path d="M 284 300 Q 400 272 516 300 Q 400 322 284 300 Z" fill="#e6ded2"/>
+  <ellipse cx="400" cy="300" rx="116" ry="16" fill="#6d4b36"/>
+  <!-- speckles -->
+  <g fill="#6d5b4b" opacity="0.5">
+    <circle cx="330" cy="400" r="4"/>
+    <circle cx="452" cy="430" r="3.5"/>
+    <circle cx="376" cy="470" r="4"/>
+    <circle cx="470" cy="360" r="3"/>
+    <circle cx="350" cy="500" r="3.5"/>
+    <circle cx="410" cy="340" r="3"/>
+    <circle cx="300" cy="460" r="3"/>
+    <circle cx="505" cy="470" r="3.5"/>
+  </g>
+  <!-- steam -->
+  <path d="M 340 240 Q 352 214 340 190" fill="none" stroke="#c4b7ae" stroke-width="7" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 396 234 Q 408 206 396 182" fill="none" stroke="#c4b7ae" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 452 240 Q 464 214 452 190" fill="none" stroke="#c4b7ae" stroke-width="7" stroke-linecap="round" opacity="0.8"/>
+  <defs>
+    <linearGradient id="mShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="0.55" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.16"/>
+    </linearGradient>
+  </defs>
+</svg>

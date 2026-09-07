@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Chef working beside an open flame in the Ember and Wood kitchen">
+  <title>Kitchen at work</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf8f6"/>
+      <stop offset="1" stop-color="#ddd4cd"/>
+    </linearGradient>
+    <linearGradient id="apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a98f82"/>
+      <stop offset="1" stop-color="#5a4a42"/>
+    </linearGradient>
+    <radialGradient id="fire" cx="0.5" cy="0.55" r="0.5">
+      <stop offset="0" stop-color="#e8c98f"/>
+      <stop offset="0.35" stop-color="#b07d2b"/>
+      <stop offset="1" stop-color="#c94a4a" stop-opacity="0.25"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <!-- wall line + backsplash -->
+  <rect x="0" y="560" width="800" height="44" fill="#c4b7ae"/>
+  <rect x="0" y="604" width="800" height="196" fill="#f0ece8"/>
+  <g stroke="#ddd4cd" stroke-width="4">
+    <path d="M0 612 h800 M0 640 h800 M0 668 h800 M0 696 h800 M0 724 h800 M0 752 h800 M0 780 h800"/>
+    <path d="M120 604 v196 M240 604 v196 M360 604 v196 M480 604 v196 M600 604 v196 M720 604 v196"/>
+  </g>
+
+  <!-- hanging pans -->
+  <g>
+    <line x1="120" y1="120" x2="120" y2="200" stroke="#4a3d37" stroke-width="6"/>
+    <ellipse cx="120" cy="206" rx="56" ry="14" fill="#5a4a42"/>
+    <circle cx="120" cy="206" r="20" fill="none" stroke="#5a4a42" stroke-width="5"/>
+    <line x1="660" y1="120" x2="660" y2="180" stroke="#4a3d37" stroke-width="6"/>
+    <path d="M600 200 h120 l-12 44 h-96 Z" fill="#3b312c"/>
+  </g>
+
+  <!-- shelf -->
+  <rect x="60" y="320" width="220" height="16" rx="8" fill="#a98f82"/>
+  <g>
+    <path d="M100 320 v-44 c0-14 10-24 24-24 h8 v68 Z" fill="#3d7a4e"/>
+    <rect x="150" y="296" width="30" height="24" rx="4" fill="#b07d2b"/>
+    <path d="M210 320 v-36 c0-12 8-20 20-20 h6 v56 Z" fill="#5a4a42"/>
+  </g>
+
+  <!-- flames -->
+  <ellipse cx="360" cy="640" rx="150    " ry="42" fill="#2c2521"/>
+  <g>
+    <path d="M260 640 C260 560 300 540 318 470 C340 540 336 560 376 640 Z" fill="url(#fire)"/>
+    <path d="M300 640 C300 570 330 556 352 486 C378 550 366 570 400 640 Z" fill="#e8c98f" opacity="0.75"/>
+    <path d="M300 640 C300 578 316 566 328 520 C344 570 340 580 352 640 Z" fill="#c94a4a" opacity="0.5"/>
+  </g>
+
+  <!-- grill box -->
+  <rect x="220" y="640" width="280" height="96" rx="18" fill="#1d1815"/>
+  <g stroke="#3b312c" stroke-width="10">
+    <path d="M260 660 h200 M260 684 h200 M260 708 h200"/>
+  </g>
+
+  <!-- chef -->
+  <g>
+    <circle cx="520" cy="330" r="52" fill="#a98f82"/>
+    <ellipse cx="520" cy="330" rx="56" ry="62" fill="#4a3d37"/>
+    <path d="M458 322 a62 62 0 0 1 124 0 Z" fill="#ddd4cd"/>
+    <path d="M520 278 c-6-18 12-22 6-38 26 6 34 22 34 40 Z" fill="#3b312c" transform="translate(-14  0)"/>
+    <rect x="452" y="382" width="136" height="196" rx="30" fill="url(#apron)"/>
+    <path d="M452 470 h136 M452 492 h136" stroke="#2c2521" stroke-width="8" opacity="0.55"/>
+    <rect x="512" y="372" width="16" height="60" rx="8" fill="#b07d2b"/>
+    <path d="M470 578 l-16 64 c30 12 76 12 104 0 l-14-64 Z" fill="#2c2521"/>
+  </g>
+
+  <!-- pan being carried -->
+  <g transform="rotate(-12 610 520)">
+    <ellipse cx="640" cy="520" rx="70" ry="16" fill="#3b312c"/>
+    <path d="M640 504 l-18 -34 h36 Z" fill="#2c2521"/>
+  </g>
+  <path d="M590 506 C540 470 520 470 500 452" fill="none" stroke="#4a3d37" stroke-width="8" stroke-linecap="round"/>
+
+  <rect width="800" height="800" filter="url(#grain)" opacity="0.8"/>
+</svg>

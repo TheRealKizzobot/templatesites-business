@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Lounge sofa illustration">
+  <rect width="800" height="800" fill="#faf8f6"/>
+  <rect x="0" y="0" width="800" height="800" fill="none" stroke="#f0ece8" stroke-width="2"/>
+  <ellipse cx="400" cy="688" rx="250" ry="24" fill="#efe9e2"/>
+  <!-- legs -->
+  <rect x="250" y="536" width="24" height="134" rx="10" fill="#8a6f5c"/>
+  <rect x="526" y="536" width="24" height="134" rx="10" fill="#8a6f5c"/>
+  <!-- base -->
+  <rect x="206" y="456" width="388" height="94" rx="26" fill="#a98f82"/>
+  <!-- seat cushions -->
+  <rect x="222" y="380" width="172" height="96" rx="24" fill="#c4b7ae"/>
+  <rect x="406" y="380" width="172" height="96" rx="24" fill="#c4b7ae"/>
+  <!-- back -->
+  <rect x="214" y="150" width="372" height="252" rx="52" fill="#5a4a42"/>
+  <rect x="230" y="168" width="340" height="218" rx="44" fill="#6e5b51"/>
+  <!-- two armrests -->
+  <rect x="168" y="280" width="54" height="250" rx="26" fill="#5a4a42"/>
+  <rect x="578" y="280" width="54" height="250" rx="26" fill="#5a4a42"/>
+  <rect x="170" y="306" width="50" height="56" rx="24" fill="#6e5b51"/>
+  <rect x="580" y="306" width="50" height="56" rx="24" fill="#6e5b51"/>
+  <!-- pillow accent -->
+  <circle cx="410" cy="330" r="46" fill="#ddd4cd"/>
+  <circle cx="410" cy="330" r="46" fill="none" stroke="#c4b7ae" stroke-width="6"/>
+  <defs>
+    <linearGradient id="baseShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <rect x="206" y="456" width="388" height="94" rx="26" fill="url(#baseShade)" opacity="0.3"/>
+</svg>
