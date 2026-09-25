@@ -3,135 +3,170 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #fafaf8;
-  --bg-secondary: #f3f0eb;
-  --bg-accent: #efe8e0;
-  --text-primary: #1c1917;
-  --text-secondary: #57534e;
-  --text-muted: #a8a29e;
-  --brand: #c08a5a;
-  --brand-hover: #8c5a2f;
-  --border: #e6e1d9;
-  --error: #dc2626;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4efe8;
+  --bg-accent: #e8ddd2;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --text-muted: #a0a0a0;
+  --brand: #5a4a42;
+  --brand-light: #8a7a72;
+  --border: #e0ddd8;
+  --error: #c94a4a;
 }
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 5.5rem;
-  }
-  body {
-    @apply bg-[var(--bg-primary)] font-sans text-[var(--text-primary)] antialiased;
-  }
-  :focus-visible {
-    outline: 2px solid var(--brand);
-    outline-offset: 2px;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    @apply font-display font-bold tracking-tight;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@layer components {
-  .btn {
-    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold transition-colors;
-  }
-  .btn-primary {
-    @apply btn bg-brand-700 text-brand-50 hover:bg-brand-600;
-  }
-  .btn-secondary {
-    @apply btn border border-brand-200 bg-white text-brand-800 hover:bg-brand-50;
-  }
-  .btn-ghost {
-    @apply btn text-brand-800 hover:bg-brand-100;
-  }
-  .field {
-    @apply block w-full rounded-md border border-border bg-white px-3 py-2.5 text-text-primary placeholder:text-text-muted focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/25;
-  }
-  .label {
-    @apply mb-1 block text-sm font-medium text-text-primary;
-  }
-  .card {
-    @apply rounded-xl bg-white shadow-soft;
-  }
-  .tag {
-    @apply inline-flex items-center rounded-full bg-brand-100 px-2.5 py-1 text-xs font-medium text-brand-800;
-  }
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* Card hover */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--brand);
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: var(--brand-light);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+.btn-secondary:hover {
+  background-color: var(--bg-secondary);
+}
+
+/* Section */
+.section {
+  padding: 64px 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 48px;
+  max-width: 600px;
+}
+
+/* Template card */
+.template-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.template-card .preview {
+  height: 180px;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  border-bottom: 1px solid var(--border);
+}
+
+.template-card .info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.template-card .info h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.template-card .info p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.template-card .info .tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.template-card .info .tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .section {
-    @apply px-4 py-16 sm:px-6 lg:py-20;
-  }
-  .text-text-secondary {
-    @apply text-[var(--text-secondary)];
-  }
-  .text-text-muted {
-    @apply text-[var(--text-muted)];
-  }
-  .text-text-primary {
-    @apply text-[var(--text-primary)];
-  }
-  .bg-bg-primary {
-    @apply bg-[var(--bg-primary)];
-  }
-  .bg-bg-secondary {
-    @apply bg-[var(--bg-secondary)];
-  }
-  .bg-brand-50 {
-    @apply bg-[var(--brand-50)];
-  }
-  .bg-brand-100 {
-    @apply bg-[var(--brand-100)];
-  }
-  .bg-brand-500 {
-    @apply bg-[var(--brand-500)];
-  }
-  .bg-brand-700 {
-    @apply bg-[var(--brand-700)];
-  }
-  .bg-brand-800 {
-    @apply bg-[var(--brand-800)];
-  }
-  .border-brand-500 {
-    @apply border-[var(--brand)];
-  }
-  .border-border {
-    @apply border-[var(--border)];
-  }
-  .hover\:bg-brand-50:hover {
-    @apply bg-[var(--brand-50)];
-  }
-  .hover\:bg-brand-100:hover {
-    @apply bg-[var(--brand-100)];
-  }
-  .hover\:bg-brand-600:hover {
-    @apply bg-[var(--brand-hover)];
-  }
-  .hover\:text-brand-600:hover {
-    @apply text-[var(--brand-hover)];
-  }
-  .hover\:text-brand-700:hover {
-    @apply text-[var(--brand-hover)];
-  }
-  .hover\:text-brand-800:hover {
-    @apply text-[var(--brand-hover)];
+    padding: 48px 16px;
   }
   .section-title {
-    @apply text-3xl font-bold tracking-tight sm:text-4xl;
+    font-size: 24px;
   }
   .section-subtitle {
-    @apply mt-3 max-w-2xl text-lg text-text-secondary;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+    font-size: 16px;
+    margin-bottom: 32px;
   }
 }
