@@ -136,7 +136,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-xl flex flex-col items-center justify-between gap-md border-t border-brand-800 pt-xl text-sm text-brand-300 sm:flex-row">
-          <p>Made with MoshineSites</p>
+          <p>Made with <a href="https://dkservers.space" className="underline hover:no-underline" style={{ color: "var(--brand-400)" }}>MoshineSites</a></p>
         </div>
       </div>
     </footer>

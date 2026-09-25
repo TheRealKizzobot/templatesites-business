@@ -11,7 +11,7 @@ const templates = [
     status: "Live",
     href: "https://restaurant-site-tawny.vercel.app",
     icon: "🍽️",
-    adminPassword: "admin123",
+    hasAdmin: false,
   },
   {
     id: "taskflow",
@@ -23,7 +23,7 @@ const templates = [
     status: "Live",
     href: "https://taskflow-saas-lac.vercel.app",
     icon: "📋",
-    adminPassword: null,
+    hasAdmin: false,
   },
   {
     id: "booking",
@@ -35,7 +35,7 @@ const templates = [
     status: "Live",
     href: "https://booking-system-olive-eight.vercel.app",
     icon: "🗓️",
-    adminPassword: "admin123",
+    hasAdmin: true,
   },
   {
     id: "shop",
@@ -47,7 +47,7 @@ const templates = [
     status: "Live",
     href: "https://ecommerce-store-five-phi.vercel.app",
     icon: "🛒",
-    adminPassword: "admin123",
+    hasAdmin: true,
   },
   {
     id: "metrics",
@@ -59,7 +59,7 @@ const templates = [
     status: "Live",
     href: "https://analytics-dashboard-five-kohl.vercel.app",
     icon: "📊",
-    adminPassword: null,
+    hasAdmin: false,
   },
 ];
 
@@ -137,9 +137,9 @@ export default function Home() {
                   <div className="mt-auto pt-4 border-t border-border">
                     <div className="flex items-center justify-between text-xs text-text-muted">
                       <span>{t.type}</span>
-                      {t.adminPassword && (
-                        <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-brand-100 text-brand-800 font-mono text-[11px]">
-                          Admin: <code>{t.adminPassword}</code>
+                      {t.hasAdmin && (
+                        <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-brand-100 text-brand-800 font-medium text-[11px]">
+                          Admin panel included
                         </span>
                       )}
                     </div>
@@ -219,7 +219,7 @@ export default function Home() {
           </a>
         </div>
         <p className="mt-8 text-sm text-text-muted">
-          Admin password for backend templates: <code className="font-mono bg-brand-100 px-1.5 py-0.5 rounded">admin123</code>
+          Backend templates include an admin panel (credentials delivered securely upon purchase).
         </p>
       </section>
     </main>

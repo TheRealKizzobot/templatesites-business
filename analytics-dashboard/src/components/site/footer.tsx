@@ -65,7 +65,7 @@ export default function SiteFooter() {
       </div>
       <div className="border-t border-border/60 dark:border-brand-700">
         <p className="mx-auto max-w-6xl px-4 py-6 text-xs text-text-secondary sm:px-6">
-          Made with MoshineSites.
+          Made with <a href="https://dkservers.space" className="underline hover:no-underline" style={{ color: "var(--brand)" }}>MoshineSites</a>.
         </p>
       </div>
     </footer>
