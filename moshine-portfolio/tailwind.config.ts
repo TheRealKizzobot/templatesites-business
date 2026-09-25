@@ -1,43 +1,33 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        // MoshineSites brand palette (consistent across all templates)
-        bg: {
-          primary: "#ffffff",
-          secondary: "#f4efe8",
-          accent: "#e8ddd2",
-        },
         brand: {
-          DEFAULT: "#5a4a42",
-          light: "#8a7a72",
+          50: '#fdf7f3',
+          100: '#f7eae0',
+          200: '#f0d9c6',
+          300: '#e3c4a7',
+          400: '#d4a373',
+          500: '#c08a5a',
+          600: '#a8723f',
+          700: '#8c5a2f',
+          800: '#6b4320',
+          900: '#3d2818',
         },
-        text: {
-          primary: "#1a1a1a",
-          secondary: "#6b6b6b",
-          muted: "#a0a0a0",
-        },
-        border: "#e0ddd8",
-        error: "#c94a4a",
       },
       fontFamily: {
-        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
-        display: ['Georgia', 'serif'],
+        display: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
       },
-      spacing: {
-        xs: "4px",
-        sm: "8px",
-        md: "16px",
-        lg: "24px",
-        xl: "32px",
-        "2xl": "48px",
-        "3xl": "64px",
+      boxShadow: {
+        soft: '0 1px 2px rgba(0,0,0,.04), 0 4px 12px rgba(0,0,0,.06)',
+        lift: '0 6px 16px rgba(0,0,0,.10), 0 2px 6px rgba(0,0,0,.06)',
       },
-      maxWidth: {
-        content: "1100px",
+      borderRadius: {
+        xl: '16px',
       },
     },
   },
