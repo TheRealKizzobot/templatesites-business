@@ -2,171 +2,128 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ---------------------------------------------------------------------------
+   MoshineSites Design System — warm, sophisticated palette
+   Matches the restaurant-site quality
+--------------------------------------------------------------------------- */
 :root {
   --bg-primary: #ffffff;
-  --bg-secondary: #f4efe8;
-  --bg-accent: #e8ddd2;
-  --text-primary: #1a1a1a;
-  --text-secondary: #6b6b6b;
-  --text-muted: #a0a0a0;
-  --brand: #5a4a42;
-  --brand-light: #8a7a72;
-  --border: #e0ddd8;
+  --bg-secondary: #faf8f5;
+  --bg-accent: #f0ede6;
+  --text-primary: #1c1a18;
+  --text-secondary: #6b6864;
+  --text-muted: #a8a4a0;
+  --brand: #a88e6b;
+  --brand-hover: #8c7454;
+  --border: #e8e4dd;
   --error: #c94a4a;
+  --success: #3d7a4e;
+  --warning: #b07d2b;
+
+  --brand-50: #fdf8f3;
+  --brand-100: #f7efe5;
+  --brand-200: #ebdfd1;
+  --brand-300: #d8c9b3;
+  --brand-400: #c1aa8f;
+  --brand-500: #a88e6b;
+  --brand-600: #8c7454;
+  --brand-700: #6f5c42;
+  --brand-800: #5a4a35;
+  --brand-900: #483a2a;
+
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-inter);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: var(--brand-500);
+    color: #ffffff;
+  }
 }
 
-body {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  line-height: 1.6;
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .section-kicker {
+    @apply text-sm font-semibold uppercase tracking-[0.16em] text-brand-500;
+  }
+
+  .section-title {
+    @apply mt-2 font-display text-3xl text-text-primary sm:text-4xl;
+  }
+
+  .section-lede {
+    @apply mt-4 max-w-2xl text-text-secondary;
+  }
+
+  .btn {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-6 py-2.5 text-base font-medium transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-brand-700 text-white hover:bg-brand-800 active:bg-brand-900;
+  }
+
+  .btn-outline {
+    @apply border border-brand-300 bg-transparent text-brand-700 hover:border-brand-500 hover:bg-brand-100;
+  }
+
+  .btn-on-dark {
+    @apply bg-[#f4efe8] text-brand-800 hover:bg-white;
+  }
+
+  .card {
+    @apply rounded-xl bg-white shadow-soft;
+  }
+
+  .tag {
+    @apply inline-flex items-center rounded-full bg-brand-100 px-2.5 py-1 text-xs font-medium text-brand-800;
+  }
 }
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Focus visible for accessibility */
-:focus-visible {
-  outline: 2px solid var(--brand);
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--brand-500);
   outline-offset: 2px;
 }
 
-/* Card hover */
-.card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-/* Button */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 16px;
-  text-decoration: none;
-  transition: background-color 0.15s ease, color 0.15s ease;
-  cursor: pointer;
-  border: none;
-}
-
-.btn-primary {
-  background-color: var(--brand);
-  color: #ffffff;
-}
-.btn-primary:hover {
-  background-color: var(--brand-light);
-}
-
-.btn-secondary {
-  background-color: transparent;
-  color: var(--text-primary);
-  border: 1px solid var(--border);
-}
-.btn-secondary:hover {
-  background-color: var(--bg-secondary);
-}
-
-/* Section */
-.section {
-  padding: 64px 32px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.section-title {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 16px;
-  color: var(--text-primary);
-}
-
-.section-subtitle {
-  font-size: 18px;
-  color: var(--text-secondary);
-  margin-bottom: 48px;
-  max-width: 600px;
-}
-
-/* Template card */
-.template-card {
-  background: var(--bg-primary);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.template-card .preview {
-  height: 180px;
-  background: var(--bg-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  border-bottom: 1px solid var(--border);
-}
-
-.template-card .info {
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.template-card .info h3 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.template-card .info p {
-  color: var(--text-secondary);
-  font-size: 15px;
-  margin-bottom: 16px;
-  flex: 1;
-}
-
-.template-card .info .tags {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 16px;
-}
-
-.template-card .info .tag {
-  font-size: 12px;
-  padding: 4px 10px;
-  background: var(--bg-secondary);
-  border-radius: 4px;
-  color: var(--text-secondary);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .section {
-    padding: 48px 16px;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
-  .section-title {
-    font-size: 24px;
-  }
-  .section-subtitle {
-    font-size: 16px;
-    margin-bottom: 32px;
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
