@@ -36,6 +36,8 @@ const templates = [
     href: "https://booking-system-olive-eight.vercel.app",
     icon: "🗓️",
     hasAdmin: true,
+    adminUrl: "/admin",
+    adminPassword: "admin123",
   },
   {
     id: "shop",
@@ -48,6 +50,8 @@ const templates = [
     href: "https://ecommerce-store-five-phi.vercel.app",
     icon: "🛒",
     hasAdmin: true,
+    adminUrl: "/admin",
+    adminPassword: "admin123",
   },
   {
     id: "metrics",
@@ -143,6 +147,16 @@ export default function Home() {
                         </span>
                       )}
                     </div>
+                    {t.hasAdmin && (
+                      <div className="mt-3 p-3 bg-brand-50 rounded-lg border border-brand-100">
+                        <p className="text-xs font-medium text-brand-800 mb-1">Test the admin panel:</p>
+                        <div className="flex flex-col gap-1 text-xs">
+                          <span className="font-mono bg-brand-100 px-2 py-1 rounded text-brand-800">
+                            {t.adminUrl} — password: <strong>{t.adminPassword}</strong>
+                          </span>
+                        </div>
+                      </div>
+                    )}
                     <button className="btn btn-primary mt-4 w-full">
                       Try It →
                     </button>
@@ -219,7 +233,7 @@ export default function Home() {
           </a>
         </div>
         <p className="mt-8 text-sm text-text-muted">
-          Backend templates include an admin panel (credentials delivered securely upon purchase).
+          Admin password for backend templates: <code className="font-mono bg-brand-100 px-1.5 py-0.5 rounded">admin123</code>
         </p>
       </section>
     </main>
