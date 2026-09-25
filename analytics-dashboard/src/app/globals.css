@@ -3,24 +3,41 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f4efe8;
-  --text-primary: #1a1a1a;
-  --text-secondary: #6b6b6b;
-  --brand: #5a4a42;
-  --border: #e0ddd8;
-  --error: #c94a4a;
-  --success: #3d7a4e;
-  --warning: #b07d2b;
+  --bg-primary: #faf9ff;
+  --bg-secondary: #f3f0ff;
+  --bg-tertiary: #ede9fe;
+  --text-primary: #2e1065;
+  --text-secondary: #5b21b6;
+  --text-muted: #8b5cf6;
+  --brand: #7c3aed;
+  --brand-hover: #6d28d9;
+  --border: #e9d5ff;
+  --error: #ef4444;
+  --success: #10b981;
+  --warning: #f59e0b;
+
+  --brand-50: #faf5ff;
+  --brand-100: #f3e8ff;
+  --brand-200: #e9d5ff;
+  --brand-300: #d8b4fe;
+  --brand-400: #c084fc;
+  --brand-500: #a855f7;
+  --brand-600: #9333ea;
+  --brand-700: #7c3aed;
+  --brand-800: #6b21a8;
+  --brand-900: #581c87;
+
+  --font-display: var(--font-inter);
+  --font-body: var(--font-inter);
 }
 
 .dark {
-  --bg-primary: #171310;
-  --bg-secondary: #221c18;
-  --text-primary: #f4efe8;
-  --text-secondary: #c4b7ae;
-  --brand: #faf8f6;
-  --border: #3b312c;
+  --bg-primary: #1a0b2e;
+  --bg-secondary: #251445;
+  --text-primary: #f3e8ff;
+  --text-secondary: #d8b4fe;
+  --brand: #a855f7;
+  --border: #581c87;
 }
 
 @layer base {

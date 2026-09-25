@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: 'Admin — Ember & Wood Bookings',
 };
 
-export default function AdminPage() {
-  const authed = verifyAdminToken(cookies().get(ADMIN_COOKIE)?.value);
+export default async function AdminPage() {
+  const authed = verifyAdminToken((await cookies()).get(ADMIN_COOKIE)?.value);
 
   return (
     <main className="min-h-screen bg-bg-secondary">

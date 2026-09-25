@@ -3,15 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f4efe8;
-  --text-primary: #1a1a1a;
-  --text-secondary: #6b6b6b;
-  --brand: #5a4a42;
-  --border: #e0ddd8;
-  --error: #c94a4a;
-  --success: #3d7a4e;
-  --warning: #b07d2b;
+  --bg-primary: #fffdf9;
+  --bg-secondary: #fef6e4;
+  --bg-tertiary: #fcefd8;
+  --text-primary: #1c1917;
+  --text-secondary: #57534e;
+  --text-muted: #a8a29e;
+  --brand: #d97706;
+  --brand-hover: #b45309;
+  --border: #f0e6d2;
+  --error: #dc2626;
+  --success: #059669;
+  --warning: #d97706;
+
+  --brand-50: #fffbeb;
+  --brand-100: #fef3c7;
+  --brand-200: #fde68a;
+  --brand-300: #fcd34d;
+  --brand-400: #fbbf24;
+  --brand-500: #f59e0b;
+  --brand-600: #d97706;
+  --brand-700: #b45309;
+  --brand-800: #92400e;
+  --brand-900: #78350f;
+
+  --font-display: var(--font-inter);
+  --font-body: var(--font-inter);
 }
 
 @layer base {
@@ -47,16 +64,16 @@
     @apply btn text-brand-800 hover:bg-brand-100;
   }
   .btn-danger {
-    @apply btn border border-error/25 bg-white text-error hover:bg-error/5;
+    @apply btn border border-red-200 bg-white text-red-600 hover:bg-red-50;
   }
   .btn-sm {
     @apply min-h-[44px] px-4 py-1.5 text-xs;
   }
   .field {
-    @apply block w-full rounded-md border border-border bg-white px-3 py-2.5 text-text-primary placeholder:text-text-secondary/70 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/25;
+    @apply block w-full rounded-md border border-border bg-white px-3 py-2.5 text-text-primary placeholder:text-text-muted focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-amber-500/25;
   }
   .field-error {
-    @apply border-error focus:border-error focus:ring-error/20;
+    @apply border-red-500 focus:border-red-500 focus:ring-red-200;
   }
   .label {
     @apply mb-1 block text-sm font-medium text-text-primary;

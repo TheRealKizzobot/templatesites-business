@@ -86,7 +86,7 @@ export default function SiteFooter() {
       </div>
       <div className="border-t border-border/60">
         <p className="mx-auto max-w-7xl px-4 py-6 text-xs text-text-secondary sm:px-6 lg:px-8">
-          © {new Date().getFullYear()} Northlight Goods. A template built with Next.js, SQLite and care.
+          Made with MoshineSites.
         </p>
       </div>
     </footer>

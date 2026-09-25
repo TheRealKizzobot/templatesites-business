@@ -3,5 +3,32 @@
   "buildCommand": "next build",
   "outputDirectory": ".next",
   "devCommand": "next dev",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "redirects": [
+    {
+      "source": "/restaurant-examplepage",
+      "destination": "https://restaurant-site-i0ohcnv5o-therealkizzobots-projects.vercel.app",
+      "permanent": true
+    },
+    {
+      "source": "/taskflow-examplepage",
+      "destination": "https://taskflow-saas-iv2o8mnxg-therealkizzobots-projects.vercel.app",
+      "permanent": true
+    },
+    {
+      "source": "/booking-examplepage",
+      "destination": "https://booking-system-qy0lo5jiy-therealkizzobots-projects.vercel.app",
+      "permanent": true
+    },
+    {
+      "source": "/shop-examplepage",
+      "destination": "https://ecommerce-store-fpm2jmhl5-therealkizzobots-projects.vercel.app",
+      "permanent": true
+    },
+    {
+      "source": "/metrics-examplepage",
+      "destination": "https://analytics-dashboard-l8d23xnk8-therealkizzobots-projects.vercel.app",
+      "permanent": true
+    }
+  ]
 }

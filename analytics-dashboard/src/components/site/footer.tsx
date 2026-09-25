@@ -65,7 +65,7 @@ export default function SiteFooter() {
       </div>
       <div className="border-t border-border/60 dark:border-brand-700">
         <p className="mx-auto max-w-6xl px-4 py-6 text-xs text-text-secondary sm:px-6">
-          © {new Date().getFullYear()} Metrics. Made with MoshineSites.
+          Made with MoshineSites.
         </p>
       </div>
     </footer>

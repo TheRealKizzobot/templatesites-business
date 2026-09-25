@@ -15,14 +15,12 @@ import {
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-type Params = { params: { id: string } };
-
 function parseId(raw: string): number | null {
   const id = Number(raw);
   return Number.isInteger(id) && id > 0 ? id : null;
 }
 
-export async function PATCH(req: NextRequest, { params }: Params) {
+export async function PATCH(req: NextRequest, context: { params: Promise<{ id: string }> }) {
   if (!isAdminRequest(req)) {
     return NextResponse.json(
       { ok: false, error: 'Unauthorized.' },
@@ -31,15 +29,16 @@ export async function PATCH(req: NextRequest, { params }: Params) {
   }
   const db = getDb();
 
-  const id = parseId(params.id);
-  if (id === null) {
+  const { id } = await context.params;
+  const numId = parseId(id);
+  if (numId === null) {
     return NextResponse.json(
       { ok: false, error: 'Invalid booking id.' },
       { status: 400 }
     );
   }
 
-  const existing = db.prepare('SELECT * FROM bookings WHERE id = ?').get(id) as
+  const existing = db.prepare('SELECT * FROM bookings WHERE id = ?').get(numId) as
     | BookingRow
     | undefined;
   if (!existing) {
@@ -82,12 +81,12 @@ export async function PATCH(req: NextRequest, { params }: Params) {
     );
   }
 
-  db.prepare('UPDATE bookings SET status = ? WHERE id = ?').run(next, id);
-  const updated = db.prepare('SELECT * FROM bookings WHERE id = ?').get(id) as BookingRow;
+  db.prepare('UPDATE bookings SET status = ? WHERE id = ?').run(next, numId);
+  const updated = db.prepare('SELECT * FROM bookings WHERE id = ?').get(numId) as BookingRow;
   return NextResponse.json({ ok: true, data: updated });
 }
 
-export async function DELETE(req: NextRequest, { params }: Params) {
+export async function DELETE(req: NextRequest, context: { params: Promise<{ id: string }> }) {
   if (!isAdminRequest(req)) {
     return NextResponse.json(
       { ok: false, error: 'Unauthorized.' },
@@ -96,15 +95,16 @@ export async function DELETE(req: NextRequest, { params }: Params) {
   }
   const db = getDb();
 
-  const id = parseId(params.id);
-  if (id === null) {
+  const { id } = await context.params;
+  const numId = parseId(id);
+  if (numId === null) {
     return NextResponse.json(
       { ok: false, error: 'Invalid booking id.' },
       { status: 400 }
     );
   }
 
-  const info = db.prepare('DELETE FROM bookings WHERE id = ?').run(id);
+  const info = db.prepare('DELETE FROM bookings WHERE id = ?').run(numId);
   if (info.changes === 0) {
     return NextResponse.json(
       { ok: false, error: 'Booking not found.' },
@@ -112,5 +112,5 @@ export async function DELETE(req: NextRequest, { params }: Params) {
     );
   }
 
-  return NextResponse.json({ ok: true, data: { deleted: id } });
+  return NextResponse.json({ ok: true, data: { deleted: numId } });
 }

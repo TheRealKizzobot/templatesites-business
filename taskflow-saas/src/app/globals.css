@@ -3,15 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f4efe8;
-  --text-primary: #1a1a1a;
-  --text-secondary: #6b6b6b;
-  --brand: #5a4a42;
-  --border: #e0ddd8;
-  --error: #c94a4a;
-  --success: #3d7a4e;
-  --warning: #b07d2b;
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-tertiary: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --brand: #0ea5e9;
+  --brand-hover: #0284c7;
+  --border: #e2e8f0;
+  --error: #ef4444;
+  --success: #10b981;
+  --warning: #f59e0b;
+
+  --brand-50: #f0f9ff;
+  --brand-100: #e0f2fe;
+  --brand-200: #bae6fd;
+  --brand-300: #7dd3fc;
+  --brand-400: #38bdf8;
+  --brand-500: #0ea5e9;
+  --brand-600: #0284c7;
+  --brand-700: #0369a1;
+  --brand-800: #075985;
+  --brand-900: #0c4a6e;
+
+  --font-display: var(--font-inter);
+  --font-body: var(--font-inter);
 }
 
 @layer base {
@@ -30,13 +47,20 @@
   }
 
   ::selection {
-    background-color: var(--brand);
-    color: #ffffff;
+    background-color: var(--brand-200);
+    color: var(--brand-900);
   }
 
   :focus-visible {
     outline: 2px solid var(--brand);
     outline-offset: 2px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
   }
 }
 

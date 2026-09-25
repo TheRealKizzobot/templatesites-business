@@ -3,15 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f4efe8;
-  --text-primary: #1a1a1a;
-  --text-secondary: #6b6b6b;
-  --brand: #5a4a42;
-  --border: #e0ddd8;
-  --error: #c94a4a;
-  --success: #3d7a4e;
-  --warning: #b07d2b;
+  --bg-primary: #f0fdf7;
+  --bg-secondary: #ecfdf5;
+  --bg-tertiary: #d1fae5;
+  --text-primary: #064e3b;
+  --text-secondary: #065f46;
+  --text-muted: #6b7280;
+  --brand: #059669;
+  --brand-hover: #047857;
+  --border: #d1fae5;
+  --error: #dc2626;
+  --success: #059669;
+  --warning: #d97706;
+
+  --brand-50: #ecfdf5;
+  --brand-100: #d1fae5;
+  --brand-200: #a7f3d0;
+  --brand-300: #6ee7b7;
+  --brand-400: #34d399;
+  --brand-500: #10b981;
+  --brand-600: #059669;
+  --brand-700: #047857;
+  --brand-800: #065f46;
+  --brand-900: #064e3b;
+
+  --font-display: var(--font-inter);
+  --font-body: var(--font-inter);
 }
 
 @layer base {
@@ -48,10 +65,10 @@
     @apply btn text-brand-800 hover:bg-brand-100;
   }
   .btn-danger {
-    @apply btn border border-error/25 bg-white text-error hover:bg-error/5;
+    @apply btn border border-red-200 bg-white text-red-600 hover:bg-red-50;
   }
   .field {
-    @apply block w-full rounded-md border border-hairline bg-white px-3 py-2.5 text-text-primary placeholder:text-text-secondary/70 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/25;
+    @apply block w-full rounded-md border border-green-200 bg-white px-3 py-2.5 text-text-primary placeholder:text-gray-500 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/25;
   }
   .label {
     @apply mb-1 block text-sm font-medium text-text-primary;

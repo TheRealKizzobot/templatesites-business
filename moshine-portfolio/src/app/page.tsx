@@ -9,7 +9,7 @@ const templates = [
     type: "Frontend + Backend",
     tags: ["Next.js", "Static Export", "Reservation System"],
     status: "Live",
-    href: "/restaurant",
+    href: "https://restaurant-site-i0ohcnv5o-therealkizzobots-projects.vercel.app",
     icon: "🍽️",
   },
   {
@@ -20,7 +20,7 @@ const templates = [
     type: "Frontend Only",
     tags: ["Next.js", "Framer Motion", "Interactive Demo"],
     status: "Live",
-    href: "/taskflow",
+    href: "https://taskflow-saas-iv2o8mnxg-therealkizzobots-projects.vercel.app",
     icon: "📋",
   },
   {
@@ -31,7 +31,7 @@ const templates = [
     type: "Full-Stack",
     tags: ["Next.js", "SQLite", "Admin Panel"],
     status: "Live",
-    href: "/booking",
+    href: "https://booking-system-qy0lo5jiy-therealkizzobots-projects.vercel.app",
     icon: "🗓️",
   },
   {
@@ -42,7 +42,7 @@ const templates = [
     type: "Full-Stack",
     tags: ["Next.js", "SQLite", "Cart System"],
     status: "Live",
-    href: "/shop",
+    href: "https://ecommerce-store-fpm2jmhl5-therealkizzobots-projects.vercel.app",
     icon: "🛒",
   },
   {
@@ -53,7 +53,7 @@ const templates = [
     type: "Full-Stack",
     tags: ["Next.js", "SQLite", "Recharts"],
     status: "Live",
-    href: "/metrics",
+    href: "https://analytics-dashboard-l8d23xnk8-therealkizzobots-projects.vercel.app",
     icon: "📊",
   },
 ];
@@ -61,7 +61,6 @@ const templates = [
 export default function Home() {
   return (
     <main>
-      {/* Hero Section */}
       <section className="section pt-20 md:pt-32">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-4" style={{ color: "var(--text-primary)" }}>
@@ -76,7 +75,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About / Bio */}
       <section className="section" style={{ backgroundColor: "var(--bg-secondary)" }}>
         <h2 className="section-title">Who We Are</h2>
         <div className="max-w-3xl">
@@ -105,7 +103,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Templates Grid */}
       <section id="templates" className="section">
         <h2 className="section-title">Template Showcase</h2>
         <p className="section-subtitle">
@@ -137,7 +134,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing */}
       <section className="section" style={{ backgroundColor: "var(--bg-secondary)" }}>
         <h2 className="section-title">Pricing</h2>
         <p className="section-subtitle">
@@ -180,7 +176,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact CTA */}
       <section className="section text-center">
         <h2 className="section-title">Ready to Build?</h2>
         <p className="section-subtitle mx-auto">
@@ -193,17 +188,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="py-8 text-center text-sm" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>
-        <p>© 2026 MoshineSites. Built with Next.js, React, and Tailwind CSS.</p>
-        <p className="mt-2">
-          Templates deployed on{" "}
-          <a href="https://dkservers.space" target="_blank" rel="noopener" className="underline" style={{ color: "var(--brand)" }}>
-            dkservers.space
-          </a>
-        </p>
-      </footer>
     </main>
   );
 }

@@ -107,7 +107,7 @@ export default function Footer() {
 
         <div className="mt-3xl flex flex-col items-center justify-between gap-lg border-t border-border/70 pt-lg sm:flex-row">
           <p className="text-sm text-text-secondary">
-            © {new Date().getFullYear()} TaskFlow. Made with MoshineSites.
+            Made with MoshineSites.
           </p>
           <ul className="flex items-center gap-xs" aria-label="Social media">
             {SOCIALS.map((social) => (

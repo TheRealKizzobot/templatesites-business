@@ -136,7 +136,6 @@ export default function Footer() {
         </div>
 
         <div className="mt-xl flex flex-col items-center justify-between gap-md border-t border-brand-800 pt-xl text-sm text-brand-300 sm:flex-row">
-          <p>© {new Date().getFullYear()} Ember & Wood.</p>
           <p>Made with MoshineSites</p>
         </div>
       </div>
