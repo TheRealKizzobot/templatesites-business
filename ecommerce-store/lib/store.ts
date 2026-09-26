@@ -404,6 +404,12 @@ export function adminCreateProduct(input: {
   rating: number;
 }): Product {
   const db = getDb();
+
+  // Validate description length (matching parseProductInput in admin products route)
+  if (!input.description || input.description.trim().length < 10) {
+    throw new Error('Description must be at least 10 characters.');
+  }
+
   const slug = createProductSlugSync(input.name);
   const info = db
     .prepare(
