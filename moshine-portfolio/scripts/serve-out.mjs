@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const cwd = normalize(resolve(fileURLToPath(new URL('.', import.meta.url)), '..'));
 const root = join(cwd, 'out');
-const port = Number(process.env.PORT || 3000);
+const port = Number(process.env.PORT || 3006);
 
 const types = {
   '.html': 'text/html; charset=utf-8',
@@ -47,7 +47,7 @@ const server = createServer(async (req, res) => {
     } catch {
       resolvedTarget = target;
     }
-    if (!resolvedTarget.startsWith(realRoot + path.sep) && resolvedTarget !== realRoot) {
+    if (!resolvedTarget.startsWith(realRoot + '/') && resolvedTarget !== realRoot) {
       res.writeHead(403).end();
       return;
     }
@@ -72,5 +72,5 @@ const server = createServer(async (req, res) => {
 });
 
 server.listen(port, () => {
-  console.log(`Serving Ember & Wood static export from ./out at http://localhost:${port}`);
+  console.log(`Serving MoshineSites static export from ./out at http://localhost:${port}`);
 });

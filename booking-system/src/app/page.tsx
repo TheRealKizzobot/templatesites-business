@@ -1,4 +1,7 @@
+'use client';
+
 import SiteNav from '@/components/site/nav';
+import SiteFooter from '@/components/site/footer';
 import FadeIn from '@/components/site/fade-in';
 import BookingWidget from '@/components/booking-widget';
 
@@ -29,7 +32,7 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      'Quiet, warm, and genuinely seasonal. Ember & Wood has become our family’s Sunday ritual.',
+      'Quiet, warm, and genuinely seasonal. Ember & Wood has become our family\'s Sunday ritual.',
     name: 'Daniel K.',
     role: 'Four-year regular',
   },
@@ -79,7 +82,7 @@ export default function Home() {
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_auto] lg:py-24">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-600">
-                Ember &amp; Wood · Wood-fired kitchen &amp; natural wine
+                Ember & Wood · Wood-fired kitchen & natural wine
               </p>
               <h1 id="hero-title" className="mt-4 text-4xl leading-tight text-brand-900 sm:text-5xl">
                 Reserve your table
@@ -260,7 +263,7 @@ export default function Home() {
             <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
               <div id="hours">
                 <h2 id="hours-title" className="text-3xl text-brand-900">
-                  Hours &amp; contact
+                  Hours & contact
                 </h2>
                 <table className="mt-6 w-full max-w-md border-collapse text-sm">
                   <caption className="sr-only">Opening hours</caption>
@@ -316,7 +319,7 @@ export default function Home() {
                       <p className="text-text-secondary">
                         <a href="tel:+15035550142" className="underline-offset-2 hover:underline">(503) 555-0142</a>
                         <br />
-                        <a href="mailto:hello@emberandwood.example" className="underline-offset-2 hover:underline">hello@emberandwood.example</a>
+                        <a href="mailto:hello@emberandwood.com" className="underline-offset-2 hover:underline">hello@emberandwood.com</a>
                       </p>
                     </div>
                   </li>
@@ -340,105 +343,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      <footer className="border-t border-brand-200/40 bg-brand-900 text-brand-100">
-        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <p className="font-display text-lg text-brand-50">Ember &amp; Wood</p>
-            <p className="mt-2 text-sm leading-relaxed text-brand-300">
-              Seasonal wood-fired cooking and natural wine, in Portland&apos;s Old Town.
-            </p>
-          </div>
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-brand-200">
-              Hours
-            </p>
-            <ul className="mt-3 space-y-1 text-sm text-brand-300">
-              <li>Monday · Closed</li>
-              <li>Tue – Fri · 11:00 – 12:30 &amp; 17:00 – 21:00</li>
-              <li>Sat – Sun · 11:00 – 12:30 &amp; 17:00 – 21:00</li>
-            </ul>
-          </div>
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-brand-200">
-              Find us
-            </p>
-            <ul className="mt-3 space-y-1 text-sm text-brand-300">
-              <li>14 Mill Lane, Old Town</li>
-              <li>Portland, OR 97205</li>
-              <li>
-                <a href="tel:+15035550142" className="hover:text-white">(503) 555-0142</a>
-              </li>
-              <li>
-                <a href="mailto:hello@emberandwood.example" className="hover:text-white">
-                  hello@emberandwood.example
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-brand-200">
-              Follow
-            </p>
-            <ul className="mt-3 flex gap-2">
-              <li>
-                <a
-                  href="https://instagram.com/emberandwood"
-                  aria-label="Instagram"
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full text-brand-200 transition-colors hover:bg-brand-700 hover:text-white"
-                >
-                  <svg aria-hidden="true" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="3" y="3" width="18" height="18" rx="5" />
-                    <path d="M16 11.37a4 4 0 1 1-7.9 1.26 4 4 0 0 1 7.9-1.26Z" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://facebook.com/emberandwood"
-                  aria-label="Facebook"
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full text-brand-200 transition-colors hover:bg-brand-700 hover:text-white"
-                >
-                  <svg aria-hidden="true" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M14 9h3l-.5 2.5H14v9h-3v-9H9V9h2V7.5C11 5 12.3 4 14.6 4H17v2.5h-1.7c-.8 0-1.3.3-1.3 1.2V9Z" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://x.com/emberandwood"
-                  aria-label="X"
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full text-brand-200 transition-colors hover:bg-brand-700 hover:text-white"
-                >
-                  <svg aria-hidden="true" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.9 2h3.7l-8.1 9.3L23.8 22h-7.5l-5.9-7.7L3.8 22H0l8.7-9.9L0 2h7.7l5.3 7L18.9 2Zm-1.3 18h2L6.5 4H4.3L17.6 20Z" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <nav aria-label="Footer" className="mt-4">
-              <ul className="flex flex-wrap gap-2 text-sm">
-                <li><a className="rounded-full px-3 py-2 text-brand-200 hover:text-white" href="#about">About</a></li>
-                <li><a className="rounded-full px-3 py-2 text-brand-200 hover:text-white" href="#book">Book</a></li>
-              </ul>
-            </nav>
-            <nav aria-label="Legal">
-              <ul className="mt-2 flex flex-wrap gap-2 text-sm">
-                <li><a className="rounded-full px-3 py-2 text-brand-200 hover:text-white" href="/terms">Terms of Service</a></li>
-                <li><a className="rounded-full px-3 py-2 text-brand-200 hover:text-white" href="/privacy">Privacy Policy</a></li>
-                <li><a className="rounded-full px-3 py-2 text-brand-200 hover:text-white" href="/cookies">Cookie Policy</a></li>
-                <li><a className="rounded-full px-3 py-2 text-brand-200 hover:text-white" href="/admin">Admin *</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div className="border-t border-brand-800 py-6">
-          <p className="mx-auto max-w-6xl px-4 text-sm text-brand-300 sm:px-6">
-            © {new Date().getFullYear()} Ember &amp; Wood. 
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

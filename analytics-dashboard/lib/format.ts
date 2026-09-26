@@ -7,13 +7,6 @@ export function formatNumber(n: number): string {
   return String(n);
 }
 
-export function formatDelta(current: number, previous: number): string {
-  if (previous <= 0) return '—';
-  const delta = ((current - previous) / previous) * 100;
-  const sign = delta >= 0 ? '+' : '';
-  return `${sign}${delta.toFixed(1)}%`;
-}
-
 /** "2026-09-03 15:44:00" or ISO -> "3h ago" style */
 export function timeAgo(value: string): string {
   const date = new Date(value);

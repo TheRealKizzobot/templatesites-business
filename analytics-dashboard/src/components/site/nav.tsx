@@ -13,7 +13,7 @@ export default function SiteNav() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-white/95 backdrop-blur dark:bg-[#171310]">
+    <header className="sticky top-0 z-40 border-b border-border bg-white/95 backdrop-blur dark:bg-bg-primary">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6" aria-label="Primary">
         <Link
           href="/dashboard"

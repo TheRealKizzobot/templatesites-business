@@ -37,7 +37,6 @@ const templates = [
     icon: "🗓️",
     hasAdmin: true,
     adminUrl: "/admin",
-    adminPassword: "admin123",
   },
   {
     id: "shop",
@@ -51,7 +50,6 @@ const templates = [
     icon: "🛒",
     hasAdmin: true,
     adminUrl: "/admin",
-    adminPassword: "admin123",
   },
   {
     id: "metrics",
@@ -72,10 +70,10 @@ export default function Home() {
     <main>
       <section className="section pt-20 md:pt-32 bg-gradient-to-b from-brand-50 to-transparent">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight" style={{ color: "var(--text-primary)" }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight text-text-primary">
             MoshineSites
           </h1>
-          <p className="mt-4 text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto" style={{ color: "var(--text-secondary)" }}>
+          <p className="mt-4 text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto text-text-secondary">
             Production-ready website templates and custom web development for small and local businesses.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
@@ -94,22 +92,22 @@ export default function Home() {
         <p className="section-subtitle text-center mx-auto">
           MoshineSites is built by a self-taught developer passionate about creating clean, functional websites
           for local businesses. With experience building apps like{" "}
-          <a href="https://sipsterra.dkservers.space" target="_blank" rel="noopener" className="underline hover:no-underline" style={{ color: "var(--brand)" }}>
+          <a href="https://sipsterra.dkservers.space" target="_blank" rel="noopener" className="underline hover:no-underline text-brand">
             sipsterra
           </a>
           , each template showcases real, deployable projects — not mockups or placeholders.
         </p>
         <div className="mt-12 flex flex-wrap gap-4 justify-center">
           <div className="card px-4 py-2 border-0 shadow-sm max-w-xs">
-            <span className="text-sm text-text-muted">Services:</span>
+            <span className="text-sm text-text-secondary">Services:</span>
             <p className="font-semibold mt-1">Custom Sites & Templates</p>
           </div>
           <div className="card px-4 py-2 border-0 shadow-sm max-w-xs">
-            <span className="text-sm text-text-muted">Stack:</span>
+            <span className="text-sm text-text-secondary">Stack:</span>
             <p className="font-semibold mt-1">Next.js, React, Tailwind, SQLite</p>
           </div>
           <div className="card px-4 py-2 border-0 shadow-sm max-w-xs">
-            <span className="text-sm text-text-muted">Location:</span>
+            <span className="text-sm text-text-secondary">Location:</span>
             <p className="font-semibold mt-1">Raleigh, NC (Remote OK)</p>
           </div>
         </div>
@@ -122,48 +120,44 @@ export default function Home() {
         </p>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {templates.map((t) => (
-            <Link key={t.id} href={t.href} target="_blank" rel="noopener noreferrer" className="block">
-              <div className="card h-full overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
-                <div className="preview text-6xl flex items-center justify-center min-h-[200px] bg-brand-50">
-                  {t.icon}
+            <div key={t.id} className="card h-full overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
+              <div className="preview text-6xl flex items-center justify-center min-h-[200px] bg-brand-50" role="img" aria-label={t.icon === "🍽️" ? "Restaurant" : t.icon === "📋" ? "Task board" : t.icon === "🗓️" ? "Calendar" : t.icon === "🛒" ? "Shopping cart" : "Chart"}>
+                {t.icon}
+              </div>
+              <div className="info p-6 flex flex-col h-full">
+                <h3 className="text-xl font-bold tracking-tight">{t.title}</h3>
+                <p className="mt-1 text-sm font-medium text-brand">{t.subtitle}</p>
+                <p className="mt-2 text-sm text-text-secondary flex-1">{t.description}</p>
+                <div className="tags mt-4 flex flex-wrap gap-2">
+                  {t.tags.map((tag) => (
+                    <span key={tag} className="tag">{tag}</span>
+                  ))}
                 </div>
-                <div className="info p-6 flex flex-col h-full">
-                  <h3 className="text-xl font-bold tracking-tight">{t.title}</h3>
-                  <p className="mt-1 text-sm font-medium" style={{ color: "var(--brand)" }}>
-                    {t.subtitle}
-                  </p>
-                  <p className="mt-2 text-sm text-text-secondary flex-1">{t.description}</p>
-                  <div className="tags mt-4 flex flex-wrap gap-2">
-                    {t.tags.map((tag) => (
-                      <span key={tag} className="tag">{tag}</span>
-                    ))}
-                  </div>
-                  <div className="mt-auto pt-4 border-t border-border">
-                    <div className="flex items-center justify-between text-xs text-text-muted">
-                      <span>{t.type}</span>
-                      {t.hasAdmin && (
-                        <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-brand-100 text-brand-800 font-medium text-[11px]">
-                          Admin panel included
-                        </span>
-                      )}
-                    </div>
+                <div className="mt-auto pt-4 border-t border-border">
+                  <div className="flex items-center justify-between text-xs text-text-secondary">
+                    <span>{t.type}</span>
                     {t.hasAdmin && (
-                      <div className="mt-3 p-3 bg-brand-50 rounded-lg border border-brand-100">
-                        <p className="text-xs font-medium text-brand-800 mb-1">Test the admin panel:</p>
-                        <div className="flex flex-col gap-1 text-xs">
-                          <span className="font-mono bg-brand-100 px-2 py-1 rounded text-brand-800">
-                            {t.adminUrl} — password: <strong>{t.adminPassword}</strong>
-                          </span>
-                        </div>
-                      </div>
+                      <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-brand-100 text-brand-800 font-medium text-[11px]">
+                        Admin panel included
+                      </span>
                     )}
-                    <button className="btn btn-primary mt-4 w-full">
-                      Try It →
-                    </button>
                   </div>
+                  {t.hasAdmin && (
+                    <div className="mt-3 p-3 bg-brand-50 rounded-lg border border-brand-100">
+                      <p className="text-xs font-medium text-brand-800 mb-1">Test the admin panel:</p>
+                      <div className="flex flex-col gap-1 text-xs">
+                        <span className="font-mono bg-brand-100 px-2 py-1 rounded text-brand-800">
+                          {t.adminUrl} — password in .env.example
+                        </span>
+                      </div>
+                    </div>
+                  )}
+                  <a href={t.href} target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-4 w-full text-center block">
+                    Try It →
+                  </a>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </section>
@@ -176,45 +170,45 @@ export default function Home() {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <div className="card p-6 border-0 shadow-sm flex flex-col">
             <h3 className="text-xl font-semibold">Template Kit</h3>
-            <p className="mt-2 text-3xl font-bold" style={{ color: "var(--brand)" }}>$499</p>
-            <ul className="mt-6 space-y-3 text-sm flex-1" style={{ color: "var(--text-secondary)" }}>
+            <p className="mt-2 text-3xl font-bold text-brand">$499</p>
+            <ul className="mt-6 space-y-3 text-sm flex-1 text-text-secondary">
               <li className="flex items-center gap-2">✅ All 5 templates</li>
               <li className="flex items-center gap-2">✅ Full source code</li>
               <li className="flex items-center gap-2">✅ Design system included</li>
-              <li className="flex items-center gap-2 text-text-muted">❌ Custom branding</li>
+              <li className="flex items-center gap-2 text-text-secondary">❌ Custom branding</li>
             </ul>
-            <Link href="#contact" className="btn btn-primary w-full mt-6 text-center">
+            <a href="#contact" className="btn btn-primary w-full mt-6 text-center block">
               Get Started
-            </Link>
+            </a>
           </div>
           <div className="card p-6 border-2 border-brand-500 flex flex-col relative">
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-500 text-brand-50 text-xs font-semibold px-3 py-1 rounded-full">
               Most Popular
             </span>
             <h3 className="text-xl font-semibold">Custom Build</h3>
-            <p className="mt-2 text-3xl font-bold" style={{ color: "var(--brand)" }}>Custom</p>
-            <ul className="mt-6 space-y-3 text-sm flex-1" style={{ color: "var(--text-secondary)" }}>
+            <p className="mt-2 text-3xl font-bold text-brand">Custom</p>
+            <ul className="mt-6 space-y-3 text-sm flex-1 text-text-secondary">
               <li className="flex items-center gap-2">✅ Everything in Template Kit</li>
               <li className="flex items-center gap-2">✅ Custom branding & design</li>
               <li className="flex items-center gap-2">✅ Your own domain setup</li>
               <li className="flex items-center gap-2">✅ 2 rounds of revisions</li>
             </ul>
-            <Link href="#contact" className="btn btn-primary w-full mt-6 text-center">
+            <a href="#contact" className="btn btn-primary w-full mt-6 text-center block">
               Get Started
-            </Link>
+            </a>
           </div>
           <div className="card p-6 border-0 shadow-sm flex flex-col">
             <h3 className="text-xl font-semibold">Maintain</h3>
-            <p className="mt-2 text-3xl font-bold" style={{ color: "var(--brand)" }}>From $99/mo</p>
-            <ul className="mt-6 space-y-3 text-sm flex-1" style={{ color: "var(--text-secondary)" }}>
+            <p className="mt-2 text-3xl font-bold text-brand">From $99/mo</p>
+            <ul className="mt-6 space-y-3 text-sm flex-1 text-text-secondary">
               <li className="flex items-center gap-2">✅ Hosting & SSL</li>
               <li className="flex items-center gap-2">✅ Updates & security</li>
               <li className="flex items-center gap-2">✅ Bug fixes</li>
               <li className="flex items-center gap-2">✅ Priority support</li>
             </ul>
-            <Link href="#contact" className="btn btn-primary w-full mt-6 text-center">
+            <a href="#contact" className="btn btn-primary w-full mt-6 text-center block">
               Get Started
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -225,16 +219,13 @@ export default function Home() {
           Have a project in mind? Get in touch and let&apos;s talk about what you need.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="mailto:connect@dkservers.space" className="btn btn-primary text-lg px-8">
+          <a href="mailto:connect@dkservers.space" className="btn btn-primary text-lg px-8">
             Email Me
-          </Link>
-          <a href="https://forms.gle/your-form-link" target="_blank" rel="noopener noreferrer" className="btn btn-secondary text-lg px-8">
+          </a>
+          <a href="#contact" className="btn btn-secondary text-lg px-8">
             Project Form
           </a>
         </div>
-        <p className="mt-8 text-sm text-text-muted">
-          Admin password for backend templates: <code className="font-mono bg-brand-100 px-1.5 py-0.5 rounded">admin123</code>
-        </p>
       </section>
     </main>
   );

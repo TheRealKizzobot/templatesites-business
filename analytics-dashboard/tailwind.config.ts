@@ -8,8 +8,10 @@ const config: Config = {
       colors: {
         'bg-primary': 'var(--bg-primary)',
         'bg-secondary': 'var(--bg-secondary)',
+        'bg-tertiary': 'var(--bg-tertiary)',
         'text-primary': 'var(--text-primary)',
         'text-secondary': 'var(--text-secondary)',
+        'text-muted': 'var(--text-muted)',
         border: 'var(--border)',
         error: 'var(--error)',
         success: 'var(--success)',
@@ -26,6 +28,7 @@ const config: Config = {
           800: 'var(--brand-800)',
           900: 'var(--brand-900)',
         },
+        'brand-hover': 'var(--brand-hover)',
       },
       spacing: {
         xs: '4px',
@@ -44,7 +47,7 @@ const config: Config = {
         lift: '0 6px 16px rgba(0,0,0,.12), 0 2px 6px rgba(0,0,0,.08)',
       },
       fontFamily: {
-        display: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-fraunces)', 'Georgia', 'serif'],
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
       },
       keyframes: {

@@ -115,15 +115,6 @@ export function ChartIcon({ className }: IconProps) {
   );
 }
 
-export function SyncIcon({ className }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...stroke}>
-      <path d="M20 12a8 8 0 1 1-2.7-6" />
-      <path d="M20 3v4h-4" />
-    </svg>
-  );
-}
-
 export function KeyboardIcon({ className }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...stroke}>

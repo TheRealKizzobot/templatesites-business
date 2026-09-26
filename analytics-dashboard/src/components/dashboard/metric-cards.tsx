@@ -8,12 +8,7 @@ interface Props {
   loading: boolean;
 }
 
-function formatNumber(n: number): string {
-  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
-  if (n >= 10_000) return `${(n / 1000).toFixed(0)}k`;
-  if (n >= 1000) return `${(n / 1000).toFixed(1)}k`;
-  return String(n);
-}
+import { formatNumber } from '@/lib/format';
 
 function deltaPct(current: number, prev: number): { label: string; up: boolean } | null {
   if (!prev) return null;

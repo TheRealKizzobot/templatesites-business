@@ -5,7 +5,6 @@ import {
   Area,
   AreaChart,
   CartesianGrid,
-  Legend,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -90,27 +89,27 @@ export default function AnalyticsPage() {
                 <AreaChart data={series} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
                   <defs>
                     <linearGradient id="viewsFill" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#5a4a42" stopOpacity={0.32} />
-                      <stop offset="100%" stopColor="#5a4a42" stopOpacity={0.02} />
+                      <stop offset="0%" stopColor="var(--brand)" stopOpacity={0.32} />
+                      <stop offset="100%" stopColor="var(--brand)" stopOpacity={0.02} />
                     </linearGradient>
                     <linearGradient id="engFill" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#b07d2b" stopOpacity={0.28} />
-                      <stop offset="100%" stopColor="#b07d2b" stopOpacity={0.02} />
+                      <stop offset="0%" stopColor="var(--warning)" stopOpacity={0.28} />
+                      <stop offset="100%" stopColor="var(--warning)" stopOpacity={0.02} />
                     </linearGradient>
                   </defs>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#e0ddd8" vertical={false} />
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
                   <XAxis
                     dataKey="date"
                     tickFormatter={formatShortDay}
-                    tick={{ fill: '#6b6b6b', fontSize: 12 }}
-                    stroke="#e0ddd8"
+                    tick={{ fill: 'var(--text-secondary)', fontSize: 12 }}
+                    stroke="var(--border)"
                     tickLine={false}
                     axisLine={false}
                   />
                   <YAxis
                     tickFormatter={formatNumber}
-                    tick={{ fill: '#6b6b6b', fontSize: 12 }}
-                    stroke="#e0ddd8"
+                    tick={{ fill: 'var(--text-secondary)', fontSize: 12 }}
+                    stroke="var(--border)"
                     tickLine={false}
                     axisLine={false}
                     width={44}
@@ -118,7 +117,7 @@ export default function AnalyticsPage() {
                   <Tooltip
                     contentStyle={{
                       borderRadius: 12,
-                      border: '1px solid #e0ddd8',
+                      border: '1px solid var(--border)',
                       fontSize: 13,
                     }}
                     labelFormatter={tooltipLabel}
@@ -127,11 +126,10 @@ export default function AnalyticsPage() {
                       name === 'views' ? 'Views' : 'Engagement',
                     ]}
                   />
-                  <Legend wrapperStyle={{ fontSize: 13 }} />
                   <Area
                     type="monotone"
                     dataKey="views"
-                    stroke="#faf8f6"
+                    stroke="var(--brand-50)"
                     strokeWidth={2}
                     fill="url(#viewsFill)"
                     dot={false}
@@ -141,7 +139,7 @@ export default function AnalyticsPage() {
                   <Area
                     type="monotone"
                     dataKey="engagement"
-                    stroke="#f0c97a"
+                    stroke="var(--warning)"
                     strokeWidth={2}
                     fill="url(#engFill)"
                     dot={false}

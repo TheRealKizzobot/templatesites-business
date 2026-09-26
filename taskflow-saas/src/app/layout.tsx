@@ -15,6 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://taskflow.app'),
   title: 'TaskFlow — Your work, finally in flow',
   description:
     'TaskFlow is the simple, private task app that turns scattered to-dos into a focused plan. Try the live demo, no account needed.',

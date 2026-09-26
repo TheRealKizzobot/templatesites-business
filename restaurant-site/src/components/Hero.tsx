@@ -1,9 +1,13 @@
 export default function Hero() {
   return (
-    <section id="top" className="relative isolate min-h-[88svh] overflow-hidden bg-brand-900">
+    <section
+      id="top"
+      aria-labelledby="hero-heading"
+      className="relative isolate min-h-[88svh] overflow-hidden bg-brand-900"
+    >
       <img
         src="/images/hero.svg"
-        alt=""
+        alt="Warm wood-fired restaurant interior with amber lighting and exposed brick walls"
         width={1600}
         height={900}
         loading="lazy"
@@ -16,11 +20,14 @@ export default function Hero() {
       <div className="container-page relative flex min-h-[88svh] items-end pb-2xl pt-28 sm:pb-3xl">
         <div className="max-w-2xl">
           <p className="section-kicker text-brand-200">Wood-fired modern American</p>
-          <h1 className="mt-md font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-6xl">
-            Fire, wood &amp; honest ingredients.
+          <h1
+            id="hero-heading"
+            className="mt-md font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-6xl"
+          >
+            Fire, wood & honest ingredients.
           </h1>
           <p className="mt-lg max-w-xl text-lg text-brand-100 sm:text-xl">
-            Ember &amp; Wood is a small wood-fired room in Portland where dinner
+            Ember & Wood is a small wood-fired room in Portland where dinner
             is slow, warm and quietly serious. Reserve a table or peek at the
             menu.
           </p>

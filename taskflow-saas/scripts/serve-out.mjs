@@ -20,6 +20,7 @@ const types = {
   '.ico': 'image/x-icon',
   '.json': 'application/json',
   '.txt': 'text/plain',
+  '.woff': 'font/woff',
   '.woff2': 'font/woff2',
 };
 
@@ -47,7 +48,7 @@ const server = createServer(async (req, res) => {
     } catch {
       resolvedTarget = target;
     }
-    if (!resolvedTarget.startsWith(realRoot + path.sep) && resolvedTarget !== realRoot) {
+    if (!resolvedTarget.startsWith(realRoot + '/') && resolvedTarget !== realRoot) {
       res.writeHead(403).end();
       return;
     }

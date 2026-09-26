@@ -9,6 +9,7 @@ const config: Config = {
         'bg-secondary': 'var(--bg-secondary)',
         'text-primary': 'var(--text-primary)',
         'text-secondary': 'var(--text-secondary)',
+        'text-muted': 'var(--text-muted)',
         border: 'var(--border)',
         error: 'var(--error)',
         success: 'var(--success)',
@@ -44,6 +45,12 @@ const config: Config = {
       fontFamily: {
         display: ['var(--font-display)', 'system-ui', 'sans-serif'],
         sans: ['var(--font-body)', 'system-ui', 'sans-serif'],
+      },
+      borderColor: {
+        hairline: 'var(--border)',
+      },
+      divideColor: {
+        hairline: 'var(--border)',
       },
     },
   },

@@ -24,10 +24,50 @@ export const metadata: Metadata = {
   },
   description:
     'A TweetDeck-style content analytics dashboard: live metric cards, a polling feed of content items, trending topics, and 7-day charts.',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://dkservers.space',
+    siteName: 'Metrics',
+    title: 'Metrics — Content Analytics',
+    description:
+      'A TweetDeck-style content analytics dashboard: live metric cards, a polling feed of content items, trending topics, and 7-day charts.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Metrics Analytics Dashboard',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Metrics — Content Analytics',
+    description:
+      'A TweetDeck-style content analytics dashboard: live metric cards, a polling feed of content items, trending topics, and 7-day charts.',
+    images: ['/og-image.png'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: '#2c2521',
+  themeColor: 'var(--brand-800)',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

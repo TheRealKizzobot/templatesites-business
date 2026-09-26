@@ -4,34 +4,33 @@ import { getDb } from '@/lib/db';
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-function getCart(): { items: { id: number; name: string; price_cents: number; image: string; qty: number }[] } {
-  if (typeof window === 'undefined') return { items: [] };
-  try {
-    const raw = window.localStorage.getItem('northlight-cart-v1');
-    if (!raw) return { items: [] };
-    const parsed = JSON.parse(raw);
-    if (!Array.isArray(parsed)) return { items: [] };
-    return { items: parsed as any };
-  } catch {
-    return { items: [] };
-  }
+type CartItem = {
+  id: number;
+  name: string;
+  price_cents: number;
+  image: string;
+  qty: number;
+};
+
+type CartResponse = {
+  ok: true;
+  data: {
+    items: CartItem[];
+    count: number;
+  };
+} | {
+  ok: false;
+  error: string;
+};
+
+export async function GET(): Promise<NextResponse<CartResponse>> {
+  // Cart is managed client-side via localStorage
+  // Server doesn't have access to client localStorage
+  // Return empty cart - client will hydrate from localStorage
+  return NextResponse.json({ ok: true, data: { items: [], count: 0 } });
 }
 
-function saveCart(cart: { items: { id: number; name: string; price_cents: number; image: string; qty: number }[] }) {
-  if (typeof window === 'undefined') return;
-  try {
-    window.localStorage.setItem('northlight-cart-v1', JSON.stringify(cart.items));
-  } catch {
-    // storage unavailable — keep cart in memory only
-  }
-}
-
-export async function GET() {
-  const cart = getCart();
-  return NextResponse.json({ ok: true, data: { items: cart.items, count: cart.items.length } });
-}
-
-export async function POST(req: NextRequest) {
+export async function POST(req: NextRequest): Promise<NextResponse<CartResponse>> {
   try {
     const body = await req.json();
     const { productId, quantity }: { productId: number; quantity: number } = body;
@@ -44,7 +43,13 @@ export async function POST(req: NextRequest) {
     }
 
     const db = getDb();
-    const product = db.prepare('SELECT * FROM products WHERE id = ?').get(productId) as any;
+    const product = db.prepare('SELECT * FROM products WHERE id = ?').get(productId) as {
+      id: number;
+      name: string;
+      price_cents: number;
+      image: string;
+      stock: number;
+    } | undefined;
 
     if (!product) {
       return NextResponse.json({ ok: false, error: `Product #${productId} no longer exists.` }, { status: 400 });
@@ -56,26 +61,16 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: false, error: `Only ${product.stock} of "${product.name}" left in stock. Please adjust the quantity.` }, { status: 409 });
     }
 
-    const cart = getCart();
-    const existing = cart.items.find((i) => i.id === productId);
+    // Return the validated product data so client can add to localStorage cart
+    const item: CartItem = {
+      id: product.id,
+      name: product.name,
+      price_cents: product.price_cents,
+      image: product.image,
+      qty: Math.min(quantity, product.stock),
+    };
 
-    if (existing) {
-      const newQty = Math.min(existing.qty + quantity, product.stock);
-      cart.items = cart.items.map((i) =>
-        i.id === productId ? { ...i, qty: newQty } : i
-      );
-    } else {
-      cart.items.push({
-        id: productId,
-        name: product.name,
-        price_cents: product.price_cents,
-        image: product.image,
-        qty: Math.min(quantity, product.stock),
-      });
-    }
-
-    saveCart(cart);
-    return NextResponse.json({ ok: true, data: { items: cart.items, count: cart.items.length } });
+    return NextResponse.json({ ok: true, data: { items: [item], count: 1 } });
   } catch (err) {
     console.error('[api/cart]', err);
     return NextResponse.json({ ok: false, error: 'Something went wrong. Please try again.' }, { status: 500 });

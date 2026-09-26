@@ -43,9 +43,9 @@ const config: Config = {
         xl: '16px',
       },
       boxShadow: {
-        soft: '0 1px 2px rgba(26,26,26,0.04)',
-        lift: '0 4px 12px rgba(26,26,26,0.06)',
-        'lift-lg': '0 12px 32px rgba(26,26,26,0.14)',
+        soft: '0 1px 2px var(--text-primary)/0.04',
+        lift: '0 4px 12px var(--text-primary)/0.06',
+        'lift-lg': '0 12px 32px var(--text-primary)/0.14',
       },
       maxWidth: {
         page: '76rem',

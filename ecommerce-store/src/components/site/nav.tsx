@@ -24,9 +24,9 @@ export default function SiteNav() {
     <header className="sticky top-0 z-40 border-b border-border bg-white/95 backdrop-blur">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8" aria-label="Primary">
         <Link href="/" className="flex min-h-[44px] items-center gap-2 text-lg font-semibold text-brand-800">
-          <svg width="24" height="24" viewBox="0 0 24 24" className="text-brand-500" aria-hidden="true">
-            <path d="M12 3a5 5 0 0 1 5 5c0 2.5-1.2 4.2-2.3 5.6-.8 1-1.7 2-1.7 2s-.9-1-1.7-2C8.2 12.2 7 10.5 7 8a5 5 0 0 1 5-5z" fill="#5a4a42" />
-            <path d="M7 14a6 6 0 0 0 3 5.2A7 7 0 0 1 6 16.5 6.4 6.4 0 0 1 7 14z" fill="#c4b7ae" />
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3a5 5 0 0 1 5 5c0 2.5-1.2 4.2-2.3 5.6-.8 1-1.7 2-1.7 2s-.9-1-1.7-2C8.2 12.2 7 10.5 7 8a5 5 0 0 1 5-5z" fill="var(--brand)" />
+            <path d="M7 14a6 6 0 0 0 3 5.2A7 7 0 0 1 6 16.5 6.4 6.4 0 0 1 7 14z" fill="var(--brand-300)" />
           </svg>
           Northlight Goods
         </Link>

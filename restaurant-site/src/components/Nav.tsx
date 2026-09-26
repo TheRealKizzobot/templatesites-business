@@ -13,9 +13,9 @@ function FlameMark({ className }: { className?: string }) {
     >
       <defs>
         <linearGradient id="flame-g" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#b07d2b" />
-          <stop offset="0.55" stopColor="#a98f82" />
-          <stop offset="1" stopColor="#4a3d37" />
+          <stop offset="0" stopColor="var(--warning)" />
+          <stop offset="0.55" stopColor="var(--brand-400)" />
+          <stop offset="1" stopColor="var(--brand-700)" />
         </linearGradient>
       </defs>
       <path
@@ -24,11 +24,11 @@ function FlameMark({ className }: { className?: string }) {
       />
       <path
         d="M16 9c2.6 3.2 4.2 5.4 4.2 7.5A4.2 4.2 0 0 1 16 20.7a4.2 4.2 0 0 1-4.2-4.2C11.8 14.4 13.4 12.2 16 9Z"
-        fill="#1d1815"
+        fill="var(--brand-900)"
         opacity="0.55"
       />
-      <circle cx="13.4" cy="23.2" r="1.1" fill="#b07d2b" opacity="0.9" />
-      <circle cx="17.8" cy="25" r="0.8" fill="#c4b7ae" opacity="0.8" />
+      <circle cx="13.4" cy="23.2" r="1.1" fill="var(--warning)" opacity="0.9" />
+      <circle cx="17.8" cy="25" r="0.8" fill="var(--brand-300)" opacity="0.8" />
     </svg>
   );
 }
@@ -69,7 +69,7 @@ export default function Nav() {
       <div
         className={`transition-colors duration-300 ${
           scrolled
-            ? 'border-b border-[#2c2521]/20 bg-brand-800'
+            ? 'border-b border-brand-900/20 bg-brand-800'
             : 'border-b border-transparent bg-transparent'
         }`}
       >
@@ -84,7 +84,7 @@ export default function Nav() {
           >
             <FlameMark className="h-8 w-8" />
             <span className="font-display text-xl font-semibold tracking-tight">
-              Ember &amp; Wood
+              Ember & Wood
             </span>
           </a>
 
@@ -147,7 +147,7 @@ export default function Nav() {
       >
         <nav
           aria-label="Mobile"
-          className="border-b border-[#2c2521]/20 bg-brand-800"
+          className="border-b border-brand-900/20 bg-brand-800"
         >
           <ul className="container-page flex flex-col py-sm">
             {NAV_LINKS.map((link) => (

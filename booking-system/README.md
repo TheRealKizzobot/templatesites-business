@@ -4,7 +4,7 @@ A full-stack restaurant booking system for **Ember & Wood** (wood-fired kitchen 
 
 ## Stack
 
-- **Next.js 14.2** (pinned — App Router, React 18, TypeScript)
+- **Next.js 16.3.4** (App Router, React 18, TypeScript)
 - **Tailwind CSS 3.4** configured from the shared design-system tokens
 - **better-sqlite3** file database at `data/booking.db` (WAL mode)
 - Fonts: **Fraunces** (display) + **Inter** (body) via `next/font/google`

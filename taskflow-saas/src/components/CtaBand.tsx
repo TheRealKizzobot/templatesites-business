@@ -93,7 +93,7 @@ export default function CtaBand() {
                   placeholder="you@company.com"
                   aria-invalid={invalid}
                   aria-describedby={invalid ? 'cta-email-error' : undefined}
-                  className={`h-11 min-w-0 flex-1 rounded-full bg-white/95 px-lg text-md text-text-primary placeholder:text-text-secondary/60 focus:bg-white ${
+                  className={`h-11 min-w-0 flex-1 rounded-full bg-bg-primary/95 px-lg text-md text-text-primary placeholder:text-text-secondary/60 focus:bg-bg-primary ${
                     invalid ? 'ring-2 ring-white' : ''
                   }`}
                 />

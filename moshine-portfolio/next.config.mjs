@@ -5,14 +5,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Reverse proxy rewrites for dev mode
+  // Reverse proxy rewrites for dev mode (ports per CLAUDE.md)
   async rewrites() {
     return [
-      { source: "/restaurant/:path*", destination: "http://localhost:3001/:path*" },
-      { source: "/taskflow/:path*", destination: "http://localhost:3002/:path*" },
-      { source: "/booking/:path*", destination: "http://localhost:3003/:path*" },
-      { source: "/shop/:path*", destination: "http://localhost:3000/:path*" },
-      { source: "/metrics/:path*", destination: "http://localhost:3005/:path*" },
+      { source: "/restaurant/:path*", destination: "http://localhost:3000/:path*" },
+      { source: "/taskflow/:path*", destination: "http://localhost:3001/:path*" },
+      { source: "/booking/:path*", destination: "http://localhost:3000/:path*" },
+      { source: "/shop/:path*", destination: "http://localhost:3020/:path*" },
+      { source: "/metrics/:path*", destination: "http://localhost:3010/:path*" },
     ];
   },
 };

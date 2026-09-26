@@ -17,16 +17,45 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ecommerce-store-five-phi.vercel.app'),
   title: {
     default: 'Northlight Goods — Home Goods, Carefully Made',
     template: '%s — Northlight Goods',
   },
   description:
     'Furniture, lighting, textiles, tableware and decor for slower, warmer homes. Free shipping on orders over $100.',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://ecommerce-store-five-phi.vercel.app',
+    siteName: 'Northlight Goods',
+    title: 'Northlight Goods — Home Goods, Carefully Made',
+    description:
+      'Furniture, lighting, textiles, tableware and decor for slower, warmer homes. Free shipping on orders over $100.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Northlight Goods — Home Goods, Carefully Made',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Northlight Goods — Home Goods, Carefully Made',
+    description:
+      'Furniture, lighting, textiles, tableware and decor for slower, warmer homes. Free shipping on orders over $100.',
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: '#2c2521',
+  themeColor: '#5a4a42',
 };
 
 export default function RootLayout({

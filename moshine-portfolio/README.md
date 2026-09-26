@@ -8,11 +8,11 @@ The portfolio site is available at: http://localhost:3006 (local development)
 
 ## 📁 Repository Structure
 
-- `/restaurant` - Frontend-only static site (Next.js) for restaurants
-- `/taskflow` - Frontend-only static site (Next.js) for SaaS/landing pages
-- `/booking` - Full-stack website with customer booking system and admin panel
-- `/shop` - Full-stack e-commerce site with product catalog, cart, and checkout
-- `/analytics-dashboard` - Full-stack real-time analytics dashboard with database
+- `restaurant-site` - Frontend-only static site (Next.js) for restaurants
+- `taskflow-saas` - Frontend-only static site (Next.js) for SaaS/landing pages
+- `booking-system` - Full-stack website with customer booking system and admin panel
+- `ecommerce-store` - Full-stack e-commerce site with product catalog, cart, and checkout
+- `analytics-dashboard` - Full-stack real-time analytics dashboard with database
 
 ## 🚀 Quick Start
 
@@ -31,4 +31,4 @@ The portfolio site is available at: http://localhost:3006 (local development)
 
 ## 📧 Contact
 
-For business inquiries, please email: daniel@example.com
+For business inquiries, please email: connect@dkservers.space

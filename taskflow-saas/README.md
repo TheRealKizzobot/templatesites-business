@@ -5,7 +5,7 @@ page for a task-management product, with a fully interactive live task-widget de
 
 ## Stack
 
-- Next.js 14.2 (static export, `output: 'export'`)
+- Next.js 14.2.x (static export, `output: 'export'`)
 - React 18 + TypeScript
 - Tailwind CSS 3.4 (MoshineSites design-system tokens)
 - Framer Motion 11 (interactive sections only)

@@ -67,7 +67,7 @@ export const DISHES: Dish[] = [
     alt: 'Hand-cut tagliatelle with a mushroom ragout and parmesan',
   },
   {
-    name: 'Duck à l’Orange',
+    name: "Duck à l'Orange",
     description:
       'Crispy-skin duck breast, burnt orange glaze, farro and charred radicchio.',
     price: '$42',
@@ -152,5 +152,5 @@ export const RESTAURANT = {
   address: '412 Firelight Avenue, Portland, OR 97209',
   phone: '(503) 555-0142',
   phoneHref: 'tel:+15035550142',
-  email: 'hello@emberandwood.example',
+  email: 'connect@dkservers.space',
 };

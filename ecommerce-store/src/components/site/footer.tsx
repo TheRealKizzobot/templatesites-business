@@ -57,8 +57,8 @@ export default function SiteFooter() {
           <p className="text-sm font-semibold text-brand-800">Visit</p>
           <ul className="mt-3 space-y-1 text-sm text-text-secondary">
             <li>
-              <a href="mailto:hello@northlightgoods.example" className="inline-flex min-h-[44px] items-center hover:text-brand-800">
-                hello@northlightgoods.example
+              <a href="mailto:connect@dkservers.space" className="inline-flex min-h-[44px] items-center hover:text-brand">
+                connect@dkservers.space
               </a>
             </li>
             <li>
@@ -86,7 +86,7 @@ export default function SiteFooter() {
       </div>
       <div className="border-t border-border/60">
         <p className="mx-auto max-w-7xl px-4 py-6 text-xs text-text-secondary sm:px-6 lg:px-8">
-          Made with <a href="https://dkservers.space" className="underline hover:no-underline" style={{ color: "var(--brand)" }}>MoshineSites</a>.
+          Made with <a href="https://dkservers.space" className="underline hover:no-underline text-brand">MoshineSites</a>.
         </p>
       </div>
     </footer>

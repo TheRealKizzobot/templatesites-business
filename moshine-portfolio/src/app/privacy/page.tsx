@@ -1,27 +1,40 @@
 export const metadata = {
   title: "Privacy Policy — MoshineSites",
   description: "Privacy Policy for MoshineSites.",
+  openGraph: {
+    title: "Privacy Policy — MoshineSites",
+    description: "Privacy Policy for MoshineSites.",
+    type: "website",
+    siteName: "MoshineSites",
+    locale: "en_US",
+    url: "https://dkservers.space/privacy",
+  },
+  twitter: {
+    card: "summary",
+    title: "Privacy Policy — MoshineSites",
+    description: "Privacy Policy for MoshineSites.",
+  },
 };
 
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen bg-white">
-      <section className="section pt-20 md:pt-32">
+    <main className="min-h-screen bg-bg-primary dark:bg-bg-primary">
+      <section className="mx-auto max-w-3xl px-4 py-10 sm:px-6 md:pt-32 pt-20">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-display font-bold mb-8" style={{ color: "var(--text-primary)" }}>
+          <h1 className="text-4xl md:text-5xl font-display font-bold mb-8 text-text-primary">
             Privacy Policy
           </h1>
-          <p className="text-lg mb-8" style={{ color: "var(--text-secondary)" }}>
+          <p className="text-lg mb-8 text-text-secondary">
             Last updated: September 2026
           </p>
 
-          <div className="space-y-12" style={{ color: "var(--text-secondary)" }}>
+          <div className="space-y-12 text-text-secondary">
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 1. Information We Collect
               </h2>
               <p className="mb-4">
-                When you interact with SITE_NAME, we may collect:
+                When you interact with MoshineSites, we may collect:
               </p>
               <ul className="list-disc list-inside space-y-2">
                 <li>Contact information (name, email, phone) when you submit forms</li>
@@ -33,7 +46,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 2. How We Use Your Information
               </h2>
               <ul className="list-disc list-inside space-y-2">
@@ -46,7 +59,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 3. Data Sharing
               </h2>
               <p>
@@ -60,7 +73,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 4. Data Retention
               </h2>
               <p>
@@ -70,7 +83,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 5. Your Rights
               </h2>
               <p>
@@ -79,11 +92,11 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 6. Contact
               </h2>
               <p>
-                Questions about this policy? Email us at <a href="mailto:daniel@example.com" className="underline" style={{ color: "var(--brand)" }}>daniel@example.com</a>
+                Questions about this policy? Email us at <a href="mailto:connect@dkservers.space" className="underline text-brand">connect@dkservers.space</a>
               </p>
             </section>
           </div>

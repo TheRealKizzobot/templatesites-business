@@ -1,23 +1,36 @@
 export const metadata = {
   title: "Terms of Service — MoshineSites",
   description: "Terms of Service for MoshineSites.",
+  openGraph: {
+    title: "Terms of Service — MoshineSites",
+    description: "Terms of Service for MoshineSites.",
+    type: "website",
+    siteName: "MoshineSites",
+    locale: "en_US",
+    url: "https://dkservers.space/terms",
+  },
+  twitter: {
+    card: "summary",
+    title: "Terms of Service — MoshineSites",
+    description: "Terms of Service for MoshineSites.",
+  },
 };
 
 export default function TermsOfService() {
   return (
-    <main className="min-h-screen bg-white">
-      <section className="section pt-20 md:pt-32">
+    <main className="min-h-screen bg-bg-primary dark:bg-bg-primary">
+      <section className="mx-auto max-w-3xl px-4 py-10 sm:px-6 md:pt-32 pt-20">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-display font-bold mb-8" style={{ color: "var(--text-primary)" }}>
+          <h1 className="text-4xl md:text-5xl font-display font-bold mb-8 text-text-primary">
             Terms of Service
           </h1>
-          <p className="text-lg mb-8" style={{ color: "var(--text-secondary)" }}>
+          <p className="text-lg mb-8 text-text-secondary">
             Last updated: September 2026
           </p>
 
-          <div className="space-y-12" style={{ color: "var(--text-secondary)" }}>
+          <div className="space-y-12 text-text-secondary">
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 1. Agreement
               </h2>
               <p>
@@ -26,7 +39,7 @@ export default function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 2. Use of Site
               </h2>
               <ul className="list-disc list-inside space-y-2 mt-2">
@@ -38,7 +51,7 @@ export default function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 3. Orders & Payments
               </h2>
               <p className="mb-4">For e-commerce and booking sites:</p>
@@ -51,7 +64,7 @@ export default function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 4. Intellectual Property
               </h2>
               <p>
@@ -60,7 +73,7 @@ export default function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 5. Disclaimer
               </h2>
               <p>
@@ -69,7 +82,7 @@ export default function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 6. Limitation of Liability
               </h2>
               <p>
@@ -78,18 +91,18 @@ export default function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 7. Governing Law
               </h2>
               <p>Governed by laws of North Carolina, USA.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 8. Contact
               </h2>
               <p>
-                Questions? Email <a href="mailto:daniel@example.com" className="underline" style={{ color: "var(--brand)" }}>daniel@example.com</a>
+                Questions? Email <a href="mailto:connect@dkservers.space" className="underline text-brand">connect@dkservers.space</a>
               </p>
             </section>
           </div>

@@ -125,7 +125,7 @@ export default function TaskWidget() {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Write a task, e.g. “Outline onboarding plan”"
           autoComplete="off"
-          className="h-11 min-w-0 flex-1 rounded-md border border-border bg-white px-md text-md text-text-primary placeholder:text-text-secondary/60 focus:border-brand-400"
+          className="h-11 min-w-0 flex-1 rounded-md border border-border bg-bg-primary px-md text-md text-text-primary placeholder:text-text-secondary/60 focus:border-brand-400"
         />
         <button
           type="submit"
@@ -204,7 +204,7 @@ export default function TaskWidget() {
                   duration: reduce ? 0.01 : 0.2,
                   layout: reduce ? { duration: 0.01 } : { duration: 0.2, ease: 'easeOut' },
                 }}
-                className="group flex items-center gap-sm rounded-md border border-border/60 bg-white p-xs shadow-soft"
+                className="group flex items-center gap-sm rounded-md border border-border/60 bg-bg-primary p-xs shadow-soft"
               >
                 <button
                   type="button"
@@ -221,7 +221,7 @@ export default function TaskWidget() {
                     className={`grid size-6 place-items-center rounded-full border-2 transition-colors ${
                       task.done
                         ? 'border-brand-600 bg-brand-600'
-                        : 'border-brand-300 bg-white'
+                        : 'border-brand-300 bg-bg-primary'
                     }`}
                   >
                     {task.done && <CheckIcon className="size-3.5 text-white" />}

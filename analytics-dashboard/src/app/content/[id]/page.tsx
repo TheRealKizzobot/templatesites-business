@@ -37,7 +37,7 @@ interface SeriesPoint {
 const PLATFORM_COLORS: Record<string, string> = {
   X: 'bg-brand-900 text-brand-50',
   Instagram: 'bg-brand-600 text-brand-50',
-  LinkedIn: 'bg-success text-success-foreground',
+  LinkedIn: 'bg-success text-white',
 };
 
 export default function ContentDetailPage() {
@@ -156,29 +156,33 @@ export default function ContentDetailPage() {
             <AreaChart data={series} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
               <defs>
                 <linearGradient id="detailViews" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#faf8f6" stopOpacity={0.3} />
-                  <stop offset="100%" stopColor="#faf8f6" stopOpacity={0.02} />
+                  <stop offset="0%" stopColor="var(--brand-50)" stopOpacity={0.3} />
+                  <stop offset="100%" stopColor="var(--brand-50)" stopOpacity={0.02} />
+                </linearGradient>
+                <linearGradient id="detailEng" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="var(--warning)" stopOpacity={0.28} />
+                  <stop offset="100%" stopColor="var(--warning)" stopOpacity={0.02} />
                 </linearGradient>
               </defs>
-              <CartesianGrid strokeDasharray="3 3" stroke="#e0ddd8" vertical={false} />
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
               <XAxis
                 dataKey="date"
                 tickFormatter={formatShortDay}
-                tick={{ fill: '#6b6b6b', fontSize: 12 }}
-                stroke="#e0ddd8"
+                tick={{ fill: 'var(--text-secondary)', fontSize: 12 }}
+                stroke="var(--border)"
                 tickLine={false}
                 axisLine={false}
               />
               <YAxis
                 tickFormatter={formatNumber}
-                tick={{ fill: '#6b6b6b', fontSize: 12 }}
-                stroke="#e0ddd8"
+                tick={{ fill: 'var(--text-secondary)', fontSize: 12 }}
+                stroke="var(--border)"
                 tickLine={false}
                 axisLine={false}
                 width={44}
               />
               <Tooltip
-                contentStyle={{ borderRadius: 12, border: '1px solid #e0ddd8', fontSize: 13 }}
+                contentStyle={{ borderRadius: 12, border: '1px solid var(--border)', fontSize: 13 }}
                 labelFormatter={(date: string) => formatShortDay(date)}
                 formatter={(value: number | string | Array<number | string>, name: string) => [
                   formatNumber(Number(value)),
@@ -188,9 +192,19 @@ export default function ContentDetailPage() {
               <Area
                 type="monotone"
                 dataKey="views"
-                stroke="#faf8f6"
+                stroke="var(--brand-50)"
                 strokeWidth={2}
                 fill="url(#detailViews)"
+                dot={false}
+                activeDot={{ r: 5 }}
+                animationDuration={400}
+              />
+              <Area
+                type="monotone"
+                dataKey="engagement"
+                stroke="var(--warning)"
+                strokeWidth={2}
+                fill="url(#detailEng)"
                 dot={false}
                 activeDot={{ r: 5 }}
                 animationDuration={400}

@@ -13,7 +13,7 @@ import { getDb } from './db';
 
 const INTERVAL_MS = Math.max(
   1000,
-  Number(process.env.SIMULATOR_INTERVAL_MS) || 180000
+  Number(process.env.SIMULATOR_INTERVAL_MS) || 5000
 );
 
 const GLOBAL_KEY = '__metrics_simulator_started__';

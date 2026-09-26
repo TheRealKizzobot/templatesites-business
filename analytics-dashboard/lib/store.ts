@@ -39,8 +39,6 @@ export interface Metrics {
   trending: TrendingTopic[];
 }
 
-export const SIMULATOR_DEFAULT_MS = 5000;
-
 function parseTags(tags: string): string[] {
   return tags
     .split(',')

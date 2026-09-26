@@ -161,11 +161,11 @@ function MockWindow() {
         {fakeTasks.map((task) => (
           <li
             key={task.label}
-            className="flex items-center gap-sm rounded-md border border-border/60 bg-white px-sm py-sm"
+            className="flex items-center gap-sm rounded-md border border-border/60 bg-bg-primary px-sm py-sm"
           >
             <span
               className={`grid size-5 place-items-center rounded-full border-2 ${
-                task.done ? 'border-brand-600 bg-brand-600' : 'border-brand-300 bg-white'
+                task.done ? 'border-brand-600 bg-brand-600' : 'border-brand-300 bg-bg-primary'
               }`}
             >
               {task.done && (

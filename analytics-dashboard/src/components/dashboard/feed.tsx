@@ -8,7 +8,7 @@ import type { FeedItem } from '@/app/dashboard/page';
 const PLATFORM_COLORS: Record<string, string> = {
   X: 'bg-brand-900 text-brand-50',
   Instagram: 'bg-brand-600 text-brand-50',
-  LinkedIn: 'bg-success text-success-foreground',
+  LinkedIn: 'bg-success text-white',
 };
 
 export default function Feed({ items, loading }: { items: FeedItem[]; loading: boolean }) {
@@ -40,9 +40,12 @@ export default function Feed({ items, loading }: { items: FeedItem[]; loading: b
       </div>
 
       <ul className="mt-3 space-y-3">
-        {items.map((item, idx) => (
-          <li key={`${item.id}-${item.views}-${idx}`}>
-            <Link href={`/content/${item.id}`} className="block rounded-xl border border-border bg-white p-4 shadow-soft transition-shadow hover:shadow-lift dark:bg-[#221c18]" style={idx > 5 ? undefined : { animation: 'fade-in 0.3s ease-out both' }}>
+        {items.map((item) => (
+          <li key={item.id}>
+            <Link
+              href={`/content/${item.id}`}
+              className="block rounded-xl border border-border bg-white p-4 shadow-soft transition-shadow hover:shadow-lift dark:bg-bg-secondary animate-fade-in"
+            >
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
                   <span className="font-semibold text-text-primary">{item.handle}</span>
@@ -60,11 +63,11 @@ export default function Feed({ items, loading }: { items: FeedItem[]; loading: b
               <p className="mt-1 line-clamp-2 text-sm text-text-secondary">{item.body}</p>
 
               <div className="mt-3 flex flex-wrap items-center gap-4 text-sm">
-                <span className="inline-flex items-center gap-1.5 text-text-primary">
+                <span className="inline-flex items-center gap-1.5 text-text-primary" aria-label={`${formatNumber(item.views)} views`}>
                   <span aria-hidden="true">👁</span>
                   <span className="tabular-nums">{formatNumber(item.views)}</span>
                 </span>
-                <span className="inline-flex items-center gap-1.5 text-text-primary">
+                <span className="inline-flex items-center gap-1.5 text-text-primary" aria-label={`${formatNumber(item.engagement)} engagements`}>
                   <span aria-hidden="true">❤</span>
                   <span className="tabular-nums">{formatNumber(item.engagement)}</span>
                 </span>

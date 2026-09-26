@@ -21,9 +21,9 @@ const LEGAL_LINKS = [
 ];
 
 const SOCIALS = [
-  { href: 'https://x.com/', label: 'TaskFlow on X', icon: XSocialIcon },
-  { href: 'https://www.linkedin.com/', label: 'TaskFlow on LinkedIn', icon: LinkedInIcon },
-  { href: 'https://github.com/', label: 'TaskFlow on GitHub', icon: GitHubIcon },
+  { href: 'https://x.com/dkservers', label: 'TaskFlow on X', icon: XSocialIcon },
+  { href: 'https://www.linkedin.com/in/daniel-kingston', label: 'TaskFlow on LinkedIn', icon: LinkedInIcon },
+  { href: 'https://github.com/TheRealKizzobot', label: 'TaskFlow on GitHub', icon: GitHubIcon },
 ];
 
 export default function Footer() {
@@ -107,7 +107,7 @@ export default function Footer() {
 
         <div className="mt-3xl flex flex-col items-center justify-between gap-lg border-t border-border/70 pt-lg sm:flex-row">
           <p className="text-sm text-text-secondary">
-            Made with <a href="https://dkservers.space" className="underline hover:no-underline" style={{ color: "var(--brand)" }}>MoshineSites</a>.
+            Made with <a href="https://dkservers.space" className="underline hover:no-underline text-brand" target="_blank" rel="noopener noreferrer">MoshineSites</a>.
           </p>
           <ul className="flex items-center gap-xs" aria-label="Social media">
             {SOCIALS.map((social) => (

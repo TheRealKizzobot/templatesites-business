@@ -3,31 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #fffdf9;
-  --bg-secondary: #fef6e4;
-  --bg-tertiary: #fcefd8;
-  --text-primary: #1c1917;
-  --text-secondary: #57534e;
-  --text-muted: #a8a29e;
-  --brand: #d97706;
-  --brand-hover: #b45309;
-  --border: #f0e6d2;
-  --error: #dc2626;
-  --success: #059669;
-  --warning: #d97706;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4efe8;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --text-muted: #9b9b9b;
+  --brand: #5a4a42;
+  --brand-hover: #4a3d37;
+  --border: #e0ddd8;
+  --error: #c94a4a;
+  --success: #3d7a4e;
+  --warning: #b07d2b;
 
-  --brand-50: #fffbeb;
-  --brand-100: #fef3c7;
-  --brand-200: #fde68a;
-  --brand-300: #fcd34d;
-  --brand-400: #fbbf24;
-  --brand-500: #f59e0b;
-  --brand-600: #d97706;
-  --brand-700: #b45309;
-  --brand-800: #92400e;
-  --brand-900: #78350f;
+  --brand-50: #faf8f6;
+  --brand-100: #f0ece8;
+  --brand-200: #ddd4cd;
+  --brand-300: #c4b7ae;
+  --brand-400: #a98f82;
+  --brand-500: #5a4a42;
+  --brand-600: #4a3d37;
+  --brand-700: #3b312c;
+  --brand-800: #2c2521;
+  --brand-900: #1d1815;
 
-  --font-display: var(--font-inter);
+  --font-display: var(--font-fraunces);
   --font-body: var(--font-inter);
 }
 
@@ -64,22 +63,31 @@
     @apply btn text-brand-800 hover:bg-brand-100;
   }
   .btn-danger {
-    @apply btn border border-red-200 bg-white text-red-600 hover:bg-red-50;
+    @apply btn border border-red-200 bg-white text-[var(--error)] hover:bg-red-50;
   }
   .btn-sm {
     @apply min-h-[44px] px-4 py-1.5 text-xs;
   }
   .field {
-    @apply block w-full rounded-md border border-border bg-white px-3 py-2.5 text-text-primary placeholder:text-text-muted focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-amber-500/25;
+    @apply block w-full rounded-md border border-brand-200 bg-white px-3 py-2.5 text-text-primary placeholder:text-text-secondary focus:border-brand-500 focus:outline-none;
+  }
+  .field:focus-visible {
+    box-shadow: 0 0 0 2px var(--brand-500);
   }
   .field-error {
-    @apply border-red-500 focus:border-red-500 focus:ring-red-200;
+    @apply border-[var(--error)] focus:border-[var(--error)];
+  }
+  .field-error:focus-visible {
+    box-shadow: 0 0 0 2px var(--error);
   }
   .label {
     @apply mb-1 block text-sm font-medium text-text-primary;
   }
   .card {
     @apply rounded-xl bg-white shadow-soft;
+  }
+  .section {
+    @apply mx-auto max-w-3xl px-4 py-12 sm:px-6 md:py-16;
   }
   .pill {
     @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold;

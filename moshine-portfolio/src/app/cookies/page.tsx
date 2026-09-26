@@ -1,23 +1,36 @@
 export const metadata = {
   title: "Cookie Policy — MoshineSites",
   description: "Cookie Policy for MoshineSites.",
+  openGraph: {
+    title: "Cookie Policy — MoshineSites",
+    description: "Cookie Policy for MoshineSites.",
+    type: "website",
+    siteName: "MoshineSites",
+    locale: "en_US",
+    url: "https://dkservers.space/cookies",
+  },
+  twitter: {
+    card: "summary",
+    title: "Cookie Policy — MoshineSites",
+    description: "Cookie Policy for MoshineSites.",
+  },
 };
 
 export default function CookiePolicy() {
   return (
-    <main className="min-h-screen bg-white">
-      <section className="section pt-20 md:pt-32">
+    <main className="min-h-screen bg-bg-primary dark:bg-bg-primary">
+      <section className="mx-auto max-w-3xl px-4 py-10 sm:px-6 md:pt-32 pt-20">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-display font-bold mb-8" style={{ color: "var(--text-primary)" }}>
+          <h1 className="text-4xl md:text-5xl font-display font-bold mb-8 text-text-primary">
             Cookie Policy
           </h1>
-          <p className="text-lg mb-8" style={{ color: "var(--text-secondary)" }}>
+          <p className="text-lg mb-8 text-text-secondary">
             Last updated: September 2026
           </p>
 
-          <div className="space-y-12" style={{ color: "var(--text-secondary)" }}>
+          <div className="space-y-12 text-text-secondary">
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 1. What Are Cookies
               </h2>
               <p>
@@ -26,7 +39,7 @@ export default function CookiePolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 2. Cookies We Use
               </h2>
               <p>MoshineSites uses the following categories of cookies:</p>
@@ -41,12 +54,12 @@ export default function CookiePolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 3. Cookie Details
               </h2>
-              <table className="w-full border-collapse text-sm" style={{ color: "var(--text-secondary)" }}>
+              <table className="w-full border-collapse text-sm text-text-secondary">
                 <thead>
-                  <tr className="border-b" style={{ borderColor: "var(--border)" }}>
+                  <tr className="border-b border-border">
                     <th className="text-left py-2 px-3">Cookie</th>
                     <th className="text-left py-2 px-3">Purpose</th>
                     <th className="text-left py-2 px-3">Duration</th>
@@ -54,37 +67,37 @@ export default function CookiePolicy() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b" style={{ borderColor: "var(--border)" }}>
+                  <tr className="border-b border-border">
                     <td className="py-2 px-3 font-mono">__session</td>
                     <td className="py-2 px-3">Session management</td>
                     <td className="py-2 px-3">Session</td>
                     <td className="py-2 px-3">Essential</td>
                   </tr>
-                  <tr className="border-b" style={{ borderColor: "var(--border)" }}>
+                  <tr className="border-b border-border">
                     <td className="py-2 px-3 font-mono">__cf_bm</td>
                     <td className="py-2 px-3">Cloudflare bot management</td>
                     <td className="py-2 px-3">30 min</td>
                     <td className="py-2 px-3">Essential</td>
                   </tr>
-                  <tr className="border-b" style={{ borderColor: "var(--border)" }}>
+                  <tr className="border-b border-border">
                     <td className="py-2 px-3 font-mono">vercel-analytics</td>
                     <td className="py-2 px-3">Anonymous page views</td>
                     <td className="py-2 px-3">1 year</td>
                     <td className="py-2 px-3">Analytics</td>
                   </tr>
-                  <tr className="border-b" style={{ borderColor: "var(--border)" }}>
+                  <tr className="border-b border-border">
                     <td className="py-2 px-3 font-mono">theme</td>
                     <td className="py-2 px-3">Theme preference</td>
                     <td className="py-2 px-3">1 year</td>
                     <td className="py-2 px-3">Preference</td>
                   </tr>
-                  <tr className="border-b" style={{ borderColor: "var(--border)" }}>
+                  <tr className="border-b border-border">
                     <td className="py-2 px-3 font-mono">cart</td>
                     <td className="py-2 px-3">Shopping cart</td>
                     <td className="py-2 px-3">30 days</td>
                     <td className="py-2 px-3">Essential</td>
                   </tr>
-                  <tr className="border-b" style={{ borderColor: "var(--border)" }}>
+                  <tr className="border-b border-border">
                     <td className="py-2 px-3 font-mono">auth_token</td>
                     <td className="py-2 px-3">Authentication</td>
                     <td className="py-2 px-3">30 days</td>
@@ -95,7 +108,7 @@ export default function CookiePolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 4. Managing Cookies
               </h2>
               <p>You can manage cookies via your browser settings:</p>
@@ -111,7 +124,7 @@ export default function CookiePolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 5. Third-Party Cookies
               </h2>
               <p>
@@ -120,7 +133,7 @@ export default function CookiePolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 6. Consent
               </h2>
               <p>
@@ -129,11 +142,11 @@ export default function CookiePolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
+              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 7. Contact
               </h2>
               <p>
-                Questions about this policy? Email <a href="mailto:daniel@example.com" className="underline" style={{ color: "var(--brand)" }}>daniel@example.com</a>
+                Questions about this policy? Email <a href="mailto:connect@dkservers.space" className="underline text-brand">connect@dkservers.space</a>
               </p>
             </section>
           </div>
