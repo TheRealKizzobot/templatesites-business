@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Privacy Policy — SITE_NAME",
-  description: "Privacy Policy for SITE_NAME.",
+  title: "Privacy Policy — MoshineSites",
+  description: "Privacy Policy for MoshineSites.",
 };
 
 export default function PrivacyPolicy() {

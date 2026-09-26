@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Cookie Policy — Ember SITE_NAME Wood",
-  description: "Cookie Policy for Ember SITE_NAME Wood.",
+  title: "Cookie Policy — Ember & Wood",
+  description: "Cookie Policy for Ember & Wood.",
 };
 
 export default function CookiePolicy() {
@@ -29,7 +29,7 @@ export default function CookiePolicy() {
               <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
                 2. Cookies We Use
               </h2>
-              <p>Ember SITE_NAME Wood uses the following categories of cookies:</p>
+              <p>Ember & Wood uses the following categories of cookies:</p>
               <ul className="list-disc list-inside space-y-2 mt-2">
                 <li><strong>Essential cookies:</strong> Session management, CSRF protection, cart functionality, authentication</li>
                 <li><strong>Analytics cookies:</strong> Vercel Analytics (page views, performance metrics) — anonymized</li>
@@ -133,7 +133,7 @@ export default function CookiePolicy() {
                 7. Contact
               </h2>
               <p>
-                Questions about this policy? Email <a href="mailto:info@emberwood.example.com" className="underline" style={{ color: "var(--brand)" }}>info@emberwood.example.com</a>
+                Questions about this policy? Email <a href="mailto:hello@emberandwood.example" className="underline" style={{ color: "var(--brand)" }}>hello@emberandwood.example</a>
               </p>
             </section>
           </div>

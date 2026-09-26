@@ -1,6 +1,15 @@
-export const metadata = {
-  title: "Cookie Policy — TaskFlow",
-  description: "Cookie Policy for TaskFlow.",
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Cookie Policy — TaskFlow',
+  description: 'Cookie Policy for TaskFlow.',
+  openGraph: {
+    title: 'Cookie Policy — TaskFlow',
+    description: 'Cookie Policy for TaskFlow.',
+    url: 'https://taskflow.app/cookies',
+    siteName: 'TaskFlow',
+    type: 'website',
+  },
 };
 
 export default function CookiePolicy() {

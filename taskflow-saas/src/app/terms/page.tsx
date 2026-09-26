@@ -1,6 +1,15 @@
-export const metadata = {
-  title: "Terms of Service — TaskFlow",
-  description: "Terms of Service for TaskFlow.",
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service — TaskFlow',
+  description: 'Terms of Service for TaskFlow.',
+  openGraph: {
+    title: 'Terms of Service — TaskFlow',
+    description: 'Terms of Service for TaskFlow.',
+    url: 'https://taskflow.app/terms',
+    siteName: 'TaskFlow',
+    type: 'website',
+  },
 };
 
 export default function TermsOfService() {

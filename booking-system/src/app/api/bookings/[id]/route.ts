@@ -1,10 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
-import {
-  ADMIN_COOKIE,
-  isAdminRequest,
-  verifyAdminToken,
-} from '@/lib/auth';
+import { isAdminRequest } from '@/lib/auth';
 import {
   NEXT_STATUSES,
   STATUSES,

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { getDb } from '@/lib/db';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -42,7 +43,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: false, error: 'Quantity must be at least 1.' }, { status: 400 });
     }
 
-    const db = (await import('@/lib/store')).getDb;
+    const db = getDb();
     const product = db.prepare('SELECT * FROM products WHERE id = ?').get(productId) as any;
 
     if (!product) {

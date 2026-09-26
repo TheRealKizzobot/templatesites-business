@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Terms of Service — Ember SITE_NAME Wood",
-  description: "Terms of Service for Ember SITE_NAME Wood.",
+  title: "Terms of Service — Ember & Wood",
+  description: "Terms of Service for Ember & Wood.",
 };
 
 export default function TermsOfService() {
@@ -21,7 +21,7 @@ export default function TermsOfService() {
                 1. Agreement
               </h2>
               <p>
-                By using Ember SITE_NAME Wood, you agree to these Terms. If you disagree, do not use the site.
+                By using Ember & Wood, you agree to these Terms. If you disagree, do not use the site.
               </p>
             </section>
 
@@ -89,7 +89,7 @@ export default function TermsOfService() {
                 8. Contact
               </h2>
               <p>
-                Questions? Email <a href="mailto:info@emberwood.example.com" className="underline" style={{ color: "var(--brand)" }}>info@emberwood.example.com</a>
+                Questions? Email <a href="mailto:hello@emberandwood.example" className="underline" style={{ color: "var(--brand)" }}>hello@emberandwood.example</a>
               </p>
             </section>
           </div>

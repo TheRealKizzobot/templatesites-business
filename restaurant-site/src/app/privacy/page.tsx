@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Privacy Policy — Ember SITE_NAME Wood",
-  description: "Privacy Policy for Ember SITE_NAME Wood.",
+  title: "Privacy Policy — Ember & Wood",
+  description: "Privacy Policy for Ember & Wood.",
 };
 
 export default function PrivacyPolicy() {
@@ -83,7 +83,7 @@ export default function PrivacyPolicy() {
                 6. Contact
               </h2>
               <p>
-                Questions about this policy? Email us at <a href="mailto:info@emberwood.example.com" className="underline" style={{ color: "var(--brand)" }}>info@emberwood.example.com</a>
+                Questions about this policy? Email us at <a href="mailto:hello@emberandwood.example" className="underline" style={{ color: "var(--brand)" }}>hello@emberandwood.example</a>
               </p>
             </section>
           </div>

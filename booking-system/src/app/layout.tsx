@@ -18,6 +18,21 @@ export const metadata: Metadata = {
   title: 'Ember & Wood — Book a Table',
   description:
     'Seasonal wood-fired cooking and natural wine. Book your table at Ember & Wood — open for lunch and dinner, Tuesday to Sunday.',
+  openGraph: {
+    title: 'Ember & Wood — Book a Table',
+    description:
+      'Seasonal wood-fired cooking and natural wine. Book your table at Ember & Wood — open for lunch and dinner, Tuesday to Sunday.',
+    type: 'website',
+    siteName: 'Ember & Wood',
+    url: 'https://emberandwood.example',
+    images: [{ url: '/images/about.svg', alt: "Ember & Wood's wood-fired dining room" }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ember & Wood — Book a Table',
+    description:
+      'Seasonal wood-fired cooking and natural wine. Book your table at Ember & Wood.',
+  },
 };
 
 export const viewport: Viewport = {

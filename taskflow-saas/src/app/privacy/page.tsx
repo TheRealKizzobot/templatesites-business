@@ -1,6 +1,15 @@
-export const metadata = {
-  title: "Privacy Policy — TaskFlow",
-  description: "Privacy Policy for TaskFlow.",
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy — TaskFlow',
+  description: 'Privacy Policy for TaskFlow.',
+  openGraph: {
+    title: 'Privacy Policy — TaskFlow',
+    description: 'Privacy Policy for TaskFlow.',
+    url: 'https://taskflow.app/privacy',
+    siteName: 'TaskFlow',
+    type: 'website',
+  },
 };
 
 export default function PrivacyPolicy() {

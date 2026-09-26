@@ -3,31 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #f0fdf7;
-  --bg-secondary: #ecfdf5;
-  --bg-tertiary: #d1fae5;
-  --text-primary: #064e3b;
-  --text-secondary: #065f46;
-  --text-muted: #6b7280;
-  --brand: #059669;
-  --brand-hover: #047857;
-  --border: #d1fae5;
-  --error: #dc2626;
-  --success: #059669;
-  --warning: #d97706;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4efe8;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --text-muted: #9b9b9b;
+  --brand: #5a4a42;
+  --brand-hover: #4a3d37;
+  --border: #e0ddd8;
+  --error: #c94a4a;
+  --success: #3d7a4e;
+  --warning: #b07d2b;
 
-  --brand-50: #ecfdf5;
-  --brand-100: #d1fae5;
-  --brand-200: #a7f3d0;
-  --brand-300: #6ee7b7;
-  --brand-400: #34d399;
-  --brand-500: #10b981;
-  --brand-600: #059669;
-  --brand-700: #047857;
-  --brand-800: #065f46;
-  --brand-900: #064e3b;
+  --brand-50: #faf8f6;
+  --brand-100: #f0ece8;
+  --brand-200: #ddd4cd;
+  --brand-300: #c4b7ae;
+  --brand-400: #a98f82;
+  --brand-500: #5a4a42;
+  --brand-600: #4a3d37;
+  --brand-700: #3b312c;
+  --brand-800: #2c2521;
+  --brand-900: #1d1815;
 
-  --font-display: var(--font-inter);
+  --font-display: var(--font-fraunces);
   --font-body: var(--font-inter);
 }
 
@@ -65,16 +64,19 @@
     @apply btn text-brand-800 hover:bg-brand-100;
   }
   .btn-danger {
-    @apply btn border border-red-200 bg-white text-red-600 hover:bg-red-50;
+    @apply btn border border-red-200 bg-white text-[var(--error)] hover:bg-red-50;
   }
   .field {
-    @apply block w-full rounded-md border border-green-200 bg-white px-3 py-2.5 text-text-primary placeholder:text-gray-500 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/25;
+    @apply block w-full rounded-md border border-brand-200 bg-white px-3 py-2.5 text-text-primary placeholder:text-text-secondary focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/25;
   }
   .label {
     @apply mb-1 block text-sm font-medium text-text-primary;
   }
   .card {
     @apply rounded-xl bg-white shadow-soft;
+  }
+  .section {
+    @apply mx-auto max-w-3xl px-4 py-12 sm:px-6 md:py-16;
   }
 }
 

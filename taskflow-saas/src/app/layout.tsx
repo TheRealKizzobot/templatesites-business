@@ -18,6 +18,25 @@ export const metadata: Metadata = {
   title: 'TaskFlow — Your work, finally in flow',
   description:
     'TaskFlow is the simple, private task app that turns scattered to-dos into a focused plan. Try the live demo, no account needed.',
+  openGraph: {
+    title: 'TaskFlow — Your work, finally in flow',
+    description:
+      'TaskFlow is the simple, private task app that turns scattered to-dos into a focused plan. Try the live demo, no account needed.',
+    url: 'https://taskflow.app',
+    siteName: 'TaskFlow',
+    type: 'website',
+    images: [{ url: '/icon.svg', width: 512, height: 512, alt: 'TaskFlow' }],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'TaskFlow — Your work, finally in flow',
+    description:
+      'TaskFlow is the simple, private task app that turns scattered to-dos into a focused plan. Try the live demo, no account needed.',
+  },
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+  },
 };
 
 export default function RootLayout({

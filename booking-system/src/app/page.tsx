@@ -383,7 +383,7 @@ export default function Home() {
             <ul className="mt-3 flex gap-2">
               <li>
                 <a
-                  href="#top"
+                  href="https://instagram.com/emberandwood"
                   aria-label="Instagram"
                   className="inline-flex h-11 w-11 items-center justify-center rounded-full text-brand-200 transition-colors hover:bg-brand-700 hover:text-white"
                 >
@@ -396,7 +396,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="#top"
+                  href="https://facebook.com/emberandwood"
                   aria-label="Facebook"
                   className="inline-flex h-11 w-11 items-center justify-center rounded-full text-brand-200 transition-colors hover:bg-brand-700 hover:text-white"
                 >
@@ -407,7 +407,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="#top"
+                  href="https://x.com/emberandwood"
                   aria-label="X"
                   className="inline-flex h-11 w-11 items-center justify-center rounded-full text-brand-200 transition-colors hover:bg-brand-700 hover:text-white"
                 >
