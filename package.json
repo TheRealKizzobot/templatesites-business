@@ -1,0 +1,10 @@
+{
+  "name": "template-sites",
+  "private": true,
+  "version": "1.0.0",
+  "description": "MoshineSites — Template Portfolio Monorepo",
+  "scripts": {
+    "build:all": "for d in restaurant-site taskflow-saas booking-system ecommerce-store analytics-dashboard moshine-portfolio; do (cd $d && npm run build) || exit 1; done",
+    "seed:all": "for d in booking-system ecommerce-store analytics-dashboard; do (cd $d && npm run seed) || exit 1; done"
+  }
+}
