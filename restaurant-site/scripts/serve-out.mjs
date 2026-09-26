@@ -1,5 +1,6 @@
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
+import { realpathSync } from 'node:fs';
 import { extname, join, normalize, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -38,7 +39,15 @@ const server = createServer(async (req, res) => {
 
   try {
     let target = normalize(join(root, path));
-    if (!target.startsWith(root)) {
+    // Resolve symlinks to prevent path traversal — compare real paths
+    const realRoot = realpathSync(root);
+    let resolvedTarget;
+    try {
+      resolvedTarget = realpathSync(target);
+    } catch {
+      resolvedTarget = target;
+    }
+    if (!resolvedTarget.startsWith(realRoot + path.sep) && resolvedTarget !== realRoot) {
       res.writeHead(403).end();
       return;
     }

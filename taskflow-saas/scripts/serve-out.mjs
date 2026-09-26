@@ -38,7 +38,15 @@ const server = createServer(async (req, res) => {
 
   try {
     let target = normalize(join(root, path));
-    if (!target.startsWith(root)) {
+    // Resolve symlinks to prevent path traversal — compare real paths
+    const realRoot = realpathSync(root);
+    let resolvedTarget;
+    try {
+      resolvedTarget = realpathSync(target);
+    } catch {
+      resolvedTarget = target;
+    }
+    if (!resolvedTarget.startsWith(realRoot + path.sep) && resolvedTarget !== realRoot) {
       res.writeHead(403).end();
       return;
     }
