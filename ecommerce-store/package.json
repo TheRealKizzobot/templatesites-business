@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "seed": "node lib/seed.cjs",
+    "vercel-build": "npm run build && npm run seed",
     "typecheck": "tsc --noEmit"
   },
   "author": "",

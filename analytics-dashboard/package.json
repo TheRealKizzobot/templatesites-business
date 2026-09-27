@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "seed": "node scripts/seed.mjs",
+    "vercel-build": "npm run build && npm run seed",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
