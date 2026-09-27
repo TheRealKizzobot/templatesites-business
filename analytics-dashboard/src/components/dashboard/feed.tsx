@@ -6,9 +6,9 @@ import { formatNumber, timeAgo } from '@/lib/format';
 import type { FeedItem } from '@/app/dashboard/page';
 
 const PLATFORM_COLORS: Record<string, string> = {
-  X: 'bg-brand-900 text-brand-50',
-  Instagram: 'bg-brand-600 text-brand-50',
-  LinkedIn: 'bg-success text-white',
+  X: 'bg-brand-800 text-brand-50 dark:bg-brand-200 dark:text-brand-900',
+  Instagram: 'bg-warning/20 text-warning dark:bg-warning/30 dark:text-warning',
+  LinkedIn: 'bg-success/20 text-success dark:bg-success/30 dark:text-success',
 };
 
 export default function Feed({ items, loading }: { items: FeedItem[]; loading: boolean }) {
@@ -20,9 +20,9 @@ export default function Feed({ items, loading }: { items: FeedItem[]; loading: b
         <div className="space-y-1">
           {[0, 1, 2, 3].map((i) => (
             <div key={i} className="animate-pulse rounded-lg p-3">
-              <div className="h-3 w-1/3 rounded bg-brand-100 dark:bg-brand-200/20" />
-              <div className="mt-2 h-4 w-3/4 rounded bg-brand-100 dark:bg-brand-200/20" />
-              <div className="mt-2 h-3 w-full rounded bg-brand-100 dark:bg-brand-200/20" />
+              <div className="h-3 w-1/3 rounded bg-bg-tertiary dark:bg-bg-tertiary" />
+              <div className="mt-2 h-4 w-3/4 rounded bg-bg-tertiary dark:bg-bg-tertiary" />
+              <div className="mt-2 h-3 w-full rounded bg-bg-tertiary dark:bg-bg-tertiary" />
             </div>
           ))}
         </div>
@@ -50,7 +50,7 @@ export default function Feed({ items, loading }: { items: FeedItem[]; loading: b
                 <div className="flex items-center gap-2">
                   <span className="font-semibold text-text-primary">{item.handle}</span>
                   <span className="text-xs text-text-secondary">{item.author}</span>
-                  <span className={`pill ${PLATFORM_COLORS[item.platform] ?? 'bg-brand-100 text-brand-800 dark:bg-brand-200/20 dark:text-brand-800'}`}>
+                  <span className={`pill ${PLATFORM_COLORS[item.platform] ?? 'bg-bg-tertiary text-text-secondary dark:bg-bg-tertiary dark:text-text-secondary'}`}>
                     {item.platform}
                   </span>
                 </div>
@@ -71,7 +71,7 @@ export default function Feed({ items, loading }: { items: FeedItem[]; loading: b
                   <span aria-hidden="true">❤</span>
                   <span className="tabular-nums">{formatNumber(item.engagement)}</span>
                 </span>
-                <span className="ml-auto text-xs font-medium text-brand-700 dark:text-brand-100">
+                <span className="ml-auto text-xs font-medium text-text-secondary">
                   View detail →
                 </span>
               </div>

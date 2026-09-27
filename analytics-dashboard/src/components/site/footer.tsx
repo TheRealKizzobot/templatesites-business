@@ -15,7 +15,7 @@ export default function SiteFooter() {
             href="/dashboard"
             className="inline-flex min-h-[44px] items-center gap-2 rounded-full"
           >
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-100 font-display text-sm font-bold text-brand-800 dark:bg-brand-800 dark:text-brand-50">
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-100 font-display text-sm font-bold text-brand-800 dark:bg-brand-200 dark:text-brand-900">
               M
             </span>
             <span className="font-display text-lg font-semibold tracking-tight text-text-primary">

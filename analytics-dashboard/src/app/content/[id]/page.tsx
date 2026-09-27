@@ -35,9 +35,9 @@ interface SeriesPoint {
 }
 
 const PLATFORM_COLORS: Record<string, string> = {
-  X: 'bg-brand-900 text-brand-50',
-  Instagram: 'bg-brand-600 text-brand-50',
-  LinkedIn: 'bg-success text-white',
+  X: 'bg-brand-800 text-brand-50 dark:bg-brand-200 dark:text-brand-900',
+  Instagram: 'bg-warning/20 text-warning dark:bg-warning/30 dark:text-warning',
+  LinkedIn: 'bg-success/20 text-success dark:bg-success/30 dark:text-success',
 };
 
 export default function ContentDetailPage() {
@@ -102,7 +102,7 @@ export default function ContentDetailPage() {
         <div className="flex flex-wrap items-center gap-2">
           <span className="font-semibold text-text-primary">{content.handle}</span>
           <span className="text-sm text-text-secondary">{content.author}</span>
-          <span className={`pill ${PLATFORM_COLORS[content.platform] ?? 'bg-brand-100 text-brand-800'}`}>
+          <span className={`pill ${PLATFORM_COLORS[content.platform] ?? 'bg-bg-tertiary text-text-secondary dark:bg-bg-tertiary dark:text-text-secondary'}`}>
             {content.platform}
           </span>
           <span className="ml-auto text-sm text-text-secondary">{timeAgo(content.created_at)}</span>
@@ -117,7 +117,7 @@ export default function ContentDetailPage() {
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <span key={tag} className="pill bg-brand-100 text-brand-800 dark:bg-brand-200/20 dark:text-brand-800">
+            <span key={tag} className="pill bg-bg-tertiary text-text-secondary dark:bg-bg-tertiary dark:text-text-secondary">
               #{tag}
             </span>
           ))}
@@ -156,8 +156,8 @@ export default function ContentDetailPage() {
             <AreaChart data={series} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
               <defs>
                 <linearGradient id="detailViews" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="var(--brand-50)" stopOpacity={0.3} />
-                  <stop offset="100%" stopColor="var(--brand-50)" stopOpacity={0.02} />
+                  <stop offset="0%" stopColor="var(--brand-500)" stopOpacity={0.3} />
+                  <stop offset="100%" stopColor="var(--brand-500)" stopOpacity={0.02} />
                 </linearGradient>
                 <linearGradient id="detailEng" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0%" stopColor="var(--warning)" stopOpacity={0.28} />
@@ -192,7 +192,7 @@ export default function ContentDetailPage() {
               <Area
                 type="monotone"
                 dataKey="views"
-                stroke="var(--brand-50)"
+                stroke="var(--brand-500)"
                 strokeWidth={2}
                 fill="url(#detailViews)"
                 dot={false}

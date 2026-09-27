@@ -2,48 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ---------------------------------------------------------------------------
+   Design system tokens (MoshineSites)
+   Single source of truth — Tailwind theme maps to these CSS variables.
+--------------------------------------------------------------------------- */
 :root {
-  --bg-primary: #faf9ff;
-  --bg-secondary: #f3f0ff;
-  --bg-tertiary: #ede9fe;
-  --text-primary: #2e1065;
-  --text-secondary: #4c1d95;
-  --text-muted: #5b21b6;
-  --brand: #6d28d9;
-  --brand-hover: #5b21b6;
-  --border: #ddd6fe;
-  --error: #dc2626;
-  --success: #059669;
-  --warning: #d97706;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4efe8;
+  --bg-tertiary: #eae7e0;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --text-muted: #9b9b9b;
+  --brand: #5a4a42;
+  --brand-hover: #4a3d37;
+  --border: #e0ddd8;
+  --error: #c94a4a;
+  --success: #3d7a4e;
+  --warning: #b07d2b;
 
-  --brand-50: #faf5ff;
-  --brand-100: #f3e8ff;
-  --brand-200: #e9d5ff;
-  --brand-300: #d8b4fe;
-  --brand-400: #c084fc;
-  --brand-500: #a855f7;
-  --brand-600: #9333ea;
-  --brand-700: #7c3aed;
-  --brand-800: #6b21a8;
-  --brand-900: #581c87;
+  --brand-50: #faf8f6;
+  --brand-100: #f0ece8;
+  --brand-200: #ddd4cd;
+  --brand-300: #c4b7ae;
+  --brand-400: #a98f82;
+  --brand-500: #5a4a42;
+  --brand-600: #4a3d37;
+  --brand-700: #3b312c;
+  --brand-800: #2c2521;
+  --brand-900: #1d1815;
 
   --font-display: var(--font-fraunces);
   --font-body: var(--font-inter);
 }
 
 .dark {
-  --bg-primary: #1a0b2e;
-  --bg-secondary: #251445;
-  --bg-tertiary: #3a1a5c;
-  --text-primary: #f3e8ff;
-  --text-secondary: #d8b4fe;
-  --text-muted: #c084fc;
-  --brand: #c084fc;
-  --brand-hover: #a855f7;
-  --border: #581c87;
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #252525;
+  --bg-tertiary: #2f2f2f;
+  --text-primary: #f4efe8;
+  --text-secondary: #b0b0b0;
+  --text-muted: #808080;
+  --brand: #a98f82;
+  --brand-hover: #c4b7ae;
+  --border: #3d3d3d;
   --error: #f87171;
-  --success: #34d399;
-  --warning: #fbbf24;
+  --success: #6fbf8e;
+  --warning: #e8b86a;
+
+  --brand-50: #1d1815;
+  --brand-100: #2c2521;
+  --brand-200: #3b312c;
+  --brand-300: #4a3d37;
+  --brand-400: #5a4a42;
+  --brand-500: #a98f82;
+  --brand-600: #c4b7ae;
+  --brand-700: #ddd4cd;
+  --brand-800: #f0ece8;
+  --brand-900: #faf8f6;
 }
 
 @layer base {
@@ -51,7 +66,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-bg-primary font-sans text-text-primary antialiased transition-colors duration-200 dark:bg-bg-primary;
+    @apply bg-bg-primary font-sans text-text-primary antialiased transition-colors duration-200;
   }
   :focus-visible {
     outline: 2px solid var(--brand);
@@ -64,7 +79,7 @@
     @apply font-display;
   }
   ::selection {
-    @apply bg-brand-200 text-brand-900;
+    @apply bg-brand-200 text-brand-900 dark:bg-brand-700 dark:text-brand-50;
   }
 }
 
@@ -73,10 +88,10 @@
     @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold transition-colors;
   }
   .btn-primary {
-    @apply btn bg-brand-800 text-brand-50 hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-60;
+    @apply btn bg-brand-800 text-brand-50 hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-brand-300 dark:text-brand-900 dark:hover:bg-brand-200;
   }
   .btn-secondary {
-    @apply btn border border-border bg-white text-text-primary hover:bg-bg-secondary;
+    @apply btn border border-border bg-white text-text-primary hover:bg-bg-secondary dark:border-brand-600 dark:bg-bg-primary dark:text-text-primary dark:hover:bg-bg-secondary;
   }
   .btn-ghost {
     @apply btn text-text-secondary hover:bg-bg-secondary;
@@ -91,10 +106,10 @@
     @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold;
   }
   .nav-link {
-    @apply inline-flex min-h-[44px] items-center rounded-full px-4 text-sm font-medium text-text-secondary transition-colors hover:bg-brand-100 hover:text-brand-800 dark:text-text-secondary dark:hover:bg-brand-900 dark:hover:text-brand-100;
+    @apply inline-flex min-h-[44px] items-center rounded-full px-4 text-sm font-medium text-text-secondary transition-colors hover:bg-brand-100 hover:text-brand-800 dark:text-text-secondary dark:hover:bg-brand-200 dark:hover:text-brand-900;
   }
   .nav-link-active {
-    @apply bg-brand-100 text-brand-800 dark:bg-brand-900 dark:text-brand-100;
+    @apply bg-brand-100 text-brand-800 dark:bg-brand-200 dark:text-brand-900;
   }
 }
 

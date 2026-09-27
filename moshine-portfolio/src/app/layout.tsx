@@ -1,27 +1,30 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/site/nav";
 import Footer from "@/components/site/footer";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  variable: "--font-display",
   display: "swap",
 });
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-body",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dkservers.space"),
-  title: "MoshineSites — Web Development for Small Businesses",
-  description: "Portfolio of production-ready website templates and custom web development services for local businesses.",
+  title: "MoshineSites — Production-Ready Website Templates",
+  description:
+    "Five production-ready website templates built with Next.js, Tailwind, and SQLite. Restaurant, SaaS, e-commerce, booking, and analytics dashboards for small businesses.",
   openGraph: {
-    title: "MoshineSites — Web Development for Small Businesses",
-    description: "Portfolio of production-ready website templates and custom web development services for local businesses.",
+    title: "MoshineSites — Production-Ready Website Templates",
+    description:
+      "Five production-ready website templates built with Next.js, Tailwind, and SQLite. Restaurant, SaaS, e-commerce, booking, and analytics dashboards for small businesses.",
     type: "website",
     siteName: "MoshineSites",
     locale: "en_US",
@@ -37,8 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MoshineSites — Web Development for Small Businesses",
-    description: "Portfolio of production-ready website templates and custom web development services for local businesses.",
+    title: "MoshineSites — Production-Ready Website Templates",
+    description:
+      "Five production-ready website templates built with Next.js, Tailwind, and SQLite. Restaurant, SaaS, e-commerce, booking, and analytics dashboards for small businesses.",
     images: ["/og-image.png"],
     creator: "@dkservers",
   },
@@ -55,13 +59,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex min-h-screen flex-col bg-bg-primary font-body text-text-primary antialiased">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-brand-700"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:rounded-md focus:bg-brand focus:px-4 focus:py-2 focus:text-white"
         >
           Skip to main content
         </a>
+        <Nav />
         <main id="main-content" className="flex-1">
           {children}
         </main>

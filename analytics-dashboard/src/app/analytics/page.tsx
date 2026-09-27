@@ -89,8 +89,8 @@ export default function AnalyticsPage() {
                 <AreaChart data={series} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
                   <defs>
                     <linearGradient id="viewsFill" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="var(--brand)" stopOpacity={0.32} />
-                      <stop offset="100%" stopColor="var(--brand)" stopOpacity={0.02} />
+                      <stop offset="0%" stopColor="var(--brand-500)" stopOpacity={0.32} />
+                      <stop offset="100%" stopColor="var(--brand-500)" stopOpacity={0.02} />
                     </linearGradient>
                     <linearGradient id="engFill" x1="0" y1="0" x2="0" y2="1">
                       <stop offset="0%" stopColor="var(--warning)" stopOpacity={0.28} />
@@ -129,7 +129,7 @@ export default function AnalyticsPage() {
                   <Area
                     type="monotone"
                     dataKey="views"
-                    stroke="var(--brand-50)"
+                    stroke="var(--brand-500)"
                     strokeWidth={2}
                     fill="url(#viewsFill)"
                     dot={false}

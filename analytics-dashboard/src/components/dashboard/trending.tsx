@@ -23,8 +23,8 @@ export default function Trending({
         {loading
           ? [0, 1, 2, 3, 4].map((i) => (
               <div key={i} className="animate-pulse space-y-2 rounded-lg p-3">
-                <div className="h-3 w-2/5 rounded bg-brand-100 dark:bg-brand-200/20" />
-                <div className="h-3 w-3/5 rounded bg-brand-100 dark:bg-brand-200/20" />
+                <div className="h-3 w-2/5 rounded bg-bg-tertiary dark:bg-bg-tertiary" />
+                <div className="h-3 w-3/5 rounded bg-bg-tertiary dark:bg-bg-tertiary" />
               </div>
             ))
           : items.map((item, idx) => (
@@ -38,7 +38,7 @@ export default function Trending({
                     {item.posts} post{item.posts === 1 ? '' : 's'} · {formatNumber(item.views)} views
                   </p>
                 </div>
-                <span className="shrink-0 text-xs font-medium text-brand-700 dark:text-brand-100">
+                <span className="shrink-0 text-xs font-medium text-text-secondary">
                   {formatNumber(item.engagement)}
                 </span>
               </div>

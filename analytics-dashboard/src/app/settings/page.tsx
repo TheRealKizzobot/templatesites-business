@@ -43,8 +43,8 @@ export default function SettingsPage() {
                 onClick={() => setTheme(opt.value)}
                 className={`rounded-xl border p-4 text-left transition-colors ${
                   active
-                    ? 'border-brand-700 bg-brand-50 dark:border-brand-400 dark:bg-brand-900/30'
-                    : 'border-border bg-white hover:border-brand-300 dark:border-brand-400 dark:bg-brand-900/30'
+                    ? 'border-text-primary bg-bg-tertiary dark:border-text-secondary dark:bg-bg-tertiary'
+                    : 'border-border bg-bg-primary hover:border-text-secondary dark:border-text-secondary dark:bg-bg-secondary'
                 }`}
               >
                 <span className={`block font-semibold ${active ? 'text-text-primary' : 'text-text-primary'}`}>
@@ -78,8 +78,8 @@ export default function SettingsPage() {
                 onClick={() => setPollFreq(opt.value)}
                 className={`rounded-xl border p-4 text-left transition-colors ${
                   active
-                    ? 'border-brand-700 bg-brand-50 dark:border-brand-400 dark:bg-brand-900/30'
-                    : 'border-border bg-white hover:border-brand-300 dark:border-brand-400 dark:bg-brand-900/30'
+                    ? 'border-text-primary bg-bg-tertiary dark:border-text-secondary dark:bg-bg-tertiary'
+                    : 'border-border bg-bg-primary hover:border-text-secondary dark:border-text-secondary dark:bg-bg-secondary'
                 }`}
               >
                 <span className="block font-semibold text-text-primary">{opt.label}</span>

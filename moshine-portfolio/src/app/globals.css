@@ -3,42 +3,55 @@
 @tailwind utilities;
 
 /* ---------------------------------------------------------------------------
-   MoshineSites Design System — warm, sophisticated palette
-   Matches the restaurant-site quality
+   MoshineSites Portfolio — Premium Design System
+   Distinctive editorial palette: near-black hero, warm off-white content,
+   bronze-gold accent. Full dark mode support via .dark class.
 --------------------------------------------------------------------------- */
 :root {
-  --bg-primary: #ffffff;
-  --bg-secondary: #faf8f5;
-  --bg-accent: #f0ede6;
-  --text-primary: #1c1a18;
-  --text-secondary: #6b6864;
-  --text-muted: #a8a4a0;
-  --brand: #a88e6b;
-  --brand-hover: #8c7454;
-  --border: #e8e4dd;
-  --error: #c94a4a;
-  --success: #3d7a4e;
-  --warning: #b07d2b;
-
-  --brand-50: #fdf8f3;
-  --brand-100: #f7efe5;
-  --brand-200: #ebdfd1;
-  --brand-300: #d8c9b3;
-  --brand-400: #c1aa8f;
-  --brand-500: #a88e6b;
-  --brand-600: #8c7454;
-  --brand-700: #6f5c42;
-  --brand-800: #5a4a35;
-  --brand-900: #483a2a;
+  --bg-primary: #fafaf9;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f0efed;
+  --bg-dark: #0f0f0f;
+  --bg-dark-surface: #1a1a1a;
+  --text-primary: #09090b;
+  --text-secondary: #52525b;
+  --text-tertiary: #a1a1aa;
+  --text-on-dark: #f5f5f4;
+  --text-on-dark-muted: #a1a1aa;
+  --brand: #b8860b;
+  --brand-light: #d4a843;
+  --brand-dark: #8a6508;
+  --border: #e4e4e7;
+  --border-subtle: #f0efed;
+  --border-dark: #2a2a2a;
 
   --font-display: var(--font-fraunces);
   --font-body: var(--font-inter);
 }
 
+.dark {
+  --bg-primary: #0f0f0f;
+  --bg-surface: #1a1a1a;
+  --bg-elevated: #252525;
+  --bg-dark: #0a0a0a;
+  --bg-dark-surface: #151515;
+  --text-primary: #fafaf9;
+  --text-secondary: #a1a1aa;
+  --text-tertiary: #71717a;
+  --text-on-dark: #fafaf9;
+  --text-on-dark-muted: #a1a1aa;
+  --brand: #d4a843;
+  --brand-light: #e8c073;
+  --brand-dark: #b8860b;
+  --border: #3f3f46;
+  --border-subtle: #27272a;
+  --border-dark: #18181b;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5.5rem;
+    scroll-padding-top: 4.5rem;
   }
 
   body {
@@ -52,13 +65,13 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
     font-weight: 600;
-    line-height: 1.12;
-    letter-spacing: -0.01em;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
   }
 
   ::selection {
-    background-color: var(--brand-500);
-    color: var(--bg-primary);
+    background-color: var(--brand);
+    color: var(--bg-surface);
   }
 }
 
@@ -67,92 +80,129 @@
     @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
   }
 
-  .section {
-    @apply py-16 sm:py-20 lg:py-24;
+  /* Nav */
+  .nav-link {
+    @apply inline-flex min-h-11 items-center rounded-full px-4 text-sm font-medium
+           text-text-secondary transition-all duration-200 hover:text-text-primary;
   }
 
+  .nav-link-dark {
+    @apply text-text-on-dark-muted hover:text-text-on-dark;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full
+           px-6 text-sm font-medium transition-all duration-200;
+  }
+
+  .btn-brand {
+    @apply bg-brand text-white hover:bg-brand-dark active:bg-brand-dark
+           shadow-sm hover:shadow-md;
+  }
+
+  .btn-brand-outline {
+    @apply border border-border bg-transparent text-text-primary
+           hover:border-text-primary hover:bg-bg-primary;
+  }
+
+  .btn-white {
+    @apply bg-white text-text-primary hover:bg-brand-50 active:bg-brand-100;
+  }
+
+  /* Cards */
+  .card {
+    @apply rounded-xl border border-border bg-bg-surface p-6 transition-all duration-200;
+  }
+
+  /* Section typography */
   .section-kicker {
-    @apply text-sm font-semibold uppercase tracking-[0.16em] text-brand-500;
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-brand;
   }
 
   .section-title {
-    @apply mt-2 font-display text-3xl text-text-primary sm:text-4xl;
-  }
-
-  .section-subtitle {
-    @apply mt-2 text-sm font-medium text-text-secondary;
+    @apply mt-2 font-display text-3xl font-semibold leading-tight text-text-primary
+           sm:text-4xl lg:text-5xl;
   }
 
   .section-lede {
-    @apply mt-4 max-w-2xl text-text-secondary;
+    @apply mt-4 max-w-2xl text-base leading-relaxed text-text-secondary;
   }
 
-  .btn {
-    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-6 py-2.5 text-base font-medium transition-colors duration-200;
-  }
-
-  .btn-primary {
-    @apply bg-brand-700 text-white hover:bg-brand-800 active:bg-brand-900;
-  }
-
-  .btn-secondary {
-    @apply bg-brand-200 text-brand-800 hover:bg-brand-300 active:bg-brand-400;
-  }
-
-  .btn-outline {
-    @apply border border-brand-300 bg-transparent text-brand-700 hover:border-brand-500 hover:bg-brand-100;
-  }
-
-  .btn-on-dark {
-    @apply bg-bg-secondary text-brand-800 hover:bg-white;
-  }
-
-  .card {
-    @apply rounded-xl bg-white shadow-soft;
-  }
-
-  .tag {
-    @apply inline-flex items-center rounded-full bg-brand-100 px-2.5 py-1 text-xs font-medium text-brand-800;
-  }
-
-  .shadow-lift {
-    box-shadow: 0 6px 16px rgba(28,25,23,.10), 0 2px 6px rgba(28,25,23,.06);
-  }
-
-  .preview {
-    @apply border rounded-xl p-4 bg-bg-secondary;
+  /* Focus visible */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-brand focus-visible:ring-offset-2;
   }
 }
 
+/* CSS-only entrance animations */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out both;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* Gradient text utility */
+.gradient-text {
+  @apply bg-gradient-to-r from-brand via-brand-light to-brand-dark
+         bg-clip-text text-transparent;
+}
+
+/* Browser window mockup for template cards */
+.browser-mockup {
+  @apply overflow-hidden rounded-lg border border-border bg-bg-elevated;
+}
+
+.browser-mockup-bar {
+  @apply flex items-center gap-1.5 border-b border-border bg-bg-surface px-3 py-2;
+}
+
+.browser-dot {
+  @apply size-2.5 rounded-full;
+}
+
+.browser-content {
+  @apply aspect-[16/10] p-3;
+}
+
+/* Accessible focus ring */
 :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
-  outline: 2px solid var(--brand-500);
+  outline: 2px solid var(--brand);
   outline-offset: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+  html { scroll-behavior: auto; }
 
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
 
-/* Screen reader only utility */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+  .animate-fade-up, .animate-fade-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }

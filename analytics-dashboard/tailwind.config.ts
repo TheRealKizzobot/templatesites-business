@@ -43,26 +43,26 @@ const config: Config = {
         xl: '16px',
       },
       boxShadow: {
-        soft: '0 1px 2px rgba(0,0,0,.05), 0 4px 12px rgba(0,0,0,.08)',
-        lift: '0 6px 16px rgba(0,0,0,.12), 0 2px 6px rgba(0,0,0,.08)',
+        soft: '0 1px 2px var(--text-primary)/0.04, 0 4px 12px var(--text-primary)/0.06',
+        lift: '0 6px 16px var(--text-primary)/0.1, 0 2px 6px var(--text-primary)/0.06',
       },
       fontFamily: {
-        display: ['var(--font-fraunces)', 'Georgia', 'serif'],
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'Georgia', 'serif'],
+        sans: ['var(--font-body)', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         'fade-in': {
           from: { opacity: '0', transform: 'translateY(4px)' },
           to: { opacity: '1', transform: 'translateY(0)' },
         },
-        'pulse': {
+        pulse: {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '.5' },
         },
       },
       animation: {
         'fade-in': 'fade-in 0.3s ease-out both',
-        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
     },
   },
