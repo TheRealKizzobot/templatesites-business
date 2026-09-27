@@ -2,9 +2,9 @@ import Database from 'better-sqlite3';
 import path from 'node:path';
 import fs from 'node:fs';
 
-let db: Database.Database | null = null;
-
-const DATA_DIR = path.join(process.cwd(), 'data');
+// On Vercel, use /tmp (only writable filesystem). Locally, use project data/ folder.
+const isVercel = !!process.env.VERCEL;
+const DATA_DIR = isVercel ? '/tmp/data' : path.join(process.cwd(), 'data');
 const DB_PATH = path.join(DATA_DIR, 'analytics.db');
 
 export function getDb(): Database.Database {

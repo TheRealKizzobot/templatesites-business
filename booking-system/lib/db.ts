@@ -2,7 +2,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import Database from 'better-sqlite3';
 
-const dataDir = path.join(process.cwd(), 'data');
+// On Vercel, use /tmp (only writable filesystem). Locally, use project data/ folder.
+const isVercel = !!process.env.VERCEL;
+const dataDir = isVercel ? '/tmp/data' : path.join(process.cwd(), 'data');
 const dbPath = path.join(dataDir, 'booking.db');
 
 let db: Database.Database | null = null;

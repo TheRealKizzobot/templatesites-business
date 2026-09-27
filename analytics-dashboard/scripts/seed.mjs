@@ -1,15 +1,19 @@
 #!/usr/bin/env node
 /**
  * Metrics — Analytics Dashboard seed script.
- * Creates data/analytics.db, 18 content items, and 7 days of daily_stats
+ * Creates analytics.db, 18 content items, and 7 days of daily_stats
  * per item so charts have history on first run. Idempotent: existing DB
  * with content is left untouched.
+ *
+ * Uses the same DB path logic as lib/db.ts (respects VERCEL env for /tmp).
  */
 import path from 'node:path';
 import fs from 'node:fs';
 import Database from 'better-sqlite3';
 
-const DATA_DIR = path.join(process.cwd(), 'data');
+// Match lib/db.ts path logic: on Vercel use /tmp/data, locally use project data/
+const isVercel = !!process.env.VERCEL;
+const DATA_DIR = isVercel ? '/tmp/data' : path.join(process.cwd(), 'data');
 const DB_PATH = path.join(DATA_DIR, 'analytics.db');
 
 fs.mkdirSync(DATA_DIR, { recursive: true });
@@ -45,14 +49,15 @@ db.exec(`
   CREATE INDEX IF NOT EXISTS idx_daily_stats_content ON daily_stats (content_id, stat_date);
 `);
 
-const existing = db.prepare('SELECT COUNT(*) AS n FROM content').get().n;
-if (existing > 0) {
-  console.log(`[seed] Database already seeded (${existing} content items) — skipping.`);
-  db.close();
-  process.exit(0);
-}
+function seed(): void {
+  const existing = db.prepare('SELECT COUNT(*) AS n FROM content').get().n;
+  if (existing > 0) {
+    console.log(`[seed] Database already seeded (${existing} content items) — skipping.`);
+    db.close();
+    return;
+  }
 
-/** Deterministic-but-varied pseudo random so a fresh seed looks organic. */
+  /** Deterministic-but-varied pseudo random so a fresh seed looks organic. */
 let seedState = 42;
 function rnd() {
   seedState = (seedState * 1664525 + 1013904223) % 4294967296;
@@ -131,5 +136,5 @@ ITEMS.forEach((item, i) => {
 
 console.log(`[seed] Created ${ITEMS.length} content items with 7 days of history each.`);
 console.log('[seed] Simulator bumps views/engagement every 5s while the server runs.');
-console.log('[seed] Run `npm run dev` then open http://localhost:3000/dashboard');
+console.log('[seed] Run `npm run dev` then open http://localhost:3010/dashboard');
 db.close();

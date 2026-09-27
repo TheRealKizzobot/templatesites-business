@@ -32,7 +32,7 @@ export default function AdminDashboard() {
     setLoading(true);
     setError('');
     try {
-      const res = await fetch('/api/bookings');
+      const res = await fetch('/api/bookings', { credentials: 'include' });
       const json = (await res.json()) as { ok?: boolean; data?: BookingRow[]; error?: string };
       if (!json.ok) throw new Error(json.error || 'Failed to load bookings.');
       setAll(json.data ?? []);
@@ -73,6 +73,7 @@ export default function AdminDashboard() {
         method,
         headers: { 'Content-Type': 'application/json' },
         body: status ? JSON.stringify({ status }) : undefined,
+        credentials: 'include',
       });
       const json = (await res.json()) as {
         ok?: boolean;
