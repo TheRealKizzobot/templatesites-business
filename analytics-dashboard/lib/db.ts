@@ -7,6 +7,8 @@ const isVercel = !!process.env.VERCEL;
 const DATA_DIR = isVercel ? '/tmp/data' : path.join(process.cwd(), 'data');
 const DB_PATH = path.join(DATA_DIR, 'analytics.db');
 
+let db: Database.Database | null = null;
+
 export function getDb(): Database.Database {
   if (!db) {
     fs.mkdirSync(DATA_DIR, { recursive: true });
