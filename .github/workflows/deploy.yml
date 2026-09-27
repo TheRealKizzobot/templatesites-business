@@ -1,11 +1,11 @@
-name: Deploy All Sites
+name: Build and Test All Sites
 
 on:
   push:
     branches: [main, testing, develop]
 
 jobs:
-  deploy:
+  build-and-test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -20,19 +20,9 @@ jobs:
       - uses: actions/checkout@v4.1.7
       - uses: actions/setup-node@v4.1.0
         with:
-          node-version: '20'
+          node-version: '22'
       - name: Install and Build
         run: |
           cd ${{ matrix.site }}
           npm install
           npm run build
-      - name: Deploy to Vercel
-        uses: amondnet/vercel-action@16e87c0a08142b0d0d33b76aeaf20823c381b9b9
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets[format('VERCEL_PROJECT_ID_{0}', matrix.site)] }}
-          working-directory: ${{ matrix.site }}
-          scope: therealkizzobots-projects
-          alias-domains: |
-            ${{ matrix.site == 'moshine-portfolio' && 'dkservers.space' || matrix.site == 'taskflow-saas' && 'taskflow-saas-lac.vercel.app' || '' }}
