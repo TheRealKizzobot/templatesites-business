@@ -145,3 +145,8 @@ function seed() {
 }
 
 export { seed, getDb };
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const result = seed();
+  console.log(JSON.stringify(result));
+}

@@ -429,3 +429,8 @@ return { seeded: true, products: pCount, orders: oCount };
 }
 
 module.exports = { seed, getDb };
+
+if (require.main === module) {
+  const result = seed();
+  console.log(JSON.stringify(result));
+}
