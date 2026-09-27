@@ -45,4 +45,4 @@ Admin areas (booking + ecommerce) use the `ADMIN_PASSWORD` env var; the local de
 
 ## Verification status
 
-All five sites: `npm run build` green. Ecommerce + booking API suites exercised against running servers (auth, CRUD, stock/capacity edge cases). Analytics dashboard verified end-to-end: seed, typecheck, build, live-simulation delta, API edge cases (400/404), all pages 200. See `PLAN.md` for the full status.
+All five sites: `npm run build` green. Ecommerce + booking API suites exercised against running servers (auth, CRUD, stock/capacity edge cases). Analytics dashboard verified end-to-end: seed, typecheck, build, live-simulation delta, API edge cases (400/404), all pages 200. See `PLAN.md` for the full status.# Build test trigger
