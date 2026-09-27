@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
 import { isAdminRequest } from '@/lib/auth';
+import { seed as seedDb } from '@/lib/seed';
 import {
   CAPACITY_PER_SLOT,
   STATUSES,
@@ -19,6 +20,9 @@ export async function GET(req: NextRequest) {
       { status: 401 }
     );
   }
+
+  // Auto-seed database if empty
+  seedDb();
 
   const status = req.nextUrl.searchParams.get('status');
   const db = getDb();

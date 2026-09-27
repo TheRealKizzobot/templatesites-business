@@ -1,4 +1,7 @@
 import { getDb } from './db';
+import { seed as seedFn } from '../scripts/seed.mjs';
+
+export const seed = seedFn;
 
 export interface ContentItem {
   id: number;

@@ -9,37 +9,43 @@ const Database = require('better-sqlite3');
 const isVercel = !!process.env.VERCEL;
 const dataDir = isVercel ? '/tmp/data' : path.join(__dirname, '..', 'data');
 const dbPath = path.join(dataDir, 'booking.db');
-fs.mkdirSync(dataDir, { recursive: true });
 
-const db = new Database(dbPath);
-db.pragma('journal_mode = WAL');
-db.pragma('foreign_keys = ON');
-
-db.exec(`
-  CREATE TABLE IF NOT EXISTS bookings (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    email TEXT NOT NULL,
-    phone TEXT NOT NULL,
-    date TEXT NOT NULL,
-    time TEXT NOT NULL,
-    party_size INTEGER NOT NULL CHECK (party_size BETWEEN 1 AND 8),
-    notes TEXT NOT NULL DEFAULT '',
-    status TEXT NOT NULL DEFAULT 'pending' CHECK (status IN ('pending','confirmed','completed','cancelled')),
-    created_at TEXT NOT NULL DEFAULT (datetime('now'))
-  );
-  CREATE INDEX IF NOT EXISTS idx_bookings_slot ON bookings (date, time, status);
-`);
-
-const existing = db.prepare('SELECT COUNT(*) AS n FROM bookings').get().n;
-if (existing > 0) {
-  console.log(`[seed] Database already exists at ${dbPath}`);
-  console.log(`[seed] Table bookings already contains ${existing} rows — skipping inserts.`);
-  db.close();
-  process.exit(0);
+function getDb() {
+  fs.mkdirSync(dataDir, { recursive: true });
+  const db = new Database(dbPath);
+  db.pragma('journal_mode = WAL');
+  db.pragma('foreign_keys = ON');
+  return db;
 }
 
-function daysFromNow(days) {
+function seed() {
+  const db = getDb();
+
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS bookings (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      name TEXT NOT NULL,
+      email TEXT NOT NULL,
+      phone TEXT NOT NULL,
+      date TEXT NOT NULL,
+      time TEXT NOT NULL,
+      party_size INTEGER NOT NULL CHECK (party_size BETWEEN 1 AND 8),
+      notes TEXT NOT NULL DEFAULT '',
+      status TEXT NOT NULL DEFAULT 'pending' CHECK (status IN ('pending','confirmed','completed','cancelled')),
+      created_at TEXT NOT NULL DEFAULT (datetime('now'))
+    );
+    CREATE INDEX IF NOT EXISTS idx_bookings_slot ON bookings (date, time, status);
+  `);
+
+  const existing = db.prepare('SELECT COUNT(*) AS n FROM bookings').get().n;
+  if (existing > 0) {
+    console.log(`[seed] Database already exists at ${dbPath}`);
+    console.log(`[seed] Table bookings already contains ${existing} rows — skipping inserts.`);
+    db.close();
+    return { seeded: false, count: existing };
+  }
+
+  function daysFromNow(days) {
   const d = new Date();
   d.setDate(d.getDate() + days);
   const pad = (n) => String(n).padStart(2, '0');
@@ -80,3 +86,7 @@ console.log(`[seed] Inserted ${inserted} sample bookings (${summary}).`);
 console.log('[seed] Admin login uses ADMIN_PASSWORD env (fallback "admin123").');
 
 db.close();
+return { seeded: true, count: inserted };
+}
+
+module.exports = { seed, getDb };

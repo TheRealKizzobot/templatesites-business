@@ -1,11 +1,12 @@
 import { NextResponse } from 'next/server';
-import { listContent } from '@/lib/store';
-import '@/lib/simulator';
+import { listContent, seed } from '@/lib/store';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 export async function GET() {
+  // Auto-seed if database is empty
+  seed();
   const items = listContent(20).map((item) => ({
     id: item.id,
     handle: item.handle,

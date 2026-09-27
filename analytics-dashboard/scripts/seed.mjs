@@ -16,45 +16,48 @@ const isVercel = !!process.env.VERCEL;
 const DATA_DIR = isVercel ? '/tmp/data' : path.join(process.cwd(), 'data');
 const DB_PATH = path.join(DATA_DIR, 'analytics.db');
 
-fs.mkdirSync(DATA_DIR, { recursive: true });
+function getDb(): Database.Database {
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  const db = new Database(DB_PATH);
+  db.pragma('journal_mode = WAL');
+  db.pragma('foreign_keys = ON');
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS content (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      handle TEXT NOT NULL,
+      author TEXT NOT NULL,
+      title TEXT NOT NULL,
+      body TEXT NOT NULL,
+      platform TEXT NOT NULL,
+      tags TEXT NOT NULL,
+      views INTEGER NOT NULL DEFAULT 0,
+      engagement INTEGER NOT NULL DEFAULT 0,
+      active_users INTEGER NOT NULL DEFAULT 0,
+      created_at TEXT NOT NULL
+    );
 
-const db = new Database(DB_PATH);
-db.pragma('journal_mode = WAL');
-db.pragma('foreign_keys = ON');
-db.exec(`
-  CREATE TABLE IF NOT EXISTS content (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    handle TEXT NOT NULL,
-    author TEXT NOT NULL,
-    title TEXT NOT NULL,
-    body TEXT NOT NULL,
-    platform TEXT NOT NULL,
-    tags TEXT NOT NULL,
-    views INTEGER NOT NULL DEFAULT 0,
-    engagement INTEGER NOT NULL DEFAULT 0,
-    active_users INTEGER NOT NULL DEFAULT 0,
-    created_at TEXT NOT NULL
-  );
+    CREATE TABLE IF NOT EXISTS daily_stats (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      content_id INTEGER NOT NULL REFERENCES content(id) ON DELETE CASCADE,
+      stat_date TEXT NOT NULL,
+      views INTEGER NOT NULL DEFAULT 0,
+      engagement INTEGER NOT NULL DEFAULT 0,
+      UNIQUE (content_id, stat_date)
+    );
 
-  CREATE TABLE IF NOT EXISTS daily_stats (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    content_id INTEGER NOT NULL REFERENCES content(id) ON DELETE CASCADE,
-    stat_date TEXT NOT NULL,
-    views INTEGER NOT NULL DEFAULT 0,
-    engagement INTEGER NOT NULL DEFAULT 0,
-    UNIQUE (content_id, stat_date)
-  );
+    CREATE INDEX IF NOT EXISTS idx_content_created ON content (created_at DESC);
+    CREATE INDEX IF NOT EXISTS idx_daily_stats_content ON daily_stats (content_id, stat_date);
+  `);
+  return db;
+}
 
-  CREATE INDEX IF NOT EXISTS idx_content_created ON content (created_at DESC);
-  CREATE INDEX IF NOT EXISTS idx_daily_stats_content ON daily_stats (content_id, stat_date);
-`);
-
-function seed(): void {
+function seed(): { seeded: boolean; count: number } {
+  const db = getDb();
   const existing = db.prepare('SELECT COUNT(*) AS n FROM content').get().n;
   if (existing > 0) {
     console.log(`[seed] Database already seeded (${existing} content items) — skipping.`);
     db.close();
-    return;
+    return { seeded: false, count: existing };
   }
 
   /** Deterministic-but-varied pseudo random so a fresh seed looks organic. */
@@ -138,3 +141,7 @@ console.log(`[seed] Created ${ITEMS.length} content items with 7 days of history
 console.log('[seed] Simulator bumps views/engagement every 5s while the server runs.');
 console.log('[seed] Run `npm run dev` then open http://localhost:3010/dashboard');
 db.close();
+return { seeded: true, count: ITEMS.length };
+}
+
+export { seed, getDb };
