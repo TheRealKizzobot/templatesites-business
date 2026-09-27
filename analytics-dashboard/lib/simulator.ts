@@ -39,7 +39,8 @@ export function startSimulator(): void {
     } catch (err) {
       // DB might not exist yet (not seeded). Log once per minute instead of every tick.
       const now = Date.now();
-      if (!g.__simulator_last_error__ || now - g.__simulator_last_error__ > 60000) {
+      const lastError = g.__simulator_last_error__ as number | undefined;
+      if (!lastError || now - lastError > 60000) {
         console.error('[simulator] tick failed', err);
         g.__simulator_last_error__ = now;
       }
