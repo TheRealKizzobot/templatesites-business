@@ -1,0 +1,38 @@
+name: Deploy All Sites
+
+on:
+  push:
+    branches: [main, testing, develop]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        site:
+          - restaurant-site
+          - taskflow-saas
+          - booking-system
+          - ecommerce-store
+          - analytics-dashboard
+          - moshine-portfolio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install and Build
+        run: |
+          cd ${{ matrix.site }}
+          npm install
+          npm run build
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets[format('VERCEL_PROJECT_ID_{0}', matrix.site)] }}
+          working-directory: ${{ matrix.site }}
+          scope: therealkizzobots-projects
+          alias-domains: |
+            ${{ matrix.site == 'moshine-portfolio' && 'dkservers.space' || matrix.site == 'taskflow-saas' && 'taskflow-saas-lac.vercel.app' || '' }}
