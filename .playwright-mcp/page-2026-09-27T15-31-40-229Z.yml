@@ -1,0 +1,92 @@
+- generic [active] [ref=f9e1]:
+  - link "Skip to content" [ref=f9e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f9e3]:
+    - navigation "Primary" [ref=f9e4]:
+      - link "Northlight Goods" [ref=f9e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f9e9]:
+        - link "Home" [ref=f9e10] [cursor=pointer]:
+          - /url: /
+        - link "Shop" [ref=f9e11] [cursor=pointer]:
+          - /url: /shop
+        - link "About" [ref=f9e12] [cursor=pointer]:
+          - /url: /#about
+        - link "Contact" [ref=f9e13] [cursor=pointer]:
+          - /url: /#contact
+      - link "Cart with 0 items" [ref=f9e15] [cursor=pointer]:
+        - /url: /cart
+  - main [ref=f9e19]:
+    - generic [ref=f9e21]:
+      - paragraph [ref=f9e22]: Northlight Goods
+      - heading "Shop our collection" [level=1] [ref=f9e23]
+      - paragraph [ref=f9e24]: Furniture, lighting, textiles, tableware and decor. Free US shipping on orders over $100 — otherwise a flat $8.
+    - generic [ref=f9e25]:
+      - generic [ref=f9e26]:
+        - generic [ref=f9e27]: Search products
+        - searchbox "Search products" [ref=f9e28]
+        - generic [ref=f9e29]: Filter by category
+        - combobox "Filter by category" [ref=f9e30]:
+          - option "All categories" [selected]
+          - option "Furniture"
+          - option "Lighting"
+          - option "Textiles"
+          - option "Tableware"
+          - option "Decor"
+      - paragraph [ref=f9e31]: Loading products…
+  - contentinfo [ref=f9e32]:
+    - generic [ref=f9e33]:
+      - generic [ref=f9e34]:
+        - paragraph [ref=f9e35]: Northlight Goods
+        - paragraph [ref=f9e36]: Furniture, lighting, textiles, tableware and decor for slower, warmer homes. Every piece is chosen to outlast trends — and built to be lived with.
+        - paragraph [ref=f9e37]: Free US shipping on orders over $100. Flat $8 under that.
+      - generic [ref=f9e38]:
+        - paragraph [ref=f9e39]: Shop
+        - list [ref=f9e40]:
+          - listitem [ref=f9e41]:
+            - link "All products" [ref=f9e42] [cursor=pointer]:
+              - /url: /shop
+          - listitem [ref=f9e43]:
+            - link "Furniture" [ref=f9e44] [cursor=pointer]:
+              - /url: /shop?category=Furniture
+          - listitem [ref=f9e45]:
+            - link "Lighting" [ref=f9e46] [cursor=pointer]:
+              - /url: /shop?category=Lighting
+          - listitem [ref=f9e47]:
+            - link "Textiles" [ref=f9e48] [cursor=pointer]:
+              - /url: /shop?category=Textiles
+          - listitem [ref=f9e49]:
+            - link "Tableware" [ref=f9e50] [cursor=pointer]:
+              - /url: /shop?category=Tableware
+          - listitem [ref=f9e51]:
+            - link "Decor" [ref=f9e52] [cursor=pointer]:
+              - /url: /shop?category=Decor
+      - generic [ref=f9e53]:
+        - paragraph [ref=f9e54]: Visit
+        - list [ref=f9e55]:
+          - listitem [ref=f9e56]:
+            - link "connect@dkservers.space" [ref=f9e57] [cursor=pointer]:
+              - /url: mailto:connect@dkservers.space
+          - listitem [ref=f9e58]:
+            - generic [ref=f9e59]: Mon–Sat, 10am–6pm
+          - listitem [ref=f9e60]:
+            - link "Store admin" [ref=f9e61] [cursor=pointer]:
+              - /url: /admin
+      - navigation "Legal" [ref=f9e62]:
+        - paragraph [ref=f9e63]: Legal
+        - list [ref=f9e64]:
+          - listitem [ref=f9e65]:
+            - link "Terms of Service" [ref=f9e66] [cursor=pointer]:
+              - /url: /terms
+          - listitem [ref=f9e67]:
+            - link "Privacy Policy" [ref=f9e68] [cursor=pointer]:
+              - /url: /privacy
+          - listitem [ref=f9e69]:
+            - link "Cookie Policy" [ref=f9e70] [cursor=pointer]:
+              - /url: /cookies
+    - paragraph [ref=f9e72]:
+      - text: Made with
+      - link "MoshineSites" [ref=f9e73] [cursor=pointer]:
+        - /url: https://dkservers.space
+      - text: .
+  - alert [ref=f9e74]

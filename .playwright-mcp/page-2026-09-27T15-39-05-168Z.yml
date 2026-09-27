@@ -1,0 +1,91 @@
+- generic [active] [ref=f45e1]:
+  - link "Skip to content" [ref=f45e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f45e3]:
+    - navigation "Primary" [ref=f45e4]:
+      - link "Northlight Goods" [ref=f45e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f45e9]:
+        - link "Home" [ref=f45e10] [cursor=pointer]:
+          - /url: /
+        - link "Shop" [ref=f45e11] [cursor=pointer]:
+          - /url: /shop
+        - link "About" [ref=f45e12] [cursor=pointer]:
+          - /url: /#about
+        - link "Contact" [ref=f45e13] [cursor=pointer]:
+          - /url: /#contact
+      - link "Cart with 0 items" [ref=f45e15] [cursor=pointer]:
+        - /url: /cart
+  - main [ref=f45e19]:
+    - generic [ref=f45e21]:
+      - paragraph [ref=f45e22]: Northlight Goods
+      - heading "Shop our collection" [level=1] [ref=f45e23]
+      - paragraph [ref=f45e24]: Furniture, lighting, textiles, tableware and decor. Free US shipping on orders over $100 — otherwise a flat $8.
+    - generic [ref=f45e25]:
+      - generic [ref=f45e26]:
+        - generic [ref=f45e27]: Search products
+        - searchbox "Search products" [ref=f45e28]
+        - generic [ref=f45e29]: Filter by category
+        - combobox "Filter by category" [ref=f45e30]:
+          - option "All categories" [selected]
+      - paragraph [ref=f45e31]: 0 products
+      - generic [ref=f45e32]:
+        - paragraph [ref=f45e33]: No products found
+        - paragraph [ref=f45e34]: Try a different search or category.
+        - button "Clear filters" [ref=f45e35] [cursor=pointer]
+  - contentinfo [ref=f45e36]:
+    - generic [ref=f45e37]:
+      - generic [ref=f45e38]:
+        - paragraph [ref=f45e39]: Northlight Goods
+        - paragraph [ref=f45e40]: Furniture, lighting, textiles, tableware and decor for slower, warmer homes. Every piece is chosen to outlast trends — and built to be lived with.
+        - paragraph [ref=f45e41]: Free US shipping on orders over $100. Flat $8 under that.
+      - generic [ref=f45e42]:
+        - paragraph [ref=f45e43]: Shop
+        - list [ref=f45e44]:
+          - listitem [ref=f45e45]:
+            - link "All products" [ref=f45e46] [cursor=pointer]:
+              - /url: /shop
+          - listitem [ref=f45e47]:
+            - link "Furniture" [ref=f45e48] [cursor=pointer]:
+              - /url: /shop?category=Furniture
+          - listitem [ref=f45e49]:
+            - link "Lighting" [ref=f45e50] [cursor=pointer]:
+              - /url: /shop?category=Lighting
+          - listitem [ref=f45e51]:
+            - link "Textiles" [ref=f45e52] [cursor=pointer]:
+              - /url: /shop?category=Textiles
+          - listitem [ref=f45e53]:
+            - link "Tableware" [ref=f45e54] [cursor=pointer]:
+              - /url: /shop?category=Tableware
+          - listitem [ref=f45e55]:
+            - link "Decor" [ref=f45e56] [cursor=pointer]:
+              - /url: /shop?category=Decor
+      - generic [ref=f45e57]:
+        - paragraph [ref=f45e58]: Visit
+        - list [ref=f45e59]:
+          - listitem [ref=f45e60]:
+            - link "connect@dkservers.space" [ref=f45e61] [cursor=pointer]:
+              - /url: mailto:connect@dkservers.space
+          - listitem [ref=f45e62]:
+            - generic [ref=f45e63]: Mon–Sat, 10am–6pm
+          - listitem [ref=f45e64]:
+            - link "Store admin" [ref=f45e65] [cursor=pointer]:
+              - /url: /admin
+      - navigation "Legal" [ref=f45e66]:
+        - paragraph [ref=f45e67]: Legal
+        - list [ref=f45e68]:
+          - listitem [ref=f45e69]:
+            - link "Terms of Service" [ref=f45e70] [cursor=pointer]:
+              - /url: /terms
+          - listitem [ref=f45e71]:
+            - link "Privacy Policy" [ref=f45e72] [cursor=pointer]:
+              - /url: /privacy
+          - listitem [ref=f45e73]:
+            - link "Cookie Policy" [ref=f45e74] [cursor=pointer]:
+              - /url: /cookies
+    - paragraph [ref=f45e76]:
+      - text: Made with
+      - link "MoshineSites" [ref=f45e77] [cursor=pointer]:
+        - /url: https://dkservers.space
+      - text: .
+  - alert [ref=f45e78]

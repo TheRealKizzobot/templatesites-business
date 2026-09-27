@@ -1,0 +1,14 @@
+- generic [active] [ref=f57e1]:
+  - link "Skip to content" [ref=f57e2] [cursor=pointer]:
+    - /url: "#main"
+  - main [ref=f57e3]:
+    - generic [ref=f57e4]:
+      - paragraph [ref=f57e5]: Northlight Goods
+      - heading "Admin sign in" [level=1] [ref=f57e6]
+      - paragraph [ref=f57e7]: Enter the admin password from your environment configuration.
+      - generic [ref=f57e8]:
+        - generic [ref=f57e9]:
+          - generic [ref=f57e10]: Password
+          - textbox "Password" [ref=f57e11]
+        - button "Sign in" [disabled] [ref=f57e12]
+  - alert [ref=f57e13]

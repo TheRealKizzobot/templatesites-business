@@ -1,0 +1,97 @@
+- generic [active] [ref=f7e1]:
+  - link "Skip to content" [ref=f7e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f7e3]:
+    - navigation "Primary" [ref=f7e4]:
+      - link "Northlight Goods" [ref=f7e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f7e9]:
+        - link "Home" [ref=f7e10] [cursor=pointer]:
+          - /url: /
+        - link "Shop" [ref=f7e11] [cursor=pointer]:
+          - /url: /shop
+        - link "About" [ref=f7e12] [cursor=pointer]:
+          - /url: /#about
+        - link "Contact" [ref=f7e13] [cursor=pointer]:
+          - /url: /#contact
+      - link "Cart with 0 items" [ref=f7e15] [cursor=pointer]:
+        - /url: /cart
+  - main [ref=f7e19]:
+    - generic [ref=f7e22]:
+      - paragraph [ref=f7e23]: Northlight Goods · Home goods, carefully made
+      - heading "Shop our collection." [level=1] [ref=f7e24]
+      - paragraph [ref=f7e25]: Furniture, lighting, textiles, tableware and decor for slower, warmer homes — every piece chosen to outlast trends and built to be lived with.
+      - generic [ref=f7e26]:
+        - link "Browse products" [ref=f7e27] [cursor=pointer]:
+          - /url: /shop
+        - link "View featured" [ref=f7e28] [cursor=pointer]:
+          - /url: "#featured"
+    - generic [ref=f7e32]:
+      - generic [ref=f7e33]:
+        - paragraph [ref=f7e34]: About the collection
+        - heading "Made to be lived with" [level=2] [ref=f7e35]
+      - generic [ref=f7e36]:
+        - paragraph [ref=f7e37]: "We started Northlight Goods with a simple idea: the things in your home should earn their place. That means honest materials, considered proportions, and finishes that get better with use instead of wearing out."
+        - paragraph [ref=f7e38]: Every piece in the collection is chosen for how it settles into daily life — a mug that fits a full four-finger grip, a throw heavy enough to count, a lamp that makes a room feel finished. Furniture, lighting, textiles, tableware and decor that work together, quietly.
+    - generic [ref=f7e40]:
+      - generic [ref=f7e41]:
+        - paragraph [ref=f7e42]: Featured
+        - heading "Bestsellers & staff picks" [level=2] [ref=f7e43]
+      - link "View all products" [ref=f7e44] [cursor=pointer]:
+        - /url: /shop
+  - contentinfo [ref=f7e45]:
+    - generic [ref=f7e46]:
+      - generic [ref=f7e47]:
+        - paragraph [ref=f7e48]: Northlight Goods
+        - paragraph [ref=f7e49]: Furniture, lighting, textiles, tableware and decor for slower, warmer homes. Every piece is chosen to outlast trends — and built to be lived with.
+        - paragraph [ref=f7e50]: Free US shipping on orders over $100. Flat $8 under that.
+      - generic [ref=f7e51]:
+        - paragraph [ref=f7e52]: Shop
+        - list [ref=f7e53]:
+          - listitem [ref=f7e54]:
+            - link "All products" [ref=f7e55] [cursor=pointer]:
+              - /url: /shop
+          - listitem [ref=f7e56]:
+            - link "Furniture" [ref=f7e57] [cursor=pointer]:
+              - /url: /shop?category=Furniture
+          - listitem [ref=f7e58]:
+            - link "Lighting" [ref=f7e59] [cursor=pointer]:
+              - /url: /shop?category=Lighting
+          - listitem [ref=f7e60]:
+            - link "Textiles" [ref=f7e61] [cursor=pointer]:
+              - /url: /shop?category=Textiles
+          - listitem [ref=f7e62]:
+            - link "Tableware" [ref=f7e63] [cursor=pointer]:
+              - /url: /shop?category=Tableware
+          - listitem [ref=f7e64]:
+            - link "Decor" [ref=f7e65] [cursor=pointer]:
+              - /url: /shop?category=Decor
+      - generic [ref=f7e66]:
+        - paragraph [ref=f7e67]: Visit
+        - list [ref=f7e68]:
+          - listitem [ref=f7e69]:
+            - link "connect@dkservers.space" [ref=f7e70] [cursor=pointer]:
+              - /url: mailto:connect@dkservers.space
+          - listitem [ref=f7e71]:
+            - generic [ref=f7e72]: Mon–Sat, 10am–6pm
+          - listitem [ref=f7e73]:
+            - link "Store admin" [ref=f7e74] [cursor=pointer]:
+              - /url: /admin
+      - navigation "Legal" [ref=f7e75]:
+        - paragraph [ref=f7e76]: Legal
+        - list [ref=f7e77]:
+          - listitem [ref=f7e78]:
+            - link "Terms of Service" [ref=f7e79] [cursor=pointer]:
+              - /url: /terms
+          - listitem [ref=f7e80]:
+            - link "Privacy Policy" [ref=f7e81] [cursor=pointer]:
+              - /url: /privacy
+          - listitem [ref=f7e82]:
+            - link "Cookie Policy" [ref=f7e83] [cursor=pointer]:
+              - /url: /cookies
+    - paragraph [ref=f7e85]:
+      - text: Made with
+      - link "MoshineSites" [ref=f7e86] [cursor=pointer]:
+        - /url: https://dkservers.space
+      - text: .
+  - alert [ref=f7e87]

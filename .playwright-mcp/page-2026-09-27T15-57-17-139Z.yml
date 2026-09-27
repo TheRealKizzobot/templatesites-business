@@ -1,0 +1,60 @@
+- generic [active] [ref=f85e1]:
+  - link "Skip to content" [ref=f85e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f85e3]:
+    - navigation "Primary" [ref=f85e4]:
+      - link "Metrics home" [ref=f85e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=f85e6]: M
+        - generic [ref=f85e7]: Metrics
+      - list [ref=f85e8]:
+        - link "Dashboard" [ref=f85e9] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Analytics" [ref=f85e11] [cursor=pointer]:
+          - /url: /analytics
+        - link "Settings" [ref=f85e13] [cursor=pointer]:
+          - /url: /settings
+  - main [ref=f85e15]:
+    - generic [ref=f85e16]:
+      - generic [ref=f85e17]:
+        - heading "7-day overview" [level=1] [ref=f85e18]
+        - paragraph [ref=f85e19]: Aggregate views and engagement across all content, updated live.
+      - generic "Loading chart" [ref=f85e20]
+  - contentinfo [ref=f85e21]:
+    - generic [ref=f85e22]:
+      - generic [ref=f85e23]:
+        - link "M Metrics" [ref=f85e24] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=f85e25]: M
+          - generic [ref=f85e26]: Metrics
+        - paragraph [ref=f85e27]: A live content analytics dashboard — metric cards, polling feed, and 7-day charts.
+      - generic [ref=f85e28]:
+        - paragraph [ref=f85e29]: Navigate
+        - list [ref=f85e30]:
+          - listitem [ref=f85e31]:
+            - link "Dashboard" [ref=f85e32] [cursor=pointer]:
+              - /url: /dashboard
+          - listitem [ref=f85e33]:
+            - link "Analytics" [ref=f85e34] [cursor=pointer]:
+              - /url: /analytics
+          - listitem [ref=f85e35]:
+            - link "Settings" [ref=f85e36] [cursor=pointer]:
+              - /url: /settings
+      - generic [ref=f85e37]:
+        - paragraph [ref=f85e38]: Legal
+        - list [ref=f85e39]:
+          - listitem [ref=f85e40]:
+            - link "Terms of Service" [ref=f85e41] [cursor=pointer]:
+              - /url: /terms
+          - listitem [ref=f85e42]:
+            - link "Privacy Policy" [ref=f85e43] [cursor=pointer]:
+              - /url: /privacy
+          - listitem [ref=f85e44]:
+            - link "Cookie Policy" [ref=f85e45] [cursor=pointer]:
+              - /url: /cookies
+    - paragraph [ref=f85e47]:
+      - text: Made with
+      - link "MoshineSites" [ref=f85e48] [cursor=pointer]:
+        - /url: https://dkservers.space
+      - text: .
+  - alert [ref=f85e49]

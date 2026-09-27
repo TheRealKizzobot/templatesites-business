@@ -1,0 +1,94 @@
+- generic [active] [ref=f37e1]:
+  - link "Skip to main content" [ref=f37e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f37e3]:
+    - navigation "Primary" [ref=f37e4]:
+      - link "MoshineSites — back to top" [ref=f37e5] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=f37e11]: MoshineSites
+      - generic [ref=f37e12]:
+        - link "Templates" [ref=f37e13] [cursor=pointer]:
+          - /url: "#templates"
+        - link "About" [ref=f37e14] [cursor=pointer]:
+          - /url: "#about"
+        - link "Pricing" [ref=f37e15] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "Contact" [ref=f37e16] [cursor=pointer]:
+          - /url: "#contact"
+        - link "Blog" [ref=f37e18] [cursor=pointer]:
+          - /url: https://dkservers.space
+      - link "Start a Project" [ref=f37e20] [cursor=pointer]:
+        - /url: "#contact"
+  - main [ref=f37e21]:
+    - generic [ref=f37e23]:
+      - heading "404" [level=1] [ref=f37e24]
+      - heading "This page could not be found." [level=2] [ref=f37e26]
+  - contentinfo "Site footer" [ref=f37e27]:
+    - generic [ref=f37e28]:
+      - generic [ref=f37e29]:
+        - generic [ref=f37e30]:
+          - link "MoshineSites" [ref=f37e31] [cursor=pointer]:
+            - /url: "#top"
+          - paragraph [ref=f37e38]: Production-ready website templates and custom development for small businesses. Clean code, fast sites, no bloat.
+          - generic [ref=f37e39]:
+            - link "GitHub" [ref=f37e40] [cursor=pointer]:
+              - /url: https://github.com/TheRealKizzobot
+            - link "X (Twitter)" [ref=f37e43] [cursor=pointer]:
+              - /url: https://x.com/dkservers
+            - link "LinkedIn" [ref=f37e46] [cursor=pointer]:
+              - /url: https://linkedin.com/in/danielkingston
+        - generic [ref=f37e49]:
+          - heading "Templates" [level=3] [ref=f37e50]
+          - list [ref=f37e51]:
+            - listitem [ref=f37e52]:
+              - link "Ember & Wood" [ref=f37e53] [cursor=pointer]:
+                - /url: https://restaurant-site-tawny.vercel.app
+              - paragraph [ref=f37e58]: Restaurant & dining
+            - listitem [ref=f37e59]:
+              - link "TaskFlow" [ref=f37e60] [cursor=pointer]:
+                - /url: https://taskflow-saas-lac.vercel.app
+              - paragraph [ref=f37e65]: SaaS dashboard
+            - listitem [ref=f37e66]:
+              - link "Book & Dine" [ref=f37e67] [cursor=pointer]:
+                - /url: https://booking-system-olive-eight.vercel.app
+              - paragraph [ref=f37e72]: Reservation system
+            - listitem [ref=f37e73]:
+              - link "Northlight Goods" [ref=f37e74] [cursor=pointer]:
+                - /url: https://ecommerce-store-five-phi.vercel.app
+              - paragraph [ref=f37e79]: E-commerce store
+            - listitem [ref=f37e80]:
+              - link "Metrics" [ref=f37e81] [cursor=pointer]:
+                - /url: https://analytics-dashboard-five-kohl.vercel.app
+              - paragraph [ref=f37e86]: Analytics dashboard
+        - generic [ref=f37e87]:
+          - heading "Resources" [level=3] [ref=f37e88]
+          - list [ref=f37e89]:
+            - listitem [ref=f37e90]:
+              - link "About" [ref=f37e91] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=f37e92]:
+              - link "Pricing" [ref=f37e93] [cursor=pointer]:
+                - /url: "#pricing"
+            - listitem [ref=f37e94]:
+              - link "Contact" [ref=f37e95] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f37e96]:
+              - link "Blog" [ref=f37e97] [cursor=pointer]:
+                - /url: https://dkservers.space
+        - generic [ref=f37e98]:
+          - heading "Legal" [level=3] [ref=f37e99]
+          - list [ref=f37e100]:
+            - listitem [ref=f37e101]:
+              - link "Terms of Service" [ref=f37e102] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f37e103]:
+              - link "Privacy Policy" [ref=f37e104] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f37e105]:
+              - link "Cookie Policy" [ref=f37e106] [cursor=pointer]:
+                - /url: /cookies
+          - paragraph [ref=f37e107]: connect@dkservers.space
+      - generic [ref=f37e108]:
+        - paragraph [ref=f37e109]: © 2026 MoshineSites. All rights reserved.
+        - paragraph [ref=f37e110]: Built with Next.js, Tailwind & SQLite
+  - alert [ref=f37e111]

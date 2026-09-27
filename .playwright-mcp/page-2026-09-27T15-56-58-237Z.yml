@@ -1,0 +1,283 @@
+- generic [active] [ref=f81e1]:
+  - link "Skip to main content" [ref=f81e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f81e3]:
+    - generic [ref=f81e4]:
+      - link "TaskFlow — back to top" [ref=f81e5] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=f81e11]: TaskFlow
+      - navigation "Primary" [ref=f81e12]:
+        - list [ref=f81e13]:
+          - listitem [ref=f81e14]:
+            - link "Features" [ref=f81e15] [cursor=pointer]:
+              - /url: "#features"
+          - listitem [ref=f81e16]:
+            - link "Demo" [ref=f81e17] [cursor=pointer]:
+              - /url: "#demo"
+          - listitem [ref=f81e18]:
+            - link "Pricing" [ref=f81e19] [cursor=pointer]:
+              - /url: "#pricing"
+          - listitem [ref=f81e20]:
+            - link "Testimonials" [ref=f81e21] [cursor=pointer]:
+              - /url: "#testimonials"
+      - link "Start Free" [ref=f81e23] [cursor=pointer]:
+        - /url: "#cta"
+  - main [ref=f81e24]:
+    - region "Hero" [ref=f81e25]:
+      - generic [ref=f81e26]:
+        - paragraph [ref=f81e27]: Built for calm productivity
+        - heading "Your work, finally in flow." [level=1] [ref=f81e28]:
+          - generic [ref=f81e29]: Your
+          - generic [ref=f81e30]: work,
+          - generic [ref=f81e31]: finally
+          - generic [ref=f81e32]: in
+          - generic [ref=f81e33]: flow.
+        - paragraph [ref=f81e34]: TaskFlow is the simple, private task app that turns scattered to-dos into a focused plan. Capture tasks in seconds, watch progress move, and end each day knowing what actually got done.
+        - generic [ref=f81e35]:
+          - link "Try the Demo" [ref=f81e36] [cursor=pointer]:
+            - /url: "#demo"
+          - link "View Pricing" [ref=f81e37] [cursor=pointer]:
+            - /url: "#pricing"
+        - generic [ref=f81e41]:
+          - generic [ref=f81e42]: Today · 2 of 4 done
+          - list [ref=f81e50]:
+            - listitem [ref=f81e51]:
+              - generic [ref=f81e55]: Draft weekly report
+            - listitem [ref=f81e56]:
+              - generic [ref=f81e58]: Review onboarding copy
+            - listitem [ref=f81e59]:
+              - generic [ref=f81e63]: Sync metrics dashboard
+            - listitem [ref=f81e64]:
+              - generic [ref=f81e66]: Book 1:1s for the week
+    - region [ref=f81e67]:
+      - generic [ref=f81e68]:
+        - generic [ref=f81e69]:
+          - paragraph [ref=f81e70]: Features
+          - heading "Everything you need. Nothing you don't." [level=2] [ref=f81e71]
+          - paragraph [ref=f81e72]: TaskFlow stays out of your way so the work speaks for itself.
+        - list [ref=f81e73]:
+          - listitem [ref=f81e74]:
+            - article [ref=f81e75]:
+              - heading "Capture in seconds" [level=3] [ref=f81e80]
+              - paragraph [ref=f81e81]: A quiet input that never fights you. Type a task, press Enter, move on — the braindump stays in the box.
+          - listitem [ref=f81e82]:
+            - article [ref=f81e83]:
+              - heading "Focus mode" [level=3] [ref=f81e88]
+              - paragraph [ref=f81e89]: Filter to today with one tap. The noise disappears and your most important work floats to the top.
+          - listitem [ref=f81e90]:
+            - article [ref=f81e91]:
+              - heading "Progress that moves" [level=3] [ref=f81e95]
+              - paragraph [ref=f81e96]: Watch a live counter turn “done” from a number into a feeling. Small wins compound into momentum.
+          - listitem [ref=f81e97]:
+            - article [ref=f81e98]:
+              - heading "Lightning fast" [level=3] [ref=f81e102]
+              - paragraph [ref=f81e103]: Instant add, instant edit, instant feel. No loaders, no waiting, no ceremony between you and done.
+          - listitem [ref=f81e104]:
+            - article [ref=f81e105]:
+              - heading "Keyboard-first" [level=3] [ref=f81e110]
+              - paragraph [ref=f81e111]: Build muscle memory with shortcuts for everything. Your hands never have to leave the keyboard.
+          - listitem [ref=f81e112]:
+            - article [ref=f81e113]:
+              - heading "Private by design" [level=3] [ref=f81e118]
+              - paragraph [ref=f81e119]: No accounts, no tracking, no cloud hostage. Your list lives in your browser and nowhere else.
+    - region [ref=f81e120]:
+      - generic [ref=f81e121]:
+        - generic [ref=f81e122]:
+          - paragraph [ref=f81e123]: Live demo
+          - heading "Go on, try it live" [level=2] [ref=f81e124]
+          - paragraph [ref=f81e125]: This is the real widget. Add, complete, and delete tasks — your list is saved in this browser, no account needed.
+        - region "Interactive task demo" [ref=f81e127]:
+          - generic [ref=f81e128]:
+            - heading "Try it live" [level=3] [ref=f81e129]
+            - generic [ref=f81e130]: 3 starter tasks included
+          - generic [ref=f81e131]:
+            - generic [ref=f81e132]: New task
+            - textbox "New task" [ref=f81e133]:
+              - /placeholder: Write a task, e.g. “Outline onboarding plan”
+            - button "Add" [disabled] [ref=f81e134]
+          - generic [ref=f81e138]:
+            - paragraph [ref=f81e139]: 1 of 3 done
+            - paragraph [ref=f81e140]: 33% complete
+          - progressbar "Task completion" [ref=f81e141]
+          - list "Your tasks" [ref=f81e143]:
+            - listitem [ref=f81e144]:
+              - button "Mark \"Outline the onboarding flow\" as done" [ref=f81e145] [cursor=pointer]
+              - generic [ref=f81e147]: Outline the onboarding flow
+              - button "Delete \"Outline the onboarding flow\"" [ref=f81e148] [cursor=pointer]
+            - listitem [ref=f81e151]:
+              - button "Mark \"Sync notes with the team\" as not done" [pressed] [ref=f81e152] [cursor=pointer]
+              - generic [ref=f81e156]: Sync notes with the team
+              - button "Delete \"Sync notes with the team\"" [ref=f81e157] [cursor=pointer]
+            - listitem [ref=f81e160]:
+              - button "Mark \"Book 1:1s for the week\" as done" [ref=f81e161] [cursor=pointer]
+              - generic [ref=f81e163]: Book 1:1s for the week
+              - button "Delete \"Book 1:1s for the week\"" [ref=f81e164] [cursor=pointer]
+        - paragraph [ref=f81e167]: Tasks persist in your browser with localStorage. Refresh and they're still here.
+    - region [ref=f81e168]:
+      - generic [ref=f81e169]:
+        - generic [ref=f81e170]:
+          - paragraph [ref=f81e171]: Pricing
+          - heading "Simple pricing that scales with you" [level=2] [ref=f81e172]
+          - paragraph [ref=f81e173]: Start free. Upgrade when the list gets long.
+        - generic [ref=f81e174]:
+          - article [ref=f81e175]:
+            - heading "Starter" [level=3] [ref=f81e176]
+            - paragraph [ref=f81e177]: For getting organized solo.
+            - paragraph [ref=f81e178]:
+              - generic [ref=f81e179]: $0
+              - generic [ref=f81e180]: forever
+            - list "Starter features" [ref=f81e181]:
+              - listitem [ref=f81e182]:
+                - generic [ref=f81e186]: Unlimited tasks
+              - listitem [ref=f81e187]:
+                - generic [ref=f81e191]: One project board
+              - listitem [ref=f81e192]:
+                - generic [ref=f81e196]: Weekly focus digest
+              - listitem [ref=f81e197]:
+                - generic [ref=f81e201]: Community support
+            - link "Start for free" [ref=f81e202] [cursor=pointer]:
+              - /url: "#cta"
+          - article [ref=f81e203]:
+            - generic [ref=f81e204]: Most popular
+            - heading "Pro" [level=3] [ref=f81e205]
+            - paragraph [ref=f81e206]: For makers who live in their lists.
+            - paragraph [ref=f81e207]:
+              - generic [ref=f81e208]: $12
+              - generic [ref=f81e209]: /month
+            - list "Pro features" [ref=f81e210]:
+              - listitem [ref=f81e211]:
+                - generic [ref=f81e215]: Everything in Starter
+              - listitem [ref=f81e216]:
+                - generic [ref=f81e220]: Unlimited projects
+              - listitem [ref=f81e221]:
+                - generic [ref=f81e225]: Custom labels & views
+              - listitem [ref=f81e226]:
+                - generic [ref=f81e230]: Focus reports & analytics
+              - listitem [ref=f81e231]:
+                - generic [ref=f81e235]: Priority support
+            - link "Start 14-day trial" [ref=f81e236] [cursor=pointer]:
+              - /url: "#cta"
+          - article [ref=f81e237]:
+            - heading "Team" [level=3] [ref=f81e238]
+            - paragraph [ref=f81e239]: For teams that ship together.
+            - paragraph [ref=f81e240]:
+              - generic [ref=f81e241]: $29
+              - generic [ref=f81e242]: /month
+            - list "Team features" [ref=f81e243]:
+              - listitem [ref=f81e244]:
+                - generic [ref=f81e248]: Everything in Pro
+              - listitem [ref=f81e249]:
+                - generic [ref=f81e253]: Shared workspaces
+              - listitem [ref=f81e254]:
+                - generic [ref=f81e258]: Roles & permissions
+              - listitem [ref=f81e259]:
+                - generic [ref=f81e263]: Audit log
+              - listitem [ref=f81e264]:
+                - generic [ref=f81e268]: Dedicated onboarding
+            - link "Talk to sales" [ref=f81e269] [cursor=pointer]:
+              - /url: "#cta"
+    - region [ref=f81e270]:
+      - generic [ref=f81e271]:
+        - generic [ref=f81e272]:
+          - paragraph [ref=f81e273]: Testimonials
+          - heading "Loved at every level" [level=2] [ref=f81e274]
+          - paragraph [ref=f81e275]: From solo makers to whole teams — TaskFlow meets people where they are.
+        - list [ref=f81e276]:
+          - listitem [ref=f81e277]:
+            - figure [ref=f81e278]:
+              - img "Rated 5 out of 5 stars" [ref=f81e279]
+              - blockquote [ref=f81e290]: “TaskFlow replaced three tools for our team. The live demo sold everyone in five minutes — they felt the momentum before we even wrote a contract.”
+              - generic [ref=f81e291]:
+                - paragraph [ref=f81e292]: Maya Chen
+                - paragraph [ref=f81e293]: Product Lead, Lumen
+          - listitem [ref=f81e294]:
+            - figure [ref=f81e295]:
+              - img "Rated 5 out of 5 stars" [ref=f81e296]
+              - blockquote [ref=f81e307]: “I have tried every todo app that exists. This is the first one I have kept using for a year straight. The counter alone keeps me honest every day.”
+              - generic [ref=f81e308]:
+                - paragraph [ref=f81e309]: Diego Ramírez
+                - paragraph [ref=f81e310]: Freelance Designer
+          - listitem [ref=f81e311]:
+            - figure [ref=f81e312]:
+              - img "Rated 5 out of 5 stars" [ref=f81e313]
+              - blockquote [ref=f81e324]: “Our support team shaves two hours a day off tracking work. Tasks just flow through the day without anyone chasing anyone else.”
+              - generic [ref=f81e325]:
+                - paragraph [ref=f81e326]: Priya Nair
+                - paragraph [ref=f81e327]: Head of Ops, Northbeam
+    - region [ref=f81e328]:
+      - generic [ref=f81e331]:
+        - heading "Ready to feel the flow?" [level=2] [ref=f81e337]
+        - paragraph [ref=f81e338]: Join 40,000+ people who end each day knowing what got done. Get a 14-day Pro trial — no credit card required.
+        - generic [ref=f81e339]:
+          - generic [ref=f81e340]: Email address
+          - textbox "Email address" [ref=f81e341]:
+            - /placeholder: you@company.com
+          - button "Get started" [ref=f81e342] [cursor=pointer]
+        - alert [ref=f81e345]: Please enter a valid email address.
+  - contentinfo [ref=f81e346]:
+    - generic [ref=f81e347]:
+      - generic [ref=f81e348]:
+        - generic [ref=f81e349]:
+          - link "TaskFlow — back to top" [ref=f81e350] [cursor=pointer]:
+            - /url: "#top"
+            - generic [ref=f81e356]: TaskFlow
+          - paragraph [ref=f81e357]: The calm, private way to get things done. Capture fast, watch progress move, and keep your list yours.
+        - navigation "Product" [ref=f81e358]:
+          - heading "Product" [level=3] [ref=f81e359]
+          - list [ref=f81e360]:
+            - listitem [ref=f81e361]:
+              - link "Features" [ref=f81e362] [cursor=pointer]:
+                - /url: "#features"
+            - listitem [ref=f81e363]:
+              - link "Live demo" [ref=f81e364] [cursor=pointer]:
+                - /url: "#demo"
+            - listitem [ref=f81e365]:
+              - link "Pricing" [ref=f81e366] [cursor=pointer]:
+                - /url: "#pricing"
+            - listitem [ref=f81e367]:
+              - link "Testimonials" [ref=f81e368] [cursor=pointer]:
+                - /url: "#testimonials"
+        - navigation "Get started" [ref=f81e369]:
+          - heading "Get started" [level=3] [ref=f81e370]
+          - list [ref=f81e371]:
+            - listitem [ref=f81e372]:
+              - link "Try the demo" [ref=f81e373] [cursor=pointer]:
+                - /url: "#demo"
+            - listitem [ref=f81e374]:
+              - link "View plans" [ref=f81e375] [cursor=pointer]:
+                - /url: "#pricing"
+            - listitem [ref=f81e376]:
+              - link "Get a trial" [ref=f81e377] [cursor=pointer]:
+                - /url: "#cta"
+            - listitem [ref=f81e378]:
+              - link "Contact us" [ref=f81e379] [cursor=pointer]:
+                - /url: mailto:hello@taskflow.app
+        - navigation "Legal" [ref=f81e380]:
+          - heading "Legal" [level=3] [ref=f81e381]
+          - list [ref=f81e382]:
+            - listitem [ref=f81e383]:
+              - link "Terms of Service" [ref=f81e384] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f81e385]:
+              - link "Privacy Policy" [ref=f81e386] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f81e387]:
+              - link "Cookie Policy" [ref=f81e388] [cursor=pointer]:
+                - /url: /cookies
+      - generic [ref=f81e389]:
+        - paragraph [ref=f81e390]:
+          - text: Made with
+          - link "MoshineSites" [ref=f81e391] [cursor=pointer]:
+            - /url: https://dkservers.space
+          - text: .
+        - list "Social media" [ref=f81e392]:
+          - listitem [ref=f81e393]:
+            - link "TaskFlow on X" [ref=f81e394] [cursor=pointer]:
+              - /url: https://x.com/dkservers
+          - listitem [ref=f81e397]:
+            - link "TaskFlow on LinkedIn" [ref=f81e398] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/daniel-kingston
+          - listitem [ref=f81e401]:
+            - link "TaskFlow on GitHub" [ref=f81e402] [cursor=pointer]:
+              - /url: https://github.com/TheRealKizzobot
+  - alert [ref=f81e405]

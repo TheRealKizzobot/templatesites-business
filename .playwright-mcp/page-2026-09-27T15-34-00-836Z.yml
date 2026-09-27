@@ -1,0 +1,21 @@
+- generic [active] [ref=f16e1]:
+  - link "Skip to content" [ref=f16e2] [cursor=pointer]:
+    - /url: "#main"
+  - main [ref=f16e3]:
+    - generic [ref=f16e4]:
+      - generic [ref=f16e6]:
+        - generic [ref=f16e7]:
+          - heading "Admin Panel" [level=1] [ref=f16e8]
+          - paragraph [ref=f16e9]: Ember & Wood · 0 bookings
+        - button "Sign out" [ref=f16e10] [cursor=pointer]
+      - main [ref=f16e11]:
+        - generic [ref=f16e13]:
+          - generic [ref=f16e14]: Filter
+          - combobox "Filter" [ref=f16e15]:
+            - option "All statuses" [selected]
+            - option "Pending"
+            - option "Confirmed"
+            - option "Completed"
+            - option "Cancelled"
+        - status [ref=f16e16]: Loading bookings…
+  - alert [ref=f16e17]

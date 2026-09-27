@@ -1,0 +1,47 @@
+- generic [active] [ref=f94e1]:
+  - link "Skip to content" [ref=f94e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f94e3]:
+    - complementary [ref=f94e4]:
+      - navigation "Admin" [ref=f94e5]:
+        - paragraph [ref=f94e6]:
+          - text: Northlight
+          - generic [ref=f94e7]: Admin panel
+        - list [ref=f94e8]:
+          - listitem [ref=f94e9]:
+            - link "Dashboard" [ref=f94e10] [cursor=pointer]:
+              - /url: /admin
+          - listitem [ref=f94e13]:
+            - link "Orders" [ref=f94e14] [cursor=pointer]:
+              - /url: /admin/orders
+          - listitem [ref=f94e17]:
+            - link "Products" [ref=f94e18] [cursor=pointer]:
+              - /url: /admin/products
+          - listitem [ref=f94e21]:
+            - link "Settings" [ref=f94e22] [cursor=pointer]:
+              - /url: /admin/settings
+        - button "Log out" [ref=f94e26] [cursor=pointer]
+    - generic [ref=f94e29]:
+      - banner [ref=f94e30]:
+        - heading "Admin Panel" [level=1] [ref=f94e31]
+        - generic [ref=f94e32]: Signed in
+      - main [ref=f94e35]:
+        - generic [ref=f94e36]:
+          - generic [ref=f94e37]:
+            - generic [ref=f94e38]:
+              - heading "Products" [level=2] [ref=f94e39]
+              - paragraph [ref=f94e40]: 0 products in the catalog.
+            - button "+ Add product" [ref=f94e41] [cursor=pointer]
+          - generic [ref=f94e42]:
+            - table [ref=f94e43]:
+              - rowgroup [ref=f94e44]:
+                - row [ref=f94e45]:
+                  - columnheader "Product" [ref=f94e46]
+                  - columnheader "Category" [ref=f94e47]
+                  - columnheader "Price" [ref=f94e48]
+                  - columnheader "Stock" [ref=f94e49]
+                  - columnheader "Rating" [ref=f94e50]
+                  - columnheader "Actions" [ref=f94e51]
+              - rowgroup
+            - paragraph [ref=f94e52]: No products yet. Add your first one!
+  - alert [ref=f94e53]

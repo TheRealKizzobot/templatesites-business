@@ -1,0 +1,8 @@
+- generic [active] [ref=f47e1]:
+  - link "Skip to main content" [ref=f47e2] [cursor=pointer]:
+    - /url: "#main"
+  - main [ref=f47e3]:
+    - generic [ref=f47e5]:
+      - heading "404" [level=1] [ref=f47e6]
+      - heading "This page could not be found." [level=2] [ref=f47e8]
+  - alert [ref=f47e9]

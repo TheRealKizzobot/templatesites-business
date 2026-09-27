@@ -1,0 +1,12 @@
+- generic [active] [ref=f14e1]:
+  - link "Skip to content" [ref=f14e2] [cursor=pointer]:
+    - /url: "#main"
+  - main [ref=f14e3]:
+    - generic [ref=f14e5]:
+      - heading "Admin sign in" [level=1] [ref=f14e6]
+      - paragraph [ref=f14e7]: Ember & Wood — booking management
+      - generic [ref=f14e8]:
+        - generic [ref=f14e9]: Password
+        - textbox "Password" [ref=f14e10]
+        - button "Sign in" [ref=f14e11] [cursor=pointer]
+  - alert [ref=f14e12]
