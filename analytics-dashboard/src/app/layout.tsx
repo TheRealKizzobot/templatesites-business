@@ -27,14 +27,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://dkservers.space',
     siteName: 'Metrics',
     title: 'Metrics — Content Analytics',
     description:
       'A TweetDeck-style content analytics dashboard: live metric cards, a polling feed of content items, trending topics, and 7-day charts.',
     images: [
       {
-        url: '/og-image.png',
+        url: '/images/og-default.svg',
         width: 1200,
         height: 630,
         alt: 'Metrics Analytics Dashboard',
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
     title: 'Metrics — Content Analytics',
     description:
       'A TweetDeck-style content analytics dashboard: live metric cards, a polling feed of content items, trending topics, and 7-day charts.',
-    images: ['/og-image.png'],
+    images: ['/images/og-default.svg'],
   },
   icons: {
     icon: '/favicon.ico',

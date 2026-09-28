@@ -21,7 +21,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://dkservers.space',
     siteName: 'Ember & Wood',
     title: 'Ember & Wood — Modern American Restaurant',
     description:
@@ -48,7 +47,6 @@ export const metadata: Metadata = {
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
   },
-  metadataBase: new URL('https://dkservers.space'),
 };
 
 export default function RootLayout({

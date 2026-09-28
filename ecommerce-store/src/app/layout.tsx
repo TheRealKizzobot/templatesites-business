@@ -27,14 +27,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ecommerce-store-five-phi.vercel.app',
     siteName: 'Northlight Goods',
     title: 'Northlight Goods — Home Goods, Carefully Made',
     description:
       'Furniture, lighting, textiles, tableware and decor for slower, warmer homes. Free shipping on orders over $100.',
     images: [
       {
-        url: '/og-image.png',
+        url: '/images/og-default.svg',
         width: 1200,
         height: 630,
         alt: 'Northlight Goods — Home Goods, Carefully Made',
@@ -46,11 +45,16 @@ export const metadata: Metadata = {
     title: 'Northlight Goods — Home Goods, Carefully Made',
     description:
       'Furniture, lighting, textiles, tableware and decor for slower, warmer homes. Free shipping on orders over $100.',
-    images: ['/og-image.png'],
+    images: ['/images/og-default.svg'],
   },
   robots: {
     index: true,
     follow: true,
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
   },
 };
 

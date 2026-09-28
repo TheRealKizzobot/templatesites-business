@@ -24,7 +24,6 @@ export const metadata: Metadata = {
       'Seasonal wood-fired cooking and natural wine. Book your table at Ember & Wood — open for lunch and dinner, Tuesday to Sunday.',
     type: 'website',
     siteName: 'Ember & Wood',
-    url: 'https://emberandwood.example',
     images: [{ url: '/images/about.svg', alt: "Ember & Wood's wood-fired dining room" }],
   },
   twitter: {
@@ -32,6 +31,11 @@ export const metadata: Metadata = {
     title: 'Ember & Wood — Book a Table',
     description:
       'Seasonal wood-fired cooking and natural wine. Book your table at Ember & Wood.',
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
   },
 };
 

@@ -15,7 +15,6 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://taskflow.app'),
   title: 'TaskFlow — Your work, finally in flow',
   description:
     'TaskFlow is the simple, private task app that turns scattered to-dos into a focused plan. Try the live demo, no account needed.',
@@ -23,10 +22,9 @@ export const metadata: Metadata = {
     title: 'TaskFlow — Your work, finally in flow',
     description:
       'TaskFlow is the simple, private task app that turns scattered to-dos into a focused plan. Try the live demo, no account needed.',
-    url: 'https://taskflow.app',
     siteName: 'TaskFlow',
     type: 'website',
-    images: [{ url: '/icon.svg', width: 512, height: 512, alt: 'TaskFlow' }],
+    images: [{ url: '/images/og-default.svg', width: 512, height: 512, alt: 'TaskFlow' }],
   },
   twitter: {
     card: 'summary',
@@ -35,8 +33,9 @@ export const metadata: Metadata = {
       'TaskFlow is the simple, private task app that turns scattered to-dos into a focused plan. Try the live demo, no account needed.',
   },
   icons: {
-    icon: '/icon.svg',
-    shortcut: '/icon.svg',
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
   },
 };
 

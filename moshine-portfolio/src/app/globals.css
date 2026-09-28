@@ -11,8 +11,8 @@
   --bg-primary: #fafaf9;
   --bg-surface: #ffffff;
   --bg-elevated: #f0efed;
-  --bg-dark: #0f0f0f;
-  --bg-dark-surface: #1a1a1a;
+  --bg-dark: #1a1a1a;
+  --bg-dark-surface: #252525;
   --text-primary: #09090b;
   --text-secondary: #52525b;
   --text-tertiary: #a1a1aa;
@@ -23,7 +23,7 @@
   --brand-dark: #8a6508;
   --border: #e4e4e7;
   --border-subtle: #f0efed;
-  --border-dark: #2a2a2a;
+  --border-dark: #3f3f46;
 
   --font-display: var(--font-fraunces);
   --font-body: var(--font-inter);

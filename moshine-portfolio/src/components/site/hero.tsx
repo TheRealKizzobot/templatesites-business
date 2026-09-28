@@ -31,22 +31,6 @@ export default function Hero() {
         <div className="size-[400px] rounded-full bg-brand/5 blur-[100px]" />
       </div>
 
-      {/* Top nav bar (inside hero) */}
-      <div className="container-page pt-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2 text-text-on-dark-muted text-xs font-mono">
-            <span className="size-2 rounded-full bg-brand animate-pulse" />
-            <span>All systems operational</span>
-          </div>
-          <a
-            href="#contact"
-            className="rounded-full border border-text-on-dark/15 px-4 py-2 text-xs font-medium text-text-on-dark/70 transition-colors hover:border-brand/50 hover:text-brand-light"
-          >
-            Get in touch
-          </a>
-        </div>
-      </div>
-
       {/* Main hero content */}
       <div className="container-page flex flex-1 items-end pb-20 pt-12 sm:pt-20 lg:pb-28">
         <div className="max-w-3xl">
