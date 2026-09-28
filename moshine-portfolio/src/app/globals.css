@@ -29,12 +29,19 @@
   --font-body: var(--font-inter);
 }
 
+@media (prefers-color-scheme: light) {
+  :root:not(.dark) {
+    --bg-dark: #1a1a1a;
+    --bg-dark-surface: #252525;
+  }
+}
+
 .dark {
   --bg-primary: #0f0f0f;
   --bg-surface: #1a1a1a;
   --bg-elevated: #252525;
-  --bg-dark: #0a0a0a;
-  --bg-dark-surface: #151515;
+  --bg-dark: #141414;
+  --bg-dark-surface: #1e1e1e;
   --text-primary: #fafaf9;
   --text-secondary: #a1a1aa;
   --text-tertiary: #71717a;

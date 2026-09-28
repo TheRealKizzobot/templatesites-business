@@ -32,7 +32,7 @@ export default function Hero() {
       </div>
 
       {/* Main hero content */}
-      <div className="container-page flex flex-1 items-end pb-20 pt-12 sm:pt-20 lg:pb-28">
+      <div className="container-page flex flex-1 items-end pb-20 pt-20 sm:pt-28 lg:pb-28">
         <div className="max-w-3xl">
           {/* Eyebrow */}
           <div className="animate-fade-up inline-flex items-center gap-2 rounded-full border border-text-on-dark/10 bg-text-on-dark/5 px-3.5 py-1.5 text-xs text-text-on-dark/60 backdrop-blur-sm">
