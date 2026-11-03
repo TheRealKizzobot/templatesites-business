@@ -46,7 +46,7 @@ export default function About() {
           {/* Right: visual element - tech stack cards */}
           <div className="relative">
             {/* Decorative grid */}
-            <div aria-hidden="true" className="absolute -inset-4 rounded-2xl bg-gradient-to-br from-brand/5 via-transparent to-transparent" />
+            <div aria-hidden="true" className="absolute -inset-4 rounded-2xl bg-bg-elevated" />
             <div className="relative grid gap-3">
               {[
                 { name: 'Next.js', desc: 'App Router, static export', color: 'from-gray-800 to-gray-900' },
@@ -56,7 +56,7 @@ export default function About() {
               ].map((tech, i) => (
                 <div
                   key={tech.name}
-                  className="flex items-center gap-4 rounded-xl border border-border bg-bg-surface p-4 transition-all hover:border-brand/30 hover:shadow-soft"
+                  className="flex items-center gap-4 rounded-xl border border-border bg-bg-surface p-4 transition-colors hover:border-brand/30 hover:shadow-soft"
                   style={{ animationDelay: `${i * 100}ms` }}
                 >
                   <div className={`flex size-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br ${tech.color}`}>

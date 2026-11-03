@@ -61,7 +61,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="flex size-9 items-center justify-center rounded-full border border-border text-text-tertiary transition-all hover:border-brand/40 hover:text-brand"
+                  className="flex size-9 items-center justify-center rounded-full border border-border text-text-tertiary transition-colors hover:border-brand/40 hover:text-brand"
                 >
                   <svg viewBox="0 0 24 24" className="size-4" aria-hidden="true" fill="currentColor">
                     <path d={social.path} />
@@ -86,7 +86,7 @@ export default function Footer() {
                     className="group flex items-center justify-between text-sm text-text-secondary transition-colors hover:text-text-primary"
                   >
                     <span>{t.label}</span>
-                    <svg viewBox="0 0 16 16" className="size-3.5 opacity-0 transition-all group-hover:translate-x-0.5 group-hover:opacity-100" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                    <svg viewBox="0 0 16 16" className="size-3.5 opacity-0 transition-opacity group-hover:translate-x-0.5 group-hover:opacity-100" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                       <path d="M6 3l5 5-5 5" />
                       <path d="M11 3H6v5" />
                     </svg>

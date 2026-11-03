@@ -97,7 +97,7 @@ export default function Pricing() {
                   <li key={feature} className="flex items-start gap-2.5 text-sm text-text-secondary">
                     <svg
                       viewBox="0 0 16 16"
-                      className={`mt-0.5 size-4 shrink-0 ${tier.featured ? 'text-brand' : 'text-green-600'}`}
+                      className={`mt-0.5 size-4 shrink-0 ${tier.featured ? 'text-brand' : 'text-text-tertiary}'}`}
                       aria-hidden="true"
                       fill="currentColor"
                     >

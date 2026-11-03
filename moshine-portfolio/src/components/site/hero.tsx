@@ -47,7 +47,7 @@ export default function Hero() {
           >
             Websites that
             <br />
-            <span className="gradient-text">actually ship.</span>
+            <span className="text-brand">actually ship.</span>
           </h1>
 
           {/* Subheadline */}

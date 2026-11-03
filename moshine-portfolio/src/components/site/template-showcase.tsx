@@ -199,7 +199,7 @@ function TemplateCard({ template, index }: { template: typeof TEMPLATES[0]; inde
   const delay = index * 80;
   return (
     <article
-      className="group flex flex-col rounded-xl border border-border bg-bg-surface transition-all duration-300 hover:shadow-card-hover hover:-translate-y-0.5"
+      className="group flex flex-col rounded-xl border border-border bg-bg-surface transition-colors duration-300 hover:shadow-card-hover hover:-translate-y-0.5"
       style={{ animationDelay: `${delay}ms` }}
     >
       {/* Preview */}
@@ -248,7 +248,7 @@ function TemplateCard({ template, index }: { template: typeof TEMPLATES[0]; inde
           href={template.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-lg border border-border bg-bg-elevated py-2.5 text-sm font-medium text-text-primary transition-all hover:border-brand/40 hover:bg-brand/5 hover:text-brand-dark"
+          className="focus-ring inline-flex w-full items-center justify-center rounded-lg border border-border bg-bg-elevated py-2.5 text-sm font-medium text-text-primary transition-colors hover:border-brand/40 hover:bg-brand/5 hover:text-brand-dark"
         >
           Try it live
           <svg viewBox="0 0 16 16" className="size-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
