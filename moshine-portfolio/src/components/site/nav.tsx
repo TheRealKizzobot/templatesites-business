@@ -82,12 +82,10 @@ export default function Nav() {
           ))}
           <span className="mx-1 h-4 w-px bg-border" />
           <a
-            href="https://dkservers.space"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/metrics"
             className="nav-link"
           >
-            Blog
+            Live Demo
           </a>
         </div>
 
