@@ -17,12 +17,19 @@ export default function Hero() {
         </svg>
       </div>
 
-      {/* Subtle background texture */}
+      {/* Gradient glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-[0.02]"
-        style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, var(--text-on-dark) 1px, transparent 0)', backgroundSize: '32px 32px' }}
-      />
+        className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2"
+      >
+        <div className="size-[600px] rounded-full bg-brand/10 blur-[120px]" />
+      </div>
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-0 right-0"
+      >
+        <div className="size-[400px] rounded-full bg-brand/5 blur-[100px]" />
+      </div>
 
       {/* Main hero content */}
       <div className="container-page flex flex-1 items-end pb-20 pt-20 sm:pt-28 lg:pb-28">
@@ -40,7 +47,7 @@ export default function Hero() {
           >
             Websites that
             <br />
-            <span className="text-brand-light">actually ship.</span>
+            <span className="gradient-text">actually ship.</span>
           </h1>
 
           {/* Subheadline */}

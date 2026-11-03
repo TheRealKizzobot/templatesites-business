@@ -74,8 +74,8 @@ export default function Pricing() {
               }`}
             >
               {tier.featured && (
-                <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 text-xs font-medium text-brand">
-                  Recommended
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand px-3 py-1 text-xs font-semibold text-white">
+                  Most popular
                 </span>
               )}
 
@@ -97,7 +97,7 @@ export default function Pricing() {
                   <li key={feature} className="flex items-start gap-2.5 text-sm text-text-secondary">
                     <svg
                       viewBox="0 0 16 16"
-                      className="mt-0.5 size-4 shrink-0 text-text-tertiary"
+                      className={`mt-0.5 size-4 shrink-0 ${tier.featured ? 'text-brand' : 'text-green-600'}`}
                       aria-hidden="true"
                       fill="currentColor"
                     >

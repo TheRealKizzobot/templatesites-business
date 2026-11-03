@@ -1,0 +1,24 @@
+{
+  "name": "@moshinesites/retry-524",
+  "version": "1.0.0",
+  "description": "Retry utility for Cloudflare 524 and other transient errors with exponential backoff",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": ["retry", "cloudflare", "524", "fetch", "timeout", "exponential-backoff"],
+  "author": "MoshineSites",
+  "license": "MIT",
+  "peerDependencies": {},
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}

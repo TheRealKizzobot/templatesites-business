@@ -168,7 +168,11 @@
 .delay-400 { animation-delay: 0.4s; }
 .delay-500 { animation-delay: 0.5s; }
 
-/* Gradient text utility — removed per unslop pass */
+/* Gradient text utility */
+.gradient-text {
+  @apply bg-gradient-to-r from-brand via-brand-light to-brand-dark
+         bg-clip-text text-transparent;
+}
 
 /* Browser window mockup for template cards */
 .browser-mockup {
