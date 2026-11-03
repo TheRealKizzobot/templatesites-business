@@ -54,7 +54,7 @@ export default function Nav() {
         {/* Logo */}
         <Link
           href="#top"
-          className="flex items-center gap-2.5 text-text-primary transition-colors hover:text-brand-dark"
+          className="flex items-center gap-2.5 text-text-on-dark transition-colors hover:text-brand-dark"
           aria-label="MoshineSites — back to top"
         >
           {/* Geometric mark */}
