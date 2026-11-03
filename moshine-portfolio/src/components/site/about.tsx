@@ -1,9 +1,9 @@
 export default function About() {
   const stats = [
     { value: '5', label: 'Templates built' },
-    { value: '10K+', label: 'Lines of production code' },
     { value: 'SQLite', label: 'Database backed' },
     { value: '0', label: 'External UI libraries' },
+    { value: 'MIT', label: 'Open source' },
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function About() {
             >
               Built by a developer
               <br />
-              who ships.
+              who ships
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-text-secondary">
               <p>
@@ -49,18 +49,17 @@ export default function About() {
             <div aria-hidden="true" className="absolute -inset-4 rounded-2xl bg-bg-elevated" />
             <div className="relative grid gap-3">
               {[
-                { name: 'Next.js', desc: 'App Router, static export', color: 'from-gray-800 to-gray-900' },
-                { name: 'Tailwind CSS', desc: 'Utility-first, design tokens', color: 'from-cyan-500 to-blue-600' },
-                { name: 'SQLite', desc: 'Zero-config, file-based DB', color: 'from-blue-500 to-indigo-600' },
-                { name: 'TypeScript', desc: 'Type-safe, modern syntax', color: 'from-blue-600 to-blue-700' },
-              ].map((tech, i) => (
+                { name: 'Next.js', desc: 'App Router, static export' },
+                { name: 'Tailwind CSS', desc: 'Utility-first, design tokens' },
+                { name: 'SQLite', desc: 'Zero-config, file-based DB' },
+                { name: 'TypeScript', desc: 'Type-safe, modern syntax' },
+              ].map((tech) => (
                 <div
                   key={tech.name}
-                  className="flex items-center gap-4 rounded-xl border border-border bg-bg-surface p-4 transition-colors hover:border-brand/30 hover:shadow-soft"
-                  style={{ animationDelay: `${i * 100}ms` }}
+                  className="flex items-center gap-4 rounded-xl border border-border bg-bg-surface p-4 transition-colors hover:border-brand/30"
                 >
-                  <div className={`flex size-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br ${tech.color}`}>
-                    <span className="text-xs font-bold text-white">{tech.name[0]}</span>
+                  <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-brand/15">
+                    <span className="text-xs font-bold text-brand-dark">{tech.name[0]}</span>
                   </div>
                   <div>
                     <div className="font-semibold text-text-primary">{tech.name}</div>

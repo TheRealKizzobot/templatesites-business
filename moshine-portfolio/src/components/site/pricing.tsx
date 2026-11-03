@@ -67,17 +67,12 @@ export default function Pricing() {
           {tiers.map((tier, i) => (
             <article
               key={tier.name}
-              className={`relative flex flex-col rounded-xl border bg-bg-surface p-6 ${
+                        className={`relative flex flex-col rounded-xl border bg-bg-surface p-6 ${
                 tier.featured
-                  ? 'border-brand/30 shadow-card'
+                  ? 'border-brand/20 shadow-card'
                   : 'border-border shadow-soft'
               }`}
             >
-              {tier.featured && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand px-3 py-1 text-xs font-semibold text-white">
-                  Most popular
-                </span>
-              )}
 
               <h3 className="font-display text-lg font-semibold text-text-primary">
                 {tier.name}

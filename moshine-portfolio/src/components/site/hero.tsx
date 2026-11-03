@@ -5,31 +5,11 @@ export default function Hero() {
       aria-labelledby="hero-heading"
       className="relative isolate flex min-h-screen flex-col overflow-hidden bg-bg-dark"
     >
-      {/* Background grid pattern */}
-      <div aria-hidden="true" className="absolute inset-0 opacity-[0.035]">
-        <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="var(--text-on-dark)" strokeWidth="0.5" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#grid)" />
-        </svg>
-      </div>
-
-      {/* Gradient glow */}
+      {/* Subtle warm tone shift at the top of the hero */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2"
-      >
-        <div className="size-[600px] rounded-full bg-brand/10 blur-[120px]" />
-      </div>
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute bottom-0 right-0"
-      >
-        <div className="size-[400px] rounded-full bg-brand/5 blur-[100px]" />
-      </div>
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_0%,rgba(184,134,11,0.07),transparent_60%)]"
+      />
 
       {/* Main hero content */}
       <div className="container-page flex flex-1 items-end pb-20 pt-20 sm:pt-28 lg:pb-28">

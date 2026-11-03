@@ -73,7 +73,7 @@ export default function Footer() {
 
           {/* Templates */}
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-text-tertiary">
+            <h3 className="text-xs font-medium text-text-tertiary">
               Templates
             </h3>
             <ul className="mt-4 flex flex-col gap-2">
