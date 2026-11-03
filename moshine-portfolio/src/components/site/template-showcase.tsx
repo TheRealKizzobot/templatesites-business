@@ -195,16 +195,10 @@ function BrowserMockup({ template }: { template: typeof TEMPLATES[0] }) {
           aria-label={`View ${template.title} live site`}
         >
           <div
-            className="flex h-full flex-col items-center justify-center gap-3 rounded-md p-4 transition-colors"
+            className="flex h-full flex-col gap-2 p-3 transition-colors group-hover:brightness-105"
             style={{ background: template.colors.surface }}
           >
-            <svg viewBox="0 0 24 24" className="size-8" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.5">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <path d="M3 9h18M9 21V9" />
-            </svg>
-            <span className="text-xs font-medium" style={{ color: template.colors.accent }}>
-              Open live site →
-            </span>
+            {template.mockupContent()}
           </div>
         </a>
       </div>
