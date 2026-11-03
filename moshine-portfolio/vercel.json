@@ -2,5 +2,12 @@
   "buildCommand": "npm run build",
   "framework": "nextjs",
   "installCommand": "npm install",
-  "devCommand": "npm run dev"
+  "devCommand": "npm run dev",
+  "redirects": [
+    { "source": "/restaurant", "destination": "https://restaurant-site-i0ohcnv5o-therealkizzobots-projects.vercel.app" },
+    { "source": "/taskflow", "destination": "https://taskflow-saas-iv2o8mnxg-therealkizzobots-projects.vercel.app" },
+    { "source": "/booking", "destination": "https://booking-system-qy0lo5jiy-therealkizzobots-projects.vercel.app" },
+    { "source": "/shop", "destination": "https://ecommerce-store-fpm2jmhl5-therealkizzobots-projects.vercel.app" },
+    { "source": "/metrics", "destination": "https://analytics-dashboard-l8d23xnk8-therealkizzobots-projects.vercel.app" }
+  ]
 }
