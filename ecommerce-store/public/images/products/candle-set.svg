@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Soy candle set illustration">
+  <rect width="800" height="800" fill="#faf8f6"/>
+  <rect x="0" y="0" width="800" height="800" fill="none" stroke="#f0ece8" stroke-width="2"/>
+  <ellipse cx="400" cy="670" rx="300" ry="20" fill="#efe9e2"/>
+  <!-- kraft gift box -->
+  <rect x="240" y="560" width="320" height="70" rx="14" fill="#c9a87a"/>
+  <rect x="240" y="560" width="320" height="70" rx="14" fill="url(#boxShade)" opacity="0.3"/>
+  <rect x="240" y="560" width="320" height="10" rx="5" fill="#a8855a" opacity="0.6"/>
+  <rect x="360" y="540" width="80" height="20" rx="10" fill="#a8855a" opacity="0.7"/>
+  <!-- striker card -->
+  <rect x="272" y="600" width="60" height="6" rx="3" fill="#e8a45c"/>
+  <!-- candle 1 -->
+  <rect x="280" y="360" width="100" height="200" rx="12" fill="#f1e5d2"/>
+  <rect x="280" y="360" width="100" height="200" rx="12" fill="url(#cShade)" opacity="0.3"/>
+  <g>
+    <ellipse cx="330" cy="360" rx="12" ry="14" fill="#6d4b36"/>
+    <path d="M 330 316 Q 336 344 330 360 Q 324 344 330 316 Z" fill="#3b312c"/>
+    <path d="M 330 312 C 334 324 326 324 330 312 Z" fill="#e8a45c"/>
+  </g>
+  <!-- candle 2 -->
+  <rect x="420" y="340" width="100" height="220" rx="12" fill="#e8d9c4"/>
+  <rect x="420" y="340" width="100" height="220" rx="12" fill="url(#cShade)" opacity="0.3"/>
+  <g>
+    <ellipse cx="470" cy="340" rx="12" ry="14" fill="#5d3f2d"/>
+    <path d="M 470 296 Q 476 324 470 340 Q 464 324 470 296 Z" fill="#3b312c"/>
+    <path d="M 470 292 C 474 304 466 304 470 292 Z" fill="#e8a45c"/>
+  </g>
+  <!-- candle 3 -->
+  <rect x="350" y="320" width="100" height="240" rx="12" fill="#cbb8a0"/>
+  <rect x="350" y="320" width="100" height="240" rx="12" fill="url(#cShade)" opacity="0.3"/>
+  <g>
+    <ellipse cx="400" cy="320" rx="12" ry="14" fill="#7a5638"/>
+    <path d="M 400 276 Q 406 304 400 320 Q 394 304 400 276 Z" fill="#3b312c"/>
+    <path d="M 400 272 C 404 284 396 284 400 272 Z" fill="#e8a45c"/>
+  </g>
+  <defs>
+    <linearGradient id="cShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.4"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="boxShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+</svg>

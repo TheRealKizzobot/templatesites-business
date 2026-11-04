@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Leather wallet illustration">
+  <rect width="800" height="800" fill="#faf8f6"/>
+  <rect x="0" y="0" width="800" height="800" fill="none" stroke="#f0ece8" stroke-width="2"/>
+  <ellipse cx="400" cy="660" rx="240" ry="20" fill="#efe9e2"/>
+  <!-- wallet body (bi-fold) -->
+  <rect x="220" y="340" width="360" height="260" rx="28" fill="#6b4a32"/>
+  <rect x="220" y="340" width="360" height="260" rx="28" fill="url(#wShade)" opacity="0.3"/>
+  <!-- fold line -->
+  <rect x="396" y="340" width="8" height="260" rx="4" fill="#4a3424" opacity="0.7"/>
+  <!-- flap -->
+  <path d="M 220 340 L 580 340 L 580 430 Q 580 470 540 470 L 260 470 Q 220 470 220 430 Z" fill="#5a3d28"/>
+  <path d="M 220 340 L 580 340 L 580 430 Q 580 470 540 470 L 260 470 Q 220 470 220 430 Z" fill="url(#wShade)" opacity="0.35"/>
+  <!-- snap button -->
+  <circle cx="400" cy="450" r="14" fill="#c9a227"/>
+  <circle cx="400" cy="450" r="14" fill="none" stroke="#8a6f3a" stroke-width="2"/>
+  <circle cx="400" cy="450" r="4" fill="#3b312c"/>
+  <!-- card slots peeking out -->
+  <rect x="250" y="356" width="120" height="22" rx="6" fill="#e8e2d8"/>
+  <rect x="250" y="384" width="120" height="22" rx="6" fill="#d8d0c4"/>
+  <rect x="250" y="412" width="120" height="22" rx="6" fill="#c4b7ae"/>
+  <!-- RFID emblem -->
+  <rect x="470" y="370" width="70" height="26" rx="13" fill="#3b312c" opacity="0.85"/>
+  <text x="505" y="388" font-family="sans-serif" font-size="13" font-weight="700" fill="#e8a45c" text-anchor="middle">RFID</text>
+  <defs>
+    <linearGradient id="wShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+</svg>

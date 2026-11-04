@@ -17,6 +17,11 @@ export const PRODUCT_IMAGES = [
   '/images/products/vase.svg',
   '/images/products/planter.svg',
   '/images/products/floral.svg',
+  '/images/products/throw-blanket.svg',
+  '/images/products/mug-set.svg',
+  '/images/products/leather-wallet.svg',
+  '/images/products/candle-set.svg',
+  '/images/products/cutting-board.svg',
 ];
 
 export const CATEGORIES = ['Furniture', 'Lighting', 'Textiles', 'Tableware', 'Decor'];

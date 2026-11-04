@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Wool throw blanket illustration">
+  <rect width="800" height="800" fill="#faf8f6"/>
+  <rect x="0" y="0" width="800" height="800" fill="none" stroke="#f0ece8" stroke-width="2"/>
+  <ellipse cx="400" cy="660" rx="260" ry="22" fill="#efe9e2"/>
+  <!-- folded throw -->
+  <path d="M 140 540 Q 140 380 400 380 Q 660 380 660 540 Q 660 640 400 640 Q 140 640 140 540 Z" fill="#a4675a"/>
+  <path d="M 140 540 Q 140 380 400 380 Q 660 380 660 540 Q 660 640 400 640 Q 140 640 140 540 Z" fill="url(#thShade)" opacity="0.3"/>
+  <!-- top fold highlight -->
+  <path d="M 180 540 Q 180 440 400 440 Q 620 440 620 540" fill="none" stroke="#c98f72" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+  <!-- merino texture -->
+  <g fill="#7a4a40" opacity="0.18">
+    <circle cx="240" cy="470" r="3"/>
+    <circle cx="300" cy="450" r="2.5"/>
+    <circle cx="360" cy="475" r="3"/>
+    <circle cx="420" cy="445" r="2.5"/>
+    <circle cx="480" cy="470" r="3"/>
+    <circle cx="540" cy="455" r="2.5"/>
+    <circle cx="270" cy="510" r="2.5"/>
+    <circle cx="330" cy="520" r="3"/>
+    <circle cx="450" cy="515" r="2.5"/>
+    <circle cx="510" cy="525" r="3"/>
+  </g>
+  <!-- fringed edge -->
+  <g stroke="#c98f72" stroke-width="5" stroke-linecap="round">
+    <line x1="160" y1="632" x2="150" y2="670"/>
+    <line x1="196" y1="640" x2="190" y2="678"/>
+    <line x1="232" y1="646" x2="228" y2="684"/>
+    <line x1="268" y1="650" x2="266" y2="688"/>
+    <line x1="600" y1="650" x2="602" y2="688"/>
+    <line x1="636" y1="646" x2="640" y2="684"/>
+    <line x1="672" y1="640" x2="678" y2="678"/>
+    <line x1="708" y1="632" x2="718" y2="670"/>
+  </g>
+  <defs>
+    <linearGradient id="thShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+</svg>

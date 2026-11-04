@@ -27,11 +27,6 @@ export default function SiteFooter() {
               </a>
             </li>
             <li>
-              <a href="/shop?category=Furniture" className="inline-flex min-h-[44px] items-center hover:text-brand-800">
-                Furniture
-              </a>
-            </li>
-            <li>
               <a href="/shop?category=Lighting" className="inline-flex min-h-[44px] items-center hover:text-brand-800">
                 Lighting
               </a>
