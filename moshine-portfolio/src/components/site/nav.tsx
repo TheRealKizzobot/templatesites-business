@@ -54,7 +54,7 @@ export default function Nav() {
         {/* Logo */}
         <Link
           href="#top"
-          className="flex items-center gap-2.5 text-text-on-dark transition-colors hover:text-brand-dark"
+          className={`flex items-center gap-2.5 transition-colors hover:text-brand ${scrolled ? 'text-text-primary' : 'text-text-on-dark'}`}
           aria-label="MoshineSites — back to top"
         >
           {/* Geometric mark */}
@@ -75,7 +75,7 @@ export default function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="nav-link"
+              className={`nav-link ${scrolled ? 'text-text-secondary hover:text-text-primary' : 'text-text-on-dark-muted hover:text-text-on-dark'}`}
             >
               {link.label}
             </Link>
