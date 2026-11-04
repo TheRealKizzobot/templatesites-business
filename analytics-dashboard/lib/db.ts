@@ -3,7 +3,7 @@ import path from 'node:path';
 import fs from 'node:fs';
 
 // On Vercel, use /tmp (only writable filesystem). Locally, use project data/ folder.
-const DATA_DIR = process.env.DATA_DIR ?? (process.env.VERCEL ? '/tmp/data' : path.join(process.cwd(), 'data'));
+const DATA_DIR = process.env.DATA_DIR ?? path.join(process.cwd(), 'data');
 const DB_PATH = path.join(DATA_DIR, 'analytics.db');
 
 let db: Database.Database | null = null;
