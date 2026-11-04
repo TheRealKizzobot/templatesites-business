@@ -131,6 +131,7 @@ export default function TaskWidget() {
           type="submit"
           disabled={!input.trim()}
           className="inline-flex min-h-11 items-center gap-sm rounded-full bg-brand-600 px-lg text-sm font-medium text-white shadow-soft transition-colors hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-40"
+          aria-label="Add task"
         >
           <PlusIcon className="size-4" />
           <span>Add</span>
@@ -187,6 +188,7 @@ export default function TaskWidget() {
             type="button"
             onClick={resetDemo}
             className="mt-lg inline-flex min-h-11 items-center rounded-full bg-brand-600 px-lg text-sm font-medium text-white shadow-soft transition-colors hover:bg-brand-700"
+            aria-label="Reset demo with starter tasks"
           >
             Reset with starter tasks
           </button>

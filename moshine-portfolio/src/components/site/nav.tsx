@@ -1,13 +1,14 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 const NAV_LINKS = [
-  { href: '#templates', label: 'Templates' },
-  { href: '#about', label: 'About' },
-  { href: '#pricing', label: 'Pricing' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/', label: 'Templates' },
+  { href: '/', label: 'About' },
+  { href: '/', label: 'Pricing' },
+  { href: '/', label: 'Contact' },
 ];
 
 const TEMPLATE_LINKS = [
@@ -19,10 +20,19 @@ const TEMPLATE_LINKS = [
 ];
 
 export default function Nav() {
+  const pathname = usePathname();
+  // On subpages (no dark hero) or after scrolling, the nav must be solid and opaque
+  // so text is always readable. On the homepage before scroll, keep it transparent
+  // so it sits cleanly over the dark hero.
+  const isSubpage = pathname !== '/' && !pathname.startsWith('/_next');
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const readyRef = useRef(false);
+  const hasSolidBg = scrolled || isSubpage;
 
   useEffect(() => {
+    if (readyRef.current) return;
+    readyRef.current = true;
     const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -45,17 +55,17 @@ export default function Nav() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        scrolled
-          ? 'bg-bg-surface/90 backdrop-blur-lg border-b border-border shadow-soft'
+        hasSolidBg
+          ? 'bg-bg-surface backdrop-blur-lg border-b border-border shadow-soft'
           : 'bg-transparent border-b border-transparent'
       }`}
     >
       <nav aria-label="Primary" className="container-page flex h-18 items-center justify-between">
         {/* Logo */}
         <Link
-          href="#top"
-          className={`flex items-center gap-2.5 transition-colors hover:text-brand ${scrolled ? 'text-text-primary' : 'text-text-on-dark'}`}
-          aria-label="MoshineSites — back to top"
+          href="/"
+          className={`flex items-center gap-2.5 transition-colors hover:text-brand ${hasSolidBg ? 'text-text-primary' : 'text-text-on-dark'}`}
+          aria-label="MoshineSites — back to homepage"
         >
           {/* Geometric mark */}
           <svg viewBox="0 0 28 28" className="size-7" aria-hidden="true">
@@ -71,31 +81,21 @@ export default function Nav() {
 
         {/* Desktop nav */}
         <div className="hidden items-center gap-1 md:flex">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`nav-link ${scrolled ? 'text-text-secondary hover:text-text-primary' : 'text-text-on-dark-muted hover:text-text-on-dark'}`}
-            >
-              {link.label}
-            </Link>
-          ))}
-          <span className="mx-1 h-4 w-px bg-border" />
-          <a
-            href="https://dkservers.space"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-link"
-          >
-            Blog
-          </a>
-        </div>
+          <a href="/" className={`nav-link ${hasSolidBg ? 'text-text-secondary hover:text-text-primary' : 'text-text-on-dark-muted hover:text-text-on-dark'}`}>Templates</a>
+          <a href="/" className={`nav-link ${hasSolidBg ? 'text-text-secondary hover:text-text-primary' : 'text-text-on-dark-muted hover:text-text-on-dark'}`}>About</a>
+          <a href="/" className={`nav-link ${hasSolidBg ? 'text-text-secondary hover:text-text-primary' : 'text-text-on-dark-muted hover:text-text-on-dark'}`}>Pricing</a>
+          <a href="/" className={`nav-link ${hasSolidBg ? 'text-text-secondary hover:text-text-primary' : 'text-text-on-dark-muted hover:text-text-on-dark'}`}>Contact</a>
+          </div>
 
         {/* CTA + mobile toggle */}
         <div className="flex items-center gap-2">
           <a
-            href="#contact"
-            className="hidden min-h-11 items-center rounded-full bg-text-primary px-5 text-sm font-medium text-white transition-colors hover:bg-brand-dark sm:inline-flex"
+            href="/#contact"
+            className={`hidden min-h-11 items-center rounded-full px-5 text-sm font-medium transition-colors sm:inline-flex ${
+              hasSolidBg
+                ? 'bg-text-primary text-white hover:bg-brand-dark'
+                : 'bg-text-on-dark/15 text-text-on-dark border border-text-on-dark/20 hover:bg-text-on-dark/25'
+            }`}
           >
             Start a Project
           </a>
@@ -105,7 +105,11 @@ export default function Nav() {
             aria-expanded={mobileOpen}
             aria-controls="mobile-menu"
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
-            className="inline-flex size-11 items-center justify-center rounded-lg text-text-primary hover:bg-bg-elevated md:hidden"
+            className={`inline-flex size-11 items-center justify-center rounded-lg transition-colors hover:bg-bg-elevated md:hidden ${
+              hasSolidBg
+                ? 'text-text-primary'
+                : 'text-text-on-dark hover:text-white'
+            }`}
           >
             {mobileOpen ? (
               <svg viewBox="0 0 24 24" className="size-5" aria-hidden="true">
@@ -130,20 +134,20 @@ export default function Nav() {
             <ul className="flex flex-col py-2">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
-                  <Link
+                  <a
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
                     className="flex min-h-12 items-center px-6 text-sm font-medium text-text-secondary hover:text-text-primary"
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
               <li className="px-6 py-3">
                 <a
-                  href="#contact"
+                  href="/#contact"
                   onClick={() => setMobileOpen(false)}
-                  className="inline-flex min-h-11 w-full items-center justify-center rounded-full bg-text-primary px-5 text-sm font-medium text-white"
+                  className="inline-flex min-h-11 w-full items-center justify-center rounded-full bg-text-primary px-5 text-sm font-medium text-white hover:bg-brand-dark"
                 >
                   Start a Project
                 </a>

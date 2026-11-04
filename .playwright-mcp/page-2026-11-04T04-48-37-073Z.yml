@@ -1,0 +1,127 @@
+- generic [active] [ref=f33e1]:
+  - link "Skip to main content" [ref=f33e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f33e3]:
+    - navigation "Primary" [ref=f33e4]:
+      - link "MoshineSites — back to homepage" [ref=f33e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f33e11]: MoshineSites
+      - generic [ref=f33e12]:
+        - link "Templates" [ref=f33e13] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f33e14] [cursor=pointer]:
+          - /url: /
+        - link "Pricing" [ref=f33e15] [cursor=pointer]:
+          - /url: /
+        - link "Contact" [ref=f33e16] [cursor=pointer]:
+          - /url: /
+      - link "Start a Project" [ref=f33e18] [cursor=pointer]:
+        - /url: /#contact
+  - main [ref=f33e19]:
+    - main [ref=f33e20]:
+      - generic [ref=f33e22]:
+        - heading "Terms of Service" [level=1] [ref=f33e23]
+        - paragraph [ref=f33e24]: "Last updated: September 2026"
+        - generic [ref=f33e25]:
+          - generic [ref=f33e26]:
+            - heading "1. Agreement" [level=2] [ref=f33e27]
+            - paragraph [ref=f33e28]: By using MoshineSites, you agree to these Terms. If you disagree, do not use the site.
+          - generic [ref=f33e29]:
+            - heading "2. Use of Site" [level=2] [ref=f33e30]
+            - list [ref=f33e31]:
+              - listitem [ref=f33e32]: You must be 18+ or have parental consent
+              - listitem [ref=f33e33]: You agree to provide accurate information
+              - listitem [ref=f33e34]: You are responsible for your account security
+              - listitem [ref=f33e35]: No unauthorized access, scraping, or abuse
+          - generic [ref=f33e36]:
+            - heading "3. Orders & Payments" [level=2] [ref=f33e37]
+            - paragraph [ref=f33e38]: "For e-commerce and booking sites:"
+            - list [ref=f33e39]:
+              - listitem [ref=f33e40]: Prices are in USD unless stated otherwise
+              - listitem [ref=f33e41]: Payment processed via secure providers (Stripe)
+              - listitem [ref=f33e42]: Orders confirmed via email
+              - listitem [ref=f33e43]: Refunds per individual site policy
+          - generic [ref=f33e44]:
+            - heading "4. Intellectual Property" [level=2] [ref=f33e45]
+            - paragraph [ref=f33e46]: All content, design, and code is owned by MoshineSites or licensed. You may not copy, reproduce, or redistribute without permission.
+          - generic [ref=f33e47]:
+            - heading "5. Disclaimer" [level=2] [ref=f33e48]
+            - paragraph [ref=f33e49]: Site provided "as-is." No warranties regarding availability, accuracy, or fitness for purpose.
+          - generic [ref=f33e50]:
+            - heading "6. Limitation of Liability" [level=2] [ref=f33e51]
+            - paragraph [ref=f33e52]: Liability limited to amount paid. Not liable for indirect, incidental, or consequential damages.
+          - generic [ref=f33e53]:
+            - heading "7. Governing Law" [level=2] [ref=f33e54]
+            - paragraph [ref=f33e55]: Governed by laws of North Carolina, USA.
+          - generic [ref=f33e56]:
+            - heading "8. Contact" [level=2] [ref=f33e57]
+            - paragraph [ref=f33e58]:
+              - text: Questions? Email
+              - link "connect@dkservers.space" [ref=f33e59] [cursor=pointer]:
+                - /url: mailto:connect@dkservers.space
+  - contentinfo "Site footer" [ref=f33e60]:
+    - generic [ref=f33e61]:
+      - generic [ref=f33e62]:
+        - generic [ref=f33e63]:
+          - link "MoshineSites" [ref=f33e64] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=f33e71]: Production-ready website templates and custom development for small businesses. Clean code, fast sites, no bloat.
+          - generic [ref=f33e72]:
+            - link "GitHub" [ref=f33e73] [cursor=pointer]:
+              - /url: https://github.com/TheRealKizzobot
+            - link "X (Twitter)" [ref=f33e76] [cursor=pointer]:
+              - /url: https://x.com/dkservers
+            - link "LinkedIn" [ref=f33e79] [cursor=pointer]:
+              - /url: https://linkedin.com/in/danielkingston
+        - generic [ref=f33e82]:
+          - heading "Templates" [level=3] [ref=f33e83]
+          - list [ref=f33e84]:
+            - listitem [ref=f33e85]:
+              - link "Ember & Wood" [ref=f33e86] [cursor=pointer]:
+                - /url: https://restaurant-site-tawny.vercel.app
+              - paragraph [ref=f33e91]: Restaurant & dining
+            - listitem [ref=f33e92]:
+              - link "TaskFlow" [ref=f33e93] [cursor=pointer]:
+                - /url: https://taskflow-saas-lac.vercel.app
+              - paragraph [ref=f33e98]: SaaS dashboard
+            - listitem [ref=f33e99]:
+              - link "Book & Dine" [ref=f33e100] [cursor=pointer]:
+                - /url: https://booking-system-olive-eight.vercel.app
+              - paragraph [ref=f33e105]: Reservation system
+            - listitem [ref=f33e106]:
+              - link "Northlight Goods" [ref=f33e107] [cursor=pointer]:
+                - /url: https://ecommerce-store-five-phi.vercel.app
+              - paragraph [ref=f33e112]: E-commerce store
+            - listitem [ref=f33e113]:
+              - link "Metrics" [ref=f33e114] [cursor=pointer]:
+                - /url: https://analytics-dashboard-five-kohl.vercel.app
+              - paragraph [ref=f33e119]: Analytics dashboard
+        - generic [ref=f33e120]:
+          - heading "Resources" [level=3] [ref=f33e121]
+          - list [ref=f33e122]:
+            - listitem [ref=f33e123]:
+              - link "About" [ref=f33e124] [cursor=pointer]:
+                - /url: /#about
+            - listitem [ref=f33e125]:
+              - link "Pricing" [ref=f33e126] [cursor=pointer]:
+                - /url: /#pricing
+            - listitem [ref=f33e127]:
+              - link "Contact" [ref=f33e128] [cursor=pointer]:
+                - /url: /#contact
+        - generic [ref=f33e129]:
+          - heading "Legal" [level=3] [ref=f33e130]
+          - list [ref=f33e131]:
+            - listitem [ref=f33e132]:
+              - link "Terms of Service" [ref=f33e133] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f33e134]:
+              - link "Privacy Policy" [ref=f33e135] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f33e136]:
+              - link "Cookie Policy" [ref=f33e137] [cursor=pointer]:
+                - /url: /cookies
+          - paragraph [ref=f33e138]: connect@dkservers.space
+      - generic [ref=f33e139]:
+        - paragraph [ref=f33e140]: © 2026 MoshineSites. All rights reserved.
+        - paragraph [ref=f33e141]: Built with Next.js, Tailwind & TypeScript
+  - alert [ref=f33e142]

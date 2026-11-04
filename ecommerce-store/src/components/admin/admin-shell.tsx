@@ -87,6 +87,7 @@ export default function AdminShell({ children }: { children: ReactNode }) {
           onClick={handleLogout}
           disabled={loggingOut}
           className="flex min-h-[44px] w-full items-center gap-3 rounded-lg px-3 text-sm font-medium text-text-secondary transition-colors hover:bg-error/5 hover:text-error"
+          aria-label="Log out of admin panel"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />

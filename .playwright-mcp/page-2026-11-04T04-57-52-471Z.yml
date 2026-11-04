@@ -1,0 +1,321 @@
+- generic [active] [ref=f46e1]:
+  - link "Skip to main content" [ref=f46e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f46e3]:
+    - navigation "Primary" [ref=f46e4]:
+      - link "MoshineSites — back to homepage" [ref=f46e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f46e11]: MoshineSites
+      - button "Open menu" [ref=f46e13] [cursor=pointer]
+  - main [ref=f46e16]:
+    - region [ref=f46e17]:
+      - generic [ref=f46e19]:
+        - generic [ref=f46e20]: 5 production templates · Next.js + SQLite + Tailwind
+        - heading "Websites that actually ship." [level=1] [ref=f46e23]: Websites thatactually ship.
+        - paragraph [ref=f46e24]: Production-ready templates for restaurants, SaaS products, e-commerce stores, and dashboards. No placeholders. No mockups. Just real, deployable code.
+        - generic [ref=f46e25]:
+          - link "View the Templates" [ref=f46e26] [cursor=pointer]:
+            - /url: "#templates"
+          - link "Learn More" [ref=f46e27] [cursor=pointer]:
+            - /url: "#about"
+        - generic [ref=f46e28]:
+          - generic [ref=f46e29]:
+            - generic [ref=f46e30]: "5"
+            - generic [ref=f46e31]: Live templates
+          - generic [ref=f46e32]:
+            - generic [ref=f46e33]: Next.js
+            - generic [ref=f46e34]: App Router
+          - generic [ref=f46e35]:
+            - generic [ref=f46e36]: SQLite
+            - generic [ref=f46e37]: Backend ready
+          - generic [ref=f46e38]:
+            - generic [ref=f46e39]: Tailwind
+            - generic [ref=f46e40]: Design system
+      - generic [ref=f46e42]: Scroll
+    - region [ref=f46e45]:
+      - generic [ref=f46e46]:
+        - generic [ref=f46e47]:
+          - paragraph [ref=f46e48]: The Collection
+          - heading "Production-ready templates for every business" [level=2] [ref=f46e49]
+          - paragraph [ref=f46e50]: Five complete, deployable websites. Each one built with the same design system, clean code, and attention to detail — ready to adapt or inspire your next project.
+        - generic [ref=f46e51]:
+          - article [ref=f46e52]:
+            - generic [ref=f46e54]:
+              - generic [ref=f46e55]: restaurant-site-tawny.vercel.app
+              - link "View Ember & Wood live site" [ref=f46e61] [cursor=pointer]:
+                - /url: https://restaurant-site-tawny.vercel.app
+            - generic [ref=f46e74]:
+              - generic [ref=f46e75]:
+                - generic [ref=f46e76]:
+                  - heading "Ember & Wood" [level=3] [ref=f46e77]
+                  - paragraph [ref=f46e78]: Restaurant & Dining
+                - generic [ref=f46e79]: Live
+              - paragraph [ref=f46e80]: A wood-fired kitchen marketing site with dish gallery, lightbox, testimonials, and a live reservation system. Static export with smooth animations.
+              - generic [ref=f46e81]:
+                - generic [ref=f46e82]: Next.js
+                - generic [ref=f46e83]: Static Export
+                - generic [ref=f46e84]: Tailwind
+            - link "Try it live" [ref=f46e86] [cursor=pointer]:
+              - /url: https://restaurant-site-tawny.vercel.app
+          - article [ref=f46e90]:
+            - generic [ref=f46e92]:
+              - generic [ref=f46e93]: taskflow-saas-lac.vercel.app
+              - link "View TaskFlow live site" [ref=f46e99] [cursor=pointer]:
+                - /url: https://taskflow-saas-lac.vercel.app
+            - generic [ref=f46e115]:
+              - generic [ref=f46e116]:
+                - generic [ref=f46e117]:
+                  - heading "TaskFlow" [level=3] [ref=f46e118]
+                  - paragraph [ref=f46e119]: SaaS Dashboard
+                - generic [ref=f46e120]: Live
+              - paragraph [ref=f46e121]: A productivity app landing page with an interactive live taskboard demo. Drag-and-drop tasks, state persistence, and pricing tiers all working in real time.
+              - generic [ref=f46e122]:
+                - generic [ref=f46e123]: Next.js
+                - generic [ref=f46e124]: Framer Motion
+                - generic [ref=f46e125]: Tailwind
+            - link "Try it live" [ref=f46e127] [cursor=pointer]:
+              - /url: https://taskflow-saas-lac.vercel.app
+          - article [ref=f46e131]:
+            - generic [ref=f46e133]:
+              - generic [ref=f46e134]: booking-system-olive-eight.vercel.app
+              - link "View Book & Dine live site" [ref=f46e140] [cursor=pointer]:
+                - /url: https://booking-system-olive-eight.vercel.app
+            - generic [ref=f46e156]:
+              - generic [ref=f46e157]:
+                - generic [ref=f46e158]:
+                  - heading "Book & Dine" [level=3] [ref=f46e159]
+                  - paragraph [ref=f46e160]: Reservation System
+                - generic [ref=f46e161]: Live
+              - paragraph [ref=f46e162]: Full-stack reservation platform with customer booking flow and admin panel. Real-time table management, date/time selection, and order tracking via SQLite.
+              - generic [ref=f46e163]:
+                - generic [ref=f46e164]: Next.js
+                - generic [ref=f46e165]: SQLite
+                - generic [ref=f46e166]: API Routes
+                - generic [ref=f46e167]: Admin panel
+            - link "Try it live" [ref=f46e169] [cursor=pointer]:
+              - /url: https://booking-system-olive-eight.vercel.app
+        - generic [ref=f46e173]:
+          - article [ref=f46e174]:
+            - generic [ref=f46e176]:
+              - generic [ref=f46e177]: ecommerce-store-five-phi.vercel.app
+              - link "View Northlight Goods live site" [ref=f46e183] [cursor=pointer]:
+                - /url: https://ecommerce-store-five-phi.vercel.app
+            - generic [ref=f46e197]:
+              - generic [ref=f46e198]:
+                - generic [ref=f46e199]:
+                  - heading "Northlight Goods" [level=3] [ref=f46e200]
+                  - paragraph [ref=f46e201]: E-Commerce Store
+                - generic [ref=f46e202]: Live
+              - paragraph [ref=f46e203]: Complete online store with product catalog, shopping cart, checkout flow, order confirmation, and a full admin panel for managing products and orders.
+              - generic [ref=f46e204]:
+                - generic [ref=f46e205]: Next.js
+                - generic [ref=f46e206]: SQLite
+                - generic [ref=f46e207]: Cart System
+                - generic [ref=f46e208]: Admin panel
+            - link "Try it live" [ref=f46e210] [cursor=pointer]:
+              - /url: https://ecommerce-store-five-phi.vercel.app
+          - article [ref=f46e214]:
+            - generic [ref=f46e216]:
+              - generic [ref=f46e217]: analytics-dashboard-five-kohl.vercel.app
+              - link "View Metrics live site" [ref=f46e223] [cursor=pointer]:
+                - /url: https://analytics-dashboard-five-kohl.vercel.app
+            - generic [ref=f46e241]:
+              - generic [ref=f46e242]:
+                - generic [ref=f46e243]:
+                  - heading "Metrics" [level=3] [ref=f46e244]
+                  - paragraph [ref=f46e245]: Analytics Dashboard
+                - generic [ref=f46e246]: Live
+              - paragraph [ref=f46e247]: TweetDeck-style content analytics dashboard with real-time metric cards, live feed, trending topics, and 7-day charts. Full backend API with SQLite.
+              - generic [ref=f46e248]:
+                - generic [ref=f46e249]: Next.js
+                - generic [ref=f46e250]: SQLite
+                - generic [ref=f46e251]: Recharts
+            - link "Try it live" [ref=f46e253] [cursor=pointer]:
+              - /url: https://analytics-dashboard-five-kohl.vercel.app
+    - region [ref=f46e257]:
+      - generic [ref=f46e259]:
+        - generic [ref=f46e260]:
+          - paragraph [ref=f46e261]: About
+          - heading "Built by a developer who ships" [level=2] [ref=f46e262]: Built by a developerwho ships
+          - generic [ref=f46e263]:
+            - paragraph [ref=f46e264]: Every template here is a complete, deployed project — not a sketch or a Figma file. Each one has real data, working forms, API routes, and admin panels where it makes sense.
+            - paragraph [ref=f46e265]: "The stack is intentional: Next.js App Router for structure, Tailwind for styling, and SQLite for persistence. No heavy frameworks, no vendor lock-in, no bloat. Just clean code that you can adapt and extend."
+          - generic [ref=f46e266]:
+            - generic [ref=f46e267]:
+              - generic [ref=f46e268]: "5"
+              - generic [ref=f46e269]: Templates built
+            - generic [ref=f46e270]:
+              - generic [ref=f46e271]: SQLite
+              - generic [ref=f46e272]: Database backed
+            - generic [ref=f46e273]:
+              - generic [ref=f46e274]: "0"
+              - generic [ref=f46e275]: External UI libraries
+            - generic [ref=f46e276]:
+              - generic [ref=f46e277]: Next.js
+              - generic [ref=f46e278]: App Router
+        - generic [ref=f46e281]:
+          - generic [ref=f46e282]:
+            - generic [ref=f46e283]: "N"
+            - generic [ref=f46e285]:
+              - generic [ref=f46e286]: Next.js
+              - generic [ref=f46e287]: App Router
+          - generic [ref=f46e288]:
+            - generic [ref=f46e289]: T
+            - generic [ref=f46e291]:
+              - generic [ref=f46e292]: Tailwind CSS
+              - generic [ref=f46e293]: Utility-first, design tokens
+          - generic [ref=f46e294]:
+            - generic [ref=f46e295]: S
+            - generic [ref=f46e297]:
+              - generic [ref=f46e298]: SQLite
+              - generic [ref=f46e299]: Zero-config, file-based DB
+          - generic [ref=f46e300]:
+            - generic [ref=f46e301]: T
+            - generic [ref=f46e303]:
+              - generic [ref=f46e304]: TypeScript
+              - generic [ref=f46e305]: Type-safe, modern syntax
+    - region [ref=f46e306]:
+      - generic [ref=f46e307]:
+        - generic [ref=f46e308]:
+          - paragraph [ref=f46e309]: Pricing
+          - heading "Simple, transparent pricing" [level=2] [ref=f46e310]
+          - paragraph [ref=f46e311]: Every template is a starting point. Pick what fits your needs — or let us build something custom.
+        - generic [ref=f46e312]:
+          - article [ref=f46e313]:
+            - heading "Template Kit" [level=3] [ref=f46e314]
+            - paragraph [ref=f46e315]: one-time
+            - paragraph [ref=f46e316]:
+              - generic [ref=f46e317]: $499
+            - paragraph [ref=f46e318]: Get all five templates with full source code and the shared design system.
+            - list "Template Kit features" [ref=f46e319]:
+              - listitem [ref=f46e320]:
+                - generic [ref=f46e323]: All 5 templates
+              - listitem [ref=f46e324]:
+                - generic [ref=f46e327]: Complete source code
+              - listitem [ref=f46e328]:
+                - generic [ref=f46e331]: Design system tokens
+              - listitem [ref=f46e332]:
+                - generic [ref=f46e335]: Static export builds
+              - listitem [ref=f46e336]:
+                - generic [ref=f46e339]: MIT license
+            - link "Get the Kit" [ref=f46e340] [cursor=pointer]:
+              - /url: /#contact
+          - article [ref=f46e341]:
+            - heading "Custom Build" [level=3] [ref=f46e342]
+            - paragraph [ref=f46e343]: scope-based
+            - paragraph [ref=f46e344]:
+              - generic [ref=f46e345]: Custom
+            - paragraph [ref=f46e346]: Start from a template or build from scratch. Your brand, your domain, your specs.
+            - list "Custom Build features" [ref=f46e347]:
+              - listitem [ref=f46e348]:
+                - generic [ref=f46e351]: Everything in Template Kit
+              - listitem [ref=f46e352]:
+                - generic [ref=f46e355]: Custom branding & colors
+              - listitem [ref=f46e356]:
+                - generic [ref=f46e359]: Your domain setup
+              - listitem [ref=f46e360]:
+                - generic [ref=f46e363]: 2 rounds of revisions
+              - listitem [ref=f46e364]:
+                - generic [ref=f46e367]: Deploy support
+            - link "Start a Project" [ref=f46e368] [cursor=pointer]:
+              - /url: /#contact
+          - article [ref=f46e369]:
+            - heading "Maintenance" [level=3] [ref=f46e370]
+            - paragraph [ref=f46e371]: /month
+            - paragraph [ref=f46e372]:
+              - generic [ref=f46e373]: $99
+            - paragraph [ref=f46e374]: Keep your site running smoothly with hosting, updates, and priority support.
+            - list "Maintenance features" [ref=f46e375]:
+              - listitem [ref=f46e376]:
+                - generic [ref=f46e379]: Hosting & SSL
+              - listitem [ref=f46e380]:
+                - generic [ref=f46e383]: Monthly updates
+              - listitem [ref=f46e384]:
+                - generic [ref=f46e387]: Security patches
+              - listitem [ref=f46e388]:
+                - generic [ref=f46e391]: Bug fixes
+              - listitem [ref=f46e392]:
+                - generic [ref=f46e395]: Priority email support
+            - link "Get Support" [ref=f46e396] [cursor=pointer]:
+              - /url: /#contact
+    - region [ref=f46e397]:
+      - generic [ref=f46e399]:
+        - paragraph [ref=f46e400]: Get in Touch
+        - heading "Have a project in mind?" [level=2] [ref=f46e401]
+        - paragraph [ref=f46e402]: Tell me about what you need — a template adaptation, a custom build, or just some code review. I reply within 24 hours.
+        - generic [ref=f46e403]:
+          - link "Email Me" [ref=f46e404] [cursor=pointer]:
+            - /url: mailto:connect@dkservers.space
+          - link "View on GitHub" [ref=f46e405] [cursor=pointer]:
+            - /url: https://github.com/TheRealKizzobot
+        - generic [ref=f46e406]:
+          - generic [ref=f46e407]: GitHub
+          - link "connect@dkservers.space" [ref=f46e410] [cursor=pointer]:
+            - /url: mailto:connect@dkservers.space
+          - generic [ref=f46e413]: Raleigh, NC
+  - contentinfo "Site footer" [ref=f46e414]:
+    - generic [ref=f46e415]:
+      - generic [ref=f46e416]:
+        - generic [ref=f46e417]:
+          - link "MoshineSites" [ref=f46e418] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=f46e425]: Production-ready website templates and custom development for small businesses. Clean code, fast sites, no bloat.
+          - generic [ref=f46e426]:
+            - link "GitHub" [ref=f46e427] [cursor=pointer]:
+              - /url: https://github.com/TheRealKizzobot
+            - link "X (Twitter)" [ref=f46e430] [cursor=pointer]:
+              - /url: https://x.com/dkservers
+            - link "LinkedIn" [ref=f46e433] [cursor=pointer]:
+              - /url: https://linkedin.com/in/danielkingston
+        - generic [ref=f46e436]:
+          - heading "Templates" [level=3] [ref=f46e437]
+          - list [ref=f46e438]:
+            - listitem [ref=f46e439]:
+              - link "Ember & Wood" [ref=f46e440] [cursor=pointer]:
+                - /url: https://restaurant-site-tawny.vercel.app
+              - paragraph [ref=f46e445]: Restaurant & dining
+            - listitem [ref=f46e446]:
+              - link "TaskFlow" [ref=f46e447] [cursor=pointer]:
+                - /url: https://taskflow-saas-lac.vercel.app
+              - paragraph [ref=f46e452]: SaaS dashboard
+            - listitem [ref=f46e453]:
+              - link "Book & Dine" [ref=f46e454] [cursor=pointer]:
+                - /url: https://booking-system-olive-eight.vercel.app
+              - paragraph [ref=f46e459]: Reservation system
+            - listitem [ref=f46e460]:
+              - link "Northlight Goods" [ref=f46e461] [cursor=pointer]:
+                - /url: https://ecommerce-store-five-phi.vercel.app
+              - paragraph [ref=f46e466]: E-commerce store
+            - listitem [ref=f46e467]:
+              - link "Metrics" [ref=f46e468] [cursor=pointer]:
+                - /url: https://analytics-dashboard-five-kohl.vercel.app
+              - paragraph [ref=f46e473]: Analytics dashboard
+        - generic [ref=f46e474]:
+          - heading "Resources" [level=3] [ref=f46e475]
+          - list [ref=f46e476]:
+            - listitem [ref=f46e477]:
+              - link "About" [ref=f46e478] [cursor=pointer]:
+                - /url: /#about
+            - listitem [ref=f46e479]:
+              - link "Pricing" [ref=f46e480] [cursor=pointer]:
+                - /url: /#pricing
+            - listitem [ref=f46e481]:
+              - link "Contact" [ref=f46e482] [cursor=pointer]:
+                - /url: /#contact
+        - generic [ref=f46e483]:
+          - heading "Legal" [level=3] [ref=f46e484]
+          - list [ref=f46e485]:
+            - listitem [ref=f46e486]:
+              - link "Terms of Service" [ref=f46e487] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f46e488]:
+              - link "Privacy Policy" [ref=f46e489] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f46e490]:
+              - link "Cookie Policy" [ref=f46e491] [cursor=pointer]:
+                - /url: /cookies
+          - paragraph [ref=f46e492]: connect@dkservers.space
+      - generic [ref=f46e493]:
+        - paragraph [ref=f46e494]: © 2026 MoshineSites. All rights reserved.
+        - paragraph [ref=f46e495]: Built with Next.js, Tailwind & TypeScript
+  - alert [ref=f46e496]

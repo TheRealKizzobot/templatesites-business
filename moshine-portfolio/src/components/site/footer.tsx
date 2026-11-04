@@ -36,7 +36,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link
-              href="#top"
+              href="/"
               className="inline-flex items-center gap-2 text-text-primary transition-colors hover:text-brand-dark"
             >
               <svg viewBox="0 0 28 28" className="size-6" aria-hidden="true">
@@ -104,10 +104,9 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 flex flex-col gap-2">
               {[
-                { label: 'About', href: '#about' },
-                { label: 'Pricing', href: '#pricing' },
-                { label: 'Contact', href: '#contact' },
-                { label: 'Blog', href: 'https://dkservers.space' },
+                { label: 'About', href: '/#about' },
+                { label: 'Pricing', href: '/#pricing' },
+                { label: 'Contact', href: '/#contact' },
               ].map((link) => (
                 <li key={link.label}>
                   <Link
@@ -151,7 +150,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-border-subtle pt-8 text-xs text-text-tertiary sm:flex-row">
           <p>&copy; {currentYear} MoshineSites. All rights reserved.</p>
-          <p>Built with Next.js, Tailwind & SQLite</p>
+          <p>Built with Next.js, Tailwind & TypeScript</p>
         </div>
       </div>
     </footer>

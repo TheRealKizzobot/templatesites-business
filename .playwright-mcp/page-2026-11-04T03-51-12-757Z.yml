@@ -1,0 +1,174 @@
+- generic [active] [ref=f20e1]:
+  - link "Skip to main content" [ref=f20e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f20e3]:
+    - navigation "Primary" [ref=f20e4]:
+      - link "MoshineSites — back to homepage" [ref=f20e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f20e11]: MoshineSites
+      - generic [ref=f20e12]:
+        - link "Templates" [ref=f20e13] [cursor=pointer]:
+          - /url: "#templates"
+        - link "About" [ref=f20e14] [cursor=pointer]:
+          - /url: "#about"
+        - link "Pricing" [ref=f20e15] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "Contact" [ref=f20e16] [cursor=pointer]:
+          - /url: "#contact"
+        - link "Blog" [ref=f20e18] [cursor=pointer]:
+          - /url: https://dkservers.space
+      - link "Start a Project" [ref=f20e20] [cursor=pointer]:
+        - /url: "#contact"
+  - main [ref=f20e21]:
+    - main [ref=f20e22]:
+      - generic [ref=f20e24]:
+        - heading "Cookie Policy" [level=1] [ref=f20e25]
+        - paragraph [ref=f20e26]: "Last updated: September 2026"
+        - generic [ref=f20e27]:
+          - generic [ref=f20e28]:
+            - heading "1. What Are Cookies" [level=2] [ref=f20e29]
+            - paragraph [ref=f20e30]: Cookies are small text files stored on your device when you visit a website. They help sites function properly and provide analytics.
+          - generic [ref=f20e31]:
+            - heading "2. Cookies We Use" [level=2] [ref=f20e32]
+            - paragraph [ref=f20e33]: "MoshineSites uses the following categories of cookies:"
+            - list [ref=f20e34]:
+              - listitem [ref=f20e35]:
+                - strong [ref=f20e36]: "Essential cookies:"
+                - text: Session management, CSRF protection, cart functionality, authentication
+              - listitem [ref=f20e37]:
+                - strong [ref=f20e38]: "Analytics cookies:"
+                - text: Vercel Analytics (page views, performance metrics) — anonymized
+              - listitem [ref=f20e39]:
+                - strong [ref=f20e40]: "Preference cookies:"
+                - text: Theme selection, language preference
+            - paragraph [ref=f20e41]: We do not use advertising or tracking cookies. No third-party advertising cookies are set.
+          - generic [ref=f20e42]:
+            - heading "3. Cookie Details" [level=2] [ref=f20e43]
+            - table [ref=f20e44]:
+              - rowgroup [ref=f20e45]:
+                - row [ref=f20e46]:
+                  - columnheader "Cookie" [ref=f20e47]
+                  - columnheader "Purpose" [ref=f20e48]
+                  - columnheader "Duration" [ref=f20e49]
+                  - columnheader "Type" [ref=f20e50]
+              - rowgroup [ref=f20e51]:
+                - row [ref=f20e52]:
+                  - cell "__session" [ref=f20e53]
+                  - cell "Session management" [ref=f20e54]
+                  - cell "Session" [ref=f20e55]
+                  - cell "Essential" [ref=f20e56]
+                - row [ref=f20e57]:
+                  - cell "__cf_bm" [ref=f20e58]
+                  - cell "Cloudflare bot management" [ref=f20e59]
+                  - cell "30 min" [ref=f20e60]
+                  - cell "Essential" [ref=f20e61]
+                - row [ref=f20e62]:
+                  - cell "vercel-analytics" [ref=f20e63]
+                  - cell "Anonymous page views" [ref=f20e64]
+                  - cell "1 year" [ref=f20e65]
+                  - cell "Analytics" [ref=f20e66]
+                - row [ref=f20e67]:
+                  - cell "theme" [ref=f20e68]
+                  - cell "Theme preference" [ref=f20e69]
+                  - cell "1 year" [ref=f20e70]
+                  - cell "Preference" [ref=f20e71]
+                - row [ref=f20e72]:
+                  - cell "cart" [ref=f20e73]
+                  - cell "Shopping cart" [ref=f20e74]
+                  - cell "30 days" [ref=f20e75]
+                  - cell "Essential" [ref=f20e76]
+                - row [ref=f20e77]:
+                  - cell "auth_token" [ref=f20e78]
+                  - cell "Authentication" [ref=f20e79]
+                  - cell "30 days" [ref=f20e80]
+                  - cell "Essential" [ref=f20e81]
+          - generic [ref=f20e82]:
+            - heading "4. Managing Cookies" [level=2] [ref=f20e83]
+            - paragraph [ref=f20e84]: "You can manage cookies via your browser settings:"
+            - list [ref=f20e85]:
+              - listitem [ref=f20e86]: Block all cookies (may break site functionality)
+              - listitem [ref=f20e87]: Block third-party cookies only
+              - listitem [ref=f20e88]: Clear cookies on browser close
+              - listitem [ref=f20e89]: Use browser extensions for granular control
+            - paragraph [ref=f20e90]: "Note: Disabling essential cookies will break checkout, login, and cart functionality."
+          - generic [ref=f20e91]:
+            - heading "5. Third-Party Cookies" [level=2] [ref=f20e92]
+            - paragraph [ref=f20e93]: We do not set third-party cookies. Vercel Analytics sets first-party cookies on our domain. No advertising networks, social media pixels, or tracking pixels are used.
+          - generic [ref=f20e94]:
+            - heading "6. Consent" [level=2] [ref=f20e95]
+            - paragraph [ref=f20e96]: By using our site, you consent to essential cookies. Analytics cookies are optional — you can disable them in your browser or via Vercel's privacy settings.
+          - generic [ref=f20e97]:
+            - heading "7. Contact" [level=2] [ref=f20e98]
+            - paragraph [ref=f20e99]:
+              - text: Questions about this policy? Email
+              - link "connect@dkservers.space" [ref=f20e100] [cursor=pointer]:
+                - /url: mailto:connect@dkservers.space
+  - contentinfo "Site footer" [ref=f20e101]:
+    - generic [ref=f20e102]:
+      - generic [ref=f20e103]:
+        - generic [ref=f20e104]:
+          - link "MoshineSites" [ref=f20e105] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=f20e112]: Production-ready website templates and custom development for small businesses. Clean code, fast sites, no bloat.
+          - generic [ref=f20e113]:
+            - link "GitHub" [ref=f20e114] [cursor=pointer]:
+              - /url: https://github.com/TheRealKizzobot
+            - link "X (Twitter)" [ref=f20e117] [cursor=pointer]:
+              - /url: https://x.com/dkservers
+            - link "LinkedIn" [ref=f20e120] [cursor=pointer]:
+              - /url: https://linkedin.com/in/danielkingston
+        - generic [ref=f20e123]:
+          - heading "Templates" [level=3] [ref=f20e124]
+          - list [ref=f20e125]:
+            - listitem [ref=f20e126]:
+              - link "Ember & Wood" [ref=f20e127] [cursor=pointer]:
+                - /url: https://restaurant-site-tawny.vercel.app
+              - paragraph [ref=f20e132]: Restaurant & dining
+            - listitem [ref=f20e133]:
+              - link "TaskFlow" [ref=f20e134] [cursor=pointer]:
+                - /url: https://taskflow-saas-lac.vercel.app
+              - paragraph [ref=f20e139]: SaaS dashboard
+            - listitem [ref=f20e140]:
+              - link "Book & Dine" [ref=f20e141] [cursor=pointer]:
+                - /url: https://booking-system-olive-eight.vercel.app
+              - paragraph [ref=f20e146]: Reservation system
+            - listitem [ref=f20e147]:
+              - link "Northlight Goods" [ref=f20e148] [cursor=pointer]:
+                - /url: https://ecommerce-store-five-phi.vercel.app
+              - paragraph [ref=f20e153]: E-commerce store
+            - listitem [ref=f20e154]:
+              - link "Metrics" [ref=f20e155] [cursor=pointer]:
+                - /url: https://analytics-dashboard-five-kohl.vercel.app
+              - paragraph [ref=f20e160]: Analytics dashboard
+        - generic [ref=f20e161]:
+          - heading "Resources" [level=3] [ref=f20e162]
+          - list [ref=f20e163]:
+            - listitem [ref=f20e164]:
+              - link "About" [ref=f20e165] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=f20e166]:
+              - link "Pricing" [ref=f20e167] [cursor=pointer]:
+                - /url: "#pricing"
+            - listitem [ref=f20e168]:
+              - link "Contact" [ref=f20e169] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f20e170]:
+              - link "Blog" [ref=f20e171] [cursor=pointer]:
+                - /url: https://dkservers.space
+        - generic [ref=f20e172]:
+          - heading "Legal" [level=3] [ref=f20e173]
+          - list [ref=f20e174]:
+            - listitem [ref=f20e175]:
+              - link "Terms of Service" [ref=f20e176] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f20e177]:
+              - link "Privacy Policy" [ref=f20e178] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f20e179]:
+              - link "Cookie Policy" [ref=f20e180] [cursor=pointer]:
+                - /url: /cookies
+          - paragraph [ref=f20e181]: connect@dkservers.space
+      - generic [ref=f20e182]:
+        - paragraph [ref=f20e183]: © 2026 MoshineSites. All rights reserved.
+        - paragraph [ref=f20e184]: Built with Next.js, Tailwind & SQLite
+  - alert [ref=f20e185]

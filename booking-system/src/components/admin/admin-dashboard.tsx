@@ -111,7 +111,7 @@ export default function AdminDashboard() {
               Ember &amp; Wood · {all.length} booking{all.length === 1 ? '' : 's'}
             </p>
           </div>
-          <button type="button" className="btn-secondary" onClick={onLogout}>
+          <button type="button" className="btn-secondary" onClick={onLogout} aria-label="Sign out of admin">
             Sign out
           </button>
         </div>
@@ -270,6 +270,7 @@ export default function AdminDashboard() {
                   className="btn-secondary"
                   autoFocus
                   onClick={() => setDeleteTarget(null)}
+                  aria-label="Cancel deletion"
                 >
                   Cancel
                 </button>
@@ -282,6 +283,7 @@ export default function AdminDashboard() {
                     setDeleteTarget(null);
                     void act(target.id, 'DELETE');
                   }}
+                  aria-label={busyId === deleteTarget.id ? 'Deleting booking' : 'Delete booking'}
                 >
                   {busyId === deleteTarget.id ? 'Deleting…' : 'Delete'}
                 </button>
@@ -347,6 +349,7 @@ function RowActions({
     <div className="mt-3 flex flex-wrap items-center gap-2 md:mt-0 md:justify-end">
       {booking.status === 'pending' && (
         <button
+          type="button"
           {...common}
           onClick={() => onAct(booking.id, 'PATCH', 'confirmed')}
           className={`${common.className} bg-success text-white hover:bg-success/90`}
@@ -356,6 +359,7 @@ function RowActions({
       )}
       {booking.status === 'confirmed' && (
         <button
+          type="button"
           {...common}
           onClick={() => onAct(booking.id, 'PATCH', 'completed')}
           className={`${common.className} bg-brand-100 text-brand-800 hover:bg-brand-200`}
@@ -367,6 +371,7 @@ function RowActions({
         booking.status === 'confirmed' ||
         booking.status === 'completed') && (
         <button
+          type="button"
           {...common}
           onClick={() => onAct(booking.id, 'PATCH', 'cancelled')}
           className={`${common.className} border border-hairline text-text-secondary hover:bg-bg-secondary`}
@@ -375,6 +380,7 @@ function RowActions({
         </button>
       )}
       <button
+        type="button"
         {...common}
         onClick={() => onDelete(booking)}
         className={`${common.className} border border-error/25 text-error hover:bg-error/5`}

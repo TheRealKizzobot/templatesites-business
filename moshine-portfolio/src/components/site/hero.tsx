@@ -56,9 +56,9 @@ export default function Hero() {
           <div className="animate-fade-up delay-400 mt-12 flex flex-wrap gap-x-8 gap-y-4">
             {[
               { value: '5', label: 'Live templates' },
-              { value: '100%', label: 'Static export' },
-              { value: 'WCAG', label: 'AA accessible' },
+              { value: 'Next.js', label: 'App Router' },
               { value: 'SQLite', label: 'Backend ready' },
+              { value: 'Tailwind', label: 'Design system' },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-2xl font-semibold text-text-on-dark">{stat.value}</div>

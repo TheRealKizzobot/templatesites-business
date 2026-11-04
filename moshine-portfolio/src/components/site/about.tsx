@@ -3,7 +3,7 @@ export default function About() {
     { value: '5', label: 'Templates built' },
     { value: 'SQLite', label: 'Database backed' },
     { value: '0', label: 'External UI libraries' },
-    { value: 'MIT', label: 'Open source' },
+    { value: 'Next.js', label: 'App Router' },
   ];
 
   return (
@@ -49,7 +49,7 @@ export default function About() {
             <div aria-hidden="true" className="absolute -inset-4 rounded-2xl bg-bg-elevated" />
             <div className="relative grid gap-3">
               {[
-                { name: 'Next.js', desc: 'App Router, static export' },
+                { name: 'Next.js', desc: 'App Router' },
                 { name: 'Tailwind CSS', desc: 'Utility-first, design tokens' },
                 { name: 'SQLite', desc: 'Zero-config, file-based DB' },
                 { name: 'TypeScript', desc: 'Type-safe, modern syntax' },

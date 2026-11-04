@@ -87,14 +87,10 @@
     @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12;
   }
 
-  /* Nav */
+  /* Nav — color is set inline so it adapts to background (dark hero vs light page). */
   .nav-link {
     @apply inline-flex min-h-11 items-center rounded-full px-4 text-sm font-medium
-           text-text-on-dark-muted transition-colors hover:text-text-on-dark;
-  }
-
-  .nav-link-dark {
-    @apply text-text-on-dark-muted hover:text-text-on-dark;
+           transition-colors;
   }
 
   /* Section base */

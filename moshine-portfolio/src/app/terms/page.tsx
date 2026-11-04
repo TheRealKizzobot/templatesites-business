@@ -21,7 +21,7 @@ export default function TermsOfService() {
     <main className="min-h-screen bg-bg-primary dark:bg-bg-primary">
       <section className="mx-auto max-w-3xl px-4 py-10 sm:px-6 md:pt-32 pt-20">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-display font-bold mb-8 text-text-primary">
+          <h1 className="text-4xl md:text-5xl font-display font-medium mb-8 text-text-primary">
             Terms of Service
           </h1>
           <p className="text-lg mb-8 text-text-secondary">

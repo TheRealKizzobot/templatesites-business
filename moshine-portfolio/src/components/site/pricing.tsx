@@ -104,7 +104,7 @@ export default function Pricing() {
               </ul>
 
               <a
-                href="#contact"
+                href="/#contact"
                 className={`focus-ring mt-8 inline-flex w-full items-center justify-center rounded-lg py-2.5 text-sm font-medium transition-colors ${
                   tier.featured
                     ? 'bg-brand text-white hover:bg-brand-dark'

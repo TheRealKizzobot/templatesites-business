@@ -100,6 +100,7 @@ export default function CtaBand() {
                 <button
                   type="submit"
                   className="inline-flex min-h-11 items-center justify-center gap-sm rounded-full bg-white px-lg text-sm font-semibold text-brand-700 shadow-soft transition-colors hover:bg-brand-100"
+                  aria-label="Get started with TaskFlow"
                 >
                   Get started
                   <ArrowRightIcon className="size-4" />

@@ -56,8 +56,23 @@ const server = createServer(async (req, res) => {
     try {
       body = await readFile(target);
     } catch {
-      target = normalize(join(root, path, 'index.html'));
-      body = await readFile(target);
+      // Next.js static export: route pages become <path>.html, not <path>/index.html.
+      // Try the .html fallback before the directory fallback so /cookies serves cookies.html.
+      const candidates = [
+        normalize(join(root, `${path}.html`)),
+        normalize(join(root, path, 'index.html')),
+      ];
+      let lastErr;
+      for (const candidate of candidates) {
+        try {
+          body = await readFile(candidate);
+          target = candidate;
+          break;
+        } catch (e) {
+          lastErr = e;
+        }
+      }
+      if (body === undefined) throw lastErr;
     }
 
     res.writeHead(200, {

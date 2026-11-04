@@ -1,0 +1,132 @@
+- generic [active] [ref=f3e1]:
+  - link "Skip to main content" [ref=f3e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f3e3]:
+    - navigation "Primary" [ref=f3e4]:
+      - link "MoshineSites — back to homepage" [ref=f3e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f3e11]: MoshineSites
+      - generic [ref=f3e12]:
+        - link "Templates" [ref=f3e13] [cursor=pointer]:
+          - /url: "#templates"
+        - link "About" [ref=f3e14] [cursor=pointer]:
+          - /url: "#about"
+        - link "Pricing" [ref=f3e15] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "Contact" [ref=f3e16] [cursor=pointer]:
+          - /url: "#contact"
+        - link "Blog" [ref=f3e18] [cursor=pointer]:
+          - /url: https://dkservers.space
+      - link "Start a Project" [ref=f3e20] [cursor=pointer]:
+        - /url: "#contact"
+  - main [ref=f3e21]:
+    - main [ref=f3e22]:
+      - generic [ref=f3e24]:
+        - heading "Privacy Policy" [level=1] [ref=f3e25]
+        - paragraph [ref=f3e26]: "Last updated: September 2026"
+        - generic [ref=f3e27]:
+          - generic [ref=f3e28]:
+            - heading "1. Information We Collect" [level=2] [ref=f3e29]
+            - paragraph [ref=f3e30]: "When you interact with MoshineSites, we may collect:"
+            - list [ref=f3e31]:
+              - listitem [ref=f3e32]: Contact information (name, email, phone) when you submit forms
+              - listitem [ref=f3e33]: Account information if you create an account
+              - listitem [ref=f3e34]: Order and payment information for purchases
+              - listitem [ref=f3e35]: Technical data (IP address, browser type, pages visited) via standard web analytics
+              - listitem [ref=f3e36]: Any information you voluntarily provide
+          - generic [ref=f3e37]:
+            - heading "2. How We Use Your Information" [level=2] [ref=f3e38]
+            - list [ref=f3e39]:
+              - listitem [ref=f3e40]: To provide and improve our services
+              - listitem [ref=f3e41]: To process orders and manage accounts
+              - listitem [ref=f3e42]: To communicate about orders, updates, and support
+              - listitem [ref=f3e43]: To comply with legal obligations
+              - listitem [ref=f3e44]: To send relevant updates (you can unsubscribe anytime)
+          - generic [ref=f3e45]:
+            - heading "3. Data Sharing" [level=2] [ref=f3e46]
+            - paragraph [ref=f3e47]: "We do not sell your personal information. We may share data with:"
+            - list [ref=f3e48]:
+              - listitem [ref=f3e49]: Payment processors for transactions
+              - listitem [ref=f3e50]: Hosting providers (Vercel) for site deployment
+              - listitem [ref=f3e51]: Legal authorities when required by law
+          - generic [ref=f3e52]:
+            - heading "4. Data Retention" [level=2] [ref=f3e53]
+            - paragraph [ref=f3e54]: "We retain account and order data as long as your account is active or as needed for legal compliance. Analytics data is retained per provider policies (Vercel: 30 days). You may request deletion at any time."
+          - generic [ref=f3e55]:
+            - heading "5. Your Rights" [level=2] [ref=f3e56]
+            - paragraph [ref=f3e57]: You may request access, correction, or deletion of your personal data by contacting us.
+          - generic [ref=f3e58]:
+            - heading "6. Contact" [level=2] [ref=f3e59]
+            - paragraph [ref=f3e60]:
+              - text: Questions about this policy? Email us at
+              - link "connect@dkservers.space" [ref=f3e61] [cursor=pointer]:
+                - /url: mailto:connect@dkservers.space
+  - contentinfo "Site footer" [ref=f3e62]:
+    - generic [ref=f3e63]:
+      - generic [ref=f3e64]:
+        - generic [ref=f3e65]:
+          - link "MoshineSites" [ref=f3e66] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=f3e73]: Production-ready website templates and custom development for small businesses. Clean code, fast sites, no bloat.
+          - generic [ref=f3e74]:
+            - link "GitHub" [ref=f3e75] [cursor=pointer]:
+              - /url: https://github.com/TheRealKizzobot
+            - link "X (Twitter)" [ref=f3e78] [cursor=pointer]:
+              - /url: https://x.com/dkservers
+            - link "LinkedIn" [ref=f3e81] [cursor=pointer]:
+              - /url: https://linkedin.com/in/danielkingston
+        - generic [ref=f3e84]:
+          - heading "Templates" [level=3] [ref=f3e85]
+          - list [ref=f3e86]:
+            - listitem [ref=f3e87]:
+              - link "Ember & Wood" [ref=f3e88] [cursor=pointer]:
+                - /url: https://restaurant-site-tawny.vercel.app
+              - paragraph [ref=f3e93]: Restaurant & dining
+            - listitem [ref=f3e94]:
+              - link "TaskFlow" [ref=f3e95] [cursor=pointer]:
+                - /url: https://taskflow-saas-lac.vercel.app
+              - paragraph [ref=f3e100]: SaaS dashboard
+            - listitem [ref=f3e101]:
+              - link "Book & Dine" [ref=f3e102] [cursor=pointer]:
+                - /url: https://booking-system-olive-eight.vercel.app
+              - paragraph [ref=f3e107]: Reservation system
+            - listitem [ref=f3e108]:
+              - link "Northlight Goods" [ref=f3e109] [cursor=pointer]:
+                - /url: https://ecommerce-store-five-phi.vercel.app
+              - paragraph [ref=f3e114]: E-commerce store
+            - listitem [ref=f3e115]:
+              - link "Metrics" [ref=f3e116] [cursor=pointer]:
+                - /url: https://analytics-dashboard-five-kohl.vercel.app
+              - paragraph [ref=f3e121]: Analytics dashboard
+        - generic [ref=f3e122]:
+          - heading "Resources" [level=3] [ref=f3e123]
+          - list [ref=f3e124]:
+            - listitem [ref=f3e125]:
+              - link "About" [ref=f3e126] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=f3e127]:
+              - link "Pricing" [ref=f3e128] [cursor=pointer]:
+                - /url: "#pricing"
+            - listitem [ref=f3e129]:
+              - link "Contact" [ref=f3e130] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f3e131]:
+              - link "Blog" [ref=f3e132] [cursor=pointer]:
+                - /url: https://dkservers.space
+        - generic [ref=f3e133]:
+          - heading "Legal" [level=3] [ref=f3e134]
+          - list [ref=f3e135]:
+            - listitem [ref=f3e136]:
+              - link "Terms of Service" [ref=f3e137] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f3e138]:
+              - link "Privacy Policy" [ref=f3e139] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f3e140]:
+              - link "Cookie Policy" [ref=f3e141] [cursor=pointer]:
+                - /url: /cookies
+          - paragraph [ref=f3e142]: connect@dkservers.space
+      - generic [ref=f3e143]:
+        - paragraph [ref=f3e144]: © 2026 MoshineSites. All rights reserved.
+        - paragraph [ref=f3e145]: Built with Next.js, Tailwind & SQLite
+  - alert [ref=f3e146]

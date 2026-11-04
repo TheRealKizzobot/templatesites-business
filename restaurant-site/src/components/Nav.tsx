@@ -94,6 +94,8 @@ export default function Nav() {
                 <a
                   href={link.href}
                   className="inline-flex min-h-[44px] items-center text-sm font-medium text-brand-100 transition-colors hover:text-white"
+                  target={link.href.startsWith('http') ? '_blank' : undefined}
+                  rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                 >
                   {link.label}
                 </a>
