@@ -5,7 +5,7 @@ export default function DemoSection() {
     <section id="demo" aria-labelledby="demo-title" className="bg-bg-primary py-3xl">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold tracking-wide text-brand-600 uppercase">
+          <p className="text-sm font-semibold tracking-wide text-brand-600">
             Live demo
           </p>
           <h2

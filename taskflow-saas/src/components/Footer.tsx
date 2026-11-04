@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
 
           <nav aria-label="Product">
-            <h3 className="text-sm font-semibold tracking-wide text-text-primary uppercase">
+            <h3 className="text-sm font-semibold tracking-wide text-text-primary">
               Product
             </h3>
             <ul className="mt-md space-y-xs">
@@ -69,7 +69,7 @@ export default function Footer() {
           </nav>
 
           <nav aria-label="Get started">
-            <h3 className="text-sm font-semibold tracking-wide text-text-primary uppercase">
+            <h3 className="text-sm font-semibold tracking-wide text-text-primary">
               Get started
             </h3>
             <ul className="mt-md space-y-xs">
@@ -87,7 +87,7 @@ export default function Footer() {
           </nav>
 
           <nav aria-label="Legal">
-            <h3 className="text-sm font-semibold tracking-wide text-text-primary uppercase">
+            <h3 className="text-sm font-semibold tracking-wide text-text-primary">
               Legal
             </h3>
             <ul className="mt-md space-y-xs">

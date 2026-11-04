@@ -59,7 +59,7 @@ export default function AdminShell({ children }: { children: ReactNode }) {
     <nav aria-label="Admin" className="flex h-full flex-col gap-1">
       <p className="px-3 pb-4 pt-1 font-display text-xl font-semibold text-brand-800">
         Northlight
-        <span className="block text-xs font-sans font-semibold uppercase tracking-[0.18em] text-text-secondary">
+        <span className="block text-xs font-sans font-semibold tracking-[0.18em] text-text-secondary">
           Admin panel
         </span>
       </p>

@@ -17,7 +17,7 @@ export default function SiteFooter() {
           </p>
         </div>
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-brand-200">
+          <p className="text-sm font-semibold tracking-wider text-brand-200">
             Hours
           </p>
           <ul className="mt-3 space-y-1 text-sm text-brand-300">
@@ -27,7 +27,7 @@ export default function SiteFooter() {
           </ul>
         </div>
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-brand-200">
+          <p className="text-sm font-semibold tracking-wider text-brand-200">
             Find us
           </p>
           <ul className="mt-3 space-y-1 text-sm text-brand-300">
@@ -46,7 +46,7 @@ export default function SiteFooter() {
           </ul>
         </div>
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-brand-200">
+          <p className="text-sm font-semibold tracking-wider text-brand-200">
             Follow
           </p>
           <ul className="mt-3 flex gap-2">

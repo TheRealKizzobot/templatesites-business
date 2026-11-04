@@ -191,7 +191,7 @@ export default function ProductDetailPage() {
 
         {/* Details */}
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-text-secondary">
+          <p className="text-xs font-semibold tracking-[0.2em] text-text-secondary">
             {product.category}
           </p>
           <h1 className="mt-2 text-3xl sm:text-4xl">{product.name}</h1>

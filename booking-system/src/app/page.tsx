@@ -81,10 +81,10 @@ export default function Home() {
         <section id="top" aria-labelledby="hero-title" className="bg-bg-secondary">
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_auto] lg:py-24">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-600">
+              <p className="text-sm font-semibold tracking-[0.16em] text-text-secondary">
                 Ember & Wood · Wood-fired kitchen & natural wine
               </p>
-              <h1 id="hero-title" className="mt-4 text-4xl leading-tight text-brand-900 sm:text-5xl">
+              <h1 id="hero-title" className="mt-4 font-display text-4xl leading-[1.05] text-text-primary sm:text-5xl">
                 Reserve your table
               </h1>
               <p className="mt-4 max-w-md text-lg leading-relaxed text-text-secondary">
@@ -94,7 +94,7 @@ export default function Home() {
               <div className="mt-8">
                 <a
                   href="#book"
-                  className="btn px-8 py-3.5 text-base bg-brand-800 text-brand-50 hover:bg-brand-700"
+                  className="btn px-8 py-3.5 text-base bg-brand-700 text-white hover:bg-brand-800 active:bg-brand-900"
                 >
                   Book a table
                 </a>
@@ -129,7 +129,7 @@ export default function Home() {
         <section id="about" aria-labelledby="about-title" className="bg-white">
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:py-20">
             <FadeIn>
-              <h2 id="about-title" className="text-3xl text-brand-900">
+              <h2 id="about-title" className="text-3xl text-text-primary">
                 Cooked over fire, poured by the glass
               </h2>
               <p className="mt-5 leading-relaxed text-text-secondary">
@@ -163,7 +163,7 @@ export default function Home() {
 
         <section id="menu" aria-labelledby="menu-title" className="bg-bg-secondary">
           <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:py-20">
-            <h2 id="menu-title" className="text-3xl text-brand-900">
+            <h2 id="menu-title" className="text-3xl text-text-primary">
               Signature dishes
             </h2>
             <p className="mt-3 max-w-xl text-text-secondary">
@@ -176,7 +176,7 @@ export default function Home() {
                   key={d.name}
                   className="card flex flex-col gap-2 p-6 transition-transform duration-200 hover:-translate-y-1"
                 >
-                  <h3 className="text-xl text-brand-900">{d.name}</h3>
+                  <h3 className="text-xl text-text-primary">{d.name}</h3>
                   <p className="flex-1 text-sm leading-relaxed text-text-secondary">
                     {d.blurb}
                   </p>
@@ -193,7 +193,7 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:py-20">
             <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
               <div>
-                <h2 id="book-title" className="text-3xl text-brand-900">
+                <h2 id="book-title" className="text-3xl text-text-primary">
                   Reserve your table
                 </h2>
                 <p className="mt-4 max-w-md leading-relaxed text-text-secondary">
@@ -228,7 +228,7 @@ export default function Home() {
           className="bg-bg-secondary"
         >
           <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:py-20">
-            <h2 id="testimonials-title" className="text-3xl text-brand-900">
+            <h2 id="testimonials-title" className="text-3xl text-text-primary">
               Word of mouth
             </h2>
             <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -262,7 +262,7 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:py-20">
             <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
               <div id="hours">
-                <h2 id="hours-title" className="text-3xl text-brand-900">
+                <h2 id="hours-title" className="text-3xl text-text-primary">
                   Hours & contact
                 </h2>
                 <table className="mt-6 w-full max-w-md border-collapse text-sm">

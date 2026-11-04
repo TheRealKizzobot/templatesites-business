@@ -67,15 +67,15 @@ export default function OrderConfirmationPage() {
 
       <div className="mt-10 grid gap-4 sm:grid-cols-3">
         <div className="card p-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">Order number</p>
+          <p className="text-xs font-semibold tracking-wide text-text-secondary">Order number</p>
           <p className="mt-1 text-lg font-bold text-brand-800">{String(order.order_number ?? '')}</p>
         </div>
         <div className="card p-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">Order date</p>
+          <p className="text-xs font-semibold tracking-wide text-text-secondary">Order date</p>
           <p className="mt-1 text-lg font-bold text-brand-800">{formatDate(String(order.created_at ?? ''))}</p>
         </div>
         <div className="card p-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">Estimated delivery</p>
+          <p className="text-xs font-semibold tracking-wide text-text-secondary">Estimated delivery</p>
           <p className="mt-1 text-lg font-bold text-brand-800">{formatDate(estimated)}</p>
         </div>
       </div>

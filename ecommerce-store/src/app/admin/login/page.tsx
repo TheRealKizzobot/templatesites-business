@@ -37,7 +37,7 @@ export default function AdminLoginPage() {
   return (
     <main id="main" className="flex min-h-[80vh] items-center justify-center bg-bg-secondary px-4 py-16">
       <div className="w-full max-w-sm rounded-xl border border-border bg-white p-8 shadow-soft">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand">
+        <p className="text-sm font-semibold tracking-[0.2em] text-brand">
           Northlight Goods
         </p>
         <h1 className="mt-2 text-2xl">Admin sign in</h1>

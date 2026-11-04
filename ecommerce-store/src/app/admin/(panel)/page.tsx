@@ -101,7 +101,7 @@ export default function AdminDashboard() {
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {cards.map((card, i) => (
               <div key={card.label} className={`card p-5 ${CARD_STYLES[i % CARD_STYLES.length]}`}>
-                <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                <p className="text-xs font-semibold tracking-wide text-text-secondary">
                   {card.label}
                 </p>
                 <p className="mt-2 text-2xl font-bold text-brand-800">{card.value}</p>
@@ -115,7 +115,7 @@ export default function AdminDashboard() {
             </h3>
             <div className="mt-4 overflow-hidden rounded-xl border border-border bg-white shadow-soft">
               <table className="w-full text-left text-sm">
-                <thead className="bg-bg-secondary text-xs uppercase tracking-wide text-text-secondary">
+                <thead className="bg-bg-secondary text-xs tracking-wide text-text-secondary">
                   <tr>
                     <th scope="col" className="px-4 py-3 font-semibold">Order</th>
                     <th scope="col" className="px-4 py-3 font-semibold hidden sm:table-cell">Customer</th>

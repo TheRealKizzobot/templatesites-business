@@ -3,7 +3,7 @@ export default function Hero() {
     <section
       id="top"
       aria-labelledby="hero-heading"
-      className="relative isolate min-h-[88svh] overflow-hidden bg-brand-900"
+      className="relative isolate min-h-[88svh] overflow-hidden bg-bg-dark"
     >
       <img
         src="/images/hero.svg"
@@ -19,14 +19,14 @@ export default function Hero() {
       />
       <div className="container-page relative flex min-h-[88svh] items-end pb-2xl pt-28 sm:pb-3xl">
         <div className="max-w-2xl">
-          <p className="section-kicker text-brand-200">Wood-fired modern American</p>
+          <p className="section-kicker text-text-on-dark/80">Wood-fired modern American</p>
           <h1
             id="hero-heading"
-            className="mt-md font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-6xl"
+            className="mt-md font-display text-4xl font-semibold leading-[1.05] text-text-on-dark sm:text-5xl lg:text-6xl"
           >
             Fire, wood & honest ingredients.
           </h1>
-          <p className="mt-lg max-w-xl text-lg text-brand-100 sm:text-xl">
+          <p className="mt-lg max-w-xl text-lg text-text-on-dark/85 sm:text-xl">
             Ember & Wood is a small wood-fired room in Portland where dinner
             is slow, warm and quietly serious. Reserve a table or peek at the
             menu.
@@ -37,7 +37,7 @@ export default function Hero() {
             </a>
             <a
               href="#menu"
-              className="btn border border-brand-300/60 bg-transparent text-white hover:border-white hover:bg-white/10"
+              className="btn border border-brand-300/60 bg-transparent text-text-on-dark hover:border-white hover:bg-white/10"
             >
               View the Menu
             </a>

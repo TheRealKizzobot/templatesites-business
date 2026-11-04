@@ -153,7 +153,7 @@ export default function AnalyticsPage() {
 
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <div className="card p-5">
-              <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+              <p className="text-xs font-semibold tracking-wide text-text-secondary">
                 Best posting day
               </p>
               <p className="mt-2 text-2xl font-bold text-text-primary">
@@ -163,7 +163,7 @@ export default function AnalyticsPage() {
               </p>
             </div>
             <div className="card p-5">
-              <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+              <p className="text-xs font-semibold tracking-wide text-text-secondary">
                 Highest engagement rate
               </p>
               <p className="mt-2 text-2xl font-bold text-text-primary">

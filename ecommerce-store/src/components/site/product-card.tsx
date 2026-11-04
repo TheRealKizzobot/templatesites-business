@@ -26,7 +26,7 @@ export default function ProductCard({ product }: { product: Product }) {
       </Link>
       <div className="flex flex-1 flex-col gap-1.5 p-4">
         <div className="flex items-center justify-between gap-2">
-          <span className="text-xs font-medium uppercase tracking-wide text-text-secondary">{product.category}</span>
+          <span className="text-xs font-medium tracking-wide text-text-secondary">{product.category}</span>
           <Stars rating={product.rating} size="sm" />
         </div>
         <Link href={`/product/${product.id}`} className="font-display text-xl font-semibold line-clamp-2 text-text-primary hover:text-brand-600">

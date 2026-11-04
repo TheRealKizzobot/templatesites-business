@@ -5,10 +5,10 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 const NAV_LINKS = [
-  { href: '/', label: 'Templates' },
-  { href: '/', label: 'About' },
-  { href: '/', label: 'Pricing' },
-  { href: '/', label: 'Contact' },
+  { href: '/#templates', label: 'Templates' },
+  { href: '/#about', label: 'About' },
+  { href: '/#pricing', label: 'Pricing' },
+  { href: '/#contact', label: 'Contact' },
 ];
 
 const TEMPLATE_LINKS = [
@@ -81,11 +81,16 @@ export default function Nav() {
 
         {/* Desktop nav */}
         <div className="hidden items-center gap-1 md:flex">
-          <a href="/" className={`nav-link ${hasSolidBg ? 'text-text-secondary hover:text-text-primary' : 'text-text-on-dark-muted hover:text-text-on-dark'}`}>Templates</a>
-          <a href="/" className={`nav-link ${hasSolidBg ? 'text-text-secondary hover:text-text-primary' : 'text-text-on-dark-muted hover:text-text-on-dark'}`}>About</a>
-          <a href="/" className={`nav-link ${hasSolidBg ? 'text-text-secondary hover:text-text-primary' : 'text-text-on-dark-muted hover:text-text-on-dark'}`}>Pricing</a>
-          <a href="/" className={`nav-link ${hasSolidBg ? 'text-text-secondary hover:text-text-primary' : 'text-text-on-dark-muted hover:text-text-on-dark'}`}>Contact</a>
-          </div>
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className={`nav-link ${hasSolidBg ? 'text-text-secondary hover:text-text-primary' : 'text-text-on-dark-muted hover:text-text-on-dark'}`}
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
 
         {/* CTA + mobile toggle */}
         <div className="flex items-center gap-2">

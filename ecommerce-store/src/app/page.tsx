@@ -14,16 +14,16 @@ export default function HomePage() {
   return (
     <main id="main">
       {/* Hero */}
-      <section className="bg-brand-800 text-brand-50">
+      <section className="bg-bg-primary text-text-primary">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:py-28">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
+            <p className="text-sm font-semibold tracking-[0.2em] text-text-secondary">
               Northlight Goods · Home goods, carefully made
             </p>
             <h1 className="mt-4 text-4xl leading-tight sm:text-5xl lg:text-6xl">
               Shop our collection.
             </h1>
-            <p className="mt-5 max-w-md text-lg leading-relaxed text-brand-100">
+            <p className="mt-5 max-w-md text-lg leading-relaxed text-text-secondary">
               Furniture, lighting, textiles, tableware and decor for slower, warmer homes —
               every piece chosen to outlast trends and built to be lived with.
             </p>
@@ -33,7 +33,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="#featured"
-                className="btn border border-brand-500 text-brand-100 hover:bg-brand-700"
+                className="btn border border-brand-500 text-text-primary hover:bg-brand-100"
               >
                 View featured
               </Link>
@@ -64,7 +64,7 @@ export default function HomePage() {
       <section id="about" className="border-b border-border bg-bg-secondary">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-20">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand">
+            <p className="text-sm font-semibold tracking-[0.2em] text-brand">
               About the collection
             </p>
             <h2 className="mt-3 text-3xl">Made to be lived with</h2>
@@ -89,7 +89,7 @@ export default function HomePage() {
       <section id="featured" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand">
+            <p className="text-sm font-semibold tracking-[0.2em] text-brand">
               Featured
             </p>
             <h2 className="mt-3 text-3xl">Bestsellers &amp; staff picks</h2>

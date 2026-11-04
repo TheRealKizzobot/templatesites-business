@@ -47,7 +47,8 @@ const server = createServer(async (req, res) => {
     } catch {
       resolvedTarget = target;
     }
-    if (!resolvedTarget.startsWith(realRoot + path.sep) && resolvedTarget !== realRoot) {
+    if (!resolvedTarget.startsWith(realRoot + '/') && resolvedTarget !== realRoot) {
+      console.error('403', JSON.stringify({ path, target, resolvedTarget, realRoot }));
       res.writeHead(403).end();
       return;
     }

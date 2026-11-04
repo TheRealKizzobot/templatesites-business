@@ -79,7 +79,7 @@ export default function Nav() {
         >
           <a
             href="#top"
-            className="flex items-center gap-sm text-brand-100 hover:text-white"
+            className="flex items-center gap-sm text-text-primary hover:text-white"
             onClick={close}
           >
             <FlameMark className="h-8 w-8" />
@@ -93,7 +93,7 @@ export default function Nav() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="inline-flex min-h-[44px] items-center text-sm font-medium text-brand-100 transition-colors hover:text-white"
+                  className="inline-flex min-h-[44px] items-center text-sm font-medium text-text-secondary transition-colors hover:text-text-primary"
                   target={link.href.startsWith('http') ? '_blank' : undefined}
                   rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                 >
@@ -157,7 +157,7 @@ export default function Nav() {
                 <a
                   href={link.href}
                   onClick={close}
-                  className="flex min-h-[52px] items-center font-display text-lg text-brand-100 hover:text-white"
+                  className="flex min-h-[52px] items-center font-display text-lg text-text-secondary hover:text-text-primary"
                 >
                   {link.label}
                 </a>
@@ -167,7 +167,7 @@ export default function Nav() {
               <a
                 href="#reserve"
                 onClick={close}
-                className="btn btn-on-dark w-full"
+                className="btn btn-on-dark w-full text-text-primary"
               >
                 Reserve a Table
               </a>

@@ -34,119 +34,91 @@ export default function CookiePolicy() {
                 1. What Are Cookies
               </h2>
               <p>
-                Cookies are small text files stored on your device when you visit a website. They help sites function properly and provide analytics.
+                Cookies are small text files stored on your device when you visit our website.
+                They help us provide you with a better experience and understand how you use our services.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4 text-text-primary">
-                2. Cookies We Use
+                2. How We Use Cookies
               </h2>
-              <p>MoshineSites uses the following categories of cookies:</p>
+              <p className="mb-4">We use cookies for the following purposes:</p>
               <ul className="list-disc list-inside space-y-2 mt-2">
-                <li><strong>Essential cookies:</strong> Session management, CSRF protection, cart functionality, authentication</li>
-                <li><strong>Analytics cookies:</strong> Vercel Analytics (page views, performance metrics) — anonymized</li>
-                <li><strong>Preference cookies:</strong> Theme selection, language preference</li>
+                <li>
+                  <strong className="text-text-primary">Essential cookies:</strong> Required for the
+                  website to function properly, including session management and security.
+                </li>
+                <li>
+                  <strong className="text-text-primary">Functionality cookies:</strong> Remember
+                  your preferences and settings.
+                </li>
+                <li>
+                  <strong className="text-text-primary">Analytics cookies:</strong> Help us
+                  understand how visitors interact with our website.
+                </li>
+                <li>
+                  <strong className="text-text-primary">Application data cookies:</strong> For our
+                  demo templates (Northlight Goods, Book & Dine, Metrics), we store application
+                  data like cart items, bookings, and dashboard settings in cookies for
+                  demonstration purposes.
+                </li>
               </ul>
-              <p className="mt-2">
-                We do not use advertising or tracking cookies. No third-party advertising cookies are set.
-              </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4 text-text-primary">
-                3. Cookie Details
+                3. Demo Template Data Storage
               </h2>
-              <table className="w-full border-collapse text-sm text-text-secondary">
-                <thead>
-                  <tr className="border-b border-border">
-                    <th className="text-left py-2 px-3">Cookie</th>
-                    <th className="text-left py-2 px-3">Purpose</th>
-                    <th className="text-left py-2 px-3">Duration</th>
-                    <th className="text-left py-2 px-3">Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-border">
-                    <td className="py-2 px-3 font-mono">__session</td>
-                    <td className="py-2 px-3">Session management</td>
-                    <td className="py-2 px-3">Session</td>
-                    <td className="py-2 px-3">Essential</td>
-                  </tr>
-                  <tr className="border-b border-border">
-                    <td className="py-2 px-3 font-mono">__cf_bm</td>
-                    <td className="py-2 px-3">Cloudflare bot management</td>
-                    <td className="py-2 px-3">30 min</td>
-                    <td className="py-2 px-3">Essential</td>
-                  </tr>
-                  <tr className="border-b border-border">
-                    <td className="py-2 px-3 font-mono">vercel-analytics</td>
-                    <td className="py-2 px-3">Anonymous page views</td>
-                    <td className="py-2 px-3">1 year</td>
-                    <td className="py-2 px-3">Analytics</td>
-                  </tr>
-                  <tr className="border-b border-border">
-                    <td className="py-2 px-3 font-mono">theme</td>
-                    <td className="py-2 px-3">Theme preference</td>
-                    <td className="py-2 px-3">1 year</td>
-                    <td className="py-2 px-3">Preference</td>
-                  </tr>
-                  <tr className="border-b border-border">
-                    <td className="py-2 px-3 font-mono">cart</td>
-                    <td className="py-2 px-3">Shopping cart</td>
-                    <td className="py-2 px-3">30 days</td>
-                    <td className="py-2 px-3">Essential</td>
-                  </tr>
-                  <tr className="border-b border-border">
-                    <td className="py-2 px-3 font-mono">auth_token</td>
-                    <td className="py-2 px-3">Authentication</td>
-                    <td className="py-2 px-3">30 days</td>
-                    <td className="py-2 px-3">Essential</td>
-                  </tr>
-                </tbody>
-              </table>
+              <p className="mb-4">
+                Our demo templates use cookies to store data locally in your browser for
+                demonstration purposes. This includes:
+              </p>
+              <ul className="list-disc list-inside space-y-2 mt-2">
+                <li>
+                  <strong className="text-text-primary">Northlight Goods (E-commerce):</strong>
+                  {' '}
+                  Shopping cart contents, product catalog data, and order information
+                </li>
+                <li>
+                  <strong className="text-text-primary">Book & Dine (Reservations):</strong>
+                  {' '}
+                  Booking information and reservation data
+                </li>
+                <li>
+                  <strong className="text-text-primary">Metrics (Analytics):</strong>
+                  {' '}
+                  Dashboard settings and analytics data
+                </li>
+              </ul>
+              <p className="mt-4">
+                This data is stored only in your browser cookies and is not transmitted to
+                external servers. Each user has their own isolated data that others cannot see.
+              </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                 4. Managing Cookies
               </h2>
-              <p>You can manage cookies via your browser settings:</p>
-              <ul className="list-disc list-inside space-y-2 mt-2">
-                <li>Block all cookies (may break site functionality)</li>
-                <li>Block third-party cookies only</li>
-                <li>Clear cookies on browser close</li>
-                <li>Use browser extensions for granular control</li>
-              </ul>
-              <p className="mt-2">
-                Note: Disabling essential cookies will break checkout, login, and cart functionality.
+              <p>
+                You can control and/or delete cookies as you wish. You can delete all cookies
+                that are already on your computer and you can set most browsers to prevent them
+                from being placed. However, if you do this, you may have to manually adjust some
+                preferences every time you visit our site and some services and functionalities
+                may not work.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4 text-text-primary">
-                5. Third-Party Cookies
+                5. Contact Us
               </h2>
               <p>
-                We do not set third-party cookies. Vercel Analytics sets first-party cookies on our domain. No advertising networks, social media pixels, or tracking pixels are used.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
-                6. Consent
-              </h2>
-              <p>
-                By using our site, you consent to essential cookies. Analytics cookies are optional — you can disable them in your browser or via Vercel's privacy settings.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-4 text-text-primary">
-                7. Contact
-              </h2>
-              <p>
-                Questions about this policy? Email <a href="mailto:connect@dkservers.space" className="underline text-brand">connect@dkservers.space</a>
+                Questions? Email{' '}
+                <a href="mailto:connect@dkservers.space" className="underline text-brand">
+                  connect@dkservers.space
+                </a>
               </p>
             </section>
           </div>

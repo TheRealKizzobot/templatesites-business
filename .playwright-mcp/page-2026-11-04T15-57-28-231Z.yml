@@ -1,0 +1,132 @@
+- generic [active] [ref=f33e1]:
+  - link "Skip to main content" [ref=f33e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f33e3]:
+    - navigation "Primary" [ref=f33e4]:
+      - link "MoshineSites — back to homepage" [ref=f33e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f33e11]: MoshineSites
+      - generic [ref=f33e12]:
+        - link "Templates" [ref=f33e13] [cursor=pointer]:
+          - /url: /#templates
+        - link "About" [ref=f33e14] [cursor=pointer]:
+          - /url: /#about
+        - link "Pricing" [ref=f33e15] [cursor=pointer]:
+          - /url: /#pricing
+        - link "Contact" [ref=f33e16] [cursor=pointer]:
+          - /url: /#contact
+      - link "Start a Project" [ref=f33e18] [cursor=pointer]:
+        - /url: /#contact
+  - main [ref=f33e19]:
+    - main [ref=f33e20]:
+      - generic [ref=f33e22]:
+        - heading "Cookie Policy" [level=1] [ref=f33e23]
+        - paragraph [ref=f33e24]: "Last updated: September 2026"
+        - generic [ref=f33e25]:
+          - generic [ref=f33e26]:
+            - heading "1. What Are Cookies" [level=2] [ref=f33e27]
+            - paragraph [ref=f33e28]: Cookies are small text files stored on your device when you visit our website. They help us provide you with a better experience and understand how you use our services.
+          - generic [ref=f33e29]:
+            - heading "2. How We Use Cookies" [level=2] [ref=f33e30]
+            - paragraph [ref=f33e31]: "We use cookies for the following purposes:"
+            - list [ref=f33e32]:
+              - listitem [ref=f33e33]:
+                - strong [ref=f33e34]: "Essential cookies:"
+                - text: Required for the website to function properly, including session management and security.
+              - listitem [ref=f33e35]:
+                - strong [ref=f33e36]: "Functionality cookies:"
+                - text: Remember your preferences and settings.
+              - listitem [ref=f33e37]:
+                - strong [ref=f33e38]: "Analytics cookies:"
+                - text: Help us understand how visitors interact with our website.
+              - listitem [ref=f33e39]:
+                - strong [ref=f33e40]: "Application data cookies:"
+                - text: For our demo templates (Northlight Goods, Book & Dine, Metrics), we store application data like cart items, bookings, and dashboard settings in cookies for demonstration purposes.
+          - generic [ref=f33e41]:
+            - heading "3. Demo Template Data Storage" [level=2] [ref=f33e42]
+            - paragraph [ref=f33e43]: "Our demo templates use cookies to store data locally in your browser for demonstration purposes. This includes:"
+            - list [ref=f33e44]:
+              - listitem [ref=f33e45]:
+                - strong [ref=f33e46]: "Northlight Goods (E-commerce):"
+                - text: Shopping cart contents, product catalog data, and order information
+              - listitem [ref=f33e47]:
+                - strong [ref=f33e48]: "Book & Dine (Reservations):"
+                - text: Booking information and reservation data
+              - listitem [ref=f33e49]:
+                - strong [ref=f33e50]: "Metrics (Analytics):"
+                - text: Dashboard settings and analytics data
+            - paragraph [ref=f33e51]: This data is stored only in your browser cookies and is not transmitted to external servers. Each user has their own isolated data that others cannot see.
+          - generic [ref=f33e52]:
+            - heading "4. Managing Cookies" [level=2] [ref=f33e53]
+            - paragraph [ref=f33e54]: You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. However, if you do this, you may have to manually adjust some preferences every time you visit our site and some services and functionalities may not work.
+          - generic [ref=f33e55]:
+            - heading "5. Contact Us" [level=2] [ref=f33e56]
+            - paragraph [ref=f33e57]:
+              - text: Questions? Email
+              - link "connect@dkservers.space" [ref=f33e58] [cursor=pointer]:
+                - /url: mailto:connect@dkservers.space
+  - contentinfo "Site footer" [ref=f33e59]:
+    - generic [ref=f33e60]:
+      - generic [ref=f33e61]:
+        - generic [ref=f33e62]:
+          - link "MoshineSites" [ref=f33e63] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=f33e70]: Production-ready website templates and custom development for small businesses. Clean code, fast sites, no bloat.
+          - generic [ref=f33e71]:
+            - link "GitHub" [ref=f33e72] [cursor=pointer]:
+              - /url: https://github.com/TheRealKizzobot
+            - link "X (Twitter)" [ref=f33e75] [cursor=pointer]:
+              - /url: https://x.com/dkservers
+            - link "LinkedIn" [ref=f33e78] [cursor=pointer]:
+              - /url: https://linkedin.com/in/danielkingston
+        - generic [ref=f33e81]:
+          - heading "Templates" [level=3] [ref=f33e82]
+          - list [ref=f33e83]:
+            - listitem [ref=f33e84]:
+              - link "Ember & Wood" [ref=f33e85] [cursor=pointer]:
+                - /url: https://restaurant-site-tawny.vercel.app
+              - paragraph [ref=f33e90]: Restaurant & dining
+            - listitem [ref=f33e91]:
+              - link "TaskFlow" [ref=f33e92] [cursor=pointer]:
+                - /url: https://taskflow-saas-lac.vercel.app
+              - paragraph [ref=f33e97]: SaaS dashboard
+            - listitem [ref=f33e98]:
+              - link "Book & Dine" [ref=f33e99] [cursor=pointer]:
+                - /url: https://booking-system-olive-eight.vercel.app
+              - paragraph [ref=f33e104]: Reservation system
+            - listitem [ref=f33e105]:
+              - link "Northlight Goods" [ref=f33e106] [cursor=pointer]:
+                - /url: https://ecommerce-store-five-phi.vercel.app
+              - paragraph [ref=f33e111]: E-commerce store
+            - listitem [ref=f33e112]:
+              - link "Metrics" [ref=f33e113] [cursor=pointer]:
+                - /url: https://analytics-dashboard-five-kohl.vercel.app
+              - paragraph [ref=f33e118]: Analytics dashboard
+        - generic [ref=f33e119]:
+          - heading "Resources" [level=3] [ref=f33e120]
+          - list [ref=f33e121]:
+            - listitem [ref=f33e122]:
+              - link "About" [ref=f33e123] [cursor=pointer]:
+                - /url: /#about
+            - listitem [ref=f33e124]:
+              - link "Pricing" [ref=f33e125] [cursor=pointer]:
+                - /url: /#pricing
+            - listitem [ref=f33e126]:
+              - link "Contact" [ref=f33e127] [cursor=pointer]:
+                - /url: /#contact
+        - generic [ref=f33e128]:
+          - heading "Legal" [level=3] [ref=f33e129]
+          - list [ref=f33e130]:
+            - listitem [ref=f33e131]:
+              - link "Terms of Service" [ref=f33e132] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f33e133]:
+              - link "Privacy Policy" [ref=f33e134] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f33e135]:
+              - link "Cookie Policy" [ref=f33e136] [cursor=pointer]:
+                - /url: /cookies
+          - paragraph [ref=f33e137]: connect@dkservers.space
+      - generic [ref=f33e138]:
+        - paragraph [ref=f33e139]: © 2026 MoshineSites. All rights reserved.
+        - paragraph [ref=f33e140]: Built with Next.js, Tailwind & TypeScript

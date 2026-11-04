@@ -128,19 +128,19 @@ export default function ContentDetailPage() {
 
       <div className="mt-6 grid gap-4 sm:grid-cols-3">
         <div className="card p-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">Views</p>
+          <p className="text-xs font-semibold tracking-wide text-text-secondary">Views</p>
           <p className="mt-2 text-2xl font-bold text-text-primary tabular-nums">
             {formatNumber(content.views)}
           </p>
         </div>
         <div className="card p-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">Engagement</p>
+          <p className="text-xs font-semibold tracking-wide text-text-secondary">Engagement</p>
           <p className="mt-2 text-2xl font-bold text-text-primary tabular-nums">
             {formatNumber(content.engagement)}
           </p>
         </div>
         <div className="card p-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">Active now</p>
+          <p className="text-xs font-semibold tracking-wide text-text-secondary">Active now</p>
           <p className="mt-2 text-2xl font-bold text-text-primary tabular-nums">
             {formatNumber(content.active_users)}
           </p>

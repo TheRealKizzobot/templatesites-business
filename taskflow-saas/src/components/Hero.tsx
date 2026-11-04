@@ -47,7 +47,7 @@ export default function Hero() {
           initial={reduce ? { opacity: 0 } : { opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={reduce ? { duration: 0.01 } : { duration: 0.4, ease: 'easeOut' }}
-          className="mx-auto inline-flex min-h-11 items-center rounded-full bg-brand-100 px-lg text-sm font-medium text-brand-600"
+          className="mx-auto inline-flex min-h-11 items-center rounded-full bg-bg-primary px-lg text-sm font-medium text-text-primary"
         >
           Built for calm productivity
         </motion.p>
@@ -64,7 +64,7 @@ export default function Hero() {
               variants={item}
               className={
                 word.accent
-                  ? 'inline-block bg-gradient-to-r from-brand-500 to-brand-700 bg-clip-text pr-[0.08em] text-transparent'
+                  ? 'inline-block pr-[0.08em] text-brand-600'
                   : 'mr-[0.24em] inline-block'
               }
             >
@@ -116,7 +116,7 @@ export default function Hero() {
         >
           <div
             aria-hidden="true"
-            className="absolute -inset-x-8 -top-8 -bottom-8 rounded-full bg-gradient-to-br from-brand-200/70 via-brand-100/60 to-transparent blur-2xl"
+            className="absolute -inset-x-8 -top-8 -bottom-8 rounded-full bg-bg-secondary/70 blur-2xl"
           />
           <motion.div
             aria-hidden="true"

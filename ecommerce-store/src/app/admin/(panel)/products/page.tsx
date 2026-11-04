@@ -203,7 +203,7 @@ export default function AdminProductsPage() {
       ) : (
         <div className="mt-6 overflow-x-auto rounded-xl border border-border bg-white shadow-soft">
           <table className="w-full min-w-[720px] text-left text-sm">
-            <thead className="bg-bg-secondary text-xs uppercase tracking-wide text-text-secondary">
+            <thead className="bg-bg-secondary text-xs tracking-wide text-text-secondary">
               <tr>
                 <th scope="col" className="px-4 py-3 font-semibold">Product</th>
                 <th scope="col" className="px-4 py-3 font-semibold">Category</th>

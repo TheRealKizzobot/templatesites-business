@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
 
           <nav aria-label="Footer">
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-brand-300">
+            <p className="text-sm font-semibold tracking-[0.16em] text-brand-300">
               Explore
             </p>
             <ul className="mt-md flex flex-col">
@@ -95,7 +95,7 @@ export default function Footer() {
           </nav>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-brand-300">
+            <p className="text-sm font-semibold tracking-[0.16em] text-brand-300">
               Contact
             </p>
             <ul className="mt-md flex flex-col gap-sm text-sm text-brand-100">
@@ -119,7 +119,7 @@ export default function Footer() {
           </div>
 
           <nav aria-label="Legal">
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-brand-300">
+            <p className="text-sm font-semibold tracking-[0.16em] text-brand-300">
               Legal
             </p>
             <ul className="mt-md flex flex-col gap-sm">

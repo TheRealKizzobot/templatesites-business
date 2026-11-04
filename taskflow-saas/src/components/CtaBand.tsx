@@ -33,20 +33,10 @@ export default function CtaBand() {
   return (
     <section id="cta" aria-labelledby="cta-title" className="bg-bg-primary pb-3xl">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-brand-800 via-brand-700 to-brand-600 px-md py-3xl text-center shadow-lift sm:px-lg">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -top-24 -right-24 size-64 rounded-full bg-brand-500/40 blur-3xl"
-          />
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -bottom-24 -left-24 size-64 rounded-full bg-brand-400/30 blur-3xl"
-          />
-
+        <div className="rounded-xl bg-brand-800 px-md py-3xl text-center shadow-lift sm:px-lg">
           <motion.div
             {...fadeIn}
             transition={{ duration: reduce ? 0.01 : 0.4, ease: 'easeOut' }}
-            className="relative"
           >
             <span className="mx-auto grid size-12 place-items-center rounded-full bg-white/15 text-white">
               <LogoMark className="size-6 text-white" />
@@ -58,8 +48,8 @@ export default function CtaBand() {
               Ready to feel the flow?
             </h2>
             <p className="mx-auto mt-md max-w-md text-md text-brand-100">
-              Join 40,000+ people who end each day knowing what got done. Get a 14-day Pro
-              trial — no credit card required.
+              Join people who end each day knowing what got done. Get a 14-day Pro trial —
+              no credit card required.
             </p>
 
             {done ? (
@@ -70,7 +60,7 @@ export default function CtaBand() {
               >
                 <CheckCircleIcon className="size-5 text-brand-100" />
                 <p className="text-sm font-medium">
-                  You&apos;re in! Watch your inbox for your magic link.
+                  Watch your inbox for your link.
                 </p>
               </div>
             ) : (

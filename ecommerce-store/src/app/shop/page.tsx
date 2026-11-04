@@ -110,7 +110,7 @@ function ShopContent() {
       {/* Hero */}
       <section className="bg-bg-secondary">
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:py-20">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand">
+          <p className="text-sm font-semibold tracking-[0.2em] text-brand">
             Northlight Goods
           </p>
           <h1 className="mt-3 text-4xl sm:text-5xl">Shop our collection</h1>

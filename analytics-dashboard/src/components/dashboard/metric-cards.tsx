@@ -52,7 +52,7 @@ export default function MetricCards({ totals, series, loading }: Props) {
     <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
       {cards.map((card) => (
         <article key={card.label} className="card p-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+          <p className="text-xs font-semibold tracking-wide text-text-secondary">
             {card.label}
           </p>
           <p className="mt-2 text-3xl font-bold text-text-primary tabular-nums">

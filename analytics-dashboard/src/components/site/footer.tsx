@@ -27,7 +27,7 @@ export default function SiteFooter() {
           </p>
         </div>
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-text-primary">
+          <p className="text-sm font-semibold tracking-wider text-text-primary">
             Navigate
           </p>
           <ul className="mt-3 space-y-1 text-sm text-text-secondary">
@@ -49,7 +49,7 @@ export default function SiteFooter() {
           </ul>
         </div>
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-text-primary">
+          <p className="text-sm font-semibold tracking-wider text-text-primary">
             Legal
           </p>
           <ul className="mt-3 space-y-1 text-sm text-text-secondary">

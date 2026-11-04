@@ -114,7 +114,7 @@ export default function AdminOrderDetailPage() {
             Items
           </h3>
           <table className="mt-4 w-full text-left text-sm">
-            <thead className="text-xs uppercase tracking-wide text-text-secondary">
+            <thead className="text-xs tracking-wide text-text-secondary">
               <tr>
                 <th scope="col" className="py-2 font-semibold">Product</th>
                 <th scope="col" className="py-2 font-semibold">Qty</th>
@@ -143,19 +143,19 @@ export default function AdminOrderDetailPage() {
             </h3>
             <dl className="mt-4 space-y-2 text-sm">
               <div>
-                <dt className="text-xs uppercase tracking-wide text-text-secondary">Name</dt>
+                <dt className="text-xs tracking-wide text-text-secondary">Name</dt>
                 <dd className="font-medium text-text-primary">{order.customer_name}</dd>
               </div>
               <div>
-                <dt className="text-xs uppercase tracking-wide text-text-secondary">Email</dt>
+                <dt className="text-xs tracking-wide text-text-secondary">Email</dt>
                 <dd className="text-text-primary">{order.email}</dd>
               </div>
               <div>
-                <dt className="text-xs uppercase tracking-wide text-text-secondary">Phone</dt>
+                <dt className="text-xs tracking-wide text-text-secondary">Phone</dt>
                 <dd className="text-text-primary">{order.phone}</dd>
               </div>
               <div>
-                <dt className="text-xs uppercase tracking-wide text-text-secondary">Ship to</dt>
+                <dt className="text-xs tracking-wide text-text-secondary">Ship to</dt>
                 <dd className="leading-relaxed text-text-primary">
                   {order.address_line}
                   <br />

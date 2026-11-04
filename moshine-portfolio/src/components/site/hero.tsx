@@ -5,17 +5,11 @@ export default function Hero() {
       aria-labelledby="hero-heading"
       className="relative isolate flex min-h-screen flex-col overflow-hidden bg-bg-dark"
     >
-      {/* Subtle warm tone shift at the top of the hero */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_0%,rgba(184,134,11,0.07),transparent_60%)]"
-      />
-
       {/* Main hero content */}
       <div className="container-page flex flex-1 items-end pb-20 pt-20 sm:pt-28 lg:pb-28">
         <div className="max-w-3xl">
           {/* Eyebrow */}
-          <div className="animate-fade-up inline-flex items-center gap-2 rounded-full border border-text-on-dark/30 bg-text-on-dark/5 px-4 py-2 text-xs text-text-on-dark backdrop-blur-sm">
+          <div className="animate-fade-up inline-flex items-center gap-2 rounded-full border border-text-on-dark/30 px-4 py-2 text-xs text-text-on-dark-muted">
             <span className="flex size-1.5 rounded-full bg-brand" />
             <span>5 production templates · Next.js + SQLite + Tailwind</span>
           </div>
@@ -52,18 +46,15 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Stats strip */}
-          <div className="animate-fade-up delay-400 mt-12 flex flex-wrap gap-x-8 gap-y-4">
-            {[
-              { value: '5', label: 'Live templates' },
-              { value: 'Next.js', label: 'App Router' },
-              { value: 'SQLite', label: 'Backend ready' },
-              { value: 'Tailwind', label: 'Design system' },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <div className="text-2xl font-semibold text-text-on-dark">{stat.value}</div>
-                <div className="text-sm text-text-on-dark-muted">{stat.label}</div>
-              </div>
+          {/* Tech row */}
+          <div className="animate-fade-up delay-400 mt-12 flex flex-wrap items-center gap-x-6 gap-y-2">
+            <div>
+              <div className="text-2xl font-semibold text-text-on-dark tabular-nums">5</div>
+              <div className="text-sm text-text-on-dark-muted">Live templates</div>
+            </div>
+            <div className="h-8 w-px bg-text-on-dark/15" />
+            {['Next.js', 'App Router', 'SQLite', 'Tailwind', 'TypeScript'].map((tech) => (
+              <span key={tech} className="text-sm text-text-on-dark-muted">{tech}</span>
             ))}
           </div>
         </div>
