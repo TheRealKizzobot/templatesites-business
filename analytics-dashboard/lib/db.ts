@@ -3,14 +3,14 @@ import path from 'node:path';
 import fs from 'node:fs';
 
 // On Vercel, use /tmp (only writable filesystem). Locally, use project data/ folder.
-const DATA_DIR = path.join(process.cwd(), 'data');
+const DATA_DIR = process.env.DATA_DIR ?? (process.env.VERCEL ? '/tmp/data' : path.join(process.cwd(), 'data'));
 const DB_PATH = path.join(DATA_DIR, 'analytics.db');
 
 let db: Database.Database | null = null;
 
 export function getDb(): Database.Database {
   if (!db) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
+    try { fs.mkdirSync(DATA_DIR, { recursive: true }); } catch { /* read-only fs on Vercel */ }
     db = new Database(DB_PATH);
     db.pragma('journal_mode = WAL');
     db.pragma('foreign_keys = ON');

@@ -6,8 +6,8 @@ const path = require('node:path');
 const Database = require('better-sqlite3');
 
 // Match lib/db.ts path logic: on Vercel use /tmp/data, locally use project data/
-const isVercel = !!process.env.VERCEL;
-const dataDir = isVercel ? '/tmp/data' : path.join(process.cwd(), 'data');
+
+const dataDir = process.env.DATA_DIR ?? (process.env.VERCEL ? '/tmp/data' : path.join(process.cwd(), 'data'));
 const dbPath = path.join(dataDir, 'booking.db');
 
 function getDb() {
