@@ -64,11 +64,11 @@ export default function Feed({ items, loading }: { items: FeedItem[]; loading: b
 
               <div className="mt-3 flex flex-wrap items-center gap-4 text-sm">
                 <span className="inline-flex items-center gap-1.5 text-text-primary" aria-label={`${formatNumber(item.views)} views`}>
-                  <span aria-hidden="true">👁</span>
+                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
                   <span className="tabular-nums">{formatNumber(item.views)}</span>
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-text-primary" aria-label={`${formatNumber(item.engagement)} engagements`}>
-                  <span aria-hidden="true">❤</span>
+                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9C.5 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 3.5 0 6 3.5 4 7-2.5 4.5-9.5 9-9.5 9Z"/></svg>
                   <span className="tabular-nums">{formatNumber(item.engagement)}</span>
                 </span>
                 <span className="ml-auto text-xs font-medium text-text-secondary">

@@ -3,6 +3,7 @@ import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/site/nav";
 import Footer from "@/components/site/footer";
+import HashScroll from "@/components/site/hash-scroll";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -67,6 +68,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         <Nav />
+        <HashScroll />
         <main id="main-content" className="flex-1">
           {children}
         </main>
