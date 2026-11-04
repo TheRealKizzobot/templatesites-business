@@ -3,14 +3,14 @@ export default function Contact() {
     <section id="contact" className="section bg-bg-dark py-20 sm:py-24" aria-labelledby="contact-title">
       <div className="container-page">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="section-kicker text-brand-light">Get in Touch</p>
+          <p className="section-kicker">Get in Touch</p>
           <h2
             id="contact-title"
             className="section-title mt-2 text-white"
           >
             Have a project in mind?
           </h2>
-          <p className="mt-4 text-lg text-white/60">
+          <p className="mt-4 text-lg text-white/80">
             Tell me about what you need — a template adaptation, a custom build, or just some code
             review. I reply within 24 hours.
           </p>

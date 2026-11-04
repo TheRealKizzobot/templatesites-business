@@ -31,7 +31,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border bg-bg-primary" aria-label="Site footer">
-      <div className="container-page py-16 sm:py-20">
+      <div className="container-page py-20 sm:py-24 lg:py-28">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand column */}
           <div className="sm:col-span-2 lg:col-span-1">

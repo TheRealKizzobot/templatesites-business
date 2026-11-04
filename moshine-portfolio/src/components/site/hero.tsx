@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="container-page flex flex-1 items-end pb-20 pt-20 sm:pt-28 lg:pb-28">
         <div className="max-w-3xl">
           {/* Eyebrow */}
-          <div className="animate-fade-up inline-flex items-center gap-2 rounded-full border border-text-on-dark/10 bg-text-on-dark/5 px-3.5 py-1.5 text-xs text-text-on-dark/60 backdrop-blur-sm">
+          <div className="animate-fade-up inline-flex items-center gap-2 rounded-full border border-text-on-dark/30 bg-text-on-dark/5 px-4 py-2 text-xs text-text-on-dark backdrop-blur-sm">
             <span className="flex size-1.5 rounded-full bg-brand" />
             <span>5 production templates · Next.js + SQLite + Tailwind</span>
           </div>
@@ -31,7 +31,7 @@ export default function Hero() {
           </h1>
 
           {/* Subheadline */}
-          <p className="animate-fade-up delay-200 mt-6 max-w-lg text-lg leading-relaxed text-text-on-dark/60 sm:text-xl">
+          <p className="animate-fade-up delay-200 mt-6 max-w-lg text-lg leading-relaxed text-text-on-dark sm:text-xl">
             Production-ready templates for restaurants, SaaS products, e-commerce stores,
             and dashboards. No placeholders. No mockups. Just real, deployable code.
           </p>
@@ -46,7 +46,7 @@ export default function Hero() {
             </a>
             <a
               href="#about"
-              className="btn border border-text-on-dark/20 bg-text-on-dark/5 text-base px-8 text-text-on-dark backdrop-blur-sm transition-colors hover:border-text-on-dark/40 hover:bg-text-on-dark/10"
+              className="btn border border-text-on-dark/30 bg-text-on-dark/5 text-base px-8 text-text-on-dark backdrop-blur-sm transition-colors hover:border-text-on-dark/60 hover:bg-text-on-dark/15"
             >
               Learn More
             </a>
@@ -62,7 +62,7 @@ export default function Hero() {
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-2xl font-semibold text-text-on-dark">{stat.value}</div>
-                <div className="text-sm text-text-on-dark/20">{stat.label}</div>
+                <div className="text-sm text-text-on-dark-muted">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -71,9 +71,9 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div aria-hidden="true" className="absolute bottom-6 left-1/2 -translate-x-1/2">
-        <div className="flex flex-col items-center gap-2 text-text-on-dark/30">
+        <div className="animate-fade-up flex flex-col items-center gap-2 text-text-on-dark-muted">
           <span className="text-xs font-mono tracking-widest uppercase">Scroll</span>
-          <div className="size-5 rotate-45 border-r border-t border-text-on-dark/30" />
+          <div className="size-5 rotate-45 border-r border-t border-text-on-dark-muted" />
         </div>
       </div>
     </section>
