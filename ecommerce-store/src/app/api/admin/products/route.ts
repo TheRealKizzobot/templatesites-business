@@ -1,10 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { adminCreateProduct } from '@/lib/store';
 import { isAdminRequest } from '@/lib/auth';
+import { getProducts, setProducts } from '@/lib/cookie-store';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
-
 
 interface ProductInput {
   name: string;
@@ -59,6 +58,22 @@ function parseProductInput(
   return { ok: true, value: { name, price_cents, category, image, stock, rating, description } };
 }
 
+function createSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+export async function GET(req: NextRequest) {
+  if (!isAdminRequest(req)) {
+    return NextResponse.json({ ok: false, error: 'Unauthorized.' }, { status: 401 });
+  }
+  
+  const products = await getProducts();
+  return NextResponse.json({ ok: true, data: products });
+}
+
 export async function POST(req: NextRequest) {
   if (!isAdminRequest(req)) {
     return NextResponse.json({ ok: false, error: 'Unauthorized.' }, { status: 401 });
@@ -76,6 +91,22 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error: parsed.error }, { status: 400 });
   }
 
-  const product = adminCreateProduct(parsed.value);
-  return NextResponse.json({ ok: true, data: product }, { status: 201 });
+  const products = await getProducts();
+  const newProduct = {
+    id: Date.now(),
+    slug: createSlug(parsed.value.name),
+    name: parsed.value.name,
+    description: parsed.value.description,
+    price_cents: parsed.value.price_cents,
+    category: parsed.value.category,
+    image: parsed.value.image,
+    stock: parsed.value.stock,
+    rating: parsed.value.rating,
+    created_at: new Date().toISOString(),
+  };
+  
+  products.push(newProduct);
+  await setProducts(products);
+  
+  return NextResponse.json({ ok: true, data: newProduct }, { status: 201 });
 }

@@ -1,0 +1,13 @@
+- generic [active] [ref=f63e1]:
+  - link "Skip to content" [ref=f63e2] [cursor=pointer]:
+    - /url: "#main"
+  - main [ref=f63e3]:
+    - generic [ref=f63e5]:
+      - heading "Admin sign in" [level=1] [ref=f63e6]
+      - paragraph [ref=f63e7]: Ember & Wood — booking management
+      - generic [ref=f63e8]:
+        - generic [ref=f63e9]: Password
+        - textbox "Password" [ref=f63e10]
+        - button "Sign in" [ref=f63e11] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=f63e17] [cursor=pointer]
+  - alert [ref=f63e21]

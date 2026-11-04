@@ -1,0 +1,36 @@
+- generic [active] [ref=f5e1]:
+  - link "Skip to main content" [ref=f5e2] [cursor=pointer]:
+    - /url: "#main"
+  - main [ref=f5e3]:
+    - generic [ref=f5e5]:
+      - heading "Terms of Service" [level=1] [ref=f5e6]
+      - paragraph [ref=f5e7]: "Last updated: September 2026"
+      - generic [ref=f5e8]:
+        - generic [ref=f5e9]:
+          - heading "1. Agreement" [level=2] [ref=f5e10]
+          - paragraph [ref=f5e11]: By using TaskFlow, you agree to these Terms. If you disagree, do not use the site.
+        - generic [ref=f5e12]:
+          - heading "2. Use of Site" [level=2] [ref=f5e13]
+          - list [ref=f5e14]:
+            - listitem [ref=f5e15]: You must be 18+ or have parental consent
+            - listitem [ref=f5e16]: You agree to provide accurate information
+            - listitem [ref=f5e17]: No unauthorized access, scraping, or abuse
+        - generic [ref=f5e18]:
+          - heading "3. Intellectual Property" [level=2] [ref=f5e19]
+          - paragraph [ref=f5e20]: All content, design, and code is owned by MoshineSites or licensed. You may not copy, reproduce, or redistribute without permission.
+        - generic [ref=f5e21]:
+          - heading "4. Disclaimer" [level=2] [ref=f5e22]
+          - paragraph [ref=f5e23]: Site provided “as-is.” No warranties regarding availability, accuracy, or fitness for purpose.
+        - generic [ref=f5e24]:
+          - heading "5. Limitation of Liability" [level=2] [ref=f5e25]
+          - paragraph [ref=f5e26]: Liability limited to amount paid. Not liable for indirect, incidental, or consequential damages.
+        - generic [ref=f5e27]:
+          - heading "6. Governing Law" [level=2] [ref=f5e28]
+          - paragraph [ref=f5e29]: Governed by laws of North Carolina, USA.
+        - generic [ref=f5e30]:
+          - heading "7. Contact" [level=2] [ref=f5e31]
+          - paragraph [ref=f5e32]:
+            - text: Questions? Email
+            - link "connect@dkservers.space" [ref=f5e33] [cursor=pointer]:
+              - /url: mailto:connect@dkservers.space
+  - alert [ref=f5e34]

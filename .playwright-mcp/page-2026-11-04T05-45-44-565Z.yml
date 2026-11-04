@@ -1,0 +1,41 @@
+- generic [active] [ref=f6e1]:
+  - link "Skip to main content" [ref=f6e2] [cursor=pointer]:
+    - /url: "#main"
+  - main [ref=f6e3]:
+    - generic [ref=f6e5]:
+      - heading "Privacy Policy" [level=1] [ref=f6e6]
+      - paragraph [ref=f6e7]: "Last updated: September 2026"
+      - generic [ref=f6e8]:
+        - generic [ref=f6e9]:
+          - heading "1. Information We Collect" [level=2] [ref=f6e10]
+          - paragraph [ref=f6e11]: "When you interact with TaskFlow, we may collect:"
+          - list [ref=f6e12]:
+            - listitem [ref=f6e13]: Contact information (name, email) when you submit forms
+            - listitem [ref=f6e14]: Technical data (IP address, browser type, pages visited) via standard web analytics
+            - listitem [ref=f6e15]: Any information you voluntarily provide
+        - generic [ref=f6e16]:
+          - heading "2. How We Use Your Information" [level=2] [ref=f6e17]
+          - list [ref=f6e18]:
+            - listitem [ref=f6e19]: To provide and improve our services
+            - listitem [ref=f6e20]: To communicate about updates and support
+            - listitem [ref=f6e21]: To comply with legal obligations
+            - listitem [ref=f6e22]: To send relevant updates (you can unsubscribe anytime)
+        - generic [ref=f6e23]:
+          - heading "3. Data Sharing" [level=2] [ref=f6e24]
+          - paragraph [ref=f6e25]: "We do not sell your personal information. We may share data with:"
+          - list [ref=f6e26]:
+            - listitem [ref=f6e27]: Hosting providers (Vercel) for site deployment
+            - listitem [ref=f6e28]: Legal authorities when required by law
+        - generic [ref=f6e29]:
+          - heading "4. Data Retention" [level=2] [ref=f6e30]
+          - paragraph [ref=f6e31]: "We retain contact form data as long as needed for the purpose it was submitted or as needed for legal compliance. Analytics data is retained per provider policies (Vercel: 30 days). You may request deletion at any time."
+        - generic [ref=f6e32]:
+          - heading "5. Your Rights" [level=2] [ref=f6e33]
+          - paragraph [ref=f6e34]: You may request access, correction, or deletion of your personal data by contacting us.
+        - generic [ref=f6e35]:
+          - heading "6. Contact" [level=2] [ref=f6e36]
+          - paragraph [ref=f6e37]:
+            - text: Questions about this policy? Email us at
+            - link "connect@dkservers.space" [ref=f6e38] [cursor=pointer]:
+              - /url: mailto:connect@dkservers.space
+  - alert [ref=f6e39]

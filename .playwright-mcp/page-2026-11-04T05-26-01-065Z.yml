@@ -1,0 +1,283 @@
+- generic [active] [ref=f52e1]:
+  - link "Skip to main content" [ref=f52e2] [cursor=pointer]:
+    - /url: "#main"
+  - main [ref=f52e3]:
+    - generic [ref=f52e4]:
+      - navigation "Primary" [ref=f52e6]:
+        - link "Ember & Wood" [ref=f52e7] [cursor=pointer]:
+          - /url: "#top"
+        - list [ref=f52e13]:
+          - listitem [ref=f52e14]:
+            - link "About" [ref=f52e15] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=f52e16]:
+            - link "Menu" [ref=f52e17] [cursor=pointer]:
+              - /url: "#menu"
+          - listitem [ref=f52e18]:
+            - link "Gallery" [ref=f52e19] [cursor=pointer]:
+              - /url: "#gallery"
+          - listitem [ref=f52e20]:
+            - link "Testimonials" [ref=f52e21] [cursor=pointer]:
+              - /url: "#testimonials"
+          - listitem [ref=f52e22]:
+            - link "Contact" [ref=f52e23] [cursor=pointer]:
+              - /url: "#contact"
+        - generic [ref=f52e24]:
+          - link "Reserve a Table" [ref=f52e25] [cursor=pointer]:
+            - /url: "#reserve"
+          - button "Open menu" [ref=f52e26]
+      - navigation "Mobile" [ref=f52e29]:
+        - list [ref=f52e30]:
+          - listitem [ref=f52e31]:
+            - link "About" [ref=f52e32] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=f52e33]:
+            - link "Menu" [ref=f52e34] [cursor=pointer]:
+              - /url: "#menu"
+          - listitem [ref=f52e35]:
+            - link "Gallery" [ref=f52e36] [cursor=pointer]:
+              - /url: "#gallery"
+          - listitem [ref=f52e37]:
+            - link "Testimonials" [ref=f52e38] [cursor=pointer]:
+              - /url: "#testimonials"
+          - listitem [ref=f52e39]:
+            - link "Contact" [ref=f52e40] [cursor=pointer]:
+              - /url: "#contact"
+          - listitem [ref=f52e41]:
+            - link "Reserve a Table" [ref=f52e42] [cursor=pointer]:
+              - /url: "#reserve"
+    - main [ref=f52e43]:
+      - region [ref=f52e44]:
+        - img "Warm wood-fired restaurant interior with amber lighting and exposed brick walls" [ref=f52e45]
+        - generic [ref=f52e47]:
+          - paragraph [ref=f52e48]: Wood-fired modern American
+          - heading "Fire, wood & honest ingredients." [level=1] [ref=f52e49]
+          - paragraph [ref=f52e50]: Ember & Wood is a small wood-fired room in Portland where dinner is slow, warm and quietly serious. Reserve a table or peek at the menu.
+          - generic [ref=f52e51]:
+            - link "Reserve a Table" [ref=f52e52] [cursor=pointer]:
+              - /url: "#reserve"
+            - link "View the Menu" [ref=f52e53] [cursor=pointer]:
+              - /url: "#menu"
+      - region [ref=f52e54]:
+        - generic [ref=f52e55]:
+          - img "The Ember and Wood kitchen at work beside the open flame" [ref=f52e57]
+          - generic [ref=f52e58]:
+            - paragraph [ref=f52e59]: Our story
+            - heading "A neighborhood table, tended with fire." [level=2] [ref=f52e60]
+            - paragraph [ref=f52e61]: "Ember & Wood began in 2012 with a single oak-burning hearth and a stubborn idea: dinner should taste like the place it comes from. We cook over live wood every night, let the seasons write the menu, and keep the room small enough that every plate feels personal."
+            - paragraph [ref=f52e62]: Twelve years later the hearth is still the first thing we light. Our butchers, bakers and the long-time regulars at the bar are the heart of it — everything else is just smoke and patience.
+            - generic [ref=f52e63]:
+              - generic [ref=f52e64]:
+                - paragraph [ref=f52e65]: Est. 2012
+                - paragraph [ref=f52e66]: neighborhood favorite
+              - generic [ref=f52e67]:
+                - paragraph [ref=f52e68]: James Beard
+                - paragraph [ref=f52e69]: semifinalist, 2023
+              - generic [ref=f52e70]:
+                - paragraph [ref=f52e71]: 48 Seats
+                - paragraph [ref=f52e72]: intimate wood-fire room
+            - paragraph [ref=f52e73]: — The Ember & Wood kitchen
+      - region [ref=f52e74]:
+        - generic [ref=f52e75]:
+          - generic [ref=f52e76]:
+            - paragraph [ref=f52e77]: From the hearth
+            - heading "Featured dishes" [level=2] [ref=f52e78]
+            - paragraph [ref=f52e79]: A few favorites from the current menu, cooked over oak and served in small, honest portions.
+          - list [ref=f52e80]:
+            - listitem [ref=f52e81]:
+              - article [ref=f52e82]:
+                - img "Ember-crusted ribeye steak on a dark stoneware plate with jus" [ref=f52e84]
+                - generic [ref=f52e85]:
+                  - generic [ref=f52e86]:
+                    - heading "Ember-Crusted Ribeye" [level=3] [ref=f52e87]
+                    - paragraph [ref=f52e88]: $48
+                  - paragraph [ref=f52e89]: Slow-roasted over oak coals, brown butter jus, charred scallion and smoked salt.
+            - listitem [ref=f52e90]:
+              - article [ref=f52e91]:
+                - img "Wood-fired salmon fillet with blistered tomatoes and herbs" [ref=f52e93]
+                - generic [ref=f52e94]:
+                  - generic [ref=f52e95]:
+                    - heading "Wood-Fired Salmon" [level=3] [ref=f52e96]
+                    - paragraph [ref=f52e97]: $34
+                  - paragraph [ref=f52e98]: Cedar-planked salmon, blistered cherry tomato, fennel and lemon-herb oil.
+            - listitem [ref=f52e99]:
+              - article [ref=f52e100]:
+                - img "Burrata and heirloom tomato salad drizzled with basil oil" [ref=f52e102]
+                - generic [ref=f52e103]:
+                  - generic [ref=f52e104]:
+                    - heading "Burrata & Heirloom Tomato" [level=3] [ref=f52e105]
+                    - paragraph [ref=f52e106]: $19
+                  - paragraph [ref=f52e107]: Creamy burrata, late-summer heirloom tomatoes, basil oil and grilled sourdough.
+            - listitem [ref=f52e108]:
+              - article [ref=f52e109]:
+                - img "Hand-cut tagliatelle with a mushroom ragout and parmesan" [ref=f52e111]
+                - generic [ref=f52e112]:
+                  - generic [ref=f52e113]:
+                    - heading "Mushroom Tagliatelle" [level=3] [ref=f52e114]
+                    - paragraph [ref=f52e115]: $24
+                  - paragraph [ref=f52e116]: Hand-cut tagliatelle, chanterelle and porcini ragout, aged parmesan, thyme.
+            - listitem [ref=f52e117]:
+              - article [ref=f52e118]:
+                - img "Duck breast glazed with burnt orange sauce on a plate" [ref=f52e120]
+                - generic [ref=f52e121]:
+                  - generic [ref=f52e122]:
+                    - heading "Duck à l'Orange" [level=3] [ref=f52e123]
+                    - paragraph [ref=f52e124]: $42
+                  - paragraph [ref=f52e125]: Crispy-skin duck breast, burnt orange glaze, farro and charred radicchio.
+            - listitem [ref=f52e126]:
+              - article [ref=f52e127]:
+                - img "Miso crème brûlée in a dark ramekin with a caramelized top" [ref=f52e129]
+                - generic [ref=f52e130]:
+                  - generic [ref=f52e131]:
+                    - heading "Miso Crème Brûlée" [level=3] [ref=f52e132]
+                    - paragraph [ref=f52e133]: $14
+                  - paragraph [ref=f52e134]: White miso crème brûlée, toasted sugar crust, sesame praline and black sesame.
+      - region [ref=f52e135]:
+        - generic [ref=f52e136]:
+          - generic [ref=f52e137]:
+            - paragraph [ref=f52e138]: Snapshots
+            - heading "Inside the room" [level=2] [ref=f52e139]
+            - paragraph [ref=f52e140]: Warm corners, live fire and late-night light — a look around the restaurant. Select a photo to view it closer.
+          - list [ref=f52e141]:
+            - listitem [ref=f52e142]:
+              - 'button "Enlarge: Warm dining room with exposed brick and glowing pendant lamps" [ref=f52e143]'
+            - listitem [ref=f52e144]:
+              - 'button "Enlarge: Open kitchen flames rising from the wood-fired grill" [ref=f52e145]'
+            - listitem [ref=f52e146]:
+              - 'button "Enlarge: Overhead view of a rustic table set with small plates" [ref=f52e147]'
+            - listitem [ref=f52e148]:
+              - 'button "Enlarge: Sourdough bread and whipped butter on a dark board" [ref=f52e149]'
+            - listitem [ref=f52e150]:
+              - 'button "Enlarge: Bartender pouring a cocktail at the amber-lit bar" [ref=f52e151]'
+            - listitem [ref=f52e152]:
+              - 'button "Enlarge: Cocoa-dusted dessert plated on dark ceramics" [ref=f52e153]'
+      - region [ref=f52e154]:
+        - generic [ref=f52e155]:
+          - generic [ref=f52e156]:
+            - paragraph [ref=f52e157]: Word of mouth
+            - heading "From our regulars" [level=2] [ref=f52e158]
+          - generic [ref=f52e159]:
+            - figure [ref=f52e160]:
+              - img "Rated 5 out of 5 stars" [ref=f52e161]
+              - blockquote [ref=f52e172]:
+                - generic [ref=f52e173]: “The ribeye was the best piece of meat I have eaten in years — genuinely wood-fired, perfectly rested, unforgettable.”
+              - generic [ref=f52e174]:
+                - paragraph [ref=f52e175]: Mara Jenkins
+                - paragraph [ref=f52e176]: Food columnist, Portland Eats
+            - figure [ref=f52e177]:
+              - img "Rated 5 out of 5 stars" [ref=f52e178]
+              - blockquote [ref=f52e189]:
+                - generic [ref=f52e190]: “Warm, unhurried, and beautifully lit. The burrata course alone is worth the reservation.”
+              - generic [ref=f52e191]:
+                - paragraph [ref=f52e192]: Devon Patel
+                - paragraph [ref=f52e193]: Regular since 2019
+            - figure [ref=f52e194]:
+              - img "Rated 5 out of 5 stars" [ref=f52e195]
+              - blockquote [ref=f52e206]:
+                - generic [ref=f52e207]: “We booked for an anniversary and the staff made it feel like a private dinner. The kitchen is doing real craft.”
+              - generic [ref=f52e208]:
+                - paragraph [ref=f52e209]: Lucía Herrera
+                - paragraph [ref=f52e210]: Anniversary dinner, June
+      - region [ref=f52e211]:
+        - generic [ref=f52e212]:
+          - generic [ref=f52e213]:
+            - paragraph [ref=f52e214]: Hours & contact
+            - heading "Find us by the river" [level=2] [ref=f52e215]
+            - paragraph [ref=f52e216]: Walk-ins are welcome at the bar. Reservations open three weeks out.
+            - table [ref=f52e217]:
+              - caption [ref=f52e218]: Weekly opening hours
+              - rowgroup [ref=f52e219]:
+                - row [ref=f52e220]:
+                  - columnheader "Days" [ref=f52e221]
+                  - columnheader "Hours" [ref=f52e222]
+              - rowgroup [ref=f52e223]:
+                - row [ref=f52e224]:
+                  - rowheader "Monday — Thursday" [ref=f52e225]
+                  - cell "5:00 PM – 10:00 PM" [ref=f52e226]
+                - row [ref=f52e227]:
+                  - rowheader "Friday — Saturday" [ref=f52e228]
+                  - cell "5:00 PM – 11:00 PM" [ref=f52e229]
+                - row [ref=f52e230]:
+                  - rowheader "Sunday" [ref=f52e231]
+                  - cell "4:00 PM – 9:00 PM" [ref=f52e232]
+            - generic [ref=f52e233]:
+              - paragraph [ref=f52e234]: 412 Firelight Avenue, Portland, OR 97209
+              - link "(503) 555-0142" [ref=f52e235] [cursor=pointer]:
+                - /url: tel:+15035550142
+              - link "connect@dkservers.space" [ref=f52e236] [cursor=pointer]:
+                - /url: mailto:connect@dkservers.space
+          - generic [ref=f52e238]:
+            - heading "Plan your evening" [level=3] [ref=f52e239]
+            - paragraph [ref=f52e240]: For parties of seven or more, a private event, or a quiet anniversary window, call us — a real person answers the phone.
+            - link "Call (503) 555-0142" [ref=f52e241] [cursor=pointer]:
+              - /url: tel:+15035550142
+            - paragraph [ref=f52e242]: Dinner service begins at 5 PM. The kitchen closes 30 minutes before last seating.
+      - region [ref=f52e243]:
+        - generic [ref=f52e244]:
+          - paragraph [ref=f52e245]: Reservations
+          - heading "The hearth is waiting." [level=2] [ref=f52e246]
+          - paragraph [ref=f52e247]: Book by phone and we’ll hold the table by the fire. For same-week availability, the bar is first come, first seated.
+          - generic [ref=f52e248]:
+            - link "(503) 555-0142" [ref=f52e249] [cursor=pointer]:
+              - /url: tel:+15035550142
+            - link "Contact the host" [ref=f52e250] [cursor=pointer]:
+              - /url: "#contact"
+    - generic "Site footer" [ref=f52e251]:
+      - generic [ref=f52e252]:
+        - generic [ref=f52e253]:
+          - generic [ref=f52e254]:
+            - paragraph [ref=f52e255]: Ember & Wood
+            - paragraph [ref=f52e256]: 412 Firelight Avenue, Portland, OR 97209
+            - list [ref=f52e257]:
+              - listitem [ref=f52e258]:
+                - link "Ember and Wood on Instagram" [ref=f52e259] [cursor=pointer]:
+                  - /url: https://instagram.com/dkservers
+              - listitem [ref=f52e262]:
+                - link "Ember and Wood on Facebook" [ref=f52e263] [cursor=pointer]:
+                  - /url: https://facebook.com/dkservers
+              - listitem [ref=f52e266]:
+                - link "Ember and Wood on X" [ref=f52e267] [cursor=pointer]:
+                  - /url: https://x.com/dkservers
+          - navigation "Footer" [ref=f52e270]:
+            - paragraph [ref=f52e271]: Explore
+            - list [ref=f52e272]:
+              - listitem [ref=f52e273]:
+                - link "About" [ref=f52e274] [cursor=pointer]:
+                  - /url: "#about"
+              - listitem [ref=f52e275]:
+                - link "Menu" [ref=f52e276] [cursor=pointer]:
+                  - /url: "#menu"
+              - listitem [ref=f52e277]:
+                - link "Gallery" [ref=f52e278] [cursor=pointer]:
+                  - /url: "#gallery"
+              - listitem [ref=f52e279]:
+                - link "Testimonials" [ref=f52e280] [cursor=pointer]:
+                  - /url: "#testimonials"
+              - listitem [ref=f52e281]:
+                - link "Contact" [ref=f52e282] [cursor=pointer]:
+                  - /url: "#contact"
+          - generic [ref=f52e283]:
+            - paragraph [ref=f52e284]: Contact
+            - list [ref=f52e285]:
+              - listitem [ref=f52e286]:
+                - link "(503) 555-0142" [ref=f52e287] [cursor=pointer]:
+                  - /url: tel:+15035550142
+              - listitem [ref=f52e288]:
+                - link "connect@dkservers.space" [ref=f52e289] [cursor=pointer]:
+                  - /url: mailto:connect@dkservers.space
+          - navigation "Legal" [ref=f52e290]:
+            - paragraph [ref=f52e291]: Legal
+            - list [ref=f52e292]:
+              - listitem [ref=f52e293]:
+                - link "Terms of Service" [ref=f52e294] [cursor=pointer]:
+                  - /url: /terms
+              - listitem [ref=f52e295]:
+                - link "Privacy Policy" [ref=f52e296] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=f52e297]:
+                - link "Cookie Policy" [ref=f52e298] [cursor=pointer]:
+                  - /url: /cookies
+        - paragraph [ref=f52e300]:
+          - text: Made with
+          - link "MoshineSites" [ref=f52e301] [cursor=pointer]:
+            - /url: https://dkservers.space

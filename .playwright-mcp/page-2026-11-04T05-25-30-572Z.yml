@@ -1,0 +1,242 @@
+- generic [active] [ref=f51e1]:
+  - link "Skip to content" [ref=f51e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f51e3]:
+    - navigation "Primary" [ref=f51e4]:
+      - link "Ember & Wood" [ref=f51e5] [cursor=pointer]:
+        - /url: "#top"
+      - button "Open menu" [ref=f51e6] [cursor=pointer]: Menu
+  - main [ref=f51e9]:
+    - region [ref=f51e10]:
+      - generic [ref=f51e12]:
+        - paragraph [ref=f51e13]: Ember & Wood · Wood-fired kitchen & natural wine
+        - heading "Reserve your table" [level=1] [ref=f51e14]
+        - paragraph [ref=f51e15]: Seasonal plates cooked over live fire, in a room that feels like a slow Sunday afternoon. Tuesday to Sunday, lunch and dinner.
+        - link "Book a table" [ref=f51e17] [cursor=pointer]:
+          - /url: "#book"
+    - region [ref=f51e18]:
+      - generic [ref=f51e19]:
+        - generic [ref=f51e20]:
+          - heading "Cooked over fire, poured by the glass" [level=2] [ref=f51e21]
+          - paragraph [ref=f51e22]: We roast, sear, and smoke over a single wood fireplace in the middle of the room. Menus change with the market — what arrives in the morning decides what we cook that night.
+          - paragraph [ref=f51e23]: The wine list leans natural and low-intervention, with a rotating roster by the glass. Sixteen seats at the bar, thirty-two at the tables, and one long counter for those who want to watch the fire.
+          - paragraph [ref=f51e24]: Every booking is confirmed by email, and we seat on a first-confirmed basis — so reserve early, especially for dinner.
+        - img "Flat illustration of Ember & Wood's wood-fired dining room" [ref=f51e26]
+    - region [ref=f51e27]:
+      - generic [ref=f51e28]:
+        - heading "Signature dishes" [level=2] [ref=f51e29]
+        - paragraph [ref=f51e30]: A few plates that never leave the menu. The rest changes with the market every week.
+        - list [ref=f51e31]:
+          - listitem [ref=f51e32]:
+            - heading "Wood-Roasted Half Chicken" [level=3] [ref=f51e33]
+            - paragraph [ref=f51e34]: Smoked chili glaze, charred allium, bread drippings
+            - paragraph [ref=f51e35]: $34
+          - listitem [ref=f51e36]:
+            - heading "Fire-Roasted Squash" [level=3] [ref=f51e37]
+            - paragraph [ref=f51e38]: Brown butter, crispy sage, toasted seeds
+            - paragraph [ref=f51e39]: $18
+          - listitem [ref=f51e40]:
+            - heading "Ember Flatbread" [level=3] [ref=f51e41]
+            - paragraph [ref=f51e42]: Burrata, market greens, smoked olive oil
+            - paragraph [ref=f51e43]: $16
+    - region [ref=f51e44]:
+      - generic [ref=f51e46]:
+        - generic [ref=f51e47]:
+          - heading "Reserve your table" [level=2] [ref=f51e48]
+          - paragraph [ref=f51e49]: Room for more than eight guests? Email us directly and we'll sort you out. For everything else, a quick form is all it takes — every request is confirmed by email.
+          - generic [ref=f51e50]:
+            - generic [ref=f51e51]:
+              - term [ref=f51e52]: Lunch
+              - definition [ref=f51e53]: 11:00 – 12:30, every 15 minutes
+            - generic [ref=f51e54]:
+              - term [ref=f51e55]: Dinner
+              - definition [ref=f51e56]: 17:00 – 21:00, every 15 minutes
+            - generic [ref=f51e57]:
+              - term [ref=f51e58]: Parties
+              - definition [ref=f51e59]: 1 – 8 guests per table request
+        - form "Table booking form" [ref=f51e60]:
+          - generic [ref=f51e61]:
+            - heading "Request a table" [level=2] [ref=f51e62]
+            - paragraph [ref=f51e63]: We seat on a first-confirmed basis and confirm every request by email.
+          - generic [ref=f51e64]:
+            - generic [ref=f51e65]:
+              - generic [ref=f51e66]: Name *
+              - textbox "Name *" [ref=f51e67]
+            - generic [ref=f51e68]:
+              - generic [ref=f51e69]: Phone *
+              - textbox "Phone *" [ref=f51e70]
+            - generic [ref=f51e71]:
+              - generic [ref=f51e72]: Email *
+              - textbox "Email *" [ref=f51e73]
+            - generic [ref=f51e74]:
+              - generic [ref=f51e75]: Date *
+              - textbox "Date *" [ref=f51e76]
+            - generic [ref=f51e77]:
+              - generic [ref=f51e78]: Time *
+              - combobox "Time *" [ref=f51e79]:
+                - option "Select a time" [selected]
+                - option "11:00"
+                - option "11:15"
+                - option "11:30"
+                - option "11:45"
+                - option "12:00"
+                - option "12:15"
+                - option "12:30"
+                - option "17:00"
+                - option "17:15"
+                - option "17:30"
+                - option "17:45"
+                - option "18:00"
+                - option "18:15"
+                - option "18:30"
+                - option "18:45"
+                - option "19:00"
+                - option "19:15"
+                - option "19:30"
+                - option "19:45"
+                - option "20:00"
+                - option "20:15"
+                - option "20:30"
+                - option "20:45"
+                - option "21:00"
+            - generic [ref=f51e80]:
+              - generic [ref=f51e81]: Party size *
+              - combobox "Party size *" [ref=f51e82]:
+                - option "Just me"
+                - option "2 people" [selected]
+                - option "3 people"
+                - option "4 people"
+                - option "5 people"
+                - option "6 people"
+                - option "7 people"
+                - option "8 people"
+            - generic [ref=f51e83]:
+              - generic [ref=f51e84]: Notes (optional)
+              - textbox "Notes (optional)" [ref=f51e85]:
+                - /placeholder: Allergies, celebrations, seating preferences…
+          - generic [ref=f51e86]:
+            - button "Book table" [ref=f51e87] [cursor=pointer]
+            - paragraph [ref=f51e88]: We'll confirm availability by email within the hour.
+    - region [ref=f51e89]:
+      - generic [ref=f51e90]:
+        - heading "Word of mouth" [level=2] [ref=f51e91]
+        - list [ref=f51e92]:
+          - listitem [ref=f51e93]:
+            - blockquote [ref=f51e96]: The wood-roasted chicken alone is worth the trip — the dining room fills up fast, so book ahead.
+            - generic [ref=f51e97]:
+              - paragraph [ref=f51e98]: Camille R.
+              - paragraph [ref=f51e99]: Window-seat regular
+          - listitem [ref=f51e100]:
+            - blockquote [ref=f51e103]: Quiet, warm, and genuinely seasonal. Ember & Wood has become our family's Sunday ritual.
+            - generic [ref=f51e104]:
+              - paragraph [ref=f51e105]: Daniel K.
+              - paragraph [ref=f51e106]: Four-year regular
+          - listitem [ref=f51e107]:
+            - blockquote [ref=f51e110]: Came for a birthday, left planning the next visit. The service and the fire are both extraordinary.
+            - generic [ref=f51e111]:
+              - paragraph [ref=f51e112]: Priya S.
+              - paragraph [ref=f51e113]: Celebrated here twice in 2025
+    - region [ref=f51e114]:
+      - generic [ref=f51e116]:
+        - generic [ref=f51e117]:
+          - heading "Hours & contact" [level=2] [ref=f51e118]
+          - table [ref=f51e119]:
+            - caption [ref=f51e120]: Opening hours
+            - rowgroup [ref=f51e121]:
+              - row [ref=f51e122]:
+                - columnheader "Day" [ref=f51e123]
+                - columnheader "Lunch" [ref=f51e124]
+                - columnheader "Dinner" [ref=f51e125]
+            - rowgroup [ref=f51e126]:
+              - row [ref=f51e127]:
+                - cell "Monday" [ref=f51e128]
+                - cell "Closed" [ref=f51e129]
+                - cell "Closed" [ref=f51e130]
+              - row [ref=f51e131]:
+                - cell "Tuesday – Friday" [ref=f51e132]
+                - cell "11:00 – 12:30" [ref=f51e133]
+                - cell "17:00 – 21:00" [ref=f51e134]
+              - row [ref=f51e135]:
+                - cell "Saturday" [ref=f51e136]
+                - cell "11:00 – 12:30" [ref=f51e137]
+                - cell "17:00 – 21:00" [ref=f51e138]
+              - row [ref=f51e139]:
+                - cell "Sunday" [ref=f51e140]
+                - cell "11:00 – 12:30" [ref=f51e141]
+                - cell "17:00 – 21:00" [ref=f51e142]
+        - list [ref=f51e144]:
+          - listitem [ref=f51e145]:
+            - generic [ref=f51e150]:
+              - paragraph [ref=f51e151]: Find us
+              - paragraph [ref=f51e152]: 14 Mill Lane, Old TownPortland, OR 97205
+          - listitem [ref=f51e153]:
+            - generic [ref=f51e157]:
+              - paragraph [ref=f51e158]: Call or write
+              - paragraph [ref=f51e159]:
+                - link "(503) 555-0142" [ref=f51e160] [cursor=pointer]:
+                  - /url: tel:+15035550142
+                - link "hello@emberandwood.com" [ref=f51e161] [cursor=pointer]:
+                  - /url: mailto:hello@emberandwood.com
+          - listitem [ref=f51e162]:
+            - generic [ref=f51e167]:
+              - paragraph [ref=f51e168]: Good to know
+              - paragraph [ref=f51e169]: Closed Mondays. Parties over 8 by email — we'll make room.
+  - contentinfo [ref=f51e170]:
+    - generic [ref=f51e171]:
+      - generic [ref=f51e172]:
+        - paragraph [ref=f51e173]: Ember & Wood
+        - paragraph [ref=f51e174]: Seasonal wood-fired cooking and natural wine, in Portland's Old Town.
+      - generic [ref=f51e175]:
+        - paragraph [ref=f51e176]: Hours
+        - list [ref=f51e177]:
+          - listitem [ref=f51e178]: Monday · Closed
+          - listitem [ref=f51e179]: Tue – Fri · 11:00 – 12:30 & 17:00 – 21:00
+          - listitem [ref=f51e180]: Sat – Sun · 11:00 – 12:30 & 17:00 – 21:00
+      - generic [ref=f51e181]:
+        - paragraph [ref=f51e182]: Find us
+        - list [ref=f51e183]:
+          - listitem [ref=f51e184]: 14 Mill Lane, Old Town
+          - listitem [ref=f51e185]: Portland, OR 97205
+          - listitem [ref=f51e186]:
+            - link "(503) 555-0142" [ref=f51e187] [cursor=pointer]:
+              - /url: tel:+15035550142
+          - listitem [ref=f51e188]:
+            - link "hello@emberandwood.com" [ref=f51e189] [cursor=pointer]:
+              - /url: mailto:hello@emberandwood.com
+      - generic [ref=f51e190]:
+        - paragraph [ref=f51e191]: Follow
+        - list [ref=f51e192]:
+          - listitem [ref=f51e193]:
+            - link "Instagram" [ref=f51e194] [cursor=pointer]:
+              - /url: https://instagram.com/emberandwood
+          - listitem [ref=f51e198]:
+            - link "Facebook" [ref=f51e199] [cursor=pointer]:
+              - /url: https://facebook.com/emberandwood
+          - listitem [ref=f51e202]:
+            - link "X" [ref=f51e203] [cursor=pointer]:
+              - /url: https://x.com/emberandwood
+        - navigation "Footer" [ref=f51e206]:
+          - list [ref=f51e207]:
+            - listitem [ref=f51e208]:
+              - link "About" [ref=f51e209] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=f51e210]:
+              - link "Book" [ref=f51e211] [cursor=pointer]:
+                - /url: "#book"
+        - navigation "Legal" [ref=f51e212]:
+          - list [ref=f51e213]:
+            - listitem [ref=f51e214]:
+              - link "Terms of Service" [ref=f51e215] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f51e216]:
+              - link "Privacy Policy" [ref=f51e217] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f51e218]:
+              - link "Cookie Policy" [ref=f51e219] [cursor=pointer]:
+                - /url: /cookies
+            - listitem [ref=f51e220]:
+              - link "Admin *" [ref=f51e221] [cursor=pointer]:
+                - /url: /admin
+    - paragraph [ref=f51e223]: © 2026 Ember & Wood.
+  - button "Open Next.js Dev Tools" [ref=f51e229] [cursor=pointer]
+  - alert [ref=f51e233]

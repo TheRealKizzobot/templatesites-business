@@ -1,14 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getDb } from '@/lib/db';
 import { isAdminRequest } from '@/lib/auth';
-import { seed as seedDb } from '@/lib/seed';
 import {
   CAPACITY_PER_SLOT,
   STATUSES,
   validateBookingInput,
   type BookingRow,
   type BookingStatus,
-} from '@/lib/booking';
+  getAllBookings,
+  createBooking,
+} from '@/lib/booking-store';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -21,11 +21,8 @@ export async function GET(req: NextRequest) {
     );
   }
 
-  // Auto-seed database if empty
-  seedDb();
-
   const status = req.nextUrl.searchParams.get('status');
-  const db = getDb();
+  const bookings = await getAllBookings();
 
   if (status) {
     if (!STATUSES.includes(status as BookingStatus)) {
@@ -34,23 +31,25 @@ export async function GET(req: NextRequest) {
         { status: 400 }
       );
     }
-    const rows = db
-      .prepare(
-        'SELECT * FROM bookings WHERE status = ? ORDER BY date DESC, time DESC, id DESC'
-      )
-      .all(status);
+    const rows = bookings
+      .filter(b => b.status === status)
+      .sort((a, b) => {
+        if (a.date !== b.date) return b.date.localeCompare(a.date);
+        if (a.time !== b.time) return b.time.localeCompare(a.time);
+        return b.id - a.id;
+      });
     return NextResponse.json({ ok: true, data: rows });
   }
 
-  const rows = db
-    .prepare('SELECT * FROM bookings ORDER BY date DESC, time DESC, id DESC')
-    .all();
+  const rows = bookings.sort((a, b) => {
+    if (a.date !== b.date) return b.date.localeCompare(a.date);
+    if (a.time !== b.time) return b.time.localeCompare(a.time);
+    return b.id - a.id;
+  });
   return NextResponse.json({ ok: true, data: rows });
 }
 
 export async function POST(req: NextRequest) {
-  const db = getDb();
-
   let body: unknown;
   try {
     body = await req.json();
@@ -67,15 +66,12 @@ export async function POST(req: NextRequest) {
   }
   const { value } = result;
 
-  const capacity = db
-    .prepare(
-      `SELECT COALESCE(SUM(party_size), 0) AS covers
-       FROM bookings
-       WHERE date = ? AND time = ? AND status != 'cancelled'`
-    )
-    .get(value.date, value.time) as { covers: number };
+  const bookings = await getAllBookings();
+  const capacity = bookings
+    .filter(b => b.date === value.date && b.time === value.time && b.status !== 'cancelled')
+    .reduce((sum, b) => sum + b.party_size, 0);
 
-  const remaining = CAPACITY_PER_SLOT - capacity.covers;
+  const remaining = CAPACITY_PER_SLOT - capacity;
   if (value.party_size > remaining) {
     const error =
       remaining <= 0
@@ -84,16 +80,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error }, { status: 409 });
   }
 
-  const info = db
-    .prepare(
-      `INSERT INTO bookings (name, email, phone, date, time, party_size, notes, status)
-       VALUES (@name, @email, @phone, @date, @time, @party_size, @notes, 'pending')`
-    )
-    .run({ ...value, notes: value.notes ?? '' });
-
-  const created = db
-    .prepare('SELECT * FROM bookings WHERE id = ?')
-    .get(info.lastInsertRowid) as BookingRow;
+  const created = await createBooking(value);
+  if (!created) {
+    return NextResponse.json({ ok: false, error: 'Unable to create booking.' }, { status: 409 });
+  }
 
   return NextResponse.json({ ok: true, data: created }, { status: 201 });
 }

@@ -1,0 +1,64 @@
+- generic [active] [ref=f8e1]:
+  - link "Skip to main content" [ref=f8e2] [cursor=pointer]:
+    - /url: "#main"
+  - main [ref=f8e3]:
+    - generic [ref=f8e5]:
+      - heading "Cookie Policy" [level=1] [ref=f8e6]
+      - paragraph [ref=f8e7]: "Last updated: September 2026"
+      - generic [ref=f8e8]:
+        - generic [ref=f8e9]:
+          - heading "1. What Are Cookies" [level=2] [ref=f8e10]
+          - paragraph [ref=f8e11]: Cookies are small text files stored on your device when you visit a website. They help sites function properly and provide analytics.
+        - generic [ref=f8e12]:
+          - heading "2. Cookies We Use" [level=2] [ref=f8e13]
+          - paragraph [ref=f8e14]: "TaskFlow uses only the following cookies:"
+          - list [ref=f8e15]:
+            - listitem [ref=f8e16]:
+              - strong [ref=f8e17]: "Essential cookies:"
+              - text: Theme selection preference
+            - listitem [ref=f8e18]:
+              - strong [ref=f8e19]: "Analytics cookies:"
+              - text: Vercel Analytics (page views, performance metrics) — anonymized
+          - paragraph [ref=f8e20]: We do not use advertising, tracking, session, or authentication cookies. TaskFlow has no user accounts, no shopping cart, and no server-side sessions.
+        - generic [ref=f8e21]:
+          - heading "3. Cookie Details" [level=2] [ref=f8e22]
+          - table [ref=f8e23]:
+            - rowgroup [ref=f8e24]:
+              - row [ref=f8e25]:
+                - columnheader "Cookie" [ref=f8e26]
+                - columnheader "Purpose" [ref=f8e27]
+                - columnheader "Duration" [ref=f8e28]
+                - columnheader "Type" [ref=f8e29]
+            - rowgroup [ref=f8e30]:
+              - row [ref=f8e31]:
+                - cell "theme" [ref=f8e32]
+                - cell "Theme preference (light/dark)" [ref=f8e33]
+                - cell "1 year" [ref=f8e34]
+                - cell "Essential" [ref=f8e35]
+              - row [ref=f8e36]:
+                - cell "vercel-analytics" [ref=f8e37]
+                - cell "Anonymous page views" [ref=f8e38]
+                - cell "1 year" [ref=f8e39]
+                - cell "Analytics" [ref=f8e40]
+        - generic [ref=f8e41]:
+          - heading "4. Managing Cookies" [level=2] [ref=f8e42]
+          - paragraph [ref=f8e43]: "You can manage cookies via your browser settings:"
+          - list [ref=f8e44]:
+            - listitem [ref=f8e45]: Block all cookies (may break theme persistence)
+            - listitem [ref=f8e46]: Block third-party cookies only
+            - listitem [ref=f8e47]: Clear cookies on browser close
+            - listitem [ref=f8e48]: Use browser extensions for granular control
+          - paragraph [ref=f8e49]: "Note: Disabling the theme cookie will prevent your dark/light mode preference from being remembered."
+        - generic [ref=f8e50]:
+          - heading "5. Third-Party Cookies" [level=2] [ref=f8e51]
+          - paragraph [ref=f8e52]: We do not set third-party cookies. Vercel Analytics sets first-party cookies on our domain. No advertising networks, social media pixels, or tracking pixels are used.
+        - generic [ref=f8e53]:
+          - heading "6. Consent" [level=2] [ref=f8e54]
+          - paragraph [ref=f8e55]: By using our site, you consent to essential cookies (theme preference). Analytics cookies are optional — you can disable them in your browser or via Vercel’s privacy settings.
+        - generic [ref=f8e56]:
+          - heading "7. Contact" [level=2] [ref=f8e57]
+          - paragraph [ref=f8e58]:
+            - text: Questions about this policy? Email
+            - link "connect@dkservers.space" [ref=f8e59] [cursor=pointer]:
+              - /url: mailto:connect@dkservers.space
+  - alert [ref=f8e60]
